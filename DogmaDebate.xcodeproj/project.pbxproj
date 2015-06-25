@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F45DDAD1B2E51FF00086116 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDAC1B2E51FF00086116 /* main.m */; };
+		1F45DDB01B2E51FF00086116 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDAF1B2E51FF00086116 /* AppDelegate.m */; };
+		1F45DDBB1B2E51FF00086116 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DDBA1B2E51FF00086116 /* Images.xcassets */; };
+		1F45DDBE1B2E51FF00086116 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DDBC1B2E51FF00086116 /* LaunchScreen.xib */; };
+		1F45DDCA1B2E51FF00086116 /* DogmaDebateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDC91B2E51FF00086116 /* DogmaDebateTests.m */; };
+		1F45DDDC1B2E588F00086116 /* RWHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DDDB1B2E588F00086116 /* RWHomeTableViewCell.xib */; };
+		1F45DDDD1B2E588F00086116 /* RWHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DDDB1B2E588F00086116 /* RWHomeTableViewCell.xib */; };
+		1F45DDE01B2E58B200086116 /* RWHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDDF1B2E58B200086116 /* RWHomeTableViewCell.m */; };
+		1F45DDE11B2E58B200086116 /* RWHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDDF1B2E58B200086116 /* RWHomeTableViewCell.m */; };
+		1F45DDE41B2F150100086116 /* RWEpisode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDE31B2F150100086116 /* RWEpisode.m */; };
+		1F45DDE51B2F150100086116 /* RWEpisode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDE31B2F150100086116 /* RWEpisode.m */; };
+		1F45DDF11B2F4EBC00086116 /* RWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDEF1B2F4EBC00086116 /* RWHomeViewController.m */; };
+		1F45DDF21B2F4EBC00086116 /* RWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDEF1B2F4EBC00086116 /* RWHomeViewController.m */; };
+		1F45DDF31B2F4EBC00086116 /* RWHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DDF01B2F4EBC00086116 /* RWHomeViewController.xib */; };
+		1F45DDF41B2F4EBC00086116 /* RWHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DDF01B2F4EBC00086116 /* RWHomeViewController.xib */; };
+		1F45DDFF1B3A04DA00086116 /* RWMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDFD1B3A04DA00086116 /* RWMoreViewController.m */; };
+		1F45DE001B3A04DA00086116 /* RWMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDFD1B3A04DA00086116 /* RWMoreViewController.m */; };
+		1F45DE011B3A04DA00086116 /* RWMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DDFE1B3A04DA00086116 /* RWMoreViewController.xib */; };
+		1F45DE021B3A04DA00086116 /* RWMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DDFE1B3A04DA00086116 /* RWMoreViewController.xib */; };
+		1F45DE061B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE041B3AE52F00086116 /* RWMoreTableViewCell.m */; };
+		1F45DE071B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE041B3AE52F00086116 /* RWMoreTableViewCell.m */; };
+		1F45DE081B3AE52F00086116 /* RWMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE051B3AE52F00086116 /* RWMoreTableViewCell.xib */; };
+		1F45DE091B3AE52F00086116 /* RWMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE051B3AE52F00086116 /* RWMoreTableViewCell.xib */; };
+		1F45DE0D1B3AF96400086116 /* RWEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE0B1B3AF96400086116 /* RWEventsViewController.m */; };
+		1F45DE0E1B3AF96400086116 /* RWEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE0B1B3AF96400086116 /* RWEventsViewController.m */; };
+		1F45DE0F1B3AF96400086116 /* RWEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE0C1B3AF96400086116 /* RWEventsViewController.xib */; };
+		1F45DE101B3AF96400086116 /* RWEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE0C1B3AF96400086116 /* RWEventsViewController.xib */; };
+		1F45DE131B3AFF2B00086116 /* RWEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE121B3AFF2B00086116 /* RWEvent.m */; };
+		1F45DE141B3AFF2B00086116 /* RWEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE121B3AFF2B00086116 /* RWEvent.m */; };
+		1F45DE181B3B37E800086116 /* RWEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE161B3B37E800086116 /* RWEventTableViewCell.m */; };
+		1F45DE191B3B37E800086116 /* RWEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE161B3B37E800086116 /* RWEventTableViewCell.m */; };
+		1F45DE1A1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE171B3B37E800086116 /* RWEventTableViewCell.xib */; };
+		1F45DE1B1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE171B3B37E800086116 /* RWEventTableViewCell.xib */; };
+		1F45DE1D1B3B46DC00086116 /* RWEventHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE1C1B3B46DC00086116 /* RWEventHeaderView.xib */; };
+		1F45DE1E1B3B46DC00086116 /* RWEventHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE1C1B3B46DC00086116 /* RWEventHeaderView.xib */; };
+		1F45DE211B3B488C00086116 /* RWEventHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE201B3B488C00086116 /* RWEventHeaderView.m */; };
+		1F45DE221B3B488C00086116 /* RWEventHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE201B3B488C00086116 /* RWEventHeaderView.m */; };
+		1F45DE261B3B4FA600086116 /* RWBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE241B3B4FA600086116 /* RWBlogViewController.m */; };
+		1F45DE271B3B4FA600086116 /* RWBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE241B3B4FA600086116 /* RWBlogViewController.m */; };
+		1F45DE281B3B4FA600086116 /* RWBlogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE251B3B4FA600086116 /* RWBlogViewController.xib */; };
+		1F45DE291B3B4FA600086116 /* RWBlogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE251B3B4FA600086116 /* RWBlogViewController.xib */; };
+		1F45DE2C1B3B546700086116 /* RWStyleControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE2B1B3B546700086116 /* RWStyleControls.m */; };
+		1F45DE2D1B3B546700086116 /* RWStyleControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE2B1B3B546700086116 /* RWStyleControls.m */; };
+		1F45DE301B3B6C1600086116 /* RWStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE2F1B3B6C1600086116 /* RWStore.m */; };
+		1F45DE311B3B6C1600086116 /* RWStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE2F1B3B6C1600086116 /* RWStore.m */; };
+		1F45DE481B3C5AFF00086116 /* RWCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE461B3C5AFF00086116 /* RWCollectionViewController.m */; };
+		1F45DE491B3C5AFF00086116 /* RWCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE461B3C5AFF00086116 /* RWCollectionViewController.m */; };
+		1F45DE4A1B3C5AFF00086116 /* RWCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE471B3C5AFF00086116 /* RWCollectionViewController.xib */; };
+		1F45DE4B1B3C5AFF00086116 /* RWCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE471B3C5AFF00086116 /* RWCollectionViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F45DDC41B2E51FF00086116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F45DD9F1B2E51FF00086116 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F45DDA61B2E51FF00086116;
+			remoteInfo = DogmaDebate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F45DDA71B2E51FF00086116 /* DogmaDebate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogmaDebate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F45DDAB1B2E51FF00086116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F45DDAC1B2E51FF00086116 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F45DDAE1B2E51FF00086116 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F45DDAF1B2E51FF00086116 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F45DDBA1B2E51FF00086116 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1F45DDBD1B2E51FF00086116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1F45DDC31B2E51FF00086116 /* DogmaDebateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogmaDebateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F45DDC81B2E51FF00086116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F45DDC91B2E51FF00086116 /* DogmaDebateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogmaDebateTests.m; sourceTree = "<group>"; };
+		1F45DDDB1B2E588F00086116 /* RWHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWHomeTableViewCell.xib; sourceTree = "<group>"; };
+		1F45DDDE1B2E58B200086116 /* RWHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWHomeTableViewCell.h; sourceTree = "<group>"; };
+		1F45DDDF1B2E58B200086116 /* RWHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWHomeTableViewCell.m; sourceTree = "<group>"; };
+		1F45DDE21B2F150100086116 /* RWEpisode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWEpisode.h; sourceTree = "<group>"; };
+		1F45DDE31B2F150100086116 /* RWEpisode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWEpisode.m; sourceTree = "<group>"; };
+		1F45DDEE1B2F4EBC00086116 /* RWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWHomeViewController.h; sourceTree = "<group>"; };
+		1F45DDEF1B2F4EBC00086116 /* RWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWHomeViewController.m; sourceTree = "<group>"; };
+		1F45DDF01B2F4EBC00086116 /* RWHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWHomeViewController.xib; sourceTree = "<group>"; };
+		1F45DDFC1B3A04DA00086116 /* RWMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWMoreViewController.h; sourceTree = "<group>"; };
+		1F45DDFD1B3A04DA00086116 /* RWMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWMoreViewController.m; sourceTree = "<group>"; };
+		1F45DDFE1B3A04DA00086116 /* RWMoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWMoreViewController.xib; sourceTree = "<group>"; };
+		1F45DE031B3AE52F00086116 /* RWMoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWMoreTableViewCell.h; sourceTree = "<group>"; };
+		1F45DE041B3AE52F00086116 /* RWMoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWMoreTableViewCell.m; sourceTree = "<group>"; };
+		1F45DE051B3AE52F00086116 /* RWMoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWMoreTableViewCell.xib; sourceTree = "<group>"; };
+		1F45DE0A1B3AF96400086116 /* RWEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWEventsViewController.h; sourceTree = "<group>"; };
+		1F45DE0B1B3AF96400086116 /* RWEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWEventsViewController.m; sourceTree = "<group>"; };
+		1F45DE0C1B3AF96400086116 /* RWEventsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWEventsViewController.xib; sourceTree = "<group>"; };
+		1F45DE111B3AFF2B00086116 /* RWEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWEvent.h; sourceTree = "<group>"; };
+		1F45DE121B3AFF2B00086116 /* RWEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWEvent.m; sourceTree = "<group>"; };
+		1F45DE151B3B37E800086116 /* RWEventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWEventTableViewCell.h; sourceTree = "<group>"; };
+		1F45DE161B3B37E800086116 /* RWEventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWEventTableViewCell.m; sourceTree = "<group>"; };
+		1F45DE171B3B37E800086116 /* RWEventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWEventTableViewCell.xib; sourceTree = "<group>"; };
+		1F45DE1C1B3B46DC00086116 /* RWEventHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWEventHeaderView.xib; sourceTree = "<group>"; };
+		1F45DE1F1B3B488C00086116 /* RWEventHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWEventHeaderView.h; sourceTree = "<group>"; };
+		1F45DE201B3B488C00086116 /* RWEventHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWEventHeaderView.m; sourceTree = "<group>"; };
+		1F45DE231B3B4FA600086116 /* RWBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWBlogViewController.h; sourceTree = "<group>"; };
+		1F45DE241B3B4FA600086116 /* RWBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWBlogViewController.m; sourceTree = "<group>"; };
+		1F45DE251B3B4FA600086116 /* RWBlogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWBlogViewController.xib; sourceTree = "<group>"; };
+		1F45DE2A1B3B546700086116 /* RWStyleControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWStyleControls.h; sourceTree = "<group>"; };
+		1F45DE2B1B3B546700086116 /* RWStyleControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWStyleControls.m; sourceTree = "<group>"; };
+		1F45DE2E1B3B6C1600086116 /* RWStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWStore.h; sourceTree = "<group>"; };
+		1F45DE2F1B3B6C1600086116 /* RWStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWStore.m; sourceTree = "<group>"; };
+		1F45DE451B3C5AFF00086116 /* RWCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCollectionViewController.h; sourceTree = "<group>"; };
+		1F45DE461B3C5AFF00086116 /* RWCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCollectionViewController.m; sourceTree = "<group>"; };
+		1F45DE471B3C5AFF00086116 /* RWCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWCollectionViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F45DDA41B2E51FF00086116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F45DDC01B2E51FF00086116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F45DD9E1B2E51FF00086116 = {
+			isa = PBXGroup;
+			children = (
+				1F45DDA91B2E51FF00086116 /* DogmaDebate */,
+				1F45DDC61B2E51FF00086116 /* DogmaDebateTests */,
+				1F45DDA81B2E51FF00086116 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F45DDA81B2E51FF00086116 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DDA71B2E51FF00086116 /* DogmaDebate.app */,
+				1F45DDC31B2E51FF00086116 /* DogmaDebateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F45DDA91B2E51FF00086116 /* DogmaDebate */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DDAE1B2E51FF00086116 /* AppDelegate.h */,
+				1F45DDAF1B2E51FF00086116 /* AppDelegate.m */,
+				1F45DE2E1B3B6C1600086116 /* RWStore.h */,
+				1F45DE2F1B3B6C1600086116 /* RWStore.m */,
+				1F45DDBA1B2E51FF00086116 /* Images.xcassets */,
+				1F45DDBC1B2E51FF00086116 /* LaunchScreen.xib */,
+				1F45DDE61B2F151000086116 /* Model */,
+				1F45DDD81B2E580E00086116 /* Views */,
+				1F45DDD31B2E534900086116 /* Controllers */,
+				1F45DDAA1B2E51FF00086116 /* Supporting Files */,
+			);
+			path = DogmaDebate;
+			sourceTree = "<group>";
+		};
+		1F45DDAA1B2E51FF00086116 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DDAB1B2E51FF00086116 /* Info.plist */,
+				1F45DDAC1B2E51FF00086116 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F45DDC61B2E51FF00086116 /* DogmaDebateTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DDC91B2E51FF00086116 /* DogmaDebateTests.m */,
+				1F45DDC71B2E51FF00086116 /* Supporting Files */,
+			);
+			path = DogmaDebateTests;
+			sourceTree = "<group>";
+		};
+		1F45DDC71B2E51FF00086116 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DDC81B2E51FF00086116 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F45DDD31B2E534900086116 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DDEE1B2F4EBC00086116 /* RWHomeViewController.h */,
+				1F45DDEF1B2F4EBC00086116 /* RWHomeViewController.m */,
+				1F45DDF01B2F4EBC00086116 /* RWHomeViewController.xib */,
+				1F45DE451B3C5AFF00086116 /* RWCollectionViewController.h */,
+				1F45DE461B3C5AFF00086116 /* RWCollectionViewController.m */,
+				1F45DE471B3C5AFF00086116 /* RWCollectionViewController.xib */,
+				1F45DDFC1B3A04DA00086116 /* RWMoreViewController.h */,
+				1F45DDFD1B3A04DA00086116 /* RWMoreViewController.m */,
+				1F45DDFE1B3A04DA00086116 /* RWMoreViewController.xib */,
+				1F45DE0A1B3AF96400086116 /* RWEventsViewController.h */,
+				1F45DE0B1B3AF96400086116 /* RWEventsViewController.m */,
+				1F45DE0C1B3AF96400086116 /* RWEventsViewController.xib */,
+				1F45DE231B3B4FA600086116 /* RWBlogViewController.h */,
+				1F45DE241B3B4FA600086116 /* RWBlogViewController.m */,
+				1F45DE251B3B4FA600086116 /* RWBlogViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1F45DDD81B2E580E00086116 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DDDE1B2E58B200086116 /* RWHomeTableViewCell.h */,
+				1F45DDDF1B2E58B200086116 /* RWHomeTableViewCell.m */,
+				1F45DDDB1B2E588F00086116 /* RWHomeTableViewCell.xib */,
+				1F45DE031B3AE52F00086116 /* RWMoreTableViewCell.h */,
+				1F45DE041B3AE52F00086116 /* RWMoreTableViewCell.m */,
+				1F45DE051B3AE52F00086116 /* RWMoreTableViewCell.xib */,
+				1F45DE151B3B37E800086116 /* RWEventTableViewCell.h */,
+				1F45DE161B3B37E800086116 /* RWEventTableViewCell.m */,
+				1F45DE171B3B37E800086116 /* RWEventTableViewCell.xib */,
+				1F45DE1F1B3B488C00086116 /* RWEventHeaderView.h */,
+				1F45DE201B3B488C00086116 /* RWEventHeaderView.m */,
+				1F45DE1C1B3B46DC00086116 /* RWEventHeaderView.xib */,
+				1F45DE2A1B3B546700086116 /* RWStyleControls.h */,
+				1F45DE2B1B3B546700086116 /* RWStyleControls.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1F45DDE61B2F151000086116 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F45DDE21B2F150100086116 /* RWEpisode.h */,
+				1F45DDE31B2F150100086116 /* RWEpisode.m */,
+				1F45DE111B3AFF2B00086116 /* RWEvent.h */,
+				1F45DE121B3AFF2B00086116 /* RWEvent.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F45DDA61B2E51FF00086116 /* DogmaDebate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F45DDCD1B2E51FF00086116 /* Build configuration list for PBXNativeTarget "DogmaDebate" */;
+			buildPhases = (
+				1F45DDA31B2E51FF00086116 /* Sources */,
+				1F45DDA41B2E51FF00086116 /* Frameworks */,
+				1F45DDA51B2E51FF00086116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DogmaDebate;
+			productName = DogmaDebate;
+			productReference = 1F45DDA71B2E51FF00086116 /* DogmaDebate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F45DDC21B2E51FF00086116 /* DogmaDebateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F45DDD01B2E51FF00086116 /* Build configuration list for PBXNativeTarget "DogmaDebateTests" */;
+			buildPhases = (
+				1F45DDBF1B2E51FF00086116 /* Sources */,
+				1F45DDC01B2E51FF00086116 /* Frameworks */,
+				1F45DDC11B2E51FF00086116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F45DDC51B2E51FF00086116 /* PBXTargetDependency */,
+			);
+			name = DogmaDebateTests;
+			productName = DogmaDebateTests;
+			productReference = 1F45DDC31B2E51FF00086116 /* DogmaDebateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F45DD9F1B2E51FF00086116 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = RondaleWilliams;
+				TargetAttributes = {
+					1F45DDA61B2E51FF00086116 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = R9AR4U6NWF;
+					};
+					1F45DDC21B2E51FF00086116 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 1F45DDA61B2E51FF00086116;
+					};
+				};
+			};
+			buildConfigurationList = 1F45DDA21B2E51FF00086116 /* Build configuration list for PBXProject "DogmaDebate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F45DD9E1B2E51FF00086116;
+			productRefGroup = 1F45DDA81B2E51FF00086116 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F45DDA61B2E51FF00086116 /* DogmaDebate */,
+				1F45DDC21B2E51FF00086116 /* DogmaDebateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F45DDA51B2E51FF00086116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F45DDBE1B2E51FF00086116 /* LaunchScreen.xib in Resources */,
+				1F45DE281B3B4FA600086116 /* RWBlogViewController.xib in Resources */,
+				1F45DE011B3A04DA00086116 /* RWMoreViewController.xib in Resources */,
+				1F45DE0F1B3AF96400086116 /* RWEventsViewController.xib in Resources */,
+				1F45DDDC1B2E588F00086116 /* RWHomeTableViewCell.xib in Resources */,
+				1F45DE4A1B3C5AFF00086116 /* RWCollectionViewController.xib in Resources */,
+				1F45DE081B3AE52F00086116 /* RWMoreTableViewCell.xib in Resources */,
+				1F45DDBB1B2E51FF00086116 /* Images.xcassets in Resources */,
+				1F45DDF31B2F4EBC00086116 /* RWHomeViewController.xib in Resources */,
+				1F45DE1D1B3B46DC00086116 /* RWEventHeaderView.xib in Resources */,
+				1F45DE1A1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F45DDC11B2E51FF00086116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F45DE1E1B3B46DC00086116 /* RWEventHeaderView.xib in Resources */,
+				1F45DDF41B2F4EBC00086116 /* RWHomeViewController.xib in Resources */,
+				1F45DDDD1B2E588F00086116 /* RWHomeTableViewCell.xib in Resources */,
+				1F45DE021B3A04DA00086116 /* RWMoreViewController.xib in Resources */,
+				1F45DE4B1B3C5AFF00086116 /* RWCollectionViewController.xib in Resources */,
+				1F45DE1B1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */,
+				1F45DE291B3B4FA600086116 /* RWBlogViewController.xib in Resources */,
+				1F45DE101B3AF96400086116 /* RWEventsViewController.xib in Resources */,
+				1F45DE091B3AE52F00086116 /* RWMoreTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F45DDA31B2E51FF00086116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F45DE211B3B488C00086116 /* RWEventHeaderView.m in Sources */,
+				1F45DE261B3B4FA600086116 /* RWBlogViewController.m in Sources */,
+				1F45DE0D1B3AF96400086116 /* RWEventsViewController.m in Sources */,
+				1F45DDE41B2F150100086116 /* RWEpisode.m in Sources */,
+				1F45DE061B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */,
+				1F45DE2C1B3B546700086116 /* RWStyleControls.m in Sources */,
+				1F45DDB01B2E51FF00086116 /* AppDelegate.m in Sources */,
+				1F45DDE01B2E58B200086116 /* RWHomeTableViewCell.m in Sources */,
+				1F45DE481B3C5AFF00086116 /* RWCollectionViewController.m in Sources */,
+				1F45DE301B3B6C1600086116 /* RWStore.m in Sources */,
+				1F45DE181B3B37E800086116 /* RWEventTableViewCell.m in Sources */,
+				1F45DDAD1B2E51FF00086116 /* main.m in Sources */,
+				1F45DDFF1B3A04DA00086116 /* RWMoreViewController.m in Sources */,
+				1F45DDF11B2F4EBC00086116 /* RWHomeViewController.m in Sources */,
+				1F45DE131B3AFF2B00086116 /* RWEvent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F45DDBF1B2E51FF00086116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F45DDE51B2F150100086116 /* RWEpisode.m in Sources */,
+				1F45DE071B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */,
+				1F45DE0E1B3AF96400086116 /* RWEventsViewController.m in Sources */,
+				1F45DE311B3B6C1600086116 /* RWStore.m in Sources */,
+				1F45DDE11B2E58B200086116 /* RWHomeTableViewCell.m in Sources */,
+				1F45DDF21B2F4EBC00086116 /* RWHomeViewController.m in Sources */,
+				1F45DE271B3B4FA600086116 /* RWBlogViewController.m in Sources */,
+				1F45DE491B3C5AFF00086116 /* RWCollectionViewController.m in Sources */,
+				1F45DE2D1B3B546700086116 /* RWStyleControls.m in Sources */,
+				1F45DDCA1B2E51FF00086116 /* DogmaDebateTests.m in Sources */,
+				1F45DE001B3A04DA00086116 /* RWMoreViewController.m in Sources */,
+				1F45DE141B3AFF2B00086116 /* RWEvent.m in Sources */,
+				1F45DE191B3B37E800086116 /* RWEventTableViewCell.m in Sources */,
+				1F45DE221B3B488C00086116 /* RWEventHeaderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F45DDC51B2E51FF00086116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F45DDA61B2E51FF00086116 /* DogmaDebate */;
+			targetProxy = 1F45DDC41B2E51FF00086116 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F45DDBC1B2E51FF00086116 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F45DDBD1B2E51FF00086116 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F45DDCB1B2E51FF00086116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F45DDCC1B2E51FF00086116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F45DDCE1B2E51FF00086116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DogmaDebate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F45DDCF1B2E51FF00086116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DogmaDebate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F45DDD11B2E51FF00086116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DogmaDebateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogmaDebate.app/DogmaDebate";
+			};
+			name = Debug;
+		};
+		1F45DDD21B2E51FF00086116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DogmaDebateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogmaDebate.app/DogmaDebate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F45DDA21B2E51FF00086116 /* Build configuration list for PBXProject "DogmaDebate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F45DDCB1B2E51FF00086116 /* Debug */,
+				1F45DDCC1B2E51FF00086116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F45DDCD1B2E51FF00086116 /* Build configuration list for PBXNativeTarget "DogmaDebate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F45DDCE1B2E51FF00086116 /* Debug */,
+				1F45DDCF1B2E51FF00086116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F45DDD01B2E51FF00086116 /* Build configuration list for PBXNativeTarget "DogmaDebateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F45DDD11B2E51FF00086116 /* Debug */,
+				1F45DDD21B2E51FF00086116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F45DD9F1B2E51FF00086116 /* Project object */;
+}

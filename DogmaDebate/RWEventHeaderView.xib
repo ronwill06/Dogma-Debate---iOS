@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RWEventHeaderView">
+            <rect key="frame" x="0.0" y="-5" width="600" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GnF-jP-R0q">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qme-cG-BeK">
+                            <rect key="frame" x="8" y="33" width="89" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View past events" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ek-h7-sCp">
+                            <rect key="frame" x="490" y="37" width="102" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="qme-cG-BeK" secondAttribute="centerY" id="Fnf-65-HeU"/>
+                        <constraint firstItem="qme-cG-BeK" firstAttribute="leading" secondItem="GnF-jP-R0q" secondAttribute="leading" constant="8" id="Sna-N4-Qi1"/>
+                        <constraint firstAttribute="trailing" secondItem="8ek-h7-sCp" secondAttribute="trailing" constant="8" id="aSx-Wc-08d"/>
+                        <constraint firstAttribute="centerY" secondItem="8ek-h7-sCp" secondAttribute="centerY" id="qq9-PL-fZY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GnF-jP-R0q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7Y9-Yi-GUd"/>
+                <constraint firstAttribute="bottom" secondItem="GnF-jP-R0q" secondAttribute="bottom" id="U3a-o2-LAF"/>
+                <constraint firstAttribute="trailing" secondItem="GnF-jP-R0q" secondAttribute="trailing" id="ogG-hL-RQx"/>
+                <constraint firstItem="GnF-jP-R0q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="phd-6y-pMa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="qme-cG-BeK" id="89k-4z-QN9"/>
+                <outlet property="pastEventsLabel" destination="8ek-h7-sCp" id="JyN-8i-GWK"/>
+            </connections>
+            <point key="canvasLocation" x="697" y="284"/>
+        </view>
+    </objects>
+</document>
