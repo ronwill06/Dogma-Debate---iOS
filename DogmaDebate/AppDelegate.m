@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RWContainerViewController.h"
 #import "RWHomeViewController.h"
 #import "RWEventsViewController.h"
 #import "RWBlogViewController.h"
@@ -24,13 +25,16 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    RWHomeViewController *detailVC = [[RWHomeViewController alloc] init];
+    //RWContainerViewController *containerVC = [[RWContainerViewController alloc] init];
+    RWHomeViewController *homeVC = [[RWHomeViewController alloc] init];
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:homeVC];
+    
     RWEventsViewController *eventsVC = [[RWEventsViewController alloc] init];
     RWBlogViewController *blogVC = [[RWBlogViewController alloc] init];
     RWMoreViewController *moreVC = [[RWMoreViewController alloc] init];
 
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    [tabBarController setViewControllers:@[detailVC, eventsVC, blogVC, moreVC] animated:YES];
+    [tabBarController setViewControllers:@[navVC, eventsVC, blogVC, moreVC] animated:YES];
     
     [[self window] setRootViewController:tabBarController];
     

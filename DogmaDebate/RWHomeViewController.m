@@ -8,12 +8,25 @@
 
 #import "RWHomeViewController.h"
 #import "RWHomeTableViewCell.h"
+#import "RWCollectionViewController.h"
+#import "RWContainerViewController.h"
 #import "RWStore.h"
+
+@protocol RWHomeViewControllerDelegate <NSObject>
+
+-(void)homeViewController:(RWHomeViewController *)viewController switchToCollectionView:(RWCollectionViewController *)collectionView;
+
+@end
 
 @interface RWHomeViewController ()<UITableViewDelegate, UITableViewDataSource, UITabBarDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIView *labelView;
 @property (strong, nonatomic) IBOutlet UIView *headerView;
+@property (weak, nonatomic) IBOutlet UIButton *collectionViewButton;
+@property (weak, nonatomic) IBOutlet UIButton *listViewButton;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+@property (strong, nonatomic)RWCollectionViewController *collectionVC;
 
 @end
 
@@ -33,6 +46,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[[self navigationController] navigationBar] setHidden:YES];
     [[self tableView] setTableHeaderView:self.headerView];
     
     [[RWStore store] fetchPosts];
@@ -48,6 +62,11 @@
     [[self tableView] registerNib:[UINib nibWithNibName:@"RWHomeTableViewCell" bundle:nil]
            forCellReuseIdentifier:@"RWHomeTableViewCell"];
     
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -70,6 +89,11 @@
 - (void)tabBar:(UITabBar *)tabBar didBeginCustomizingItems:(NSArray *)items
 {
     [tabBar setBackgroundColor:[UIColor blackColor]];
+}
+
+- (IBAction)switchToCollectionView:(id)sender
+{
+       
 }
 
 

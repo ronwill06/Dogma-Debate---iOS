@@ -56,6 +56,14 @@
 		1F45DE491B3C5AFF00086116 /* RWCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE461B3C5AFF00086116 /* RWCollectionViewController.m */; };
 		1F45DE4A1B3C5AFF00086116 /* RWCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE471B3C5AFF00086116 /* RWCollectionViewController.xib */; };
 		1F45DE4B1B3C5AFF00086116 /* RWCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE471B3C5AFF00086116 /* RWCollectionViewController.xib */; };
+		1F45DE4F1B3C8B6F00086116 /* RWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE4D1B3C8B6F00086116 /* RWCollectionViewCell.m */; };
+		1F45DE501B3C8B6F00086116 /* RWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE4D1B3C8B6F00086116 /* RWCollectionViewCell.m */; };
+		1F45DE511B3C8B6F00086116 /* RWCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE4E1B3C8B6F00086116 /* RWCollectionViewCell.xib */; };
+		1F45DE521B3C8B6F00086116 /* RWCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE4E1B3C8B6F00086116 /* RWCollectionViewCell.xib */; };
+		1F45DE551B3C9BAB00086116 /* RWContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE541B3C9BAB00086116 /* RWContainerViewController.m */; };
+		1F45DE561B3C9BAB00086116 /* RWContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE541B3C9BAB00086116 /* RWContainerViewController.m */; };
+		1F45DE581B3CA05700086116 /* RWContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE571B3CA05700086116 /* RWContainerViewController.xib */; };
+		1F45DE591B3CA05700086116 /* RWContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE571B3CA05700086116 /* RWContainerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +122,12 @@
 		1F45DE451B3C5AFF00086116 /* RWCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCollectionViewController.h; sourceTree = "<group>"; };
 		1F45DE461B3C5AFF00086116 /* RWCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCollectionViewController.m; sourceTree = "<group>"; };
 		1F45DE471B3C5AFF00086116 /* RWCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWCollectionViewController.xib; sourceTree = "<group>"; };
+		1F45DE4C1B3C8B6F00086116 /* RWCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCollectionViewCell.h; sourceTree = "<group>"; };
+		1F45DE4D1B3C8B6F00086116 /* RWCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCollectionViewCell.m; sourceTree = "<group>"; };
+		1F45DE4E1B3C8B6F00086116 /* RWCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWCollectionViewCell.xib; sourceTree = "<group>"; };
+		1F45DE531B3C9BAB00086116 /* RWContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWContainerViewController.h; sourceTree = "<group>"; };
+		1F45DE541B3C9BAB00086116 /* RWContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWContainerViewController.m; sourceTree = "<group>"; };
+		1F45DE571B3CA05700086116 /* RWContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWContainerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +212,9 @@
 		1F45DDD31B2E534900086116 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1F45DE531B3C9BAB00086116 /* RWContainerViewController.h */,
+				1F45DE541B3C9BAB00086116 /* RWContainerViewController.m */,
+				1F45DE571B3CA05700086116 /* RWContainerViewController.xib */,
 				1F45DDEE1B2F4EBC00086116 /* RWHomeViewController.h */,
 				1F45DDEF1B2F4EBC00086116 /* RWHomeViewController.m */,
 				1F45DDF01B2F4EBC00086116 /* RWHomeViewController.xib */,
@@ -234,6 +251,9 @@
 				1F45DE1C1B3B46DC00086116 /* RWEventHeaderView.xib */,
 				1F45DE2A1B3B546700086116 /* RWStyleControls.h */,
 				1F45DE2B1B3B546700086116 /* RWStyleControls.m */,
+				1F45DE4C1B3C8B6F00086116 /* RWCollectionViewCell.h */,
+				1F45DE4D1B3C8B6F00086116 /* RWCollectionViewCell.m */,
+				1F45DE4E1B3C8B6F00086116 /* RWCollectionViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -333,8 +353,10 @@
 				1F45DDBE1B2E51FF00086116 /* LaunchScreen.xib in Resources */,
 				1F45DE281B3B4FA600086116 /* RWBlogViewController.xib in Resources */,
 				1F45DE011B3A04DA00086116 /* RWMoreViewController.xib in Resources */,
+				1F45DE581B3CA05700086116 /* RWContainerViewController.xib in Resources */,
 				1F45DE0F1B3AF96400086116 /* RWEventsViewController.xib in Resources */,
 				1F45DDDC1B2E588F00086116 /* RWHomeTableViewCell.xib in Resources */,
+				1F45DE511B3C8B6F00086116 /* RWCollectionViewCell.xib in Resources */,
 				1F45DE4A1B3C5AFF00086116 /* RWCollectionViewController.xib in Resources */,
 				1F45DE081B3AE52F00086116 /* RWMoreTableViewCell.xib in Resources */,
 				1F45DDBB1B2E51FF00086116 /* Images.xcassets in Resources */,
@@ -351,6 +373,8 @@
 				1F45DE1E1B3B46DC00086116 /* RWEventHeaderView.xib in Resources */,
 				1F45DDF41B2F4EBC00086116 /* RWHomeViewController.xib in Resources */,
 				1F45DDDD1B2E588F00086116 /* RWHomeTableViewCell.xib in Resources */,
+				1F45DE591B3CA05700086116 /* RWContainerViewController.xib in Resources */,
+				1F45DE521B3C8B6F00086116 /* RWCollectionViewCell.xib in Resources */,
 				1F45DE021B3A04DA00086116 /* RWMoreViewController.xib in Resources */,
 				1F45DE4B1B3C5AFF00086116 /* RWCollectionViewController.xib in Resources */,
 				1F45DE1B1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */,
@@ -368,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F45DE211B3B488C00086116 /* RWEventHeaderView.m in Sources */,
+				1F45DE4F1B3C8B6F00086116 /* RWCollectionViewCell.m in Sources */,
 				1F45DE261B3B4FA600086116 /* RWBlogViewController.m in Sources */,
 				1F45DE0D1B3AF96400086116 /* RWEventsViewController.m in Sources */,
 				1F45DDE41B2F150100086116 /* RWEpisode.m in Sources */,
@@ -378,6 +403,7 @@
 				1F45DE481B3C5AFF00086116 /* RWCollectionViewController.m in Sources */,
 				1F45DE301B3B6C1600086116 /* RWStore.m in Sources */,
 				1F45DE181B3B37E800086116 /* RWEventTableViewCell.m in Sources */,
+				1F45DE551B3C9BAB00086116 /* RWContainerViewController.m in Sources */,
 				1F45DDAD1B2E51FF00086116 /* main.m in Sources */,
 				1F45DDFF1B3A04DA00086116 /* RWMoreViewController.m in Sources */,
 				1F45DDF11B2F4EBC00086116 /* RWHomeViewController.m in Sources */,
@@ -390,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F45DDE51B2F150100086116 /* RWEpisode.m in Sources */,
+				1F45DE561B3C9BAB00086116 /* RWContainerViewController.m in Sources */,
 				1F45DE071B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */,
 				1F45DE0E1B3AF96400086116 /* RWEventsViewController.m in Sources */,
 				1F45DE311B3B6C1600086116 /* RWStore.m in Sources */,
@@ -399,6 +426,7 @@
 				1F45DE491B3C5AFF00086116 /* RWCollectionViewController.m in Sources */,
 				1F45DE2D1B3B546700086116 /* RWStyleControls.m in Sources */,
 				1F45DDCA1B2E51FF00086116 /* DogmaDebateTests.m in Sources */,
+				1F45DE501B3C8B6F00086116 /* RWCollectionViewCell.m in Sources */,
 				1F45DE001B3A04DA00086116 /* RWMoreViewController.m in Sources */,
 				1F45DE141B3AFF2B00086116 /* RWEvent.m in Sources */,
 				1F45DE191B3B37E800086116 /* RWEventTableViewCell.m in Sources */,

@@ -48,21 +48,20 @@
 - (void)fetchPosts
 {
     
-    NSURL *baseUrl = [NSURL URLWithString:@"https://public-api.wordpress.com/rest/v1.1/sites/dogmadebate.com"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:baseUrl];
+    NSString *spreakerString = @"https://api.spreaker.com/user/7287953";
     
-    NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:request
-                                                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                                                    
-                                                    NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:data
-                                                                                                               options:0
-                                                                                                                 error:nil];
-                                                    
-                                                    NSLog(@"%@", jsonObject);
-                                                    
-                                                }];
-    
-    [dataTask resume];
+    NSURLSession *session = [NSURLSession sharedSession];
+    [[session dataTaskWithURL:[NSURL URLWithString:spreakerString]
+            completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                
+                NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:data
+                                                                           options:0
+                                                                             error:nil];
+                
+                NSLog(@"%@", jsonObject);
+                
+            }] resume];
+
 
 }
 

@@ -6,8 +6,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RWHomeViewController">
             <connections>
+                <outlet property="collectionViewButton" destination="4E3-xN-d1k" id="Tb8-lP-d3s"/>
                 <outlet property="headerView" destination="Htk-4p-tcd" id="jRK-O0-8Z7"/>
+                <outlet property="imageView" destination="miI-yS-wqC" id="njI-be-04v"/>
                 <outlet property="labelView" destination="Kp8-id-2v0" id="gYQ-sJ-nHN"/>
+                <outlet property="listViewButton" destination="rZH-zE-DjH" id="c1h-Zr-eDf"/>
                 <outlet property="tableView" destination="oza-HL-zVv" id="iB1-RJ-Q3K"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="7OU-jN-Nbe"/>
             </connections>
@@ -104,9 +107,12 @@
                         <constraint firstAttribute="width" constant="30" id="LMB-oH-d07"/>
                         <constraint firstAttribute="height" constant="30" id="NJU-Q5-zvV"/>
                     </constraints>
-                    <state key="normal" title="Button" image="tileview_active">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="tileview_inactive">
+                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="switchToCollectionView:" destination="-1" eventType="touchUpInside" id="D3l-8f-ZxG"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZH-zE-DjH">
                     <rect key="frame" x="562" y="13" width="30" height="30"/>
@@ -114,7 +120,7 @@
                         <constraint firstAttribute="height" constant="30" id="8Wv-a1-wD6"/>
                         <constraint firstAttribute="width" constant="30" id="lKa-YN-tUI"/>
                     </constraints>
-                    <state key="normal" title="Button" image="listview_active">
+                    <state key="normal" image="listview_inactive">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
@@ -142,7 +148,7 @@
     </objects>
     <resources>
         <image name="david_smalley" width="1500" height="1152"/>
-        <image name="listview_active" width="26" height="26"/>
-        <image name="tileview_active" width="26" height="26"/>
+        <image name="listview_inactive" width="26" height="26"/>
+        <image name="tileview_inactive" width="26" height="26"/>
     </resources>
 </document>
