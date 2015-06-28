@@ -23,12 +23,13 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="david_smalley" translatesAutoresizingMaskIntoConstraints="NO" id="miI-yS-wqC">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oza-HL-zVv">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oza-HL-zVv">
                     <rect key="frame" x="0.0" y="250" width="600" height="350"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="350" id="wJ1-X1-SeC"/>
                     </constraints>
+                    <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="tbb-nU-7OP"/>
@@ -120,7 +121,7 @@
                         <constraint firstAttribute="height" constant="30" id="8Wv-a1-wD6"/>
                         <constraint firstAttribute="width" constant="30" id="lKa-YN-tUI"/>
                     </constraints>
-                    <state key="normal" image="listview_inactive">
+                    <state key="normal" image="listview_active">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
@@ -148,7 +149,7 @@
     </objects>
     <resources>
         <image name="david_smalley" width="1500" height="1152"/>
-        <image name="listview_inactive" width="26" height="26"/>
+        <image name="listview_active" width="26" height="26"/>
         <image name="tileview_inactive" width="26" height="26"/>
     </resources>
 </document>

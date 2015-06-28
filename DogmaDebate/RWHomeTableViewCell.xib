@@ -73,6 +73,7 @@
                     </mask>
                 </variation>
             </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
             <connections>
                 <outlet property="episodeCountLabel" destination="Fal-KK-KSZ" id="kRj-3i-Dgh"/>
                 <outlet property="textView" destination="wNj-QR-QDy" id="rd6-ek-rkL"/>

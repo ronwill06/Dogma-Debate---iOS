@@ -10,6 +10,7 @@
 
 @interface RWHomeViewController : UIViewController
 
-
+@property (weak, nonatomic) IBOutlet UIButton *collectionViewButton;
+@property (weak, nonatomic) IBOutlet UIButton *listViewButton;
 
 @end

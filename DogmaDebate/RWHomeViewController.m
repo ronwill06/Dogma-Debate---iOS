@@ -9,7 +9,6 @@
 #import "RWHomeViewController.h"
 #import "RWHomeTableViewCell.h"
 #import "RWCollectionViewController.h"
-#import "RWContainerViewController.h"
 #import "RWStore.h"
 
 @protocol RWHomeViewControllerDelegate <NSObject>
@@ -18,12 +17,10 @@
 
 @end
 
-@interface RWHomeViewController ()<UITableViewDelegate, UITableViewDataSource, UITabBarDelegate>
+@interface RWHomeViewController ()<UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIView *labelView;
 @property (strong, nonatomic) IBOutlet UIView *headerView;
-@property (weak, nonatomic) IBOutlet UIButton *collectionViewButton;
-@property (weak, nonatomic) IBOutlet UIButton *listViewButton;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @property (strong, nonatomic)RWCollectionViewController *collectionVC;
@@ -77,13 +74,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     RWHomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RWHomeTableViewCell"];
-    
+   
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 200;
+    return 190;
 }
 
 - (void)tabBar:(UITabBar *)tabBar didBeginCustomizingItems:(NSArray *)items
@@ -93,8 +90,15 @@
 
 - (IBAction)switchToCollectionView:(id)sender
 {
-       
+    RWCollectionViewController *collectionVC = [[RWCollectionViewController alloc] init];
+    [[self navigationController] presentViewController:collectionVC animated:YES completion:nil];
 }
 
+//- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+//                                  animationControllerForOperation:(UINavigationControllerOperation)operation
+//                                               fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
+//{
+//    
+//}
 
 @end

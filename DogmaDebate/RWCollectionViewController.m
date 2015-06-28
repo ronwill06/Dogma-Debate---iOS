@@ -7,11 +7,13 @@
 //
 
 #import "RWCollectionViewController.h"
+#import "RWHomeViewController.h"
 #import "RWCollectionViewCell.h"
 
 
 @interface RWCollectionViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UIView *buttonView;
 
 @end
 
@@ -20,14 +22,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    CALayer *bottomLayer = [CALayer layer];
+    bottomLayer.frame = CGRectMake(0, 44, self.buttonView.bounds.size.width, 2.0);
+    bottomLayer.backgroundColor = [[UIColor blackColor] CGColor];
+    [self.buttonView.layer addSublayer:bottomLayer];
     
     [[self collectionView] registerNib:[UINib nibWithNibName:@"RWCollectionViewCell" bundle:nil]
             forCellWithReuseIdentifier:@"RWCollectionViewCell"];
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 100;
+    return 10;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -38,5 +49,10 @@
     return cell;
 }
 
+- (IBAction)switchToListView:(id)sender
+{
+//    RWHomeViewController *homeVC = [[RWHomeViewController alloc] init];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

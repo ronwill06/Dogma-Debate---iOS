@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "RWContainerViewController.h"
 #import "RWHomeViewController.h"
 #import "RWEventsViewController.h"
 #import "RWBlogViewController.h"
@@ -25,7 +24,6 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    //RWContainerViewController *containerVC = [[RWContainerViewController alloc] init];
     RWHomeViewController *homeVC = [[RWHomeViewController alloc] init];
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:homeVC];
     
