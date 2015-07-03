@@ -62,6 +62,12 @@
 		1F45DE521B3C8B6F00086116 /* RWCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE4E1B3C8B6F00086116 /* RWCollectionViewCell.xib */; };
 		1F45DE5C1B40743100086116 /* RWCollectionViewTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE5B1B40743100086116 /* RWCollectionViewTransitionAnimator.m */; };
 		1F45DE5D1B40743100086116 /* RWCollectionViewTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE5B1B40743100086116 /* RWCollectionViewTransitionAnimator.m */; };
+		1F5D5CA71B4635210074FBC8 /* RWPodcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */; };
+		1F5D5CA81B4635210074FBC8 /* RWPodcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */; };
+		1F5D5CA91B4635210074FBC8 /* RWPodcastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CA61B4635210074FBC8 /* RWPodcastViewController.xib */; };
+		1F5D5CAA1B4635210074FBC8 /* RWPodcastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CA61B4635210074FBC8 /* RWPodcastViewController.xib */; };
+		1F5D5CAD1B4635F70074FBC8 /* RWRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CAC1B4635F70074FBC8 /* RWRoundedButton.m */; };
+		1F5D5CAE1B4635F70074FBC8 /* RWRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CAC1B4635F70074FBC8 /* RWRoundedButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +131,11 @@
 		1F45DE4E1B3C8B6F00086116 /* RWCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWCollectionViewCell.xib; sourceTree = "<group>"; };
 		1F45DE5A1B40743100086116 /* RWCollectionViewTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCollectionViewTransitionAnimator.h; sourceTree = "<group>"; };
 		1F45DE5B1B40743100086116 /* RWCollectionViewTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCollectionViewTransitionAnimator.m; sourceTree = "<group>"; };
+		1F5D5CA41B4635210074FBC8 /* RWPodcastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWPodcastViewController.h; sourceTree = "<group>"; };
+		1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWPodcastViewController.m; sourceTree = "<group>"; };
+		1F5D5CA61B4635210074FBC8 /* RWPodcastViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWPodcastViewController.xib; sourceTree = "<group>"; };
+		1F5D5CAB1B4635F70074FBC8 /* RWRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWRoundedButton.h; sourceTree = "<group>"; };
+		1F5D5CAC1B4635F70074FBC8 /* RWRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWRoundedButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +235,9 @@
 				1F45DE231B3B4FA600086116 /* RWBlogViewController.h */,
 				1F45DE241B3B4FA600086116 /* RWBlogViewController.m */,
 				1F45DE251B3B4FA600086116 /* RWBlogViewController.xib */,
+				1F5D5CA41B4635210074FBC8 /* RWPodcastViewController.h */,
+				1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */,
+				1F5D5CA61B4635210074FBC8 /* RWPodcastViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -250,6 +264,8 @@
 				1F45DE4E1B3C8B6F00086116 /* RWCollectionViewCell.xib */,
 				1F45DE5A1B40743100086116 /* RWCollectionViewTransitionAnimator.h */,
 				1F45DE5B1B40743100086116 /* RWCollectionViewTransitionAnimator.m */,
+				1F5D5CAB1B4635F70074FBC8 /* RWRoundedButton.h */,
+				1F5D5CAC1B4635F70074FBC8 /* RWRoundedButton.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -357,6 +373,7 @@
 				1F45DDBB1B2E51FF00086116 /* Images.xcassets in Resources */,
 				1F45DDF31B2F4EBC00086116 /* RWHomeViewController.xib in Resources */,
 				1F45DE1D1B3B46DC00086116 /* RWEventHeaderView.xib in Resources */,
+				1F5D5CA91B4635210074FBC8 /* RWPodcastViewController.xib in Resources */,
 				1F45DE1A1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +387,7 @@
 				1F45DDDD1B2E588F00086116 /* RWHomeTableViewCell.xib in Resources */,
 				1F45DE521B3C8B6F00086116 /* RWCollectionViewCell.xib in Resources */,
 				1F45DE021B3A04DA00086116 /* RWMoreViewController.xib in Resources */,
+				1F5D5CAA1B4635210074FBC8 /* RWPodcastViewController.xib in Resources */,
 				1F45DE4B1B3C5AFF00086116 /* RWCollectionViewController.xib in Resources */,
 				1F45DE1B1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */,
 				1F45DE291B3B4FA600086116 /* RWBlogViewController.xib in Resources */,
@@ -389,6 +407,7 @@
 				1F45DE4F1B3C8B6F00086116 /* RWCollectionViewCell.m in Sources */,
 				1F45DE261B3B4FA600086116 /* RWBlogViewController.m in Sources */,
 				1F45DE0D1B3AF96400086116 /* RWEventsViewController.m in Sources */,
+				1F5D5CA71B4635210074FBC8 /* RWPodcastViewController.m in Sources */,
 				1F45DDE41B2F150100086116 /* RWEpisode.m in Sources */,
 				1F45DE061B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */,
 				1F45DE2C1B3B546700086116 /* RWStyleControls.m in Sources */,
@@ -396,6 +415,7 @@
 				1F45DDE01B2E58B200086116 /* RWHomeTableViewCell.m in Sources */,
 				1F45DE5C1B40743100086116 /* RWCollectionViewTransitionAnimator.m in Sources */,
 				1F45DE481B3C5AFF00086116 /* RWCollectionViewController.m in Sources */,
+				1F5D5CAD1B4635F70074FBC8 /* RWRoundedButton.m in Sources */,
 				1F45DE301B3B6C1600086116 /* RWStore.m in Sources */,
 				1F45DE181B3B37E800086116 /* RWEventTableViewCell.m in Sources */,
 				1F45DDAD1B2E51FF00086116 /* main.m in Sources */,
@@ -410,6 +430,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F45DDE51B2F150100086116 /* RWEpisode.m in Sources */,
+				1F5D5CAE1B4635F70074FBC8 /* RWRoundedButton.m in Sources */,
+				1F5D5CA81B4635210074FBC8 /* RWPodcastViewController.m in Sources */,
 				1F45DE071B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */,
 				1F45DE0E1B3AF96400086116 /* RWEventsViewController.m in Sources */,
 				1F45DE311B3B6C1600086116 /* RWStore.m in Sources */,

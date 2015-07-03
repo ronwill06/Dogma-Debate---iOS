@@ -9,6 +9,7 @@
 #import "RWHomeViewController.h"
 #import "RWHomeTableViewCell.h"
 #import "RWCollectionViewController.h"
+#import "RWPodcastViewController.h"
 #import "RWStore.h"
 
 @protocol RWHomeViewControllerDelegate <NSObject>
@@ -43,7 +44,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[[self navigationController] navigationBar] setHidden:YES];
     [[self tableView] setTableHeaderView:self.headerView];
     
     [[RWStore store] fetchPosts];
@@ -61,6 +61,15 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [[[self navigationController] navigationBar] setHidden:YES];
+
+    
+}
+
 - (BOOL)prefersStatusBarHidden
 {
     return YES;
@@ -74,13 +83,19 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     RWHomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RWHomeTableViewCell"];
-   
+    cell.textView.editable = NO;
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 190;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    RWPodcastViewController *podCastVC = [[RWPodcastViewController alloc] init];
+    [[self navigationController] pushViewController:podCastVC animated:YES];
 }
 
 - (void)tabBar:(UITabBar *)tabBar didBeginCustomizingItems:(NSArray *)items
