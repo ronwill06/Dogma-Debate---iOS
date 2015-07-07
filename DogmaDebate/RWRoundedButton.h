@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+IB_DESIGNABLE
+
 @interface RWRoundedButton : UIButton
+
+@property (nonatomic)IBInspectable int cornerSize;
 
 @end

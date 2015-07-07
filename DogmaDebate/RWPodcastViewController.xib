@@ -30,6 +30,11 @@
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                            <integer key="value" value="25"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                     <connections>
                                         <action selector="rewindAudio:" destination="-1" eventType="touchUpInside" id="95H-yR-VCd"/>
                                     </connections>
@@ -41,6 +46,11 @@
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                            <integer key="value" value="25"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                     <connections>
                                         <action selector="fastForwardAudio:" destination="-1" eventType="touchUpInside" id="pP3-5c-CM1"/>
                                     </connections>
@@ -58,6 +68,11 @@
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                            <integer key="value" value="25"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                     <variation key="default">
                                         <mask key="constraints">
                                             <exclude reference="ZT5-9B-XAE"/>
@@ -167,13 +182,23 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AzZ-Bj-rJ6">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                 </imageView>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0l7-v5-T3a">
+                    <rect key="frame" x="33" y="262" width="534" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="530" id="SOl-rC-BNs"/>
+                        <constraint firstAttribute="height" constant="30" id="Z93-YY-xFf"/>
+                    </constraints>
+                    <color key="minimumTrackTintColor" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                </slider>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="t6h-qG-NT3" secondAttribute="trailing" id="Dgy-8K-PYY"/>
                 <constraint firstItem="t6h-qG-NT3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="300" id="GxV-xF-eEs"/>
                 <constraint firstItem="t6h-qG-NT3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MAw-Rn-3Md"/>
+                <constraint firstAttribute="centerX" secondItem="0l7-v5-T3a" secondAttribute="centerX" id="Qpm-OV-ZoM"/>
                 <constraint firstAttribute="trailing" secondItem="AzZ-Bj-rJ6" secondAttribute="trailing" id="c6o-k9-IlU"/>
+                <constraint firstItem="t6h-qG-NT3" firstAttribute="top" secondItem="0l7-v5-T3a" secondAttribute="bottom" constant="8" id="kXn-XI-fXU"/>
                 <constraint firstItem="AzZ-Bj-rJ6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m3b-3F-GCK"/>
                 <constraint firstAttribute="bottom" secondItem="t6h-qG-NT3" secondAttribute="bottom" id="wZo-Mt-SxN"/>
                 <constraint firstItem="t6h-qG-NT3" firstAttribute="top" secondItem="AzZ-Bj-rJ6" secondAttribute="bottom" id="xdu-WD-xlS"/>

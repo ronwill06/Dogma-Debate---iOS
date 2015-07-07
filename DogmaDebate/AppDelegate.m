@@ -10,6 +10,7 @@
 #import "RWHomeViewController.h"
 #import "RWEventsViewController.h"
 #import "RWBlogViewController.h"
+#import "RWFourthLoginViewController.h"
 #import "RWMoreViewController.h"
 
 @interface AppDelegate ()
@@ -29,10 +30,16 @@
     
     RWEventsViewController *eventsVC = [[RWEventsViewController alloc] init];
     RWBlogViewController *blogVC = [[RWBlogViewController alloc] init];
+    
+    RWFourthLoginViewController *loginVC = [[RWFourthLoginViewController alloc] init];
+    UINavigationController *fourthNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    
     RWMoreViewController *moreVC = [[RWMoreViewController alloc] init];
+    UINavigationController *moreNav = [[UINavigationController alloc] initWithRootViewController:moreVC];
+
 
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    [tabBarController setViewControllers:@[navVC, eventsVC, blogVC, moreVC] animated:YES];
+    [tabBarController setViewControllers:@[navVC, eventsVC, blogVC, fourthNav, moreNav] animated:YES];
     
     [[self window] setRootViewController:tabBarController];
     

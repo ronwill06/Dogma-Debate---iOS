@@ -13,7 +13,7 @@
 - (void)drawRect:(CGRect)rect {
     // Drawing code
     
-    self.layer.cornerRadius = self.frame.size.height / 2;
+    self.layer.cornerRadius = self.cornerSize;
     self.layer.masksToBounds = YES;
 }
 

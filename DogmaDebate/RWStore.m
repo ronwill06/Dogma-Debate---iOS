@@ -48,7 +48,7 @@
 - (void)fetchPosts
 {
     
-    NSString *spreakerString = @"https://api.spreaker.com/user/7287953";
+    NSString *spreakerString = @"rtmp://194.116.72.19:80/spreaker-stream-shoutcast";
     
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithURL:[NSURL URLWithString:spreakerString]

@@ -8,8 +8,12 @@
 
 #import "RWMoreViewController.h"
 #import "RWMoreTableViewCell.h"
+#import "RWAboutUsViewController.h"
+#import "RWPartnerViewController.h"
+#import "RWFAQViewController.h"
+#import <MessageUI/MessageUI.h>
 
-@interface RWMoreViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface RWMoreViewController ()<UITableViewDelegate, UITableViewDataSource, MFMailComposeViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic, strong) NSArray *options;
@@ -41,13 +45,11 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    self.options =  @[@"our misson", @"contact us", @"partners", @"faq", @"i am 4th", @"atheist audiobooks"];
+    self.navigationController.navigationBar.hidden = YES;
+    self.options =  @[@"about us", @"contact us", @"partners", @"faq", @"atheist audiobooks"];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -62,6 +64,42 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([indexPath row] == 0) {
+        RWAboutUsViewController *aboutVC = [[RWAboutUsViewController alloc] init];
+        [[self navigationController] pushViewController:aboutVC animated:YES];
+    }
+    
+    if ([indexPath row] == 1) {
+        MFMailComposeViewController *mailVC = [[MFMailComposeViewController alloc] init];
+        mailVC.mailComposeDelegate = self;
+        [mailVC setToRecipients:@[@"donovan@dogmadebate.com"]];
+        [self presentViewController:mailVC animated:YES completion:nil];
+    }
+    
+    if ([indexPath row] == 2) {
+        RWPartnerViewController *partnerVC = [[RWPartnerViewController alloc] init];
+        [[self navigationController] pushViewController:partnerVC animated:YES];
+    }
+    
+    if ([indexPath row] == 3) {
+        RWFAQViewController *faqVC = [[RWFAQViewController alloc] init];
+        [[self navigationController] pushViewController:faqVC animated:YES];
+    }
+    
+}
+
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller
+          didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    if (!error) {
+        if (result == MFMailComposeResultCancelled) {
+            [controller dismissViewControllerAnimated:YES completion:nil];
+        }
+    }
+}
 
 
 @end

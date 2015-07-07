@@ -68,6 +68,36 @@
 		1F5D5CAA1B4635210074FBC8 /* RWPodcastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CA61B4635210074FBC8 /* RWPodcastViewController.xib */; };
 		1F5D5CAD1B4635F70074FBC8 /* RWRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CAC1B4635F70074FBC8 /* RWRoundedButton.m */; };
 		1F5D5CAE1B4635F70074FBC8 /* RWRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CAC1B4635F70074FBC8 /* RWRoundedButton.m */; };
+		1F5D5CB51B46E79A0074FBC8 /* RWFourthListenerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CB31B46E79A0074FBC8 /* RWFourthListenerViewController.m */; };
+		1F5D5CB61B46E79A0074FBC8 /* RWFourthListenerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CB31B46E79A0074FBC8 /* RWFourthListenerViewController.m */; };
+		1F5D5CB71B46E79A0074FBC8 /* RWFourthListenerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CB41B46E79A0074FBC8 /* RWFourthListenerViewController.xib */; };
+		1F5D5CB81B46E79A0074FBC8 /* RWFourthListenerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CB41B46E79A0074FBC8 /* RWFourthListenerViewController.xib */; };
+		1F5D5CBC1B46F4CA0074FBC8 /* RWFourthLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CBA1B46F4CA0074FBC8 /* RWFourthLoginViewController.m */; };
+		1F5D5CBD1B46F4CA0074FBC8 /* RWFourthLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CBA1B46F4CA0074FBC8 /* RWFourthLoginViewController.m */; };
+		1F5D5CBE1B46F4CA0074FBC8 /* RWFourthLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CBB1B46F4CA0074FBC8 /* RWFourthLoginViewController.xib */; };
+		1F5D5CBF1B46F4CA0074FBC8 /* RWFourthLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CBB1B46F4CA0074FBC8 /* RWFourthLoginViewController.xib */; };
+		1F5D5CC31B47264C0074FBC8 /* RWAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CC11B47264C0074FBC8 /* RWAboutUsViewController.m */; };
+		1F5D5CC41B47264C0074FBC8 /* RWAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CC11B47264C0074FBC8 /* RWAboutUsViewController.m */; };
+		1F5D5CC51B47264C0074FBC8 /* RWAboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CC21B47264C0074FBC8 /* RWAboutUsViewController.xib */; };
+		1F5D5CC61B47264C0074FBC8 /* RWAboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CC21B47264C0074FBC8 /* RWAboutUsViewController.xib */; };
+		1F5D5CCA1B4727140074FBC8 /* RWAboutUsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CC81B4727140074FBC8 /* RWAboutUsTableViewCell.m */; };
+		1F5D5CCB1B4727140074FBC8 /* RWAboutUsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CC81B4727140074FBC8 /* RWAboutUsTableViewCell.m */; };
+		1F5D5CCC1B4727140074FBC8 /* RWAboutUsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CC91B4727140074FBC8 /* RWAboutUsTableViewCell.xib */; };
+		1F5D5CCD1B4727140074FBC8 /* RWAboutUsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CC91B4727140074FBC8 /* RWAboutUsTableViewCell.xib */; };
+		1F5D5CD01B472BE80074FBC8 /* RWStaffInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CCF1B472BE80074FBC8 /* RWStaffInfo.m */; };
+		1F5D5CD11B472BE80074FBC8 /* RWStaffInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CCF1B472BE80074FBC8 /* RWStaffInfo.m */; };
+		1F5D5CD51B473E0B0074FBC8 /* RWPartnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CD31B473E0B0074FBC8 /* RWPartnerViewController.m */; };
+		1F5D5CD61B473E0B0074FBC8 /* RWPartnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CD31B473E0B0074FBC8 /* RWPartnerViewController.m */; };
+		1F5D5CD71B473E0B0074FBC8 /* RWPartnerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CD41B473E0B0074FBC8 /* RWPartnerViewController.xib */; };
+		1F5D5CD81B473E0B0074FBC8 /* RWPartnerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CD41B473E0B0074FBC8 /* RWPartnerViewController.xib */; };
+		1F5D5CDB1B473EA00074FBC8 /* RWPartner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CDA1B473EA00074FBC8 /* RWPartner.m */; };
+		1F5D5CDC1B473EA00074FBC8 /* RWPartner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CDA1B473EA00074FBC8 /* RWPartner.m */; };
+		1F5D5CE01B4769F30074FBC8 /* RWFAQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CDE1B4769F30074FBC8 /* RWFAQViewController.m */; };
+		1F5D5CE11B4769F30074FBC8 /* RWFAQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CDE1B4769F30074FBC8 /* RWFAQViewController.m */; };
+		1F5D5CE21B4769F30074FBC8 /* RWFAQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CDF1B4769F30074FBC8 /* RWFAQViewController.xib */; };
+		1F5D5CE31B4769F30074FBC8 /* RWFAQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CDF1B4769F30074FBC8 /* RWFAQViewController.xib */; };
+		1F5D5CF41B4B7A3F0074FBC8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5D5CE41B4B71280074FBC8 /* AudioToolbox.framework */; };
+		1F5D5CF51B4B7A460074FBC8 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5D5CEA1B4B71470074FBC8 /* CoreAudioKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +166,33 @@
 		1F5D5CA61B4635210074FBC8 /* RWPodcastViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWPodcastViewController.xib; sourceTree = "<group>"; };
 		1F5D5CAB1B4635F70074FBC8 /* RWRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWRoundedButton.h; sourceTree = "<group>"; };
 		1F5D5CAC1B4635F70074FBC8 /* RWRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWRoundedButton.m; sourceTree = "<group>"; };
+		1F5D5CB21B46E79A0074FBC8 /* RWFourthListenerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWFourthListenerViewController.h; sourceTree = "<group>"; };
+		1F5D5CB31B46E79A0074FBC8 /* RWFourthListenerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWFourthListenerViewController.m; sourceTree = "<group>"; };
+		1F5D5CB41B46E79A0074FBC8 /* RWFourthListenerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWFourthListenerViewController.xib; sourceTree = "<group>"; };
+		1F5D5CB91B46F4CA0074FBC8 /* RWFourthLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWFourthLoginViewController.h; sourceTree = "<group>"; };
+		1F5D5CBA1B46F4CA0074FBC8 /* RWFourthLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWFourthLoginViewController.m; sourceTree = "<group>"; };
+		1F5D5CBB1B46F4CA0074FBC8 /* RWFourthLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWFourthLoginViewController.xib; sourceTree = "<group>"; };
+		1F5D5CC01B47264C0074FBC8 /* RWAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWAboutUsViewController.h; sourceTree = "<group>"; };
+		1F5D5CC11B47264C0074FBC8 /* RWAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWAboutUsViewController.m; sourceTree = "<group>"; };
+		1F5D5CC21B47264C0074FBC8 /* RWAboutUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWAboutUsViewController.xib; sourceTree = "<group>"; };
+		1F5D5CC71B4727140074FBC8 /* RWAboutUsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWAboutUsTableViewCell.h; sourceTree = "<group>"; };
+		1F5D5CC81B4727140074FBC8 /* RWAboutUsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWAboutUsTableViewCell.m; sourceTree = "<group>"; };
+		1F5D5CC91B4727140074FBC8 /* RWAboutUsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWAboutUsTableViewCell.xib; sourceTree = "<group>"; };
+		1F5D5CCE1B472BE80074FBC8 /* RWStaffInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWStaffInfo.h; sourceTree = "<group>"; };
+		1F5D5CCF1B472BE80074FBC8 /* RWStaffInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWStaffInfo.m; sourceTree = "<group>"; };
+		1F5D5CD21B473E0B0074FBC8 /* RWPartnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWPartnerViewController.h; sourceTree = "<group>"; };
+		1F5D5CD31B473E0B0074FBC8 /* RWPartnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWPartnerViewController.m; sourceTree = "<group>"; };
+		1F5D5CD41B473E0B0074FBC8 /* RWPartnerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWPartnerViewController.xib; sourceTree = "<group>"; };
+		1F5D5CD91B473EA00074FBC8 /* RWPartner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWPartner.h; sourceTree = "<group>"; };
+		1F5D5CDA1B473EA00074FBC8 /* RWPartner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWPartner.m; sourceTree = "<group>"; };
+		1F5D5CDD1B4769F30074FBC8 /* RWFAQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWFAQViewController.h; sourceTree = "<group>"; };
+		1F5D5CDE1B4769F30074FBC8 /* RWFAQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWFAQViewController.m; sourceTree = "<group>"; };
+		1F5D5CDF1B4769F30074FBC8 /* RWFAQViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWFAQViewController.xib; sourceTree = "<group>"; };
+		1F5D5CE41B4B71280074FBC8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1F5D5CE61B4B712E0074FBC8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1F5D5CE81B4B713F0074FBC8 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		1F5D5CEA1B4B71470074FBC8 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		1F5D5CED1B4B73BA0074FBC8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +200,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5D5CF51B4B7A460074FBC8 /* CoreAudioKit.framework in Frameworks */,
+				1F5D5CF41B4B7A3F0074FBC8 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +218,12 @@
 		1F45DD9E1B2E51FF00086116 = {
 			isa = PBXGroup;
 			children = (
-				1F45DDA91B2E51FF00086116 /* DogmaDebate */,
+				1F5D5CED1B4B73BA0074FBC8 /* AVKit.framework */,
+				1F5D5CEA1B4B71470074FBC8 /* CoreAudioKit.framework */,
+				1F5D5CE81B4B713F0074FBC8 /* CoreAudio.framework */,
+				1F5D5CE61B4B712E0074FBC8 /* AVFoundation.framework */,
+				1F5D5CE41B4B71280074FBC8 /* AudioToolbox.framework */,
+				1F45DDA91B2E51FF00086116 /* Dogma Debate */,
 				1F45DDC61B2E51FF00086116 /* DogmaDebateTests */,
 				1F45DDA81B2E51FF00086116 /* Products */,
 			);
@@ -174,7 +238,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1F45DDA91B2E51FF00086116 /* DogmaDebate */ = {
+		1F45DDA91B2E51FF00086116 /* Dogma Debate */ = {
 			isa = PBXGroup;
 			children = (
 				1F45DDAE1B2E51FF00086116 /* AppDelegate.h */,
@@ -188,6 +252,7 @@
 				1F45DDD31B2E534900086116 /* Controllers */,
 				1F45DDAA1B2E51FF00086116 /* Supporting Files */,
 			);
+			name = "Dogma Debate";
 			path = DogmaDebate;
 			sourceTree = "<group>";
 		};
@@ -238,6 +303,21 @@
 				1F5D5CA41B4635210074FBC8 /* RWPodcastViewController.h */,
 				1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */,
 				1F5D5CA61B4635210074FBC8 /* RWPodcastViewController.xib */,
+				1F5D5CB21B46E79A0074FBC8 /* RWFourthListenerViewController.h */,
+				1F5D5CB31B46E79A0074FBC8 /* RWFourthListenerViewController.m */,
+				1F5D5CB41B46E79A0074FBC8 /* RWFourthListenerViewController.xib */,
+				1F5D5CB91B46F4CA0074FBC8 /* RWFourthLoginViewController.h */,
+				1F5D5CBA1B46F4CA0074FBC8 /* RWFourthLoginViewController.m */,
+				1F5D5CBB1B46F4CA0074FBC8 /* RWFourthLoginViewController.xib */,
+				1F5D5CC01B47264C0074FBC8 /* RWAboutUsViewController.h */,
+				1F5D5CC11B47264C0074FBC8 /* RWAboutUsViewController.m */,
+				1F5D5CC21B47264C0074FBC8 /* RWAboutUsViewController.xib */,
+				1F5D5CD21B473E0B0074FBC8 /* RWPartnerViewController.h */,
+				1F5D5CD31B473E0B0074FBC8 /* RWPartnerViewController.m */,
+				1F5D5CD41B473E0B0074FBC8 /* RWPartnerViewController.xib */,
+				1F5D5CDD1B4769F30074FBC8 /* RWFAQViewController.h */,
+				1F5D5CDE1B4769F30074FBC8 /* RWFAQViewController.m */,
+				1F5D5CDF1B4769F30074FBC8 /* RWFAQViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -266,6 +346,9 @@
 				1F45DE5B1B40743100086116 /* RWCollectionViewTransitionAnimator.m */,
 				1F5D5CAB1B4635F70074FBC8 /* RWRoundedButton.h */,
 				1F5D5CAC1B4635F70074FBC8 /* RWRoundedButton.m */,
+				1F5D5CC71B4727140074FBC8 /* RWAboutUsTableViewCell.h */,
+				1F5D5CC81B4727140074FBC8 /* RWAboutUsTableViewCell.m */,
+				1F5D5CC91B4727140074FBC8 /* RWAboutUsTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -277,6 +360,10 @@
 				1F45DDE31B2F150100086116 /* RWEpisode.m */,
 				1F45DE111B3AFF2B00086116 /* RWEvent.h */,
 				1F45DE121B3AFF2B00086116 /* RWEvent.m */,
+				1F5D5CCE1B472BE80074FBC8 /* RWStaffInfo.h */,
+				1F5D5CCF1B472BE80074FBC8 /* RWStaffInfo.m */,
+				1F5D5CD91B473EA00074FBC8 /* RWPartner.h */,
+				1F5D5CDA1B473EA00074FBC8 /* RWPartner.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -364,15 +451,21 @@
 			files = (
 				1F45DDBE1B2E51FF00086116 /* LaunchScreen.xib in Resources */,
 				1F45DE281B3B4FA600086116 /* RWBlogViewController.xib in Resources */,
+				1F5D5CD71B473E0B0074FBC8 /* RWPartnerViewController.xib in Resources */,
 				1F45DE011B3A04DA00086116 /* RWMoreViewController.xib in Resources */,
 				1F45DE0F1B3AF96400086116 /* RWEventsViewController.xib in Resources */,
 				1F45DDDC1B2E588F00086116 /* RWHomeTableViewCell.xib in Resources */,
+				1F5D5CB71B46E79A0074FBC8 /* RWFourthListenerViewController.xib in Resources */,
 				1F45DE511B3C8B6F00086116 /* RWCollectionViewCell.xib in Resources */,
+				1F5D5CC51B47264C0074FBC8 /* RWAboutUsViewController.xib in Resources */,
 				1F45DE4A1B3C5AFF00086116 /* RWCollectionViewController.xib in Resources */,
 				1F45DE081B3AE52F00086116 /* RWMoreTableViewCell.xib in Resources */,
 				1F45DDBB1B2E51FF00086116 /* Images.xcassets in Resources */,
+				1F5D5CE21B4769F30074FBC8 /* RWFAQViewController.xib in Resources */,
+				1F5D5CBE1B46F4CA0074FBC8 /* RWFourthLoginViewController.xib in Resources */,
 				1F45DDF31B2F4EBC00086116 /* RWHomeViewController.xib in Resources */,
 				1F45DE1D1B3B46DC00086116 /* RWEventHeaderView.xib in Resources */,
+				1F5D5CCC1B4727140074FBC8 /* RWAboutUsTableViewCell.xib in Resources */,
 				1F5D5CA91B4635210074FBC8 /* RWPodcastViewController.xib in Resources */,
 				1F45DE1A1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */,
 			);
@@ -382,14 +475,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5D5CD81B473E0B0074FBC8 /* RWPartnerViewController.xib in Resources */,
 				1F45DE1E1B3B46DC00086116 /* RWEventHeaderView.xib in Resources */,
 				1F45DDF41B2F4EBC00086116 /* RWHomeViewController.xib in Resources */,
 				1F45DDDD1B2E588F00086116 /* RWHomeTableViewCell.xib in Resources */,
 				1F45DE521B3C8B6F00086116 /* RWCollectionViewCell.xib in Resources */,
 				1F45DE021B3A04DA00086116 /* RWMoreViewController.xib in Resources */,
+				1F5D5CB81B46E79A0074FBC8 /* RWFourthListenerViewController.xib in Resources */,
 				1F5D5CAA1B4635210074FBC8 /* RWPodcastViewController.xib in Resources */,
+				1F5D5CC61B47264C0074FBC8 /* RWAboutUsViewController.xib in Resources */,
 				1F45DE4B1B3C5AFF00086116 /* RWCollectionViewController.xib in Resources */,
+				1F5D5CCD1B4727140074FBC8 /* RWAboutUsTableViewCell.xib in Resources */,
 				1F45DE1B1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */,
+				1F5D5CE31B4769F30074FBC8 /* RWFAQViewController.xib in Resources */,
+				1F5D5CBF1B46F4CA0074FBC8 /* RWFourthLoginViewController.xib in Resources */,
 				1F45DE291B3B4FA600086116 /* RWBlogViewController.xib in Resources */,
 				1F45DE101B3AF96400086116 /* RWEventsViewController.xib in Resources */,
 				1F45DE091B3AE52F00086116 /* RWMoreTableViewCell.xib in Resources */,
@@ -404,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F45DE211B3B488C00086116 /* RWEventHeaderView.m in Sources */,
+				1F5D5CDB1B473EA00074FBC8 /* RWPartner.m in Sources */,
 				1F45DE4F1B3C8B6F00086116 /* RWCollectionViewCell.m in Sources */,
 				1F45DE261B3B4FA600086116 /* RWBlogViewController.m in Sources */,
 				1F45DE0D1B3AF96400086116 /* RWEventsViewController.m in Sources */,
@@ -412,10 +512,17 @@
 				1F45DE061B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */,
 				1F45DE2C1B3B546700086116 /* RWStyleControls.m in Sources */,
 				1F45DDB01B2E51FF00086116 /* AppDelegate.m in Sources */,
+				1F5D5CD01B472BE80074FBC8 /* RWStaffInfo.m in Sources */,
 				1F45DDE01B2E58B200086116 /* RWHomeTableViewCell.m in Sources */,
+				1F5D5CB51B46E79A0074FBC8 /* RWFourthListenerViewController.m in Sources */,
+				1F5D5CD51B473E0B0074FBC8 /* RWPartnerViewController.m in Sources */,
 				1F45DE5C1B40743100086116 /* RWCollectionViewTransitionAnimator.m in Sources */,
+				1F5D5CCA1B4727140074FBC8 /* RWAboutUsTableViewCell.m in Sources */,
+				1F5D5CE01B4769F30074FBC8 /* RWFAQViewController.m in Sources */,
+				1F5D5CBC1B46F4CA0074FBC8 /* RWFourthLoginViewController.m in Sources */,
 				1F45DE481B3C5AFF00086116 /* RWCollectionViewController.m in Sources */,
 				1F5D5CAD1B4635F70074FBC8 /* RWRoundedButton.m in Sources */,
+				1F5D5CC31B47264C0074FBC8 /* RWAboutUsViewController.m in Sources */,
 				1F45DE301B3B6C1600086116 /* RWStore.m in Sources */,
 				1F45DE181B3B37E800086116 /* RWEventTableViewCell.m in Sources */,
 				1F45DDAD1B2E51FF00086116 /* main.m in Sources */,
@@ -435,15 +542,23 @@
 				1F45DE071B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */,
 				1F45DE0E1B3AF96400086116 /* RWEventsViewController.m in Sources */,
 				1F45DE311B3B6C1600086116 /* RWStore.m in Sources */,
+				1F5D5CCB1B4727140074FBC8 /* RWAboutUsTableViewCell.m in Sources */,
 				1F45DDE11B2E58B200086116 /* RWHomeTableViewCell.m in Sources */,
 				1F45DDF21B2F4EBC00086116 /* RWHomeViewController.m in Sources */,
+				1F5D5CC41B47264C0074FBC8 /* RWAboutUsViewController.m in Sources */,
 				1F45DE5D1B40743100086116 /* RWCollectionViewTransitionAnimator.m in Sources */,
 				1F45DE271B3B4FA600086116 /* RWBlogViewController.m in Sources */,
 				1F45DE491B3C5AFF00086116 /* RWCollectionViewController.m in Sources */,
+				1F5D5CD11B472BE80074FBC8 /* RWStaffInfo.m in Sources */,
 				1F45DE2D1B3B546700086116 /* RWStyleControls.m in Sources */,
+				1F5D5CDC1B473EA00074FBC8 /* RWPartner.m in Sources */,
 				1F45DDCA1B2E51FF00086116 /* DogmaDebateTests.m in Sources */,
+				1F5D5CD61B473E0B0074FBC8 /* RWPartnerViewController.m in Sources */,
+				1F5D5CBD1B46F4CA0074FBC8 /* RWFourthLoginViewController.m in Sources */,
 				1F45DE501B3C8B6F00086116 /* RWCollectionViewCell.m in Sources */,
+				1F5D5CB61B46E79A0074FBC8 /* RWFourthListenerViewController.m in Sources */,
 				1F45DE001B3A04DA00086116 /* RWMoreViewController.m in Sources */,
+				1F5D5CE11B4769F30074FBC8 /* RWFAQViewController.m in Sources */,
 				1F45DE141B3AFF2B00086116 /* RWEvent.m in Sources */,
 				1F45DE191B3B37E800086116 /* RWEventTableViewCell.m in Sources */,
 				1F45DE221B3B488C00086116 /* RWEventHeaderView.m in Sources */,
@@ -559,7 +674,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DogmaDebate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DogmaDebate;
 			};
 			name = Debug;
 		};
@@ -570,7 +685,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DogmaDebate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DogmaDebate;
 			};
 			name = Release;
 		};
@@ -588,7 +703,7 @@
 				);
 				INFOPLIST_FILE = DogmaDebateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DogmaDebateTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogmaDebate.app/DogmaDebate";
 			};
 			name = Debug;
@@ -603,7 +718,7 @@
 				);
 				INFOPLIST_FILE = DogmaDebateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DogmaDebateTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogmaDebate.app/DogmaDebate";
 			};
 			name = Release;

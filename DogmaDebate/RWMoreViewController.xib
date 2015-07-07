@@ -15,9 +15,12 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Tcd-wN-Dgc">
-                    <rect key="frame" x="0.0" y="10" width="600" height="590"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Tcd-wN-Dgc">
+                    <rect key="frame" x="0.0" y="150" width="600" height="300"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="Qf6-Ts-NG9"/>
+                    </constraints>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="sJw-69-6hg"/>
                         <outlet property="delegate" destination="-1" id="XrX-4P-fZw"/>
@@ -26,11 +29,21 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="centerY" secondItem="Tcd-wN-Dgc" secondAttribute="centerY" id="7eX-mL-mgh"/>
                 <constraint firstAttribute="trailing" secondItem="Tcd-wN-Dgc" secondAttribute="trailing" id="BEF-Fh-nTw"/>
                 <constraint firstAttribute="bottom" secondItem="Tcd-wN-Dgc" secondAttribute="bottom" id="Xmj-kU-yxa"/>
                 <constraint firstItem="Tcd-wN-Dgc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bS2-oI-UtX"/>
-                <constraint firstItem="Tcd-wN-Dgc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="wwO-4J-spX"/>
+                <constraint firstAttribute="trailing" secondItem="Tcd-wN-Dgc" secondAttribute="trailing" id="cwI-97-SZZ"/>
+                <constraint firstItem="Tcd-wN-Dgc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rhy-y9-mvh"/>
+                <constraint firstAttribute="centerX" secondItem="Tcd-wN-Dgc" secondAttribute="centerX" id="wfu-K3-MaQ"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="BEF-Fh-nTw"/>
+                    <exclude reference="Xmj-kU-yxa"/>
+                    <exclude reference="bS2-oI-UtX"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

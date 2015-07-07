@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RWFAQViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="633"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEd-C8-llb">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="633"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsj-Ve-D42">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="633"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCj-K4-17R">
+                                    <rect key="frame" x="50" y="8" width="500" height="600"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awv-HY-B2y">
+                                            <rect key="frame" x="140" y="20" width="221" height="20"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="What's That Song You Play ?">
+                                                    <attributes>
+                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        <integer key="NSUnderline" value="1"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hh-At-v3v">
+                                            <rect key="frame" x="98" y="48" width="305" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <state key="normal" title="Why This Kolavery Di – Anirudh Ravichander">
+                                                <color key="titleColor" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNh-vZ-Fcc">
+                                            <rect key="frame" x="164" y="86" width="173" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <state key="normal" title="Disintegrate – Crashsight">
+                                                <color key="titleColor" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i74-NO-Kgi">
+                                            <rect key="frame" x="110" y="124" width="280" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <state key="normal" title="Metaphor Swordsman – Greydon Square">
+                                                <color key="titleColor" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1y-8B-Czr">
+                                            <rect key="frame" x="107" y="162" width="287" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <state key="normal" title="Saved – Shelley Segal – An Atheist Album">
+                                                <color key="titleColor" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVa-yI-5lc">
+                                            <rect key="frame" x="205" y="200" width="90" height="20"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="More FAQ's">
+                                                    <attributes>
+                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        <integer key="NSUnderline" value="1"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How can I be a guest on Dogma Debate? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctv-Lv-dbo">
+                                            <rect key="frame" x="104" y="238" width="293" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LEL-m0-Bii">
+                                            <rect key="frame" x="95" y="264" width="311" height="27"/>
+                                            <state key="normal">
+                                                <attributedString key="attributedTitle">
+                                                    <fragment content="Email ">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                                            <font key="NSOriginalFont" size="13" name="HelveticaNeue"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="booking@dogmadebate.com">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                                            <font key="NSOriginalFont" size="13" name="HelveticaNeue"/>
+                                                            <integer key="NSUnderline" value="1"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" with your request.">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                                            <font key="NSOriginalFont" size="13" name="HelveticaNeue"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                            </state>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I don’t have PayPal, but I still want to support Dogma Debate. Is there a way for me to do this? " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kx5-GU-yos">
+                                            <rect key="frame" x="8" y="299" width="484" height="36"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have an idea for a book you should make on audio! " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYc-P1-uTh">
+                                            <rect key="frame" x="65" y="451" width="371" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Visit our Make-a-Suggestion page on AtheistAudiobooks.com and tell us what you think." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyH-UK-DH6">
+                                            <rect key="frame" x="0.0" y="477" width="500" height="50"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="O03-a2-uyp"/>
+                                                <constraint firstAttribute="width" constant="559" id="rwJ-ch-nat"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="rwJ-ch-nat"/>
+                                                </mask>
+                                            </variation>
+                                        </textView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRa-uQ-7T3">
+                                            <rect key="frame" x="52" y="535" width="397" height="18"/>
+                                            <string key="text">Who took the awesome pictures on DogmaDebate.com?
+
+</string>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Paa-76-32U">
+                                            <rect key="frame" x="134" y="561" width="232" height="27"/>
+                                            <state key="normal">
+                                                <attributedString key="attributedTitle">
+                                                    <fragment content="Mike Myers of ">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                                            <font key="NSOriginalFont" size="13" name="HelveticaNeue"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Mike Myers Photography">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                                            <font key="NSOriginalFont" size="13" name="HelveticaNeue"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                            </state>
+                                        </button>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OH8-VM-PYT">
+                                            <rect key="frame" x="8" y="343" width="484" height="100"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="150" id="KBK-fM-Uzc"/>
+                                                <constraint firstAttribute="height" constant="100" id="cIg-PU-LFk"/>
+                                            </constraints>
+                                            <string key="text">Yes, there are two ways. We are able to manually add you into the Dogma Debate system as a paying subscriber for access to behind-the-scenes content. You can visit patreon.com/dogmadebate to contribute to our show! Or, you can email brandy@dogmadebate.com with your request to sign up for 1 year of membership by mailing a check.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="KBK-fM-Uzc"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="KBK-fM-Uzc"/>
+                                                    <exclude reference="cIg-PU-LFk"/>
+                                                </mask>
+                                            </variation>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="rNh-vZ-Fcc" firstAttribute="top" secondItem="5Hh-At-v3v" secondAttribute="bottom" constant="8" id="2RK-as-4SN"/>
+                                        <constraint firstAttribute="centerX" secondItem="kx5-GU-yos" secondAttribute="centerX" id="6Hi-yz-NaE"/>
+                                        <constraint firstItem="OH8-VM-PYT" firstAttribute="leading" secondItem="gCj-K4-17R" secondAttribute="leading" constant="8" id="7JQ-x4-R8v"/>
+                                        <constraint firstAttribute="width" constant="500" id="9a9-oh-Us4">
+                                            <variation key="widthClass=compact" constant="320"/>
+                                        </constraint>
+                                        <constraint firstAttribute="centerX" secondItem="i74-NO-Kgi" secondAttribute="centerX" id="COw-Jc-prR"/>
+                                        <constraint firstItem="JYc-P1-uTh" firstAttribute="top" secondItem="OH8-VM-PYT" secondAttribute="bottom" constant="8" id="DtF-4F-1fC"/>
+                                        <constraint firstItem="hVa-yI-5lc" firstAttribute="top" secondItem="q1y-8B-Czr" secondAttribute="bottom" constant="8" id="Dvs-Xw-fps"/>
+                                        <constraint firstItem="i74-NO-Kgi" firstAttribute="top" secondItem="rNh-vZ-Fcc" secondAttribute="bottom" constant="8" id="GJG-G7-J7t"/>
+                                        <constraint firstItem="JYc-P1-uTh" firstAttribute="top" secondItem="OH8-VM-PYT" secondAttribute="bottom" constant="8" id="HFg-cg-BmE"/>
+                                        <constraint firstItem="Ctv-Lv-dbo" firstAttribute="top" secondItem="hVa-yI-5lc" secondAttribute="bottom" constant="18" id="Hhz-ps-gjG">
+                                            <variation key="widthClass=compact" constant="10"/>
+                                        </constraint>
+                                        <constraint firstAttribute="trailing" secondItem="kx5-GU-yos" secondAttribute="trailing" constant="8" id="KGw-fQ-KPP"/>
+                                        <constraint firstItem="LEL-m0-Bii" firstAttribute="top" secondItem="Ctv-Lv-dbo" secondAttribute="bottom" constant="8" id="KYo-fJ-bOn"/>
+                                        <constraint firstItem="hRa-uQ-7T3" firstAttribute="top" secondItem="cyH-UK-DH6" secondAttribute="bottom" constant="8" id="MEE-SG-efd"/>
+                                        <constraint firstAttribute="bottom" secondItem="OH8-VM-PYT" secondAttribute="bottom" constant="130" id="Op5-Gs-EDU"/>
+                                        <constraint firstAttribute="centerX" secondItem="Ctv-Lv-dbo" secondAttribute="centerX" id="QAr-Du-MoH"/>
+                                        <constraint firstItem="5Hh-At-v3v" firstAttribute="top" secondItem="awv-HY-B2y" secondAttribute="bottom" constant="8" id="Rb0-aC-jbt"/>
+                                        <constraint firstAttribute="width" constant="575" id="SeF-Jg-Bz6"/>
+                                        <constraint firstAttribute="centerX" secondItem="Paa-76-32U" secondAttribute="centerX" id="Spq-r9-fG0"/>
+                                        <constraint firstAttribute="width" constant="400" id="TvS-qh-MXv"/>
+                                        <constraint firstAttribute="centerX" secondItem="q1y-8B-Czr" secondAttribute="centerX" id="WQo-Kp-St7"/>
+                                        <constraint firstAttribute="trailing" secondItem="OH8-VM-PYT" secondAttribute="trailing" constant="8" id="Xm9-lV-43z"/>
+                                        <constraint firstItem="kx5-GU-yos" firstAttribute="leading" secondItem="gCj-K4-17R" secondAttribute="leading" constant="8" id="Xrl-Ie-Sgj"/>
+                                        <constraint firstAttribute="height" constant="600" id="bP7-m1-tve">
+                                            <variation key="widthClass=compact" constant="630"/>
+                                        </constraint>
+                                        <constraint firstAttribute="centerX" secondItem="5Hh-At-v3v" secondAttribute="centerX" id="bhk-hH-f8J"/>
+                                        <constraint firstItem="Paa-76-32U" firstAttribute="top" secondItem="hRa-uQ-7T3" secondAttribute="bottom" constant="8" id="c9E-1h-gVd"/>
+                                        <constraint firstAttribute="centerX" secondItem="rNh-vZ-Fcc" secondAttribute="centerX" id="eSw-eI-bCb"/>
+                                        <constraint firstItem="OH8-VM-PYT" firstAttribute="top" secondItem="kx5-GU-yos" secondAttribute="bottom" constant="8" id="ebh-zG-1dT"/>
+                                        <constraint firstAttribute="centerX" secondItem="hVa-yI-5lc" secondAttribute="centerX" id="hid-bG-kUV"/>
+                                        <constraint firstItem="q1y-8B-Czr" firstAttribute="top" secondItem="i74-NO-Kgi" secondAttribute="bottom" constant="8" id="i6e-3e-7sk"/>
+                                        <constraint firstItem="awv-HY-B2y" firstAttribute="top" secondItem="gCj-K4-17R" secondAttribute="top" constant="20" id="iUG-JQ-jr4"/>
+                                        <constraint firstAttribute="centerX" secondItem="awv-HY-B2y" secondAttribute="centerX" id="jbI-F9-DVE"/>
+                                        <constraint firstAttribute="trailing" secondItem="cyH-UK-DH6" secondAttribute="trailing" id="qQE-BN-NgR">
+                                            <variation key="widthClass=compact" constant="8"/>
+                                        </constraint>
+                                        <constraint firstItem="JYc-P1-uTh" firstAttribute="top" secondItem="OH8-VM-PYT" secondAttribute="bottom" constant="8" id="rQZ-ZN-D0q"/>
+                                        <constraint firstAttribute="centerX" secondItem="LEL-m0-Bii" secondAttribute="centerX" id="rVk-3U-Iov"/>
+                                        <constraint firstItem="cyH-UK-DH6" firstAttribute="leading" secondItem="gCj-K4-17R" secondAttribute="leading" id="sx6-tH-nd5">
+                                            <variation key="widthClass=compact" constant="8"/>
+                                        </constraint>
+                                        <constraint firstAttribute="centerX" secondItem="JYc-P1-uTh" secondAttribute="centerX" id="u8j-Hm-4DD"/>
+                                        <constraint firstItem="OH8-VM-PYT" firstAttribute="top" secondItem="kx5-GU-yos" secondAttribute="bottom" constant="8" id="vbj-Jq-8gr"/>
+                                        <constraint firstItem="cyH-UK-DH6" firstAttribute="top" secondItem="JYc-P1-uTh" secondAttribute="bottom" constant="8" id="xdA-H2-Urk"/>
+                                        <constraint firstAttribute="centerX" secondItem="hRa-uQ-7T3" secondAttribute="centerX" id="xuq-bY-GBK"/>
+                                        <constraint firstAttribute="centerX" secondItem="cyH-UK-DH6" secondAttribute="centerX" id="yBS-xq-Ymm"/>
+                                        <constraint firstItem="kx5-GU-yos" firstAttribute="top" secondItem="LEL-m0-Bii" secondAttribute="bottom" constant="8" id="z2h-I9-iLK"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="SeF-Jg-Bz6"/>
+                                            <exclude reference="TvS-qh-MXv"/>
+                                            <exclude reference="Op5-Gs-EDU"/>
+                                            <exclude reference="ebh-zG-1dT"/>
+                                            <exclude reference="HFg-cg-BmE"/>
+                                            <exclude reference="rQZ-ZN-D0q"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="constraints">
+                                            <exclude reference="6Hi-yz-NaE"/>
+                                            <exclude reference="DtF-4F-1fC"/>
+                                            <include reference="HFg-cg-BmE"/>
+                                            <exclude reference="yBS-xq-Ymm"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="centerX" secondItem="gCj-K4-17R" secondAttribute="centerX" id="2RI-D8-gB9"/>
+                                <constraint firstItem="gCj-K4-17R" firstAttribute="leading" secondItem="fsj-Ve-D42" secondAttribute="leading" id="3CD-hv-bQZ"/>
+                                <constraint firstAttribute="trailing" secondItem="gCj-K4-17R" secondAttribute="trailing" constant="8" id="4sj-d5-WED"/>
+                                <constraint firstItem="gCj-K4-17R" firstAttribute="leading" secondItem="fsj-Ve-D42" secondAttribute="leading" constant="140" id="7YC-sy-baV">
+                                    <variation key="widthClass=compact" constant="30"/>
+                                </constraint>
+                                <constraint firstItem="gCj-K4-17R" firstAttribute="leading" secondItem="fsj-Ve-D42" secondAttribute="leading" id="B1O-83-fxb"/>
+                                <constraint firstItem="gCj-K4-17R" firstAttribute="top" secondItem="fsj-Ve-D42" secondAttribute="top" constant="8" id="DMv-v7-IkI"/>
+                                <constraint firstAttribute="trailing" secondItem="gCj-K4-17R" secondAttribute="trailing" constant="140" id="HPf-tp-LSi">
+                                    <variation key="widthClass=compact" constant="30"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="gCj-K4-17R" secondAttribute="trailing" id="KNe-5b-qaM"/>
+                                <constraint firstAttribute="trailing" secondItem="gCj-K4-17R" secondAttribute="trailing" constant="30" id="KWp-Bu-liq"/>
+                                <constraint firstItem="gCj-K4-17R" firstAttribute="leading" secondItem="fsj-Ve-D42" secondAttribute="leading" constant="30" id="UjT-A7-q0B"/>
+                                <constraint firstItem="gCj-K4-17R" firstAttribute="leading" secondItem="fsj-Ve-D42" secondAttribute="leading" constant="30" id="VlA-4g-PpP"/>
+                                <constraint firstAttribute="trailing" secondItem="gCj-K4-17R" secondAttribute="trailing" constant="30" id="Vxf-kg-b4L"/>
+                                <constraint firstAttribute="trailing" secondItem="gCj-K4-17R" secondAttribute="trailing" id="Zhb-X1-Co8"/>
+                                <constraint firstItem="gCj-K4-17R" firstAttribute="leading" secondItem="fsj-Ve-D42" secondAttribute="leading" constant="30" id="d68-Mk-W4W"/>
+                                <constraint firstAttribute="centerX" secondItem="gCj-K4-17R" secondAttribute="centerX" id="dlp-Tm-36T"/>
+                                <constraint firstItem="gCj-K4-17R" firstAttribute="top" secondItem="fsj-Ve-D42" secondAttribute="top" id="fKH-yB-Muk"/>
+                                <constraint firstAttribute="centerX" secondItem="gCj-K4-17R" secondAttribute="centerX" id="g3Q-hL-cIY"/>
+                                <constraint firstItem="gCj-K4-17R" firstAttribute="leading" secondItem="fsj-Ve-D42" secondAttribute="leading" constant="8" id="g7P-OE-thZ"/>
+                                <constraint firstAttribute="trailing" secondItem="gCj-K4-17R" secondAttribute="trailing" constant="50" id="gjy-52-FbK">
+                                    <variation key="widthClass=compact" constant="20"/>
+                                </constraint>
+                                <constraint firstAttribute="bottom" secondItem="gCj-K4-17R" secondAttribute="bottom" id="hBc-q5-e1P"/>
+                                <constraint firstAttribute="bottom" secondItem="gCj-K4-17R" secondAttribute="bottom" constant="8" id="huK-3f-Rio"/>
+                                <constraint firstAttribute="bottom" secondItem="gCj-K4-17R" secondAttribute="bottom" id="kn9-D1-L6k"/>
+                                <constraint firstItem="gCj-K4-17R" firstAttribute="top" secondItem="fsj-Ve-D42" secondAttribute="top" constant="8" id="mNZ-rK-MlG"/>
+                                <constraint firstAttribute="trailing" secondItem="gCj-K4-17R" secondAttribute="trailing" constant="99" id="sVd-Jz-r18"/>
+                                <constraint firstItem="gCj-K4-17R" firstAttribute="leading" secondItem="fsj-Ve-D42" secondAttribute="leading" constant="50" id="ylD-AC-c4W">
+                                    <variation key="widthClass=compact" constant="20"/>
+                                </constraint>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="2RI-D8-gB9"/>
+                                    <exclude reference="3CD-hv-bQZ"/>
+                                    <exclude reference="4sj-d5-WED"/>
+                                    <exclude reference="7YC-sy-baV"/>
+                                    <exclude reference="B1O-83-fxb"/>
+                                    <exclude reference="DMv-v7-IkI"/>
+                                    <exclude reference="HPf-tp-LSi"/>
+                                    <exclude reference="KNe-5b-qaM"/>
+                                    <exclude reference="KWp-Bu-liq"/>
+                                    <exclude reference="UjT-A7-q0B"/>
+                                    <exclude reference="VlA-4g-PpP"/>
+                                    <exclude reference="Vxf-kg-b4L"/>
+                                    <exclude reference="Zhb-X1-Co8"/>
+                                    <exclude reference="d68-Mk-W4W"/>
+                                    <exclude reference="fKH-yB-Muk"/>
+                                    <exclude reference="g3Q-hL-cIY"/>
+                                    <exclude reference="g7P-OE-thZ"/>
+                                    <exclude reference="hBc-q5-e1P"/>
+                                    <exclude reference="huK-3f-Rio"/>
+                                    <exclude reference="sVd-Jz-r18"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact">
+                                <mask key="constraints">
+                                    <exclude reference="2RI-D8-gB9"/>
+                                    <include reference="7YC-sy-baV"/>
+                                    <include reference="HPf-tp-LSi"/>
+                                    <exclude reference="dlp-Tm-36T"/>
+                                    <exclude reference="gjy-52-FbK"/>
+                                    <exclude reference="ylD-AC-c4W"/>
+                                </mask>
+                            </variation>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="fsj-Ve-D42" secondAttribute="bottom" id="Epr-YB-m2A"/>
+                        <constraint firstItem="fsj-Ve-D42" firstAttribute="top" secondItem="eEd-C8-llb" secondAttribute="top" id="TDG-Bk-F0A"/>
+                        <constraint firstItem="fsj-Ve-D42" firstAttribute="leading" secondItem="eEd-C8-llb" secondAttribute="leading" id="ctC-Eg-Wor"/>
+                        <constraint firstAttribute="trailing" secondItem="fsj-Ve-D42" secondAttribute="trailing" id="vFy-SD-yC5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eEd-C8-llb" secondAttribute="trailing" id="1v1-J4-1kC"/>
+                <constraint firstAttribute="bottom" secondItem="eEd-C8-llb" secondAttribute="bottom" id="86q-8L-gag"/>
+                <constraint firstItem="eEd-C8-llb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="g4b-t2-5B3"/>
+                <constraint firstItem="eEd-C8-llb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="s6z-3W-kCt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="319.5" y="63"/>
+        </view>
+    </objects>
+</document>

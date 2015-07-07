@@ -16,10 +16,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8t-DW-EWs">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Events" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuN-QH-Fee">
-                            <rect key="frame" x="8" y="84" width="215" height="108"/>
+                            <rect key="frame" x="8" y="134" width="215" height="108"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="215" id="4yC-G5-QZe"/>
                                 <constraint firstAttribute="height" constant="108" id="SOq-cb-7Qf"/>
@@ -36,13 +36,18 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="yWX-su-e6f">
-                    <rect key="frame" x="0.0" y="200" width="600" height="400"/>
+                    <rect key="frame" x="0.0" y="250" width="600" height="350"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="400" id="ddt-Cu-jes"/>
                     </constraints>
                     <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ddt-Cu-jes"/>
+                        </mask>
+                    </variation>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="HF5-uZ-fUb"/>
                         <outlet property="delegate" destination="-1" id="aoc-4e-Ce5"/>
@@ -56,6 +61,7 @@
                 <constraint firstAttribute="bottom" secondItem="yWX-su-e6f" secondAttribute="bottom" id="Qkx-gc-rJm"/>
                 <constraint firstAttribute="trailing" secondItem="yWX-su-e6f" secondAttribute="trailing" id="TsO-dU-Ur8"/>
                 <constraint firstItem="M8t-DW-EWs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WBJ-hR-Zne"/>
+                <constraint firstItem="yWX-su-e6f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="250" id="o9r-rT-C2E"/>
                 <constraint firstItem="yWX-su-e6f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pjr-15-jOY"/>
                 <constraint firstItem="M8t-DW-EWs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tww-rV-yWq"/>
             </constraints>

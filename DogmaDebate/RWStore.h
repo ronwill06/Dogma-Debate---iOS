@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreAudio/CoreAudioTypes.h>
 
 @interface RWStore : NSObject
 

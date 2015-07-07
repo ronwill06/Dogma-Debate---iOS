@@ -59,11 +59,11 @@
             <point key="canvasLocation" x="511" y="476"/>
         </view>
         <view contentMode="scaleToFill" id="pCk-vy-JNU">
-            <rect key="frame" x="0.0" y="0.0" width="563" height="63"/>
+            <rect key="frame" x="0.0" y="0.0" width="563" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ceH-lw-8q8">
-                    <rect key="frame" x="0.0" y="0.0" width="563" height="64"/>
+                    <rect key="frame" x="0.0" y="0.0" width="563" height="51"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <segments>
                         <segment title="Lydia's Blog"/>

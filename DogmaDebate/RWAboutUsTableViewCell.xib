@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="RWAboutUsTableViewCell">
+            <rect key="frame" x="-1" y="0.0" width="380" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wix-A5-8fJ">
+                        <rect key="frame" x="8" y="8" width="44" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Kh-Nw-bqZ">
+                        <rect key="frame" x="332" y="8" width="30" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="cAM-5l-z4v"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleColor" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xna-xz-2jW">
+                        <rect key="frame" x="8" y="33" width="364" height="78"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wix-A5-8fJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="770-tP-gIg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4Kh-Nw-bqZ" secondAttribute="trailing" constant="10" id="8EF-jb-t1g"/>
+                    <constraint firstItem="4Kh-Nw-bqZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="8by-yX-vtF"/>
+                    <constraint firstItem="4Kh-Nw-bqZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="JHH-Hg-0xO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4Kh-Nw-bqZ" secondAttribute="trailing" constant="10" id="Kga-69-nyY"/>
+                    <constraint firstItem="wix-A5-8fJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="aRi-o8-lMl"/>
+                    <constraint firstItem="Xna-xz-2jW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="cNd-dQ-Gx8"/>
+                    <constraint firstItem="Xna-xz-2jW" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="jaq-EZ-Fb2"/>
+                    <constraint firstItem="Xna-xz-2jW" firstAttribute="top" secondItem="4Kh-Nw-bqZ" secondAttribute="bottom" id="mh5-th-vt1"/>
+                    <constraint firstItem="Xna-xz-2jW" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="shK-7c-e7a"/>
+                    <constraint firstItem="4Kh-Nw-bqZ" firstAttribute="leading" secondItem="wix-A5-8fJ" secondAttribute="trailing" constant="8" id="uNU-fb-s2b"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Kga-69-nyY"/>
+                        <exclude reference="uNU-fb-s2b"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailTextView" destination="Xna-xz-2jW" id="mTG-Pb-9Ek"/>
+                <outlet property="nameLabel" destination="wix-A5-8fJ" id="fQp-EZ-ehn"/>
+                <outlet property="twitterButton" destination="4Kh-Nw-bqZ" id="CYW-vX-qma"/>
+            </connections>
+            <point key="canvasLocation" x="312" y="289"/>
+        </tableViewCell>
+    </objects>
+</document>
