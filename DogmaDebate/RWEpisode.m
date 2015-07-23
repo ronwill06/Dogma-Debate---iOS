@@ -16,6 +16,7 @@
     
     if (self) {
         self.episodeTitles = [[NSMutableArray alloc] init];
+        self.episodeDescriptions = [[NSMutableArray alloc] init];
     }
     
     return self;

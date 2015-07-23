@@ -12,5 +12,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *episodeCountLabel;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UILabel *episodeTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
 @end

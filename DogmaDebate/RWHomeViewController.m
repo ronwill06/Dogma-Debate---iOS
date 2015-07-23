@@ -77,9 +77,11 @@
 - (void)loadData
 {
     NSMutableArray *titles = [[NSMutableArray alloc] init];
+    NSMutableArray *descriptions = [[NSMutableArray alloc] init];
+    NSMutableArray *dates = [[NSMutableArray alloc] init];
     [[RWStore store] fetchEpisodesWithURLWithCompletion:^(NSDictionary *episodes, NSError *error) {
         self.episodes = episodes;
-        //NSLog(@"Episode Data:%@", self.episodes);
+        NSLog(@"Episode Data:%@", self.episodes);
         
         NSDictionary  *responseData = [self.episodes objectForKey:@"response"];
         NSDictionary  *pagerData =  [responseData objectForKey:@"pager"];
@@ -91,16 +93,43 @@
             NSString *title = [episodeInfo objectForKey:@"title"];
             [titles addObject:title];
             
+            NSString *description = [episodeInfo objectForKey:@"description"];
+            if ([description isEqual:[NSNull null]]) {
+                description = @"No show description";
+            }
+            [descriptions addObject:description];
+            
+            NSString *date = [episodeInfo objectForKey:@"published_at"];
+            NSInteger month = [[date substringWithRange:NSMakeRange(6, 1)] integerValue];
+            NSInteger day = [[date substringWithRange:NSMakeRange(8, 2)] integerValue];
+            NSInteger year = [[date substringToIndex:4] integerValue];
+         
+            NSDateComponents *comps = [[NSDateComponents alloc] init];
+            [comps setMonth:month];
+            [comps setDay:day];
+            [comps setYear:year];
+            
+            NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+            NSDate *compDate = [calendar dateFromComponents:comps];
+            
+            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+            dateFormatter.dateStyle = NSDateFormatterMediumStyle;
+            NSString *formattedDate = [dateFormatter stringFromDate:compDate];
+            
+            [dates addObject:formattedDate];
+            NSLog(@"Dates: %@", dates);
+            
         }
         
         dispatch_async(dispatch_get_main_queue(), ^{
-             self.episodeData.episodeTitles = titles;
-             [[self tableView] reloadData];
+            self.episodeData.episodeTitles = titles;
+            self.episodeData.episodeDescriptions = descriptions;
+            self.episodeData.episodeDates = dates;
+            [[self tableView] reloadData];
         });
         
     }];
     
-     NSLog(@"Episode Titles:%@", titles);
 }
 
 - (BOOL)prefersStatusBarHidden
@@ -117,9 +146,14 @@
 {
     RWHomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RWHomeTableViewCell"];
     cell.textView.editable = NO;
-    cell.episodeTitleLabel.text = [self.episodeData.episodeTitles objectAtIndex:[indexPath row]];
+    NSString *description = [self.episodeData.episodeDescriptions objectAtIndex:[indexPath row]];
+    cell.textView.text = description;
     
-     NSLog(@"Episode Titles:%@", self.episodeData.episodeTitles);
+    NSString *title = [self.episodeData.episodeTitles objectAtIndex:[indexPath row]];
+    NSString *number = [title substringWithRange:NSMakeRange(1, 4)];
+    cell.episodeTitleLabel.text = title;
+    cell.episodeCountLabel.text = number;
+    cell.dateLabel.text = [self.episodeData.episodeDates objectAtIndex:[indexPath row]];
     
     return cell;
 }

@@ -31,7 +31,7 @@
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Episode 33: Name goes here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENh-5e-BK1">
-                        <rect key="frame" x="8" y="32" width="161" height="14.5"/>
+                        <rect key="frame" x="8" y="33" width="161" height="15"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="300" id="dzT-1p-kDf"/>
                         </constraints>
@@ -45,13 +45,13 @@
                         </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fal-KK-KSZ">
-                        <rect key="frame" x="20" y="102" width="30.5" height="14.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <rect key="frame" x="19" y="101" width="42" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 21, 2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ge5-eA-IjT">
-                        <rect key="frame" x="486" y="180" width="76" height="14.5"/>
+                        <rect key="frame" x="486" y="180" width="76" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -68,7 +68,7 @@
                     <constraint firstItem="ge5-eA-IjT" firstAttribute="leading" secondItem="ENh-5e-BK1" secondAttribute="trailing" constant="287" id="ULC-IU-Vdl"/>
                     <constraint firstItem="ge5-eA-IjT" firstAttribute="top" secondItem="wNj-QR-QDy" secondAttribute="bottom" constant="20" id="YRN-wu-ig1"/>
                     <constraint firstAttribute="centerY" secondItem="wNj-QR-QDy" secondAttribute="centerY" id="dGy-t2-gwA"/>
-                    <constraint firstItem="Fal-KK-KSZ" firstAttribute="leading" secondItem="bSb-7I-aA7" secondAttribute="leadingMargin" constant="12" id="fqH-56-SQP"/>
+                    <constraint firstItem="Fal-KK-KSZ" firstAttribute="leading" secondItem="bSb-7I-aA7" secondAttribute="leadingMargin" constant="11" id="fqH-56-SQP"/>
                     <constraint firstItem="wNj-QR-QDy" firstAttribute="top" secondItem="ge5-eA-IjT" secondAttribute="bottom" constant="13" id="fy8-13-PmN"/>
                     <constraint firstAttribute="bottomMargin" secondItem="QQd-lY-fAw" secondAttribute="bottom" constant="15" id="hny-0j-6Hc"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ge5-eA-IjT" secondAttribute="trailing" id="inD-ro-nrU"/>
@@ -91,6 +91,7 @@
             </tableViewCellContentView>
             <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
             <connections>
+                <outlet property="dateLabel" destination="ge5-eA-IjT" id="x9B-OW-8Et"/>
                 <outlet property="episodeCountLabel" destination="Fal-KK-KSZ" id="kRj-3i-Dgh"/>
                 <outlet property="episodeTitleLabel" destination="ENh-5e-BK1" id="ff7-px-QUe"/>
                 <outlet property="textView" destination="wNj-QR-QDy" id="rd6-ek-rkL"/>

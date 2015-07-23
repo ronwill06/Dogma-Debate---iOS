@@ -19,17 +19,7 @@
 - (void)drawRect:(CGRect)rect
 {
 
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    [[UIColor blackColor] setStroke];
-    
-    CGContextSetLineWidth(context, 2);
-    CGContextBeginPath(context);
-    CGContextMoveToPoint(context, 0, 0.5);
-    CGContextAddLineToPoint(context, CGRectGetMaxX(rect), 0.5);
-    
-    CGContextStrokePath(context);
-    
+        
 }
 
 

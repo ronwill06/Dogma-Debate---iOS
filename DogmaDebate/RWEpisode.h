@@ -12,6 +12,9 @@
 @property (nonatomic, strong) NSArray *episodes;
 
 @property (nonatomic, strong) NSMutableArray *episodeTitles;
+@property (nonatomic, strong) NSMutableArray *episodeDescriptions;
+@property (nonatomic, strong) NSMutableArray *episodeDates;
+@property (nonatomic, strong) NSDate *episodeDate;
 @property (nonatomic, strong) NSURL *imageURL;
 
 - (instancetype)init;
