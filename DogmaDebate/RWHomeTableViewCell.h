@@ -11,5 +11,6 @@
 @interface RWHomeTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *episodeCountLabel;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UILabel *episodeTitleLabel;
 
 @end

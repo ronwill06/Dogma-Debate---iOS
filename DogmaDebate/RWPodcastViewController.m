@@ -10,8 +10,6 @@
 #import "RWPodcastViewController.h"
 #import "RWEpisode.h"
 
-NSString * const RWStreamURL = @"https://api.spreaker.com/user/2500042/episodes";
-
 @interface RWPodcastViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *epsisodeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *episodeDateLabel;

@@ -10,4 +10,15 @@
 
 @implementation RWEpisode
 
+- (instancetype)init
+{
+    self = [super init];
+    
+    if (self) {
+        self.episodeTitles = [[NSMutableArray alloc] init];
+    }
+    
+    return self;
+}
+
 @end

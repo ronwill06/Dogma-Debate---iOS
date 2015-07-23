@@ -11,8 +11,9 @@
 @interface RWEpisode : NSObject
 @property (nonatomic, strong) NSArray *episodes;
 
-@property (nonatomic, strong) NSString *episodeTitle;
+@property (nonatomic, strong) NSMutableArray *episodeTitles;
 @property (nonatomic, strong) NSURL *imageURL;
 
+- (instancetype)init;
 
 @end

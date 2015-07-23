@@ -26,11 +26,10 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @property (strong, nonatomic) RWCollectionViewController *collectionVC;
-@property (strong, nonatomic) RWEpisode *episode;
+@property (strong, nonatomic) NSDictionary *episodes;
+@property (strong, nonatomic) RWEpisode *episodeData;
 
 @end
-
-NSString * const RWStreamURL = @"https://api.spreaker.com/user/2500042/episodes";
 
 @implementation RWHomeViewController
 
@@ -40,7 +39,8 @@ NSString * const RWStreamURL = @"https://api.spreaker.com/user/2500042/episodes"
     
     if (self) {
         self.title = @"Home";
-         self.episode = [[RWEpisode alloc] init];
+        self.episodes = [[NSDictionary alloc] init];
+        self.episodeData = [[RWEpisode alloc] init];
     }
     
     return self;
@@ -70,15 +70,37 @@ NSString * const RWStreamURL = @"https://api.spreaker.com/user/2500042/episodes"
     
     [[[self navigationController] navigationBar] setHidden:YES];
 
+    [self loadData];
     
 }
 
-- (void)loadEpisodeInfo
+- (void)loadData
 {
-    [[RWStore store] fetchEpisodesWithURL:RWStreamURL completion:^(NSArray *episodes, NSError *error) {
-       
-        self.episode.episodes = episodes;
+    NSMutableArray *titles = [[NSMutableArray alloc] init];
+    [[RWStore store] fetchEpisodesWithURLWithCompletion:^(NSDictionary *episodes, NSError *error) {
+        self.episodes = episodes;
+        //NSLog(@"Episode Data:%@", self.episodes);
+        
+        NSDictionary  *responseData = [self.episodes objectForKey:@"response"];
+        NSDictionary  *pagerData =  [responseData objectForKey:@"pager"];
+        NSArray *pagerResults = [pagerData objectForKey:@"results"];
+        
+        for (int i=0; i < pagerResults.count; i++) {
+            NSDictionary *episodeInfo = [pagerResults objectAtIndex:i];
+            
+            NSString *title = [episodeInfo objectForKey:@"title"];
+            [titles addObject:title];
+            
+        }
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+             self.episodeData.episodeTitles = titles;
+             [[self tableView] reloadData];
+        });
+        
     }];
+    
+     NSLog(@"Episode Titles:%@", titles);
 }
 
 - (BOOL)prefersStatusBarHidden
@@ -88,13 +110,17 @@ NSString * const RWStreamURL = @"https://api.spreaker.com/user/2500042/episodes"
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return self.episodeData.episodeTitles.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     RWHomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RWHomeTableViewCell"];
     cell.textView.editable = NO;
+    cell.episodeTitleLabel.text = [self.episodeData.episodeTitles objectAtIndex:[indexPath row]];
+    
+     NSLog(@"Episode Titles:%@", self.episodeData.episodeTitles);
+    
     return cell;
 }
 

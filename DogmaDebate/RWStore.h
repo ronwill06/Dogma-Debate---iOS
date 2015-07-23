@@ -12,6 +12,6 @@
 
 + (RWStore *)store;
 - (void)fetchPosts;
-- (void)fetchEpisodesWithURL:(NSString *)streamURL completion:(void(^)(NSArray *episodes, NSError *error))block;
+- (void)fetchEpisodesWithURLWithCompletion:(void(^)(NSDictionary *episodes, NSError *error))block;
 
 @end
