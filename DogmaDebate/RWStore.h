@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreAudio/CoreAudioTypes.h>
 
 @interface RWStore : NSObject
 
 + (RWStore *)store;
 - (void)fetchPosts;
+- (void)fetchEpisodesWithURL:(NSString *)streamURL completion:(void(^)(NSArray *episodes, NSError *error))block;
 
 @end

@@ -7,28 +7,19 @@
 //
 
 #import <AVFoundation/AVFoundation.h>
-#import <AudioToolbox/AudioToolbox.h>
 #import "RWPodcastViewController.h"
+#import "RWEpisode.h"
 
-
-static const int kNumberBuffers = 3;
-
-struct AQPlayerState {
-    AudioStreamBasicDescription   mDataFormat;
-    AudioQueueRef                 mQueue;
-    AudioQueueBufferRef           mBuffers[kNumberBuffers];
-    AudioFileID                   mAudioFile;
-    UInt32                        bufferByteSize;
-    SInt64                        mCurrentPacket;
-    UInt32                        mNumPacketsToRead;
-    AudioStreamPacketDescription  *mPacketDescs;
-    bool                          mIsRunning;
-};
+NSString * const RWStreamURL = @"https://api.spreaker.com/user/2500042/episodes";
 
 @interface RWPodcastViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *epsisodeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *episodeDateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *extraInfoLabel;
+
+@property (strong, nonatomic) AVPlayer *player;
+
+@property (strong, nonatomic) RWEpisode *episode;
 
 @end
 
@@ -47,8 +38,29 @@ struct AQPlayerState {
 
 - (IBAction)playAudio:(id)sender {
     
-    //AVPlayer *player;
+    NSURL *streamURL = [NSURL URLWithString:@"https://api.spreaker.com/download/episode/6165097/185_is_hell_really_in_the_bible.mp3"];
+    self.player = [[AVPlayer alloc] initWithURL:streamURL];
     
+    [self.player addObserver:self forKeyPath:@"status" options:0 context:nil];
+    [self.player play];
+    
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if (object == self.player && [keyPath isEqualToString:@"status"]) {
+        if (self.player.status == AVPlayerStatusReadyToPlay) {
+            [self.player play];
+        }
+    }
+    
+    if (self.player.status == AVPlayerStatusFailed) {
+        NSLog(@"No audio");
+    }
+    
+    if (self.player.status == AVPlayerStatusUnknown) {
+        NSLog(@"Status unknown");
+    }
 }
 
 - (IBAction)rewindAudio:(id)sender {

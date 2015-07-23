@@ -10,6 +10,7 @@
 #import "RWHomeTableViewCell.h"
 #import "RWCollectionViewController.h"
 #import "RWPodcastViewController.h"
+#import "RWEpisode.h"
 #import "RWStore.h"
 
 @protocol RWHomeViewControllerDelegate <NSObject>
@@ -24,9 +25,12 @@
 @property (strong, nonatomic) IBOutlet UIView *headerView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
-@property (strong, nonatomic)RWCollectionViewController *collectionVC;
+@property (strong, nonatomic) RWCollectionViewController *collectionVC;
+@property (strong, nonatomic) RWEpisode *episode;
 
 @end
+
+NSString * const RWStreamURL = @"https://api.spreaker.com/user/2500042/episodes";
 
 @implementation RWHomeViewController
 
@@ -36,6 +40,7 @@
     
     if (self) {
         self.title = @"Home";
+         self.episode = [[RWEpisode alloc] init];
     }
     
     return self;
@@ -45,8 +50,6 @@
     [super viewDidLoad];
     
     [[self tableView] setTableHeaderView:self.headerView];
-    
-    [[RWStore store] fetchPosts];
     
     self.tabBarController.tabBar.translucent = NO;
     self.tabBarController.tabBar.barStyle = UIBarStyleBlack;
@@ -68,6 +71,14 @@
     [[[self navigationController] navigationBar] setHidden:YES];
 
     
+}
+
+- (void)loadEpisodeInfo
+{
+    [[RWStore store] fetchEpisodesWithURL:RWStreamURL completion:^(NSArray *episodes, NSError *error) {
+       
+        self.episode.episodes = episodes;
+    }];
 }
 
 - (BOOL)prefersStatusBarHidden

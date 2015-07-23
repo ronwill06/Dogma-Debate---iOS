@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -97,11 +97,13 @@
                                 <constraint firstItem="HI9-Oi-j2g" firstAttribute="leading" secondItem="w9l-za-kai" secondAttribute="leading" constant="30" id="cnO-zD-S7l"/>
                                 <constraint firstAttribute="centerX" secondItem="zwj-Oi-hzz" secondAttribute="centerX" id="e7V-vg-G5k"/>
                                 <constraint firstItem="P3L-GY-yPS" firstAttribute="height" secondItem="zwj-Oi-hzz" secondAttribute="height" id="kQD-Rb-HCC"/>
+                                <constraint firstAttribute="height" constant="70" id="nXp-HB-Tjh"/>
                                 <constraint firstItem="HI9-Oi-j2g" firstAttribute="width" secondItem="zwj-Oi-hzz" secondAttribute="width" id="tDc-AN-FSa"/>
                                 <constraint firstAttribute="centerY" secondItem="P3L-GY-yPS" secondAttribute="centerY" id="xt6-ds-AdO"/>
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
+                                    <exclude reference="3HC-Cx-4GC"/>
                                     <exclude reference="VkJ-EB-WbM"/>
                                     <exclude reference="Ycf-MI-t7l"/>
                                 </mask>
@@ -169,12 +171,15 @@
                         <constraint firstItem="1dU-oZ-BP5" firstAttribute="top" secondItem="w9l-za-kai" secondAttribute="bottom" id="BtZ-6r-mZA"/>
                         <constraint firstItem="1dU-oZ-BP5" firstAttribute="leading" secondItem="t6h-qG-NT3" secondAttribute="leading" id="E0O-fD-4Jy"/>
                         <constraint firstAttribute="centerX" secondItem="w9l-za-kai" secondAttribute="centerX" id="Em2-QC-VdO"/>
+                        <constraint firstItem="w9l-za-kai" firstAttribute="top" secondItem="t6h-qG-NT3" secondAttribute="top" id="Sif-QP-av8"/>
                         <constraint firstItem="w9l-za-kai" firstAttribute="top" secondItem="t6h-qG-NT3" secondAttribute="top" id="j93-yd-h39"/>
                         <constraint firstAttribute="trailing" secondItem="w9l-za-kai" secondAttribute="trailing" id="msS-KG-ATL"/>
                         <constraint firstAttribute="centerY" secondItem="w9l-za-kai" secondAttribute="centerY" id="yUr-zp-dA6"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
+                            <exclude reference="Em2-QC-VdO"/>
+                            <exclude reference="j93-yd-h39"/>
                             <exclude reference="yUr-zp-dA6"/>
                         </mask>
                     </variation>
@@ -194,9 +199,11 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="t6h-qG-NT3" secondAttribute="trailing" id="Dgy-8K-PYY"/>
+                <constraint firstAttribute="trailing" secondItem="0l7-v5-T3a" secondAttribute="trailing" constant="35" id="GJ0-Em-U1F"/>
                 <constraint firstItem="t6h-qG-NT3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="300" id="GxV-xF-eEs"/>
                 <constraint firstItem="t6h-qG-NT3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MAw-Rn-3Md"/>
                 <constraint firstAttribute="centerX" secondItem="0l7-v5-T3a" secondAttribute="centerX" id="Qpm-OV-ZoM"/>
+                <constraint firstItem="0l7-v5-T3a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="c63-Bo-vRn"/>
                 <constraint firstAttribute="trailing" secondItem="AzZ-Bj-rJ6" secondAttribute="trailing" id="c6o-k9-IlU"/>
                 <constraint firstItem="t6h-qG-NT3" firstAttribute="top" secondItem="0l7-v5-T3a" secondAttribute="bottom" constant="8" id="kXn-XI-fXU"/>
                 <constraint firstItem="AzZ-Bj-rJ6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m3b-3F-GCK"/>
@@ -204,6 +211,11 @@
                 <constraint firstItem="t6h-qG-NT3" firstAttribute="top" secondItem="AzZ-Bj-rJ6" secondAttribute="bottom" id="xdu-WD-xlS"/>
                 <constraint firstItem="AzZ-Bj-rJ6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yEY-Wl-J2z"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Qpm-OV-ZoM"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="436" y="174"/>
         </view>
     </objects>

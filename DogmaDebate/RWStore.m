@@ -8,6 +8,8 @@
 
 #import "RWStore.h"
 
+NSString * const RWStreamURL = @"https://api.spreaker.com/user/2500042/episodes";
+
 @interface RWStore ()
 
 @property (strong, nonatomic)NSURLSession *session;
@@ -48,7 +50,7 @@
 - (void)fetchPosts
 {
     
-    NSString *spreakerString = @"rtmp://194.116.72.19:80/spreaker-stream-shoutcast";
+    NSString *spreakerString = @"https://api.spreaker.com/user/2500042/episodes";
     
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithURL:[NSURL URLWithString:spreakerString]
@@ -64,5 +66,29 @@
 
 
 }
+
+- (void)fetchEpisodesWithURL:(NSString *)streamURL completion:(void(^)(NSArray *episodes, NSError *error))block
+{
+    
+    [[self.session dataTaskWithURL:[NSURL URLWithString:streamURL]
+                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                    
+                    NSArray *episodes = [NSJSONSerialization JSONObjectWithData:data
+                                                                     options:0
+                                                                       error:nil];
+                    
+                    if (block) {
+                        block(episodes, nil);
+                    } else {
+                        block(nil, error);
+                    }
+                    
+                    NSLog(@"Shows:%@", episodes);
+                    
+                }] resume];
+    
+}
+
+
 
 @end

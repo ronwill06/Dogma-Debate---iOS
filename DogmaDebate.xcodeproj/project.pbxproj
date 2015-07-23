@@ -97,7 +97,6 @@
 		1F5D5CE21B4769F30074FBC8 /* RWFAQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CDF1B4769F30074FBC8 /* RWFAQViewController.xib */; };
 		1F5D5CE31B4769F30074FBC8 /* RWFAQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CDF1B4769F30074FBC8 /* RWFAQViewController.xib */; };
 		1F5D5CF41B4B7A3F0074FBC8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5D5CE41B4B71280074FBC8 /* AudioToolbox.framework */; };
-		1F5D5CF51B4B7A460074FBC8 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5D5CEA1B4B71470074FBC8 /* CoreAudioKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,7 +199,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F5D5CF51B4B7A460074FBC8 /* CoreAudioKit.framework in Frameworks */,
 				1F5D5CF41B4B7A3F0074FBC8 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

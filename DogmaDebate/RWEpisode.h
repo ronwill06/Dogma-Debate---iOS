@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface RWEpisode : NSObject
-@property (nonatomic, strong)NSMutableArray *episodes;
+@property (nonatomic, strong) NSArray *episodes;
+
+@property (nonatomic, strong) NSString *episodeTitle;
+@property (nonatomic, strong) NSURL *imageURL;
+
 
 @end
