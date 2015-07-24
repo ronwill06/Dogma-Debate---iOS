@@ -17,11 +17,21 @@
 
 @property (strong, nonatomic) AVPlayer *player;
 
-@property (strong, nonatomic) RWEpisode *episode;
-
 @end
 
 @implementation RWPodcastViewController
+
+- (instancetype)init
+{
+    self = [super init];
+    
+    if (self) {
+         self.episode = [[RWEpisode alloc] init];
+        
+    }
+    
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,12 +41,19 @@
     self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+}
+
 - (IBAction)fastForwardAudio:(id)sender {
 }
 
 - (IBAction)playAudio:(id)sender {
     
-    NSURL *streamURL = [NSURL URLWithString:@"https://api.spreaker.com/download/episode/6165097/185_is_hell_really_in_the_bible.mp3"];
+    NSURL *streamURL = [NSURL URLWithString:self.episode.audioURL];
     self.player = [[AVPlayer alloc] initWithURL:streamURL];
     
     [self.player addObserver:self forKeyPath:@"status" options:0 context:nil];

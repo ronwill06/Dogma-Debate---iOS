@@ -79,6 +79,7 @@
     NSMutableArray *titles = [[NSMutableArray alloc] init];
     NSMutableArray *descriptions = [[NSMutableArray alloc] init];
     NSMutableArray *dates = [[NSMutableArray alloc] init];
+    NSMutableArray *streams = [[NSMutableArray alloc] init];
     [[RWStore store] fetchEpisodesWithURLWithCompletion:^(NSDictionary *episodes, NSError *error) {
         self.episodes = episodes;
         NSLog(@"Episode Data:%@", self.episodes);
@@ -117,7 +118,12 @@
             NSString *formattedDate = [dateFormatter stringFromDate:compDate];
             
             [dates addObject:formattedDate];
-            NSLog(@"Dates: %@", dates);
+            
+            NSString *url = [episodeInfo objectForKey:@"download_url"];
+            [streams addObject:url];
+            
+            NSLog(@"Streams: %@", streams);
+            
             
         }
         
@@ -125,6 +131,7 @@
             self.episodeData.episodeTitles = titles;
             self.episodeData.episodeDescriptions = descriptions;
             self.episodeData.episodeDates = dates;
+            self.episodeData.episodeStreams = streams;
             [[self tableView] reloadData];
         });
         
@@ -166,6 +173,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     RWPodcastViewController *podCastVC = [[RWPodcastViewController alloc] init];
+    podCastVC.episode.audioURL = [self.episodeData audioUrlAtIndexPath:[indexPath row]];
     [[self navigationController] pushViewController:podCastVC animated:YES];
 }
 

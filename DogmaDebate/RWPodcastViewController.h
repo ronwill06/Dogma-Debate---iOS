@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RWEpisode.h"
 
 @interface RWPodcastViewController : UIViewController
+
+@property (nonatomic, strong)RWEpisode *episode;
 
 @end

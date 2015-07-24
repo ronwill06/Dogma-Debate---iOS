@@ -22,4 +22,11 @@
     return self;
 }
 
+-(NSString *)audioUrlAtIndexPath:(NSInteger )indexPath
+{
+    NSString *urlString = [self.episodeStreams objectAtIndex:indexPath];
+    
+    return urlString;
+}
+
 @end
