@@ -14,9 +14,12 @@
 @property (nonatomic, strong) NSMutableArray *episodeTitles;
 @property (nonatomic, strong) NSMutableArray *episodeDescriptions;
 @property (nonatomic, strong) NSMutableArray *episodeDates;
-@property (nonatomic, strong) NSDate *episodeDate;
 @property (nonatomic, strong) NSArray *episodeStreams;
 @property (nonatomic, strong) NSString *audioURL;
+@property (nonatomic, strong) NSString *episodeTitle;
+@property (nonatomic, strong) NSString *episodeDate;
+@property (nonatomic, strong) NSString *episodeDescription;
+
 
 - (instancetype)init;
 -(NSString *)audioUrlAtIndexPath:(NSInteger )indexPath;

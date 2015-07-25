@@ -7,7 +7,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RWPodcastViewController">
             <connections>
                 <outlet property="episodeDateLabel" destination="DQf-i1-Ymd" id="PZl-g1-tk5"/>
-                <outlet property="epsisodeLabel" destination="OeH-RA-6gn" id="7tg-HA-T0l"/>
+                <outlet property="episodeDescriptionView" destination="6aI-xG-r0W" id="krI-hA-lJc"/>
+                <outlet property="episodeLabel" destination="OeH-RA-6gn" id="yyu-iF-qgu"/>
                 <outlet property="extraInfoLabel" destination="5Zq-G8-SZs" id="grR-Yf-ede"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="w2n-mf-PJ8"/>
             </connections>

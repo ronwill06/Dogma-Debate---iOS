@@ -11,9 +11,6 @@
 #import "RWEpisode.h"
 
 @interface RWPodcastViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *epsisodeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *episodeDateLabel;
-@property (weak, nonatomic) IBOutlet UILabel *extraInfoLabel;
 
 @property (strong, nonatomic) AVPlayer *player;
 
@@ -46,6 +43,9 @@
 {
     [super viewWillAppear:animated];
     
+    self.episodeLabel.text = self.episode.episodeTitle;
+    self.episodeDateLabel.text = self.episode.episodeDate;
+    self.episodeDescriptionView.text = self.episode.episodeDescription;
 }
 
 - (IBAction)fastForwardAudio:(id)sender {

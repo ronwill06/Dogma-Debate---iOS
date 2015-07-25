@@ -10,6 +10,10 @@
 #import "RWEpisode.h"
 
 @interface RWPodcastViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *episodeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *episodeDateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *extraInfoLabel;
+@property (weak, nonatomic) IBOutlet UITextView *episodeDescriptionView;
 
 @property (nonatomic, strong)RWEpisode *episode;
 

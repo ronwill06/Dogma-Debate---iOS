@@ -174,6 +174,9 @@
 {
     RWPodcastViewController *podCastVC = [[RWPodcastViewController alloc] init];
     podCastVC.episode.audioURL = [self.episodeData audioUrlAtIndexPath:[indexPath row]];
+    podCastVC.episode.episodeTitle = [self.episodeData.episodeTitles objectAtIndex:[indexPath row]];
+    podCastVC.episode.episodeDate = [self.episodeData.episodeDates objectAtIndex:[indexPath row]];
+    podCastVC.episode.episodeDescription = [self.episodeData.episodeDescriptions objectAtIndex:[indexPath row]];
     [[self navigationController] pushViewController:podCastVC animated:YES];
 }
 
