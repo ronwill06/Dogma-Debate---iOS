@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RWBlogContent.h"
 
 @interface RWStore : NSObject
 
 + (RWStore *)store;
 - (void)fetchPosts;
-- (void)fetchEpisodesWithURLWithCompletion:(void(^)(NSDictionary *episodes, NSError *error))block;
+- (void)fetchEpisodesWithCompletion:(void(^)(NSDictionary *episodes, NSError *error))block;
+- (void)fetchBlogsWithCompletion:(void (^)(RWBlogContent *content, NSError *error))block;
 
 @end

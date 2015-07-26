@@ -97,6 +97,7 @@
 		1F5D5CE21B4769F30074FBC8 /* RWFAQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CDF1B4769F30074FBC8 /* RWFAQViewController.xib */; };
 		1F5D5CE31B4769F30074FBC8 /* RWFAQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CDF1B4769F30074FBC8 /* RWFAQViewController.xib */; };
 		1F5D5CF41B4B7A3F0074FBC8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5D5CE41B4B71280074FBC8 /* AudioToolbox.framework */; };
+		1FDB53821B656E0C00CE57A4 /* RWBlogContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDB53811B656E0C00CE57A4 /* RWBlogContent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +193,8 @@
 		1F5D5CE81B4B713F0074FBC8 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		1F5D5CEA1B4B71470074FBC8 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		1F5D5CED1B4B73BA0074FBC8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		1FDB53801B656E0C00CE57A4 /* RWBlogContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWBlogContent.h; sourceTree = "<group>"; };
+		1FDB53811B656E0C00CE57A4 /* RWBlogContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWBlogContent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +365,8 @@
 				1F5D5CCF1B472BE80074FBC8 /* RWStaffInfo.m */,
 				1F5D5CD91B473EA00074FBC8 /* RWPartner.h */,
 				1F5D5CDA1B473EA00074FBC8 /* RWPartner.m */,
+				1FDB53801B656E0C00CE57A4 /* RWBlogContent.h */,
+				1FDB53811B656E0C00CE57A4 /* RWBlogContent.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -510,6 +515,7 @@
 				1F45DE061B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */,
 				1F45DE2C1B3B546700086116 /* RWStyleControls.m in Sources */,
 				1F45DDB01B2E51FF00086116 /* AppDelegate.m in Sources */,
+				1FDB53821B656E0C00CE57A4 /* RWBlogContent.m in Sources */,
 				1F5D5CD01B472BE80074FBC8 /* RWStaffInfo.m in Sources */,
 				1F45DDE01B2E58B200086116 /* RWHomeTableViewCell.m in Sources */,
 				1F5D5CB51B46E79A0074FBC8 /* RWFourthListenerViewController.m in Sources */,

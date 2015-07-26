@@ -7,8 +7,10 @@
 //
 
 #import "RWStore.h"
+#import "RWBlogContent.h"
 
 NSString * const RWStreamURL = @"https://api.spreaker.com/show/261996/episodes";
+NSString * const RWBlogFeedURL = @"";
 
 @interface RWStore ()
 
@@ -67,24 +69,40 @@ NSString * const RWStreamURL = @"https://api.spreaker.com/show/261996/episodes";
 
 }
 
-- (void)fetchEpisodesWithURLWithCompletion:(void(^)(NSDictionary *episodes, NSError *error))block
+- (void)fetchEpisodesWithCompletion:(void(^)(NSDictionary *episodes, NSError *error))block
 {
     
     [[self.session dataTaskWithURL:[NSURL URLWithString:RWStreamURL]
+                 completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                     
+                     NSDictionary *episodes = [NSJSONSerialization JSONObjectWithData:data
+                                                                              options:0
+                                                                                error:nil];
+                     
+                     if (block) {
+                         block(episodes, nil);
+                     } else {
+                         block(nil, error);
+                     }
+                     
+                 }] resume];
+    
+}
+
+- (void)fetchBlogsWithCompletion:(void (^)(RWBlogContent *content, NSError *error))block
+{
+    [[self.session dataTaskWithURL:[NSURL URLWithString:RWBlogFeedURL]
                 completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                     
-                    NSDictionary *episodes = [NSJSONSerialization JSONObjectWithData:data
-                                                                     options:0
-                                                                       error:nil];
+                    RWBlogContent *blogContent = [[RWBlogContent alloc] initWithData:data];
                     
                     if (block) {
-                        block(episodes, nil);
+                        block(blogContent, nil);
                     } else {
                         block(nil, error);
                     }
                     
                 }] resume];
-    
 }
 
 

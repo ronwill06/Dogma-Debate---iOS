@@ -80,9 +80,8 @@
     NSMutableArray *descriptions = [[NSMutableArray alloc] init];
     NSMutableArray *dates = [[NSMutableArray alloc] init];
     NSMutableArray *streams = [[NSMutableArray alloc] init];
-    [[RWStore store] fetchEpisodesWithURLWithCompletion:^(NSDictionary *episodes, NSError *error) {
+    [[RWStore store] fetchEpisodesWithCompletion:^(NSDictionary *episodes, NSError *error) {
         self.episodes = episodes;
-        NSLog(@"Episode Data:%@", self.episodes);
         
         NSDictionary  *responseData = [self.episodes objectForKey:@"response"];
         NSDictionary  *pagerData =  [responseData objectForKey:@"pager"];

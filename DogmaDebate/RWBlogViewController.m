@@ -8,12 +8,15 @@
 
 #import "RWBlogViewController.h"
 #import "RWHomeTableViewCell.h"
+#import "RWStore.h"
 #import "RWStyleControls.h"
 
 @interface RWBlogViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UIView *headerView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong, nonatomic) NSArray *blogs;
 
 @end
 
@@ -39,6 +42,17 @@
     
     [[self tableView] registerNib:[UINib nibWithNibName:@"RWHomeTableViewCell" bundle:nil]
            forCellReuseIdentifier:@"RWHomeTableViewCell"];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    __weak RWBlogViewController *weakSelf = self;
+   [[RWStore store] fetchBlogsWithCompletion:^(RWBlogContent *content, NSError *error) {
+       
+    }];
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
