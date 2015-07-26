@@ -46,6 +46,7 @@
     self.episodeLabel.text = self.episode.episodeTitle;
     self.episodeDateLabel.text = self.episode.episodeDate;
     self.episodeDescriptionView.text = self.episode.episodeDescription;
+    self.episodeImage.image = self.episode.episodeImage;
 }
 
 - (IBAction)fastForwardAudio:(id)sender {

@@ -87,7 +87,8 @@
         NSDictionary  *responseData = [self.episodes objectForKey:@"response"];
         NSDictionary  *pagerData =  [responseData objectForKey:@"pager"];
         NSArray *pagerResults = [pagerData objectForKey:@"results"];
-        
+        UIImage *image = nil;
+        //This all needs to be moved over to data model
         for (int i=0; i < pagerResults.count; i++) {
             NSDictionary *episodeInfo = [pagerResults objectAtIndex:i];
             
@@ -116,14 +117,16 @@
             NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
             dateFormatter.dateStyle = NSDateFormatterMediumStyle;
             NSString *formattedDate = [dateFormatter stringFromDate:compDate];
-            
             [dates addObject:formattedDate];
             
             NSString *url = [episodeInfo objectForKey:@"download_url"];
             [streams addObject:url];
             
-            NSLog(@"Streams: %@", streams);
-            
+            NSDictionary *imageURLs = [episodeInfo objectForKey:@"image"];
+            NSString *imageURLString = [imageURLs objectForKey:@"large_url"];
+            NSURL *imageURL = [NSURL URLWithString:imageURLString];
+            NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+            image = [UIImage imageWithData:imageData];
             
         }
         
@@ -132,6 +135,7 @@
             self.episodeData.episodeDescriptions = descriptions;
             self.episodeData.episodeDates = dates;
             self.episodeData.episodeStreams = streams;
+            self.episodeData.episodeImage = image;
             [[self tableView] reloadData];
         });
         
@@ -177,6 +181,7 @@
     podCastVC.episode.episodeTitle = [self.episodeData.episodeTitles objectAtIndex:[indexPath row]];
     podCastVC.episode.episodeDate = [self.episodeData.episodeDates objectAtIndex:[indexPath row]];
     podCastVC.episode.episodeDescription = [self.episodeData.episodeDescriptions objectAtIndex:[indexPath row]];
+    podCastVC.episode.episodeImage = self.episodeData.episodeImage;
     [[self navigationController] pushViewController:podCastVC animated:YES];
 }
 
