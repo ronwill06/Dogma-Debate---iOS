@@ -10,7 +10,6 @@
 #import "RWHomeTableViewCell.h"
 #import "RWCollectionViewController.h"
 #import "RWPodcastViewController.h"
-#import "RWEpisode.h"
 #import "RWStore.h"
 
 @protocol RWHomeViewControllerDelegate <NSObject>
@@ -27,7 +26,7 @@
 
 @property (strong, nonatomic) RWCollectionViewController *collectionVC;
 @property (strong, nonatomic) NSDictionary *episodes;
-@property (strong, nonatomic) RWEpisode *episodeData;
+
 
 @end
 
@@ -39,8 +38,7 @@
     
     if (self) {
         self.title = @"Home";
-        self.episodes = [[NSDictionary alloc] init];
-        self.episodeData = [[RWEpisode alloc] init];
+       
     }
     
     return self;
@@ -55,6 +53,7 @@
     self.tabBarController.tabBar.barStyle = UIBarStyleBlack;
     self.tabBarController.tabBar.backgroundColor = [UIColor blackColor];
     self.tabBarController.tabBar.tintColor = [UIColor whiteColor];
+    [[self.tabBarController.tabBar.items objectAtIndex:0] setImage:[UIImage imageNamed:@"PodcastImage"]];
     
     self.labelView.layer.borderWidth = 2.0;
     self.labelView.layer.borderColor = [UIColor blackColor].CGColor;
@@ -129,15 +128,6 @@
             
         }
         
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.episodeData.episodeTitles = titles;
-            self.episodeData.episodeDescriptions = descriptions;
-            self.episodeData.episodeDates = dates;
-            self.episodeData.episodeStreams = streams;
-            self.episodeData.episodeImage = image;
-            [[self tableView] reloadData];
-        });
-        
     }];
     
 }
@@ -149,22 +139,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.episodeData.episodeTitles.count;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     RWHomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RWHomeTableViewCell"];
     cell.textView.editable = NO;
-    NSString *description = [self.episodeData.episodeDescriptions objectAtIndex:[indexPath row]];
-    cell.textView.text = description;
-    
-    NSString *title = [self.episodeData.episodeTitles objectAtIndex:[indexPath row]];
-    NSString *number = [title substringWithRange:NSMakeRange(1, 4)];
-    cell.episodeTitleLabel.text = title;
-    cell.episodeCountLabel.text = number;
-    cell.dateLabel.text = [self.episodeData.episodeDates objectAtIndex:[indexPath row]];
-    
+
     return cell;
 }
 
@@ -176,11 +158,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     RWPodcastViewController *podCastVC = [[RWPodcastViewController alloc] init];
-    podCastVC.episode.audioURL = [self.episodeData audioUrlAtIndexPath:[indexPath row]];
-    podCastVC.episode.episodeTitle = [self.episodeData.episodeTitles objectAtIndex:[indexPath row]];
-    podCastVC.episode.episodeDate = [self.episodeData.episodeDates objectAtIndex:[indexPath row]];
-    podCastVC.episode.episodeDescription = [self.episodeData.episodeDescriptions objectAtIndex:[indexPath row]];
-    podCastVC.episode.episodeImage = self.episodeData.episodeImage;
     [[self navigationController] pushViewController:podCastVC animated:YES];
 }
 

@@ -28,6 +28,7 @@
     
     if (self) {
         self.title = @"Blog";
+         [[self.tabBarController.tabBar.items objectAtIndex:2] setImage:[UIImage imageNamed:@"News"]];
     }
     
     return self;

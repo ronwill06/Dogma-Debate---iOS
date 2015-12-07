@@ -16,8 +16,6 @@
 		1F45DDDD1B2E588F00086116 /* RWHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DDDB1B2E588F00086116 /* RWHomeTableViewCell.xib */; };
 		1F45DDE01B2E58B200086116 /* RWHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDDF1B2E58B200086116 /* RWHomeTableViewCell.m */; };
 		1F45DDE11B2E58B200086116 /* RWHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDDF1B2E58B200086116 /* RWHomeTableViewCell.m */; };
-		1F45DDE41B2F150100086116 /* RWEpisode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDE31B2F150100086116 /* RWEpisode.m */; };
-		1F45DDE51B2F150100086116 /* RWEpisode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDE31B2F150100086116 /* RWEpisode.m */; };
 		1F45DDF11B2F4EBC00086116 /* RWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDEF1B2F4EBC00086116 /* RWHomeViewController.m */; };
 		1F45DDF21B2F4EBC00086116 /* RWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DDEF1B2F4EBC00086116 /* RWHomeViewController.m */; };
 		1F45DDF31B2F4EBC00086116 /* RWHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DDF01B2F4EBC00086116 /* RWHomeViewController.xib */; };
@@ -62,6 +60,10 @@
 		1F45DE521B3C8B6F00086116 /* RWCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE4E1B3C8B6F00086116 /* RWCollectionViewCell.xib */; };
 		1F45DE5C1B40743100086116 /* RWCollectionViewTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE5B1B40743100086116 /* RWCollectionViewTransitionAnimator.m */; };
 		1F45DE5D1B40743100086116 /* RWCollectionViewTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE5B1B40743100086116 /* RWCollectionViewTransitionAnimator.m */; };
+		1F528DA41BFAC96D00FDAD50 /* DDPodcastOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F528DA31BFAC96D00FDAD50 /* DDPodcastOperation.swift */; };
+		1F528DA71BFE8FF100FDAD50 /* RWPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F528DA61BFE8FF100FDAD50 /* RWPodcast.swift */; };
+		1F528DA91C14F8F300FDAD50 /* RWPodcastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F528DA81C14F8F300FDAD50 /* RWPodcastManager.swift */; };
+		1F528DAC1C14FBA800FDAD50 /* RWPodcastsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F528DAB1C14FBA800FDAD50 /* RWPodcastsViewModel.swift */; };
 		1F5D5CA71B4635210074FBC8 /* RWPodcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */; };
 		1F5D5CA81B4635210074FBC8 /* RWPodcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */; };
 		1F5D5CA91B4635210074FBC8 /* RWPodcastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CA61B4635210074FBC8 /* RWPodcastViewController.xib */; };
@@ -97,6 +99,7 @@
 		1F5D5CE21B4769F30074FBC8 /* RWFAQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CDF1B4769F30074FBC8 /* RWFAQViewController.xib */; };
 		1F5D5CE31B4769F30074FBC8 /* RWFAQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CDF1B4769F30074FBC8 /* RWFAQViewController.xib */; };
 		1F5D5CF41B4B7A3F0074FBC8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5D5CE41B4B71280074FBC8 /* AudioToolbox.framework */; };
+		1F73FC411C15044B0050FB28 /* RWPodcastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73FC401C15044B0050FB28 /* RWPodcastsViewController.swift */; };
 		1FDB53821B656E0C00CE57A4 /* RWBlogContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDB53811B656E0C00CE57A4 /* RWBlogContent.m */; };
 /* End PBXBuildFile section */
 
@@ -124,8 +127,6 @@
 		1F45DDDB1B2E588F00086116 /* RWHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWHomeTableViewCell.xib; sourceTree = "<group>"; };
 		1F45DDDE1B2E58B200086116 /* RWHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWHomeTableViewCell.h; sourceTree = "<group>"; };
 		1F45DDDF1B2E58B200086116 /* RWHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWHomeTableViewCell.m; sourceTree = "<group>"; };
-		1F45DDE21B2F150100086116 /* RWEpisode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWEpisode.h; sourceTree = "<group>"; };
-		1F45DDE31B2F150100086116 /* RWEpisode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWEpisode.m; sourceTree = "<group>"; };
 		1F45DDEE1B2F4EBC00086116 /* RWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWHomeViewController.h; sourceTree = "<group>"; };
 		1F45DDEF1B2F4EBC00086116 /* RWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWHomeViewController.m; sourceTree = "<group>"; };
 		1F45DDF01B2F4EBC00086116 /* RWHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWHomeViewController.xib; sourceTree = "<group>"; };
@@ -161,6 +162,11 @@
 		1F45DE4E1B3C8B6F00086116 /* RWCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWCollectionViewCell.xib; sourceTree = "<group>"; };
 		1F45DE5A1B40743100086116 /* RWCollectionViewTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCollectionViewTransitionAnimator.h; sourceTree = "<group>"; };
 		1F45DE5B1B40743100086116 /* RWCollectionViewTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCollectionViewTransitionAnimator.m; sourceTree = "<group>"; };
+		1F528DA21BFAC96C00FDAD50 /* DogmaDebate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DogmaDebate-Bridging-Header.h"; sourceTree = "<group>"; };
+		1F528DA31BFAC96D00FDAD50 /* DDPodcastOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDPodcastOperation.swift; sourceTree = "<group>"; };
+		1F528DA61BFE8FF100FDAD50 /* RWPodcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcast.swift; sourceTree = "<group>"; };
+		1F528DA81C14F8F300FDAD50 /* RWPodcastManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastManager.swift; sourceTree = "<group>"; };
+		1F528DAB1C14FBA800FDAD50 /* RWPodcastsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastsViewModel.swift; sourceTree = "<group>"; };
 		1F5D5CA41B4635210074FBC8 /* RWPodcastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWPodcastViewController.h; sourceTree = "<group>"; };
 		1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWPodcastViewController.m; sourceTree = "<group>"; };
 		1F5D5CA61B4635210074FBC8 /* RWPodcastViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWPodcastViewController.xib; sourceTree = "<group>"; };
@@ -193,6 +199,7 @@
 		1F5D5CE81B4B713F0074FBC8 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		1F5D5CEA1B4B71470074FBC8 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		1F5D5CED1B4B73BA0074FBC8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		1F73FC401C15044B0050FB28 /* RWPodcastsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastsViewController.swift; sourceTree = "<group>"; };
 		1FDB53801B656E0C00CE57A4 /* RWBlogContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWBlogContent.h; sourceTree = "<group>"; };
 		1FDB53811B656E0C00CE57A4 /* RWBlogContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWBlogContent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -248,10 +255,13 @@
 				1F45DE2F1B3B6C1600086116 /* RWStore.m */,
 				1F45DDBA1B2E51FF00086116 /* Images.xcassets */,
 				1F45DDBC1B2E51FF00086116 /* LaunchScreen.xib */,
+				1F528DAA1C14FB8000FDAD50 /* View Models */,
 				1F45DDE61B2F151000086116 /* Model */,
 				1F45DDD81B2E580E00086116 /* Views */,
 				1F45DDD31B2E534900086116 /* Controllers */,
 				1F45DDAA1B2E51FF00086116 /* Supporting Files */,
+				1F528DA31BFAC96D00FDAD50 /* DDPodcastOperation.swift */,
+				1F528DA21BFAC96C00FDAD50 /* DogmaDebate-Bridging-Header.h */,
 			);
 			name = "Dogma Debate";
 			path = DogmaDebate;
@@ -319,6 +329,7 @@
 				1F5D5CDD1B4769F30074FBC8 /* RWFAQViewController.h */,
 				1F5D5CDE1B4769F30074FBC8 /* RWFAQViewController.m */,
 				1F5D5CDF1B4769F30074FBC8 /* RWFAQViewController.xib */,
+				1F73FC401C15044B0050FB28 /* RWPodcastsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -357,8 +368,6 @@
 		1F45DDE61B2F151000086116 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1F45DDE21B2F150100086116 /* RWEpisode.h */,
-				1F45DDE31B2F150100086116 /* RWEpisode.m */,
 				1F45DE111B3AFF2B00086116 /* RWEvent.h */,
 				1F45DE121B3AFF2B00086116 /* RWEvent.m */,
 				1F5D5CCE1B472BE80074FBC8 /* RWStaffInfo.h */,
@@ -367,8 +376,18 @@
 				1F5D5CDA1B473EA00074FBC8 /* RWPartner.m */,
 				1FDB53801B656E0C00CE57A4 /* RWBlogContent.h */,
 				1FDB53811B656E0C00CE57A4 /* RWBlogContent.m */,
+				1F528DA61BFE8FF100FDAD50 /* RWPodcast.swift */,
+				1F528DA81C14F8F300FDAD50 /* RWPodcastManager.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		1F528DAA1C14FB8000FDAD50 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F528DAB1C14FBA800FDAD50 /* RWPodcastsViewModel.swift */,
+			);
+			name = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,7 +434,8 @@
 		1F45DD9F1B2E51FF00086116 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = RondaleWilliams;
 				TargetAttributes = {
 					1F45DDA61B2E51FF00086116 = {
@@ -507,16 +527,18 @@
 			files = (
 				1F45DE211B3B488C00086116 /* RWEventHeaderView.m in Sources */,
 				1F5D5CDB1B473EA00074FBC8 /* RWPartner.m in Sources */,
+				1F73FC411C15044B0050FB28 /* RWPodcastsViewController.swift in Sources */,
 				1F45DE4F1B3C8B6F00086116 /* RWCollectionViewCell.m in Sources */,
 				1F45DE261B3B4FA600086116 /* RWBlogViewController.m in Sources */,
 				1F45DE0D1B3AF96400086116 /* RWEventsViewController.m in Sources */,
 				1F5D5CA71B4635210074FBC8 /* RWPodcastViewController.m in Sources */,
-				1F45DDE41B2F150100086116 /* RWEpisode.m in Sources */,
 				1F45DE061B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */,
 				1F45DE2C1B3B546700086116 /* RWStyleControls.m in Sources */,
+				1F528DA71BFE8FF100FDAD50 /* RWPodcast.swift in Sources */,
 				1F45DDB01B2E51FF00086116 /* AppDelegate.m in Sources */,
 				1FDB53821B656E0C00CE57A4 /* RWBlogContent.m in Sources */,
 				1F5D5CD01B472BE80074FBC8 /* RWStaffInfo.m in Sources */,
+				1F528DAC1C14FBA800FDAD50 /* RWPodcastsViewModel.swift in Sources */,
 				1F45DDE01B2E58B200086116 /* RWHomeTableViewCell.m in Sources */,
 				1F5D5CB51B46E79A0074FBC8 /* RWFourthListenerViewController.m in Sources */,
 				1F5D5CD51B473E0B0074FBC8 /* RWPartnerViewController.m in Sources */,
@@ -524,6 +546,7 @@
 				1F5D5CCA1B4727140074FBC8 /* RWAboutUsTableViewCell.m in Sources */,
 				1F5D5CE01B4769F30074FBC8 /* RWFAQViewController.m in Sources */,
 				1F5D5CBC1B46F4CA0074FBC8 /* RWFourthLoginViewController.m in Sources */,
+				1F528DA91C14F8F300FDAD50 /* RWPodcastManager.swift in Sources */,
 				1F45DE481B3C5AFF00086116 /* RWCollectionViewController.m in Sources */,
 				1F5D5CAD1B4635F70074FBC8 /* RWRoundedButton.m in Sources */,
 				1F5D5CC31B47264C0074FBC8 /* RWAboutUsViewController.m in Sources */,
@@ -531,6 +554,7 @@
 				1F45DE181B3B37E800086116 /* RWEventTableViewCell.m in Sources */,
 				1F45DDAD1B2E51FF00086116 /* main.m in Sources */,
 				1F45DDFF1B3A04DA00086116 /* RWMoreViewController.m in Sources */,
+				1F528DA41BFAC96D00FDAD50 /* DDPodcastOperation.swift in Sources */,
 				1F45DDF11B2F4EBC00086116 /* RWHomeViewController.m in Sources */,
 				1F45DE131B3AFF2B00086116 /* RWEvent.m in Sources */,
 			);
@@ -540,7 +564,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F45DDE51B2F150100086116 /* RWEpisode.m in Sources */,
 				1F5D5CAE1B4635F70074FBC8 /* RWRoundedButton.m in Sources */,
 				1F5D5CA81B4635210074FBC8 /* RWPodcastViewController.m in Sources */,
 				1F45DE071B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */,
@@ -612,6 +635,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -675,10 +699,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DogmaDebate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rondalewilliams.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = DogmaDebate;
+				SWIFT_OBJC_BRIDGING_HEADER = "DogmaDebate/DogmaDebate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -686,10 +714,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DogmaDebate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rondalewilliams.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = DogmaDebate;
+				SWIFT_OBJC_BRIDGING_HEADER = "DogmaDebate/DogmaDebate-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -707,6 +738,7 @@
 				);
 				INFOPLIST_FILE = DogmaDebateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rondalewilliams.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = DogmaDebateTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogmaDebate.app/DogmaDebate";
 			};
@@ -722,6 +754,7 @@
 				);
 				INFOPLIST_FILE = DogmaDebateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rondalewilliams.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = DogmaDebateTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogmaDebate.app/DogmaDebate";
 			};

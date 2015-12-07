@@ -12,6 +12,7 @@
 #import "RWBlogViewController.h"
 #import "RWFourthLoginViewController.h"
 #import "RWMoreViewController.h"
+#import "DogmaDebate-Swift.h"
 
 @interface AppDelegate ()
 
@@ -24,6 +25,9 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    RWPodcastsViewController *podCastsVC =  [[RWPodcastsViewController alloc] init];
+    UINavigationController *podCastsNavVC = [[UINavigationController alloc] initWithRootViewController:podCastsVC];
     
     RWHomeViewController *homeVC = [[RWHomeViewController alloc] init];
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:homeVC];
@@ -40,6 +44,8 @@
 
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     [tabBarController setViewControllers:@[navVC, eventsVC, blogVC, fourthNav, moreNav] animated:YES];
+    [[tabBarController.tabBar.items objectAtIndex:2] setImage:[UIImage imageNamed:@"News"]];
+    [[tabBarController.tabBar.items objectAtIndex:3] setImage:[UIImage imageNamed:@"Login"]];
     
     [[self window] setRootViewController:tabBarController];
     

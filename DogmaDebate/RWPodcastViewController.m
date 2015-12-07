@@ -8,7 +8,6 @@
 
 #import <AVFoundation/AVFoundation.h>
 #import "RWPodcastViewController.h"
-#import "RWEpisode.h"
 
 @interface RWPodcastViewController ()
 
@@ -23,7 +22,6 @@
     self = [super init];
     
     if (self) {
-         self.episode = [[RWEpisode alloc] init];
         
     }
     
@@ -43,10 +41,6 @@
 {
     [super viewWillAppear:animated];
     
-    self.episodeLabel.text = self.episode.episodeTitle;
-    self.episodeDateLabel.text = self.episode.episodeDate;
-    self.episodeDescriptionView.text = self.episode.episodeDescription;
-    self.episodeImage.image = self.episode.episodeImage;
 }
 
 - (IBAction)fastForwardAudio:(id)sender {
@@ -54,7 +48,7 @@
 
 - (IBAction)playAudio:(id)sender {
     
-    NSURL *streamURL = [NSURL URLWithString:self.episode.audioURL];
+    NSURL *streamURL = [NSURL URLWithString:@""];
     self.player = [[AVPlayer alloc] initWithURL:streamURL];
     
     [self.player addObserver:self forKeyPath:@"status" options:0 context:nil];

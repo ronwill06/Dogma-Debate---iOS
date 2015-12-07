@@ -8,6 +8,14 @@
 
 #import "RWBlogContent.h"
 
+@interface RWBlogContent ()<NSXMLParserDelegate>
+
+@property (nonatomic, strong) NSMutableDictionary *item;
+@property (nonatomic, strong) NSString *title;
+
+@end
+
+
 @implementation RWBlogContent
 
 - (instancetype)initWithData:(NSData *)data
@@ -20,5 +28,23 @@
     
     return self;
 }
+
+- (void)loadData
+{
+    NSXMLParser *parser = [[NSXMLParser alloc] initWithData:self.blogData];
+    [parser setDelegate:self];
+    [parser parse];
+}
+
+- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName
+  namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
+    attributes:(NSDictionary<NSString *,NSString *> *)attributeDict
+{
+    if ([elementName isEqualToString:@"title"]) {
+        
+    }
+}
+
+
 
 @end

@@ -43,7 +43,7 @@ typedef enum {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     
     if (self) {
-        self.title = @"Events";
+        self.title = @"Schedule";
         
     }
     
