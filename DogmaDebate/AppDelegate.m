@@ -29,8 +29,6 @@
     RWPodcastsViewController *podCastsVC =  [[RWPodcastsViewController alloc] init];
     UINavigationController *podCastsNavVC = [[UINavigationController alloc] initWithRootViewController:podCastsVC];
     
-    RWHomeViewController *homeVC = [[RWHomeViewController alloc] init];
-    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:homeVC];
     
     RWEventsViewController *eventsVC = [[RWEventsViewController alloc] init];
     RWBlogViewController *blogVC = [[RWBlogViewController alloc] init];
@@ -43,7 +41,7 @@
 
 
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    [tabBarController setViewControllers:@[navVC, eventsVC, blogVC, fourthNav, moreNav] animated:YES];
+    [tabBarController setViewControllers:@[podCastsNavVC, eventsVC, blogVC, fourthNav, moreNav] animated:YES];
     [[tabBarController.tabBar.items objectAtIndex:2] setImage:[UIImage imageNamed:@"News"]];
     [[tabBarController.tabBar.items objectAtIndex:3] setImage:[UIImage imageNamed:@"Login"]];
     
