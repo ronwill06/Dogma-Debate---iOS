@@ -8,13 +8,12 @@
 
 import Foundation
 
-class DDPodcastOperation:NSObject, NSXMLParserDelegate {
+class DDPodcastOperation: NSObject {
+    let PodcastOperationDidSucceed = "PodcastOperationDidSucceed"
+    let PodcastOperationDidFail = "PodcastOperationDidFail"
     
     var podCasts:[RWPodcast] = [RWPodcast]()
     let podcastFeedUrl = NSURL(string: "https://api.spreaker.com/show/261996/episodes")
-    var xmlParser: NSXMLParser?
-    var isInsideItem: Bool =  false
-    var currentElement: String = ""
     
     override init() {
         super.init()
@@ -26,9 +25,11 @@ class DDPodcastOperation:NSObject, NSXMLParserDelegate {
         let urlSession = NSURLSession.sharedSession()
         if let url = podcastFeedUrl {
             
-            urlSession.dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
+            urlSession.dataTaskWithURL(url, completionHandler: { [weak self] (data, response, error) -> Void in
+                guard let strongSelf = self else { return }
                 if error != nil {
                     print("Error with podcast operation")
+                    NSNotificationCenter.defaultCenter().postNotificationName(strongSelf.PodcastOperationDidFail, object: error)
                     
                 } else {
                     let podCast = RWPodcast()
@@ -36,92 +37,32 @@ class DDPodcastOperation:NSObject, NSXMLParserDelegate {
                     
                     if let data = data {
                         do {
-                            
                         jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data, options:NSJSONReadingOptions.init(rawValue: 0)) as! [String : AnyObject]
-                        print("\(jsonDictionary)")
-                        podCast.title = jsonDictionary["title"] as? String
+                            if let jsonResponse = jsonDictionary["response"] as? [String:AnyObject], pager = jsonResponse["pager"] as? [String : AnyObject],
+                            results = pager["results"] as? [[String : AnyObject]] {
+                                for episode in results {
+                                    podCast.title = episode["title"] as? String ?? ""
+                                    podCast.podcastDescription = episode["description"] as? String ?? ""
+                                    podCast.podcastDate = episode["published_at"] as? String ?? ""
+                                    podCast.url = episode["download_url"] as? String ?? ""
+                                }
+                                
+                                strongSelf.podCasts.append(podCast)
+                                dispatch_async(dispatch_get_main_queue(), { [weak self] () -> Void in
+                                 guard let strongSelf = self else { return }
+                                  NSNotificationCenter.defaultCenter().postNotificationName(strongSelf.PodcastOperationDidSucceed, object: nil,
+                                  userInfo: ["podCastInfo" : strongSelf.podCasts])
+                                })
+                            }
                         } catch {
                             jsonDictionary = [:]
                         }
 
-                        
-                        self.xmlParser = NSXMLParser(data:data)
-                        self.xmlParser?.delegate = self
-                        self.xmlParser?.parse()
                     }
                 }
             }).resume()
         }
     }
-    
-//    func parser(parser: NSXMLParser, didStartElement elementName: String,
-//        namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
-//        
-//            print("Start Element:\(elementName)")
-//            if elementName == "item" {
-//              isInsideItem = true
-//            }
-//            
-//            if isInsideItem {
-//                switch elementName {
-//                case "title":
-//                    currentElement = "title"
-//                case "enclosure":
-//                    currentElement = "enclosure"
-//                case "description":
-//                    currentElement = "description"
-//                default:
-//                    break
-//                }
-//                
-//            }
-//            
-//    }
-//    
-//    func parser(parser: NSXMLParser, foundCharacters string: String) {
-//        let podCast = RWPodcast()
-//        if isInsideItem {
-//            switch currentElement {
-//                case "title":
-//                podCast.title = string
-//                print(podCast.title)
-//                case "enclosure":
-//                podCast.url = string
-//                print("URL: \(podCast.url)")
-//                case "description":
-//                podCast.podcastDescription = string
-//                print(podCast.podcastDescription)
-//            default:
-//                break
-//                
-//            }
-//            
-//            podCasts.append(podCast)
-//        }
-//    }
-//    
-//    func parser(parser: NSXMLParser, didEndElement elementName: String,
-//        namespaceURI: String?, qualifiedName qName: String?) {
-//            
-//            if isInsideItem {
-//                switch elementName {
-//                    case "title":
-//                    currentElement = ""
-//                    case "enclosure":
-//                    currentElement = ""
-//                    case "description":
-//                    currentElement = ""
-//                default:
-//                    break
-//                }
-//            }
-//            
-//        if elementName == "item" {
-//            isInsideItem = false
-//        }
-//            
-//    }
-//    
     
 
 }
