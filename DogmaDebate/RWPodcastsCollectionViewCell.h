@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RWHomeTableViewCell : UITableViewCell
+@interface RWPodcastsCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *episodeCountLabel;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UILabel *episodeTitleLabel;

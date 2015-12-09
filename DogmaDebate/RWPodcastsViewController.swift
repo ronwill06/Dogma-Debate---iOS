@@ -11,43 +11,55 @@ import UIKit
 
 class RWPodcastsViewController: UIViewController {
     
-    var podCastsViewModel: RWPodcastsViewModel?
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var podCastsViewModel: RWPodcastsViewModel? {
+        didSet {
+            self.title = podCastsViewModel?.tabBarTitle
+        }
+    }
+    
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        podCastsViewModel =  RWPodcastsViewModel()
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         podCastsViewModel = RWPodcastsViewModel()
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        self.collectionView.registerNib(UINib(nibName: "RWPodcastsCollectionViewCell", bundle: nil),
+            forCellWithReuseIdentifier: "RWPodcastsCollectionViewCell")
     }
     
 }
 
-extension RWPodcastsViewController: UITableViewDataSource {
+extension RWPodcastsViewController: UICollectionViewDataSource {
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5;
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("RWHomeTableViewCell", forIndexPath: indexPath) as! RWHomeTableViewCell
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("RWPodcastsCollectionViewCell", forIndexPath: indexPath) as! RWPodcastsCollectionViewCell
         
         return cell
     }
-    
 }
 
-extension RWPodcastsViewController: UITableViewDelegate {
+extension RWPodcastsViewController: UICollectionViewDelegate {
     
 }

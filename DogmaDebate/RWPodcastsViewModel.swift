@@ -8,11 +8,15 @@
 
 import Foundation
 
-class RWPodcastsViewModel: NSObject {
+class RWPodcastsViewModel: NSObject, DogmaDebateProtocol {
     
-   override init() {
-    super.init()
+    var tabBarTitle: String?
+    
+    override init() {
+        super.init()
         let podCastOperation = DDPodcastOperation()
+        
+        tabBarTitle = "Podcasts"
     }
     
     

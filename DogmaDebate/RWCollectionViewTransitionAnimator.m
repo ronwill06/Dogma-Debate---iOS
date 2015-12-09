@@ -7,7 +7,6 @@
 //
 
 #import "RWCollectionViewTransitionAnimator.h"
-#import "RWHomeViewController.h"
 #import "RWCollectionViewController.h"
 
 @interface RWCollectionViewTransitionAnimator ()<UIViewControllerAnimatedTransitioning>

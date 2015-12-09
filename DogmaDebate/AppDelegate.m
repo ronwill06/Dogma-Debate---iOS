@@ -7,9 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "RWHomeViewController.h"
-#import "RWEventsViewController.h"
-#import "RWBlogViewController.h"
 #import "RWFourthLoginViewController.h"
 #import "RWMoreViewController.h"
 #import "DogmaDebate-Swift.h"
@@ -30,9 +27,6 @@
     UINavigationController *podCastsNavVC = [[UINavigationController alloc] initWithRootViewController:podCastsVC];
     
     
-    RWEventsViewController *eventsVC = [[RWEventsViewController alloc] init];
-    RWBlogViewController *blogVC = [[RWBlogViewController alloc] init];
-    
     RWFourthLoginViewController *loginVC = [[RWFourthLoginViewController alloc] init];
     UINavigationController *fourthNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
     
@@ -41,9 +35,13 @@
 
 
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    [tabBarController setViewControllers:@[podCastsNavVC, eventsVC, blogVC, fourthNav, moreNav] animated:YES];
-    [[tabBarController.tabBar.items objectAtIndex:2] setImage:[UIImage imageNamed:@"News"]];
-    [[tabBarController.tabBar.items objectAtIndex:3] setImage:[UIImage imageNamed:@"Login"]];
+    tabBarController.tabBar.translucent = NO;
+    tabBarController.tabBar.barTintColor = [UIColor blackColor];
+    tabBarController.tabBar.backgroundColor = [UIColor blackColor];
+    tabBarController.tabBar.tintColor =  [UIColor whiteColor];
+    [tabBarController setViewControllers:@[podCastsNavVC, fourthNav, moreNav] animated:YES];
+    [[tabBarController.tabBar.items objectAtIndex:0] setImage:[UIImage imageNamed:@"PodcastImage"]];
+    [[tabBarController.tabBar.items objectAtIndex:1] setImage:[UIImage imageNamed:@"Login"]];
     
     [[self window] setRootViewController:tabBarController];
     

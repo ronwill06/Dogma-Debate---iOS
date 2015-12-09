@@ -24,7 +24,7 @@ class DDPodcastOperation: NSObject {
         
         let urlSession = NSURLSession.sharedSession()
         if let url = podcastFeedUrl {
-            
+        
             urlSession.dataTaskWithURL(url, completionHandler: { [weak self] (data, response, error) -> Void in
                 guard let strongSelf = self else { return }
                 if error != nil {
@@ -37,9 +37,10 @@ class DDPodcastOperation: NSObject {
                     
                     if let data = data {
                         do {
-                        jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data, options:NSJSONReadingOptions.init(rawValue: 0)) as! [String : AnyObject]
+                        jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data, options:NSJSONReadingOptions(rawValue: 0)) as! [String : AnyObject]
                             if let jsonResponse = jsonDictionary["response"] as? [String:AnyObject], pager = jsonResponse["pager"] as? [String : AnyObject],
                             results = pager["results"] as? [[String : AnyObject]] {
+                                print("\(results)")
                                 for episode in results {
                                     podCast.title = episode["title"] as? String ?? ""
                                     podCast.podcastDescription = episode["description"] as? String ?? ""
@@ -48,8 +49,7 @@ class DDPodcastOperation: NSObject {
                                 }
                                 
                                 strongSelf.podCasts.append(podCast)
-                                dispatch_async(dispatch_get_main_queue(), { [weak self] () -> Void in
-                                 guard let strongSelf = self else { return }
+                                dispatch_async(dispatch_get_main_queue(), { () -> Void in
                                   NSNotificationCenter.defaultCenter().postNotificationName(strongSelf.PodcastOperationDidSucceed, object: nil,
                                   userInfo: ["podCastInfo" : strongSelf.podCasts])
                                 })
