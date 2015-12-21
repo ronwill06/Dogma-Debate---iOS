@@ -32,7 +32,6 @@ class DDPodcastOperation: NSObject {
                     NSNotificationCenter.defaultCenter().postNotificationName(DDPodcastOperation.PodcastOperationDidFail, object: error)
                     
                 } else {
-                    let podCast = RWPodcast()
                     var jsonDictionary = [:]
                     
                     if let data = data {
@@ -42,17 +41,21 @@ class DDPodcastOperation: NSObject {
                             results = pager["results"] as? [[String : AnyObject]] {
                                 print("\(results)")
                                 for episode in results {
-                                    podCast.title = episode["title"] as? String ?? ""
-                                    podCast.podcastDescription = episode["description"] as? String ?? ""
-                                    podCast.podcastDate = episode["published_at"] as? String ?? ""
-                                    podCast.url = episode["download_url"] as? String ?? ""
+                                    let podcast = RWPodcast()
+                                    podcast.title = episode["title"] as? String ?? ""
+                                    let string = podcast.title as? NSString
+                                    podcast.episodeNumber =  string?.substringWithRange(NSMakeRange(1, 3))
+                                    podcast.podcastDescription = episode["description"] as? String ?? ""
+                                    let dateString = episode["published_at"] as? NSString ?? ""
+                                    podcast.podcastDate = dateString.substringWithRange(NSMakeRange(0, 10))
+                                    podcast.url = episode["download_url"] as? String ?? ""
                                     
-                                    self.podCasts.append(podCast)
+                                    self.podCasts.append(podcast)
                                 }
                                 
                                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                                   NSNotificationCenter.defaultCenter().postNotificationName(DDPodcastOperation.PodcastOperationDidSucceed, object: nil,
-                                  userInfo: ["podCastInfo" : self.podCasts])
+                                  userInfo: ["podcastInfo" : self.podCasts])
                                 })
                             }
                         } catch {

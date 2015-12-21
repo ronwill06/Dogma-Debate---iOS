@@ -22,7 +22,7 @@ class RWPodcastCellViewModel: NSObject {
     
     var podcastDescription: String?
     var date: String?
-    var episodeNumber: Int?
+    var episodeNumber: String?
     var title: String?
     
 }

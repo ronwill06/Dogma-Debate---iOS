@@ -13,14 +13,14 @@ class RWPodcastCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var descriptionTextView: UITextView?
     @IBOutlet weak var titleLabel: UILabel?
-    @IBOutlet weak var dataLabel: UILabel?
+    @IBOutlet weak var dateLabel: UILabel?
     @IBOutlet weak var numberLabel: UILabel?
     
     var cellViewModel: RWPodcastCellViewModel? {
         didSet {
             self.descriptionTextView?.text = cellViewModel?.podcastDescription
-            self.dataLabel?.text = cellViewModel?.date
-            self.numberLabel?.text = cellViewModel?.episodeNumber?.description
+            self.dateLabel?.text = cellViewModel?.date
+            self.numberLabel?.text = cellViewModel?.episodeNumber
             self.titleLabel?.text = cellViewModel?.title
         }
     }

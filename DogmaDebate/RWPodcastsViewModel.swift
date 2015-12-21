@@ -7,47 +7,52 @@
 //
 
 import Foundation
+import UIKit
 
 class RWPodcastsViewModel: NSObject, DogmaDebateProtocol {
     
     var tabBarTitle: String?
-    var podcasts: [RWPodcast] = []
+    var podcasts = [RWPodcast]()
+    var collectionViewReference: UICollectionView?
     
     override init() {
         super.init()
-        //_ = DDPodcastOperation()
-        fetchData()
-        
         tabBarTitle = "Podcasts"
+        fetchData()
+       
     }
     
-    deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
-    }
-
     func fetchData() {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "podcastData:", name:DDPodcastOperation.PodcastOperationDidSucceed,
             object: nil)
+        _ = DDPodcastOperation()
     }
     
     func podcastData(notification: NSNotification) {
         if let userInfo = notification.userInfo as? [String : [AnyObject]] {
-            if let podcasts = userInfo["podCastInfo"] as? [RWPodcast] {
+            if let podcasts = userInfo["podcastInfo"] as? [RWPodcast] {
                 self.podcasts = podcasts
+                if let collectionView = self.collectionViewReference {
+                    collectionView.reloadData()
+                }
             }
         }
     }
     
     func cellViewModelAtIndex(index: Int) -> RWPodcastCellViewModel {
         let cellViewModel = RWPodcastCellViewModel()
-        //cellViewModel.podcast = podcasts[index]
+        cellViewModel.podcast = podcasts[index]
         
         return cellViewModel
     }
     
     func numberOfItemsInSection() -> Int {
-        print(self.podcasts.count)
-        return podcasts.count
+        return self.podcasts.count
     }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+
     
 }

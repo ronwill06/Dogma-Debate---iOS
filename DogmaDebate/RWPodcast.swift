@@ -10,17 +10,17 @@ import Foundation
 
 class RWPodcast: NSObject {
     
-    var title: String?
+    var title: String = ""
     var podcastDate: String?
     var podcastDescription: String?
     var url: String?
-    var episodeNumber = 0
+    var episodeNumber: String?
     
     override init() {
         super.init()
     }
     
-    convenience init(title: String, date: String, description: String, number: Int) {
+    convenience init(title: String, date: String, description: String, number: String) {
         self.init()
         self.title = title
         self.podcastDate = date

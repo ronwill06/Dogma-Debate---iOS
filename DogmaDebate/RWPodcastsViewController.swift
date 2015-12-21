@@ -13,12 +13,7 @@ class RWPodcastsViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var podcastsViewModel: RWPodcastsViewModel? {
-        didSet {
-            let podcasts = podcastsViewModel?.podcasts
-            self.collectionView.reloadData()
-        }
-    }
+    var podcastsViewModel: RWPodcastsViewModel?
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -33,9 +28,9 @@ class RWPodcastsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         podcastsViewModel = RWPodcastsViewModel()
-        
+        podcastsViewModel?.collectionViewReference = collectionView
+
         navigationController?.setNavigationBarHidden(true, animated: false)
         self.collectionView.registerNib(UINib(nibName: "RWPodcastCollectionViewCell", bundle: nil),
             forCellWithReuseIdentifier: "RWPodcastCollectionViewCell")
@@ -51,12 +46,16 @@ extension RWPodcastsViewController: UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return (podcastsViewModel?.numberOfItemsInSection())!
+        if let count = podcastsViewModel?.numberOfItemsInSection() {
+            return count
+        }
+        
+        return 0
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("RWPodcastCollectionViewCell", forIndexPath: indexPath) as! RWPodcastCollectionViewCell
-        if let cellViewModel =  podcastsViewModel?.cellViewModelAtIndex(indexPath.row) {
+        if let cellViewModel = podcastsViewModel?.cellViewModelAtIndex(indexPath.row) {
             cell.cellViewModel = cellViewModel
         }
         
