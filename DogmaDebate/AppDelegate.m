@@ -23,9 +23,12 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    DDPodcastOperation *operation = [[DDPodcastOperation alloc] init];
+    
     RWPodcastsViewController *podCastsVC =  [[RWPodcastsViewController alloc] init];
     UINavigationController *podCastsNavVC = [[UINavigationController alloc] initWithRootViewController:podCastsVC];
     
+    RWDebaterViewController *debaterVC = [[RWDebaterViewController alloc] init];
     
     RWFourthLoginViewController *loginVC = [[RWFourthLoginViewController alloc] init];
     UINavigationController *fourthNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
@@ -39,9 +42,9 @@
     tabBarController.tabBar.barTintColor = [UIColor blackColor];
     tabBarController.tabBar.backgroundColor = [UIColor blackColor];
     tabBarController.tabBar.tintColor =  [UIColor whiteColor];
-    [tabBarController setViewControllers:@[podCastsNavVC, fourthNav, moreNav] animated:YES];
+    [tabBarController setViewControllers:@[podCastsNavVC, debaterVC, fourthNav, moreNav] animated:YES];
     [[tabBarController.tabBar.items objectAtIndex:0] setImage:[UIImage imageNamed:@"PodcastImage"]];
-    [[tabBarController.tabBar.items objectAtIndex:1] setImage:[UIImage imageNamed:@"Login"]];
+    [[tabBarController.tabBar.items objectAtIndex:2] setImage:[UIImage imageNamed:@"Login"]];
     
     [[self window] setRootViewController:tabBarController];
     

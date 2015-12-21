@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>menu</key>
+		<string>Why do modern birds have the genes for teeth?</string>
+		<key>information</key>
+		<string>We’ve found fossilized transitional forms spanning across the record that gradually develop feathers, a lighter hollow skeleton for flight, and eventually losing all teeth around 80 million years ago. This tells us that birds began splitting off from reptile relatives during the time of the dinosaurs around 150 million years ago. So it makes perfect sense for modern birds to have traces of teeth in their genome. But if every animal was created at once by a god in its present form, why would birds have genes for teeth?
+
+
+&lt;head&gt;
+&lt;title&gt;Toggle Test&lt;/title&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+#ToggleTarget {
+	display: none;
+}
+&lt;/style&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+function Toggle() {
+	var el = document.getElementById(&quot;ToggleTarget&quot;);
+	if (el.style.display == &quot;block&quot;) {
+		el.style.display = &quot;none&quot;;
+	}
+	else {
+		el.style.display = &quot;block&quot;;
+	}
+	window.scrollBy(0,275)
+}
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;b&gt;&lt;p&gt;&lt;a href=&quot;javascript:Toggle();&quot;&gt;Read More...&lt;/a&gt;&lt;/p&gt;&lt;/b&gt;
+
+&lt;div id=&quot;ToggleTarget&quot;&gt;
+
+Several years ago, scientists conducted an experiment where they placed cells from the mouth of a mouse embryo in the beak of a chick embryo. These cells combined and the mouse genes allowed the chick to form rudimentary teeth when it couldn’t before. This happened because over time, the chick’s DNA has lost the part of the genes that tells the cells to go make the teeth. Though the chick had genes for making the teeth from its reptilian ancestor, it needs help from the intact mouse go signal.
+
+Through the lens of evolution, the presence of genes for reptilian teeth in birds makes complete sense, as birds developed from toothed reptilian ancestors.
+
+We glanced into the genetic past of birds and we found that they retain the same genes their ancestors used to make teeth. So why don’t we see birds with teeth outside the window if they have the genes? Why still rudimentary teeth? 
+
+If you visualize genes lined up along chromosomes like close neighbors living next door in a neighborhood, we find that in birds, the genes (or houses in this analogy) for making enamel are in the same ‘neighborhoods’ in reptiles and mammals. We looked for the enamel making genes in the chick DNA and the genes are still in their ‘neighborhood’ but badly mutated…
+
+Visualize visiting an old neighborhood where several houses are broken down and have been abandoned for 80 million years! Who cares if you throw a brick through a window of a broken down abandoned house? Or 2? Well natural selection doesn’t care what you do with abandoned genes either! If there is a mutation in a gene that is not needed, it will be passed on because it doesn’t harm anything. Reproduction will continue to pass on old genes as they accumulate mutation, like an old house falling apart through time. These old genes will be useless just like the old houses, unless it can become renewed; which for a house could be a new tenant and a paint job, but for genes its mutation. Mutation will continue in the genes and sometimes (quite often actually) old useless genes gain a new function because of the right mutation. 
+
+So if birds did not evolve from the reptilian-like ancestors we find in the fossil record, then why do birds have the ancient genes for their teeth?
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</string>
+	</dict>
+	<dict>
+		<key>menu</key>
+		<string>Why do blind cave fish still have functionless eyes if they live in darkness?</string>
+		<key>information</key>
+		<string>The blind albino cavefish actually have small eyes that form as embryos but eventually break down, sink into the eye orbit, and are covered by skin. The blind cave fish will even construct the lens and retina but eventually they hit a point where their cells stop constructing and self terminate. These fish don’t only live in caves but actually have relatives that live on the surface that are still colored and have completely functional eyes. So if a god created blind cave fish, why would he or she have given them useless eyes, which perfectly match with the surface forms of the same creature?
+
+
+&lt;head&gt;
+&lt;title&gt;Toggle Test&lt;/title&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+#ToggleTarget {
+	display: none;
+}
+&lt;/style&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+function Toggle() {
+	var el = document.getElementById(&quot;ToggleTarget&quot;);
+	if (el.style.display == &quot;block&quot;) {
+		el.style.display = &quot;none&quot;;
+	}
+	else {
+		el.style.display = &quot;block&quot;;
+	}
+	
+	window.scrollBy(0, 275)
+}
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;b&gt;&lt;p&gt;&lt;a href=&quot;javascript:Toggle();&quot;&gt;Read More...&lt;/a&gt;&lt;/p&gt;&lt;/b&gt;
+
+&lt;div id=&quot;ToggleTarget&quot;&gt;
+Someone got the idea to take the part of the eye that the blind cave fish was missing right before it broke down from the surface fish and plant it in the orbit. This lens from a surface fish, when placed in the eye of a developing blind cave fish, will cause the eye to continue developing and will grow into a functional eye. Blind cave fish have acquired changes in their genome that has caused eye cells to kill themselves at a certain stage. But when you give the blind cave fish a lens from a genome that doesn’t say “kill yourself,” the cells form the eye they originally inherited. 
+
+Through the lens of evolution, this shows that the blind cave fish inherited functional eyes from its ancestors and over time have lost the need for sight due to the darkness in the cave system. The blind cavefish still have eyes and eye orbits that are functionless but are working together perfectly in the surface forms.
+
+If blind albino cave fish were created to fit into their environment of darkness, why then does the fish still go through the development of the eye within an eye socket only to then break it down and cover it back up? What’s ‘intelligent’ about wasting that time and energy only to have the process cut short and reverse itself? 
+
+The blind cave fish is one of many species of fish we know of that live in the darkness. Often these fish lose their pigments, change jaw formation, and develop odd sleep patterns. Although the blind cavefish and the surface dwelling Mexican tetra look different from one another, they can interbreed, and their offspring become hybrids that can also interbreed back with the parent populations. The two populations are genetically very similar, but cave fish have low genetic diversity from the constricted food. The intermixing of the cave and surface forms combine different traits of blind/albino/altered sleep cycles and differences in vision, color, and daylight, which causes the hybrids to have a wide range of color, eye size, visional capabilities, etc.
+	
+So the blind cave fish forms eyes but destroys them right afterward, and their same-species neighbors have fully functional eyes on the surface. This makes perfect sense when one understand evolution, but raises thousands of questions if Intelligent Design is to be taken seriously. 
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</string>
+	</dict>
+	<dict>
+		<key>menu</key>
+		<string>Why do we never find fossils in the wrong order, place, or time?</string>
+		<key>information</key>
+		<string>One great thing about the fossil record is that it is ordered from oldest to youngest, naturally. Not only do the dates found with dating techniques fit the order of the layers, but within the layers the fossils always show the steps of evolution in order. (If layers are out of order, it can always be traced to natural causes that leave signs.) &lt;br&gt;&lt;br&gt;
+
+Different layers are exposed around the world that represent different time periods and different animals. We can then look back into time below the layers and we’ll find the older dates and older forms. We can also take these known layers and find the missing newer layers somewhere else and continue the transition of dates and forms. We’ve never found a single fossil out of place that couldn’t be explained. If evolution is so wrong, why is so easy to predict what we will find next, down to the layer, age, and type of form?
+
+
+&lt;head&gt;
+&lt;title&gt;Toggle Test&lt;/title&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+#ToggleTarget {
+	display: none;
+}
+&lt;/style&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+function Toggle() {
+	var el = document.getElementById(&quot;ToggleTarget&quot;);
+	if (el.style.display == &quot;block&quot;) {
+		el.style.display = &quot;none&quot;;
+	}
+	else {
+		el.style.display = &quot;block&quot;;
+	}
+	
+	window.scrollBy(0, 330);
+}
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;b&gt;&lt;p&gt;&lt;a href=&quot;javascript:Toggle();&quot;&gt;Read More...&lt;/a&gt;&lt;/p&gt;&lt;/b&gt;
+
+&lt;div id=&quot;ToggleTarget&quot;&gt;
+
+
+Each of these layers record not only the animals present, but also the vegetation, climate, magnetic poles, oxygen content, flooding, and many more things. The complexity of these will fit into the layer puzzle in order. 
+
+A human will never appear before fossil primates. A primate will never appear before fossil mammals. A mammal or bird will never appear before fossil reptiles. A reptile or amphibian will never appear before fossil fish. A fish will never be found before the first chordates, spanning back 550 million years ago.
+
+If obvious order of the fossil record does not show the evolution of complexity, what then does it mean? Can you claim that a flood will create this order without even ONE misplacement? Why do fish sink before everything except the simple chordates? Why does the fossil record not show flooding through the whole series of layers?
+
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</string>
+	</dict>
+	<dict>
+		<key>menu</key>
+		<string>If mutations are so rare and extremely dangerous, why do we have 180-200 mutations that are completely distinct from our parents?</string>
+		<key>information</key>
+		<string>The word ‘mutation’ to many, means something terrible. But mutations are not only common, they are vital to evolution and our survival. When your parents developed their sperm and eggs they had small mutations occur that get passed on. Once conception happens, those mutations combine to equal around 180-200 new mutations in you alone! And this is the more conservative estimate.
+
+These mutations more than likely have gone unnoticed; especially if you believe that a mutation causes gross abnormalities or disease every time. Mutations can absolutely cause genetic diseases, problems during fetal development, as well as switching on old genes for tails, but these are just the ones that are easily noticed! Most mutations will change only a small section of the DNA that don’t change anything in your body but will be given to your children regardless. Some mutations will cause a change that does something small and often not easily noticed like creating more ear wax or a stronger body odor. 
+
+Mutations cause there to be differences in every species. Hair color, eye color, lactose tolerance, voice depth, pelvis width, brain size and everything else you can think of can be changed. Mutations help us pass on immunities to deadly diseases like the black plague and malaria and can help us avoid extinction from starvation by allowing us to drink cow milk and eat wheat. If there are no mutations, and thus no variation in a population, there is no possibility to adapt when a crisis strikes. Thankfully this is not how our evolution works as we give 180-200 chances for our children to adapt. Those chances for change are called mutations. 
+</string>
+	</dict>
+	<dict>
+		<key>menu</key>
+		<string>Why did God create all these animals, only to allow 99.99% of them to die?</string>
+		<key>information</key>
+		<string>Around 99.99% of the species found in the fossil record are extinct, and we have 30-50 million species alive today. In summary, there have been A LOT of organisms on this planet. What happened to them?
+
+Creationist opinions vary significantly: God created them and they all failed (why did 99.99% of his creations fail?), they died before the flood because they weren’t allowed on the ark (too big/too slow/something else made up), they made it on the ark but died/were killed after (specifically dinosaurs =not enough oxygen/too big and slow/eaten by man/starved)…
+
+OR…evolution through natural selection (adaptation to environment and/or natural disasters, change in reproductive success, etc) caused the evolution and extinction of most life on earth. This one makes sense because not only is 4.5 billion years a VERY long time but most species either split and die off or develop into a new line. This line will then split and some branches will die and some will change and a few will stay the same (cockroaches). Anyone who knows simple multiplication knows that if you keep splitting 1 line into 2, after thousands of generations the amount of evolutionary lines is beyond anything we can imagine.
+
+Most species only seem to survive .5-5 million years before splitting or going extinct. So with 4.5 billion years available to life on earth, 99.99% of all species being extinct might not be that surprising. But if the earth is only 6,000 – 10,000 years old, why is nearly all of God’s creation already been wiped out?  And why would he have created them all, knowing they were all going to cease to exist so soon?
+</string>
+	</dict>
+</array>
+</plist>

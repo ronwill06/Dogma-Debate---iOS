@@ -13,16 +13,16 @@ class RWPodcastsViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var podCastsViewModel: RWPodcastsViewModel? {
+    var podcastsViewModel: RWPodcastsViewModel? {
         didSet {
-            self.title = podCastsViewModel?.tabBarTitle
+            let podcasts = podcastsViewModel?.podcasts
+            self.collectionView.reloadData()
         }
     }
     
-    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
+        self.title = "Podcasts"
         
     }
     
@@ -34,11 +34,11 @@ class RWPodcastsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        podCastsViewModel = RWPodcastsViewModel()
+        podcastsViewModel = RWPodcastsViewModel()
         
         navigationController?.setNavigationBarHidden(true, animated: false)
-        self.collectionView.registerNib(UINib(nibName: "RWPodcastsCollectionViewCell", bundle: nil),
-            forCellWithReuseIdentifier: "RWPodcastsCollectionViewCell")
+        self.collectionView.registerNib(UINib(nibName: "RWPodcastCollectionViewCell", bundle: nil),
+            forCellWithReuseIdentifier: "RWPodcastCollectionViewCell")
     }
     
 }
@@ -50,11 +50,15 @@ extension RWPodcastsViewController: UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5;
+        
+        return (podcastsViewModel?.numberOfItemsInSection())!
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("RWPodcastsCollectionViewCell", forIndexPath: indexPath) as! RWPodcastsCollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("RWPodcastCollectionViewCell", forIndexPath: indexPath) as! RWPodcastCollectionViewCell
+        if let cellViewModel =  podcastsViewModel?.cellViewModelAtIndex(indexPath.row) {
+            cell.cellViewModel = cellViewModel
+        }
         
         return cell
     }
