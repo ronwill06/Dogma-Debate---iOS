@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 class RWDebaterViewModel {
     
-    var categoryNames = ["Debate Topics", "Evolution Basics", "Ask Creationists", "The Bible", "Smalley Quotes"]
+    var categoryNames = ["Debate Topics", "Evolution Basics", "Ask Creationists", "The Bible", "Smalley Quotes", "Drops"]
     
     func fetchData() {
         let atheismPath = NSBundle.mainBundle().pathForResource("atheism", ofType: "plist")
@@ -33,20 +34,25 @@ class RWDebaterViewModel {
         if let smalleyPath = smalleyPath {
             let smalleyDict =  NSDictionary(contentsOfFile: smalleyPath)
         }
-        
     }
     
     func numberOfLists() -> Int {
-        return 6
+        return categoryNames.count
     }
     
-    func catergoryAtIndex(index: Int) -> String {
+    func categoryNameAtIndex(index: Int) -> String {
+        let categoryName = categoryNames[index]
         
-        for categoryName in categoryNames {
-            return categoryName
-        }
+        return categoryName
+    }
+    
+    func viewControllerForIndex(index: Int) -> UIViewController {
+        let debateTopicsViewController = RWDebateTopicsViewController()
         
-        return ""
+        let viewControllers = [debateTopicsViewController]
+        let viewController = viewControllers[index]
+        
+        return viewController
     }
     
 }

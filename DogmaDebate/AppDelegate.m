@@ -38,13 +38,12 @@
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.tabBar.translucent = NO;
     tabBarController.tabBar.barTintColor = [UIColor blackColor];
-    tabBarController.tabBar.backgroundColor = [UIColor blackColor];
     tabBarController.tabBar.tintColor =  [UIColor whiteColor];
     [tabBarController setViewControllers:@[podCastsNavVC, debaterVC, fourthNav, moreNav] animated:YES];
     [[tabBarController.tabBar.items objectAtIndex:0] setImage:[UIImage imageNamed:@"PodcastImage"]];
     [[tabBarController.tabBar.items objectAtIndex:1] setImage:[UIImage imageNamed:@"Debater"]];
     [[tabBarController.tabBar.items objectAtIndex:2] setImage:[UIImage imageNamed:@"Login"]];
-    [[tabBarController.tabBar.items objectAtIndex:2] setImage:[UIImage imageNamed:@"More"]];
+    [[tabBarController.tabBar.items objectAtIndex:3] setImage:[UIImage imageNamed:@"More"]];
     
     [[self window] setRootViewController:tabBarController];
     
