@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RWDebateTopicsViewController" customModule="DogmaDebate" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="elk-xd-TOD" id="5XY-2n-eF0"/>
                 <outlet property="view" destination="iN0-l3-epB" id="atx-9z-FiZ"/>
             </connections>
         </placeholder>
@@ -15,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="elk-xd-TOD">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="elk-xd-TOD">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
@@ -31,6 +32,7 @@
                 <constraint firstAttribute="trailing" secondItem="elk-xd-TOD" secondAttribute="trailing" id="hbN-uG-KCK"/>
                 <constraint firstAttribute="bottom" secondItem="elk-xd-TOD" secondAttribute="bottom" id="zxC-zO-8Rd"/>
             </constraints>
+            <point key="canvasLocation" x="268" y="112"/>
         </view>
     </objects>
 </document>

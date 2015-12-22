@@ -105,6 +105,8 @@
 		7029172C1C28CAC700F64075 /* RWDebateTopicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7029172B1C28CAC700F64075 /* RWDebateTopicsViewController.xib */; };
 		7029172E1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7029172D1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift */; };
 		702917301C28DCC600F64075 /* RWAtheismObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7029172F1C28DCC600F64075 /* RWAtheismObject.swift */; };
+		70E0EE441C29C26300E647DE /* RWDebaterTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0EE431C29C26300E647DE /* RWDebaterTopicTableViewCell.swift */; };
+		70E0EE461C29C2A200E647DE /* RWDebaterTopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E0EE451C29C2A200E647DE /* RWDebaterTopicTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -213,6 +215,8 @@
 		7029172B1C28CAC700F64075 /* RWDebateTopicsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDebateTopicsViewController.xib; sourceTree = "<group>"; };
 		7029172D1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebateTopicsViewModel.swift; sourceTree = "<group>"; };
 		7029172F1C28DCC600F64075 /* RWAtheismObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWAtheismObject.swift; sourceTree = "<group>"; };
+		70E0EE431C29C26300E647DE /* RWDebaterTopicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebaterTopicTableViewCell.swift; sourceTree = "<group>"; };
+		70E0EE451C29C2A200E647DE /* RWDebaterTopicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDebaterTopicTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +377,8 @@
 				1FE4DEA41C1A62D50092575D /* RWPodcastCollectionViewCell.swift */,
 				1F27EAE91C27811F00D8FF5A /* RWDebaterCollectionViewCell.xib */,
 				1F27EAEB1C27815100D8FF5A /* RWDebaterCollectionViewCell.swift */,
+				70E0EE431C29C26300E647DE /* RWDebaterTopicTableViewCell.swift */,
+				70E0EE451C29C2A200E647DE /* RWDebaterTopicTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -508,6 +514,7 @@
 				1F45DE081B3AE52F00086116 /* RWMoreTableViewCell.xib in Resources */,
 				1F45DDBB1B2E51FF00086116 /* Images.xcassets in Resources */,
 				1F5D5CE21B4769F30074FBC8 /* RWFAQViewController.xib in Resources */,
+				70E0EE461C29C2A200E647DE /* RWDebaterTopicTableViewCell.xib in Resources */,
 				1F5D5CBE1B46F4CA0074FBC8 /* RWFourthLoginViewController.xib in Resources */,
 				1F27EADC1C27714C00D8FF5A /* creationists.plist in Resources */,
 				1F27EAE01C27716E00D8FF5A /* evolution.plist in Resources */,
@@ -561,6 +568,7 @@
 				1F528DA71BFE8FF100FDAD50 /* RWPodcast.swift in Sources */,
 				1F45DDB01B2E51FF00086116 /* AppDelegate.m in Sources */,
 				1FDB53821B656E0C00CE57A4 /* RWBlogContent.m in Sources */,
+				70E0EE441C29C26300E647DE /* RWDebaterTopicTableViewCell.swift in Sources */,
 				1F5D5CD01B472BE80074FBC8 /* RWStaffInfo.m in Sources */,
 				1F27EAE81C2777AF00D8FF5A /* RWDebaterViewModel.swift in Sources */,
 				1FE4DEA51C1A62D50092575D /* RWPodcastCollectionViewCell.swift in Sources */,
