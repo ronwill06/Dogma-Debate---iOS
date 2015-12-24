@@ -18,6 +18,7 @@ class RWPodcast: NSObject {
     
     override init() {
         super.init()
+        self.url = ""
     }
     
     convenience init(title: String, date: String, description: String, number: String) {

@@ -46,6 +46,12 @@ class RWPodcastsViewModel: NSObject, DogmaDebateProtocol {
         return cellViewModel
     }
     
+    func podcastAtIndex(index: Int) -> RWPodcast {
+        let podcast = podcasts[index]
+        
+        return podcast
+    }
+    
     func numberOfItemsInSection() -> Int {
         return self.podcasts.count
     }

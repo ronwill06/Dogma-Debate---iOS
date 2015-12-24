@@ -1,17 +1,16 @@
 //
-//  RWDebateTopicsViewController.swift
+//  RWAskCreationistsViewController.swift
 //  DogmaDebate
 //
-//  Created by Rondale Williams on 12/21/15.
+//  Created by Rondale Williams on 12/22/15.
 //  Copyright © 2015 RondaleWilliams. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-class RWDebateTopicsViewController : UIViewController {
+class RWAskCreationistsViewController: UIViewController {
     
-    var debateTopicsViewModel: RWDebateTopicsViewModel?
+    var askCreationistsViewModel: RWAskCreationistsViewModel?
     var selectedIndexPath: NSIndexPath?
     var cellIsDeselected = false
     
@@ -19,23 +18,23 @@ class RWDebateTopicsViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Debate Topics"
+        self.title = "Ask Creationists"
         navigationController?.navigationBar.barTintColor = UIColor.blackColor()
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         navigationController?.navigationBar.translucent = false
         
-        debateTopicsViewModel = RWDebateTopicsViewModel()
+        askCreationistsViewModel = RWAskCreationistsViewModel()
         tableView.registerNib(UINib(nibName: "RWDebaterTopicTableViewCell", bundle: nil), forCellReuseIdentifier: "RWDebaterTopicTableViewCell")
-    
+        
     }
 }
 
-extension RWDebateTopicsViewController : UITableViewDataSource {
+extension RWAskCreationistsViewController : UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if let numberOfItems = debateTopicsViewModel?.numberOfItems() {
+        if let numberOfItems = askCreationistsViewModel?.numberOfItems() {
             return numberOfItems
         }
         
@@ -45,11 +44,11 @@ extension RWDebateTopicsViewController : UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let genericCell =  UITableViewCell()
         if let cell = tableView.dequeueReusableCellWithIdentifier("RWDebaterTopicTableViewCell", forIndexPath: indexPath) as? RWDebaterTopicTableViewCell {
-        let topic = debateTopicsViewModel!.topicForIndex(indexPath.row)
-        cell.questionLabel.text = topic.title
-        cell.informationViewHeightConstraint.constant = 170
-        cell.informationView.text = topic.information
-        return cell
+            let topic = askCreationistsViewModel?.topicForIndex(indexPath.row)
+            cell.questionLabel.text = topic?.title
+            cell.informationViewHeightConstraint.constant = 170
+            cell.informationView.text = topic?.information
+            return cell
         }
         
         return genericCell
@@ -59,12 +58,10 @@ extension RWDebateTopicsViewController : UITableViewDataSource {
         if cellIsDeselected == false {
             if let selectedIndexPath = selectedIndexPath {
                 if indexPath.compare(selectedIndexPath) == NSComparisonResult.OrderedSame {
-                   return 200
+                    return 200
                 }
                 
             }
-        } else {
-            return 50
         }
         
         return 50
@@ -72,10 +69,9 @@ extension RWDebateTopicsViewController : UITableViewDataSource {
     
 }
 
-extension RWDebateTopicsViewController : UITableViewDelegate {
+extension RWAskCreationistsViewController : UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath)
         
         selectedIndexPath = indexPath
         tableView.beginUpdates()
@@ -87,11 +83,6 @@ extension RWDebateTopicsViewController : UITableViewDelegate {
             cellIsDeselected = false
         }
         
-//        UIView.animateWithDuration(0.3) { () -> Void in
-//             cell?.contentView.layoutIfNeeded()
-//            tableView.beginUpdates()
-//            cell?.contentView.frame.size.height = 100
-//            tableView.endUpdates()
-//        }
     }
 }
+

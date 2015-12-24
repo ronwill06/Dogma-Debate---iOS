@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1F27EADA1C27713D00D8FF5A /* atheism.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F27EAD91C27713D00D8FF5A /* atheism.plist */; };
 		1F27EADC1C27714C00D8FF5A /* creationists.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F27EADB1C27714C00D8FF5A /* creationists.plist */; };
-		1F27EADE1C27716000D8FF5A /* 4thListener-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F27EADD1C27716000D8FF5A /* 4thListener-Info.plist */; };
 		1F27EAE01C27716E00D8FF5A /* evolution.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F27EADF1C27716E00D8FF5A /* evolution.plist */; };
 		1F27EAE21C2771BD00D8FF5A /* smalley.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F27EAE11C2771BD00D8FF5A /* smalley.plist */; };
 		1F27EAE41C27732700D8FF5A /* RWDebaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F27EAE31C27732700D8FF5A /* RWDebaterViewController.swift */; };
@@ -32,8 +31,6 @@
 		1F45DE071B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE041B3AE52F00086116 /* RWMoreTableViewCell.m */; };
 		1F45DE081B3AE52F00086116 /* RWMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE051B3AE52F00086116 /* RWMoreTableViewCell.xib */; };
 		1F45DE091B3AE52F00086116 /* RWMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE051B3AE52F00086116 /* RWMoreTableViewCell.xib */; };
-		1F45DE131B3AFF2B00086116 /* RWEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE121B3AFF2B00086116 /* RWEvent.m */; };
-		1F45DE141B3AFF2B00086116 /* RWEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE121B3AFF2B00086116 /* RWEvent.m */; };
 		1F45DE181B3B37E800086116 /* RWEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE161B3B37E800086116 /* RWEventTableViewCell.m */; };
 		1F45DE191B3B37E800086116 /* RWEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE161B3B37E800086116 /* RWEventTableViewCell.m */; };
 		1F45DE1A1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE171B3B37E800086116 /* RWEventTableViewCell.xib */; };
@@ -60,7 +57,6 @@
 		1F45DE5D1B40743100086116 /* RWCollectionViewTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE5B1B40743100086116 /* RWCollectionViewTransitionAnimator.m */; };
 		1F528DA41BFAC96D00FDAD50 /* DDPodcastOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F528DA31BFAC96D00FDAD50 /* DDPodcastOperation.swift */; };
 		1F528DA71BFE8FF100FDAD50 /* RWPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F528DA61BFE8FF100FDAD50 /* RWPodcast.swift */; };
-		1F528DA91C14F8F300FDAD50 /* RWPodcastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F528DA81C14F8F300FDAD50 /* RWPodcastManager.swift */; };
 		1F528DAC1C14FBA800FDAD50 /* RWPodcastsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F528DAB1C14FBA800FDAD50 /* RWPodcastsViewModel.swift */; };
 		1F5D5CA71B4635210074FBC8 /* RWPodcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */; };
 		1F5D5CA81B4635210074FBC8 /* RWPodcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */; };
@@ -105,6 +101,20 @@
 		7029172C1C28CAC700F64075 /* RWDebateTopicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7029172B1C28CAC700F64075 /* RWDebateTopicsViewController.xib */; };
 		7029172E1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7029172D1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift */; };
 		702917301C28DCC600F64075 /* RWAtheismObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7029172F1C28DCC600F64075 /* RWAtheismObject.swift */; };
+		70DE24451C29FD420050C2B8 /* RWCreationistObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24441C29FD420050C2B8 /* RWCreationistObject.swift */; };
+		70DE24471C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24461C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift */; };
+		70DE24491C29FF880050C2B8 /* RWAskCreationistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24481C29FF880050C2B8 /* RWAskCreationistsViewController.swift */; };
+		70DE244B1C2A00210050C2B8 /* RWAskCreationistsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70DE244A1C2A00210050C2B8 /* RWAskCreationistsViewController.xib */; };
+		70DE244D1C2A02400050C2B8 /* RWEvolutionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE244C1C2A02400050C2B8 /* RWEvolutionObject.swift */; };
+		70DE244F1C2A027D0050C2B8 /* RWEvolutionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE244E1C2A027D0050C2B8 /* RWEvolutionViewModel.swift */; };
+		70DE24511C2A039F0050C2B8 /* RWEvolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24501C2A039F0050C2B8 /* RWEvolutionViewController.swift */; };
+		70DE24531C2A04B60050C2B8 /* RWQuoteObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24521C2A04B60050C2B8 /* RWQuoteObject.swift */; };
+		70DE24551C2A05250050C2B8 /* RWQuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24541C2A05250050C2B8 /* RWQuoteViewModel.swift */; };
+		70DE24571C2A07D00050C2B8 /* RWQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24561C2A07D00050C2B8 /* RWQuotesViewController.swift */; };
+		70DE24591C2A091E0050C2B8 /* RWEvolutionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70DE24581C2A091E0050C2B8 /* RWEvolutionViewController.xib */; };
+		70DE245B1C2A09C70050C2B8 /* RWQuotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70DE245A1C2A09C70050C2B8 /* RWQuotesViewController.xib */; };
+		70DE245D1C2A0E9F0050C2B8 /* RWPodcastPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE245C1C2A0E9F0050C2B8 /* RWPodcastPlayerViewController.swift */; };
+		70DE245F1C2A0EE00050C2B8 /* RWPodcastPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70DE245E1C2A0EE00050C2B8 /* RWPodcastPlayerViewController.xib */; };
 		70E0EE441C29C26300E647DE /* RWDebaterTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0EE431C29C26300E647DE /* RWDebaterTopicTableViewCell.swift */; };
 		70E0EE461C29C2A200E647DE /* RWDebaterTopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E0EE451C29C2A200E647DE /* RWDebaterTopicTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -122,7 +132,6 @@
 /* Begin PBXFileReference section */
 		1F27EAD91C27713D00D8FF5A /* atheism.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = atheism.plist; sourceTree = "<group>"; };
 		1F27EADB1C27714C00D8FF5A /* creationists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = creationists.plist; sourceTree = "<group>"; };
-		1F27EADD1C27716000D8FF5A /* 4thListener-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "4thListener-Info.plist"; sourceTree = "<group>"; };
 		1F27EADF1C27716E00D8FF5A /* evolution.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = evolution.plist; sourceTree = "<group>"; };
 		1F27EAE11C2771BD00D8FF5A /* smalley.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = smalley.plist; sourceTree = "<group>"; };
 		1F27EAE31C27732700D8FF5A /* RWDebaterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebaterViewController.swift; sourceTree = "<group>"; };
@@ -147,8 +156,6 @@
 		1F45DE031B3AE52F00086116 /* RWMoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWMoreTableViewCell.h; sourceTree = "<group>"; };
 		1F45DE041B3AE52F00086116 /* RWMoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWMoreTableViewCell.m; sourceTree = "<group>"; };
 		1F45DE051B3AE52F00086116 /* RWMoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWMoreTableViewCell.xib; sourceTree = "<group>"; };
-		1F45DE111B3AFF2B00086116 /* RWEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWEvent.h; sourceTree = "<group>"; };
-		1F45DE121B3AFF2B00086116 /* RWEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWEvent.m; sourceTree = "<group>"; };
 		1F45DE151B3B37E800086116 /* RWEventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWEventTableViewCell.h; sourceTree = "<group>"; };
 		1F45DE161B3B37E800086116 /* RWEventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWEventTableViewCell.m; sourceTree = "<group>"; };
 		1F45DE171B3B37E800086116 /* RWEventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWEventTableViewCell.xib; sourceTree = "<group>"; };
@@ -171,7 +178,6 @@
 		1F528DA21BFAC96C00FDAD50 /* DogmaDebate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DogmaDebate-Bridging-Header.h"; sourceTree = "<group>"; };
 		1F528DA31BFAC96D00FDAD50 /* DDPodcastOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDPodcastOperation.swift; sourceTree = "<group>"; };
 		1F528DA61BFE8FF100FDAD50 /* RWPodcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcast.swift; sourceTree = "<group>"; };
-		1F528DA81C14F8F300FDAD50 /* RWPodcastManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastManager.swift; sourceTree = "<group>"; };
 		1F528DAB1C14FBA800FDAD50 /* RWPodcastsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastsViewModel.swift; sourceTree = "<group>"; };
 		1F5D5CA41B4635210074FBC8 /* RWPodcastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWPodcastViewController.h; sourceTree = "<group>"; };
 		1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWPodcastViewController.m; sourceTree = "<group>"; };
@@ -215,6 +221,20 @@
 		7029172B1C28CAC700F64075 /* RWDebateTopicsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDebateTopicsViewController.xib; sourceTree = "<group>"; };
 		7029172D1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebateTopicsViewModel.swift; sourceTree = "<group>"; };
 		7029172F1C28DCC600F64075 /* RWAtheismObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWAtheismObject.swift; sourceTree = "<group>"; };
+		70DE24441C29FD420050C2B8 /* RWCreationistObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWCreationistObject.swift; sourceTree = "<group>"; };
+		70DE24461C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWAskCreationistsViewModel.swift; sourceTree = "<group>"; };
+		70DE24481C29FF880050C2B8 /* RWAskCreationistsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWAskCreationistsViewController.swift; sourceTree = "<group>"; };
+		70DE244A1C2A00210050C2B8 /* RWAskCreationistsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWAskCreationistsViewController.xib; sourceTree = "<group>"; };
+		70DE244C1C2A02400050C2B8 /* RWEvolutionObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWEvolutionObject.swift; sourceTree = "<group>"; };
+		70DE244E1C2A027D0050C2B8 /* RWEvolutionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWEvolutionViewModel.swift; sourceTree = "<group>"; };
+		70DE24501C2A039F0050C2B8 /* RWEvolutionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWEvolutionViewController.swift; sourceTree = "<group>"; };
+		70DE24521C2A04B60050C2B8 /* RWQuoteObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWQuoteObject.swift; sourceTree = "<group>"; };
+		70DE24541C2A05250050C2B8 /* RWQuoteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWQuoteViewModel.swift; sourceTree = "<group>"; };
+		70DE24561C2A07D00050C2B8 /* RWQuotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWQuotesViewController.swift; sourceTree = "<group>"; };
+		70DE24581C2A091E0050C2B8 /* RWEvolutionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWEvolutionViewController.xib; sourceTree = "<group>"; };
+		70DE245A1C2A09C70050C2B8 /* RWQuotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWQuotesViewController.xib; sourceTree = "<group>"; };
+		70DE245C1C2A0E9F0050C2B8 /* RWPodcastPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastPlayerViewController.swift; sourceTree = "<group>"; };
+		70DE245E1C2A0EE00050C2B8 /* RWPodcastPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWPodcastPlayerViewController.xib; sourceTree = "<group>"; };
 		70E0EE431C29C26300E647DE /* RWDebaterTopicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebaterTopicTableViewCell.swift; sourceTree = "<group>"; };
 		70E0EE451C29C2A200E647DE /* RWDebaterTopicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDebaterTopicTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -286,7 +306,6 @@
 			isa = PBXGroup;
 			children = (
 				1F45DDAB1B2E51FF00086116 /* Info.plist */,
-				1F27EADD1C27716000D8FF5A /* 4thListener-Info.plist */,
 				1F27EAD91C27713D00D8FF5A /* atheism.plist */,
 				1F27EADB1C27714C00D8FF5A /* creationists.plist */,
 				1F27EADF1C27716E00D8FF5A /* evolution.plist */,
@@ -347,6 +366,14 @@
 				702917251C28C82B00F64075 /* RWBibleViewController.swift */,
 				702917291C28CA4200F64075 /* RWDebateTopicsViewController.swift */,
 				7029172B1C28CAC700F64075 /* RWDebateTopicsViewController.xib */,
+				70DE24481C29FF880050C2B8 /* RWAskCreationistsViewController.swift */,
+				70DE244A1C2A00210050C2B8 /* RWAskCreationistsViewController.xib */,
+				70DE24501C2A039F0050C2B8 /* RWEvolutionViewController.swift */,
+				70DE24581C2A091E0050C2B8 /* RWEvolutionViewController.xib */,
+				70DE24561C2A07D00050C2B8 /* RWQuotesViewController.swift */,
+				70DE245A1C2A09C70050C2B8 /* RWQuotesViewController.xib */,
+				70DE245C1C2A0E9F0050C2B8 /* RWPodcastPlayerViewController.swift */,
+				70DE245E1C2A0EE00050C2B8 /* RWPodcastPlayerViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -386,8 +413,6 @@
 		1F45DDE61B2F151000086116 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1F45DE111B3AFF2B00086116 /* RWEvent.h */,
-				1F45DE121B3AFF2B00086116 /* RWEvent.m */,
 				1F5D5CCE1B472BE80074FBC8 /* RWStaffInfo.h */,
 				1F5D5CCF1B472BE80074FBC8 /* RWStaffInfo.m */,
 				1F5D5CD91B473EA00074FBC8 /* RWPartner.h */,
@@ -395,8 +420,10 @@
 				1FDB53801B656E0C00CE57A4 /* RWBlogContent.h */,
 				1FDB53811B656E0C00CE57A4 /* RWBlogContent.m */,
 				1F528DA61BFE8FF100FDAD50 /* RWPodcast.swift */,
-				1F528DA81C14F8F300FDAD50 /* RWPodcastManager.swift */,
 				7029172F1C28DCC600F64075 /* RWAtheismObject.swift */,
+				70DE24441C29FD420050C2B8 /* RWCreationistObject.swift */,
+				70DE244C1C2A02400050C2B8 /* RWEvolutionObject.swift */,
+				70DE24521C2A04B60050C2B8 /* RWQuoteObject.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -410,6 +437,9 @@
 				1FE4DEA21C1A605E0092575D /* RWPodcastCellViewModel.swift */,
 				702917271C28C9CF00F64075 /* RWBibleViewModel.swift */,
 				7029172D1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift */,
+				70DE24461C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift */,
+				70DE244E1C2A027D0050C2B8 /* RWEvolutionViewModel.swift */,
+				70DE24541C2A05250050C2B8 /* RWQuoteViewModel.swift */,
 			);
 			name = "View Models";
 			sourceTree = "<group>";
@@ -496,18 +526,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70DE245B1C2A09C70050C2B8 /* RWQuotesViewController.xib in Resources */,
 				1F45DDBE1B2E51FF00086116 /* LaunchScreen.xib in Resources */,
 				1F27EAE21C2771BD00D8FF5A /* smalley.plist in Resources */,
 				1F45DE281B3B4FA600086116 /* RWBlogViewController.xib in Resources */,
-				1F27EADE1C27716000D8FF5A /* 4thListener-Info.plist in Resources */,
 				1F5D5CD71B473E0B0074FBC8 /* RWPartnerViewController.xib in Resources */,
 				1F45DE011B3A04DA00086116 /* RWMoreViewController.xib in Resources */,
 				1F45DDDC1B2E588F00086116 /* RWPodcastCollectionViewCell.xib in Resources */,
 				1F27EAE61C2773FE00D8FF5A /* RWDebaterViewController.xib in Resources */,
 				1F5D5CB71B46E79A0074FBC8 /* RWFourthListenerViewController.xib in Resources */,
+				70DE245F1C2A0EE00050C2B8 /* RWPodcastPlayerViewController.xib in Resources */,
 				7029172C1C28CAC700F64075 /* RWDebateTopicsViewController.xib in Resources */,
 				1F27EADA1C27713D00D8FF5A /* atheism.plist in Resources */,
 				1F45DE511B3C8B6F00086116 /* RWCollectionViewCell.xib in Resources */,
+				70DE244B1C2A00210050C2B8 /* RWAskCreationistsViewController.xib in Resources */,
 				1F5D5CC51B47264C0074FBC8 /* RWAboutUsViewController.xib in Resources */,
 				1F45DE4A1B3C5AFF00086116 /* RWCollectionViewController.xib in Resources */,
 				1FE4DE9C1C17B4A30092575D /* RWPodcastsViewController.xib in Resources */,
@@ -519,6 +551,7 @@
 				1F27EADC1C27714C00D8FF5A /* creationists.plist in Resources */,
 				1F27EAE01C27716E00D8FF5A /* evolution.plist in Resources */,
 				1F45DE1D1B3B46DC00086116 /* RWEventHeaderView.xib in Resources */,
+				70DE24591C2A091E0050C2B8 /* RWEvolutionViewController.xib in Resources */,
 				1F27EAEA1C27811F00D8FF5A /* RWDebaterCollectionViewCell.xib in Resources */,
 				1F5D5CCC1B4727140074FBC8 /* RWAboutUsTableViewCell.xib in Resources */,
 				1F45DE1A1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */,
@@ -554,26 +587,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F45DE211B3B488C00086116 /* RWEventHeaderView.m in Sources */,
+				70DE244D1C2A02400050C2B8 /* RWEvolutionObject.swift in Sources */,
 				1F27EAEC1C27815100D8FF5A /* RWDebaterCollectionViewCell.swift in Sources */,
 				1F5D5CDB1B473EA00074FBC8 /* RWPartner.m in Sources */,
 				1F73FC411C15044B0050FB28 /* RWPodcastsViewController.swift in Sources */,
 				1F45DE4F1B3C8B6F00086116 /* RWCollectionViewCell.m in Sources */,
 				1FE4DEA31C1A605E0092575D /* RWPodcastCellViewModel.swift in Sources */,
 				7029172E1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift in Sources */,
+				70DE24451C29FD420050C2B8 /* RWCreationistObject.swift in Sources */,
 				702917261C28C82B00F64075 /* RWBibleViewController.swift in Sources */,
 				1F5D5CA71B4635210074FBC8 /* RWPodcastViewController.m in Sources */,
 				7029172A1C28CA4200F64075 /* RWDebateTopicsViewController.swift in Sources */,
 				1F45DE061B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */,
 				1F45DE2C1B3B546700086116 /* RWStyleControls.m in Sources */,
 				1F528DA71BFE8FF100FDAD50 /* RWPodcast.swift in Sources */,
+				70DE24471C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift in Sources */,
 				1F45DDB01B2E51FF00086116 /* AppDelegate.m in Sources */,
 				1FDB53821B656E0C00CE57A4 /* RWBlogContent.m in Sources */,
 				70E0EE441C29C26300E647DE /* RWDebaterTopicTableViewCell.swift in Sources */,
 				1F5D5CD01B472BE80074FBC8 /* RWStaffInfo.m in Sources */,
+				70DE24551C2A05250050C2B8 /* RWQuoteViewModel.swift in Sources */,
 				1F27EAE81C2777AF00D8FF5A /* RWDebaterViewModel.swift in Sources */,
+				70DE24531C2A04B60050C2B8 /* RWQuoteObject.swift in Sources */,
 				1FE4DEA51C1A62D50092575D /* RWPodcastCollectionViewCell.swift in Sources */,
 				1F528DAC1C14FBA800FDAD50 /* RWPodcastsViewModel.swift in Sources */,
 				1F5D5CB51B46E79A0074FBC8 /* RWFourthListenerViewController.m in Sources */,
+				70DE244F1C2A027D0050C2B8 /* RWEvolutionViewModel.swift in Sources */,
 				1F5D5CD51B473E0B0074FBC8 /* RWPartnerViewController.m in Sources */,
 				1FE4DEA11C17C70B0092575D /* DogmaDebateProtocol.swift in Sources */,
 				1F45DE5C1B40743100086116 /* RWCollectionViewTransitionAnimator.m in Sources */,
@@ -581,17 +620,19 @@
 				1F5D5CCA1B4727140074FBC8 /* RWAboutUsTableViewCell.m in Sources */,
 				1F5D5CE01B4769F30074FBC8 /* RWFAQViewController.m in Sources */,
 				1F5D5CBC1B46F4CA0074FBC8 /* RWFourthLoginViewController.m in Sources */,
-				1F528DA91C14F8F300FDAD50 /* RWPodcastManager.swift in Sources */,
 				1F45DE481B3C5AFF00086116 /* RWCollectionViewController.m in Sources */,
 				1F27EAE41C27732700D8FF5A /* RWDebaterViewController.swift in Sources */,
+				70DE24511C2A039F0050C2B8 /* RWEvolutionViewController.swift in Sources */,
 				1F5D5CC31B47264C0074FBC8 /* RWAboutUsViewController.m in Sources */,
 				1F45DE301B3B6C1600086116 /* RWStore.m in Sources */,
 				702917281C28C9CF00F64075 /* RWBibleViewModel.swift in Sources */,
+				70DE24571C2A07D00050C2B8 /* RWQuotesViewController.swift in Sources */,
+				70DE24491C29FF880050C2B8 /* RWAskCreationistsViewController.swift in Sources */,
+				70DE245D1C2A0E9F0050C2B8 /* RWPodcastPlayerViewController.swift in Sources */,
 				1F45DE181B3B37E800086116 /* RWEventTableViewCell.m in Sources */,
 				1F45DDAD1B2E51FF00086116 /* main.m in Sources */,
 				1F45DDFF1B3A04DA00086116 /* RWMoreViewController.m in Sources */,
 				1F528DA41BFAC96D00FDAD50 /* DDPodcastOperation.swift in Sources */,
-				1F45DE131B3AFF2B00086116 /* RWEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,7 +657,6 @@
 				1F5D5CB61B46E79A0074FBC8 /* RWFourthListenerViewController.m in Sources */,
 				1F45DE001B3A04DA00086116 /* RWMoreViewController.m in Sources */,
 				1F5D5CE11B4769F30074FBC8 /* RWFAQViewController.m in Sources */,
-				1F45DE141B3AFF2B00086116 /* RWEvent.m in Sources */,
 				1F45DE191B3B37E800086116 /* RWEventTableViewCell.m in Sources */,
 				1F45DE221B3B488C00086116 /* RWEventHeaderView.m in Sources */,
 			);

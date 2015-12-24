@@ -65,4 +65,10 @@ extension RWPodcastsViewController: UICollectionViewDataSource {
 
 extension RWPodcastsViewController: UICollectionViewDelegate {
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let podcastPlayerViewController = RWPodcastPlayerViewController()
+        podcastPlayerViewController.podcast = podcastsViewModel?.podcastAtIndex(indexPath.row)
+        self.navigationController?.pushViewController(podcastPlayerViewController, animated: true)
+    }
+    
 }
