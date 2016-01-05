@@ -126,7 +126,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jz0-dr-5ho">
-                            <rect key="frame" x="8" y="133.5" width="584" height="130"/>
+                            <rect key="frame" x="8" y="133" width="584" height="130"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="130" id="mKa-RE-Z3F"/>
@@ -161,14 +161,30 @@
                         <constraint firstAttribute="width" constant="250" id="zhZ-Vb-NFC"/>
                     </constraints>
                 </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cD0-Uq-ZHy">
+                    <rect key="frame" x="111" y="265" width="34" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgW-Rb-xOl">
+                    <rect key="frame" x="455" y="265" width="34" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="92b-GT-1cu" firstAttribute="top" secondItem="cD0-Uq-ZHy" secondAttribute="bottom" constant="20" id="6tu-Wr-ReL"/>
                 <constraint firstItem="4i9-V8-Zh0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9c9-UM-Sam"/>
                 <constraint firstItem="92b-GT-1cu" firstAttribute="top" secondItem="Uzr-zJ-hk2" secondAttribute="bottom" id="Dmf-Gs-qvB"/>
                 <constraint firstItem="92b-GT-1cu" firstAttribute="top" secondItem="4i9-V8-Zh0" secondAttribute="bottom" constant="15" id="LkL-CV-Nte"/>
+                <constraint firstItem="92b-GT-1cu" firstAttribute="top" secondItem="pgW-Rb-xOl" secondAttribute="bottom" constant="20" id="NX4-Dd-MdZ"/>
                 <constraint firstItem="92b-GT-1cu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Wy6-yJ-5Rx"/>
+                <constraint firstItem="4i9-V8-Zh0" firstAttribute="leading" secondItem="cD0-Uq-ZHy" secondAttribute="trailing" constant="30" id="X6a-pu-lc8"/>
                 <constraint firstItem="Uzr-zJ-hk2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xrl-A9-Otf"/>
+                <constraint firstItem="pgW-Rb-xOl" firstAttribute="leading" secondItem="4i9-V8-Zh0" secondAttribute="trailing" constant="30" id="aSx-tj-Hco"/>
                 <constraint firstAttribute="bottom" secondItem="92b-GT-1cu" secondAttribute="bottom" id="f2M-WQ-CJG"/>
                 <constraint firstAttribute="trailing" secondItem="92b-GT-1cu" secondAttribute="trailing" id="fPa-rv-2ye"/>
                 <constraint firstAttribute="trailing" secondItem="Uzr-zJ-hk2" secondAttribute="trailing" id="g6y-jo-5aH"/>
