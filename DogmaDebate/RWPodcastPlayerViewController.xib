@@ -10,6 +10,8 @@
                 <outlet property="imageView" destination="Uzr-zJ-hk2" id="LC5-JC-kOs"/>
                 <outlet property="podcastDescription" destination="Jz0-dr-5ho" id="R51-wX-lIp"/>
                 <outlet property="slider" destination="4i9-V8-Zh0" id="Fhq-q7-BSK"/>
+                <outlet property="timeDurationLabel" destination="pgW-Rb-xOl" id="fdH-og-SRs"/>
+                <outlet property="timerLabel" destination="cD0-Uq-ZHy" id="Z60-U4-kfH"/>
                 <outlet property="titleLabel" destination="nPb-N6-RYa" id="OEu-qq-GxG"/>
                 <outlet property="view" destination="iN0-l3-epB" id="oGN-Rj-Wk5"/>
             </connections>
@@ -162,13 +164,13 @@
                     </constraints>
                 </slider>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cD0-Uq-ZHy">
-                    <rect key="frame" x="111" y="265" width="34" height="14.5"/>
+                    <rect key="frame" x="131" y="265" width="34" height="14.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgW-Rb-xOl">
-                    <rect key="frame" x="455" y="265" width="34" height="14.5"/>
+                    <rect key="frame" x="435" y="265" width="34" height="14.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -182,9 +184,9 @@
                 <constraint firstItem="92b-GT-1cu" firstAttribute="top" secondItem="4i9-V8-Zh0" secondAttribute="bottom" constant="15" id="LkL-CV-Nte"/>
                 <constraint firstItem="92b-GT-1cu" firstAttribute="top" secondItem="pgW-Rb-xOl" secondAttribute="bottom" constant="20" id="NX4-Dd-MdZ"/>
                 <constraint firstItem="92b-GT-1cu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Wy6-yJ-5Rx"/>
-                <constraint firstItem="4i9-V8-Zh0" firstAttribute="leading" secondItem="cD0-Uq-ZHy" secondAttribute="trailing" constant="30" id="X6a-pu-lc8"/>
+                <constraint firstItem="4i9-V8-Zh0" firstAttribute="leading" secondItem="cD0-Uq-ZHy" secondAttribute="trailing" constant="10" id="X6a-pu-lc8"/>
                 <constraint firstItem="Uzr-zJ-hk2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xrl-A9-Otf"/>
-                <constraint firstItem="pgW-Rb-xOl" firstAttribute="leading" secondItem="4i9-V8-Zh0" secondAttribute="trailing" constant="30" id="aSx-tj-Hco"/>
+                <constraint firstItem="pgW-Rb-xOl" firstAttribute="leading" secondItem="4i9-V8-Zh0" secondAttribute="trailing" constant="10" id="aSx-tj-Hco"/>
                 <constraint firstAttribute="bottom" secondItem="92b-GT-1cu" secondAttribute="bottom" id="f2M-WQ-CJG"/>
                 <constraint firstAttribute="trailing" secondItem="92b-GT-1cu" secondAttribute="trailing" id="fPa-rv-2ye"/>
                 <constraint firstAttribute="trailing" secondItem="Uzr-zJ-hk2" secondAttribute="trailing" id="g6y-jo-5aH"/>

@@ -20,6 +20,8 @@ class RWPodcastPlayerViewController : UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var podcastDescription: UITextView!
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var timeDurationLabel: UILabel!
+    @IBOutlet weak var timerLabel: UILabel!
     
     var player: AVPlayer?
     var trackTime:CMTime?
@@ -88,15 +90,20 @@ class RWPodcastPlayerViewController : UIViewController {
                 if player?.status == AVPlayerStatus.ReadyToPlay {
                     isPlaying = true
                     player?.play()
-                    let secs = CMTimeGetSeconds((player?.currentItem?.asset.duration)!)
-                    let (hrs, min) = modf(secs / 3600)
-                    let (mins, sec) = modf(min * 60)
-                    print("Duration Time: \(hrs, mins, sec))")
+                    
+                    if let duration = player?.currentItem?.asset.duration {
+                        let secs = CMTimeGetSeconds(duration)
+                        self.slider.maximumValue = Float(secs)
+                        timeDurationLabel.text = setUpPodcastDuration(secs)
+                        
+                    }
+                    
                     player?.addPeriodicTimeObserverForInterval(CMTimeMake(1, 1), queue: nil) { (time) -> Void in
                         self.trackTime = time
                         self.seconds = CMTimeGetSeconds(time)
-                        print("CMTIme:\(self.trackTime)")
-                        print("Time 2:\(self.seconds)")
+                        self.timerLabel.text = self.setUpPodcastTimer(self.seconds)
+                        self.slider.value = Float(self.seconds)
+                        print("\(self.slider.value)")
                     }
 
                     if let time = player?.currentItem?.duration.seconds {
@@ -126,6 +133,31 @@ class RWPodcastPlayerViewController : UIViewController {
     func setUpPodcastDetails() {
         titleLabel.text = podcast?.title
         podcastDescription.text = podcast?.podcastDescription
+    }
+    
+    func setUpPodcastDuration(seconds: Double) -> String {
+        let (hrs, min) = modf(seconds / 3600)
+        let (mins, _) = modf(min * 60)
+        print("Duration Time: \(hrs, mins))")
+        let string = NSString(format: "%.02d:%.02d:%.02d", Int(hrs), Int(mins), Int(00))
+        
+        return string as String
+    }
+    
+    func setUpPodcastTimer(var seconds:Double) -> String {
+        var mins = 0
+        var hours = 0
+        if seconds >= 60.0 {
+            mins++
+            seconds = 0.0
+            print("\(seconds)")
+            
+        }
+        
+        if mins >= 60 {
+            hours++
+        }
+       return NSString(format: "%.02d:%.02d:%.02d", hours, mins, Int(seconds)) as String
     }
     
 }
