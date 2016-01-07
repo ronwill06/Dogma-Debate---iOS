@@ -72,7 +72,6 @@ extension RWEvolutionViewController : UITableViewDataSource {
 extension RWEvolutionViewController : UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath)
         
         selectedIndexPath = indexPath
         tableView.beginUpdates()
@@ -84,6 +83,7 @@ extension RWEvolutionViewController : UITableViewDelegate {
             cellIsDeselected = false
         }
         
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 
 }

@@ -138,7 +138,6 @@ class RWPodcastPlayerViewController : UIViewController {
     func setUpPodcastDuration(seconds: Double) -> String {
         let (hrs, min) = modf(seconds / 3600)
         let (mins, _) = modf(min * 60)
-        print("Duration Time: \(hrs, mins))")
         let string = NSString(format: "%.02d:%.02d:%.02d", Int(hrs), Int(mins), Int(00))
         
         return string as String

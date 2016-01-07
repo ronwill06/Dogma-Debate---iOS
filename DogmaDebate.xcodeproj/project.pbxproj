@@ -101,6 +101,14 @@
 		7029172C1C28CAC700F64075 /* RWDebateTopicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7029172B1C28CAC700F64075 /* RWDebateTopicsViewController.xib */; };
 		7029172E1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7029172D1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift */; };
 		702917301C28DCC600F64075 /* RWAtheismObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7029172F1C28DCC600F64075 /* RWAtheismObject.swift */; };
+		70BFE7D21C3E039E004A5D1A /* Clips in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7D11C3E039E004A5D1A /* Clips */; };
+		70BFE7D41C3E043F004A5D1A /* sounds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7D31C3E043F004A5D1A /* sounds.plist */; };
+		70BFE7D61C3E06BF004A5D1A /* RWDropsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFE7D51C3E06BF004A5D1A /* RWDropsViewController.swift */; };
+		70BFE7D81C3E07EA004A5D1A /* RWDropsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFE7D71C3E07EA004A5D1A /* RWDropsTableViewCell.swift */; };
+		70BFE7DA1C3E082C004A5D1A /* RWDropsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7D91C3E082C004A5D1A /* RWDropsTableViewCell.xib */; };
+		70BFE7DC1C3E0955004A5D1A /* RWDropsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7DB1C3E0955004A5D1A /* RWDropsViewController.xib */; };
+		70BFE7DE1C3E09CC004A5D1A /* RWDropsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFE7DD1C3E09CC004A5D1A /* RWDropsViewModel.swift */; };
+		70BFE7E01C3E0BCE004A5D1A /* RWDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFE7DF1C3E0BCE004A5D1A /* RWDrop.swift */; };
 		70DE24451C29FD420050C2B8 /* RWCreationistObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24441C29FD420050C2B8 /* RWCreationistObject.swift */; };
 		70DE24471C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24461C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift */; };
 		70DE24491C29FF880050C2B8 /* RWAskCreationistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24481C29FF880050C2B8 /* RWAskCreationistsViewController.swift */; };
@@ -221,6 +229,14 @@
 		7029172B1C28CAC700F64075 /* RWDebateTopicsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDebateTopicsViewController.xib; sourceTree = "<group>"; };
 		7029172D1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebateTopicsViewModel.swift; sourceTree = "<group>"; };
 		7029172F1C28DCC600F64075 /* RWAtheismObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWAtheismObject.swift; sourceTree = "<group>"; };
+		70BFE7D11C3E039E004A5D1A /* Clips */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Clips; sourceTree = "<group>"; };
+		70BFE7D31C3E043F004A5D1A /* sounds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sounds.plist; sourceTree = "<group>"; };
+		70BFE7D51C3E06BF004A5D1A /* RWDropsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDropsViewController.swift; sourceTree = "<group>"; };
+		70BFE7D71C3E07EA004A5D1A /* RWDropsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDropsTableViewCell.swift; sourceTree = "<group>"; };
+		70BFE7D91C3E082C004A5D1A /* RWDropsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDropsTableViewCell.xib; sourceTree = "<group>"; };
+		70BFE7DB1C3E0955004A5D1A /* RWDropsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDropsViewController.xib; sourceTree = "<group>"; };
+		70BFE7DD1C3E09CC004A5D1A /* RWDropsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDropsViewModel.swift; sourceTree = "<group>"; };
+		70BFE7DF1C3E0BCE004A5D1A /* RWDrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDrop.swift; sourceTree = "<group>"; };
 		70DE24441C29FD420050C2B8 /* RWCreationistObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWCreationistObject.swift; sourceTree = "<group>"; };
 		70DE24461C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWAskCreationistsViewModel.swift; sourceTree = "<group>"; };
 		70DE24481C29FF880050C2B8 /* RWAskCreationistsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWAskCreationistsViewController.swift; sourceTree = "<group>"; };
@@ -306,10 +322,12 @@
 			isa = PBXGroup;
 			children = (
 				1F45DDAB1B2E51FF00086116 /* Info.plist */,
+				70BFE7D11C3E039E004A5D1A /* Clips */,
 				1F27EAD91C27713D00D8FF5A /* atheism.plist */,
 				1F27EADB1C27714C00D8FF5A /* creationists.plist */,
 				1F27EADF1C27716E00D8FF5A /* evolution.plist */,
 				1F27EAE11C2771BD00D8FF5A /* smalley.plist */,
+				70BFE7D31C3E043F004A5D1A /* sounds.plist */,
 				1F45DDAC1B2E51FF00086116 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -374,6 +392,8 @@
 				70DE245A1C2A09C70050C2B8 /* RWQuotesViewController.xib */,
 				70DE245C1C2A0E9F0050C2B8 /* RWPodcastPlayerViewController.swift */,
 				70DE245E1C2A0EE00050C2B8 /* RWPodcastPlayerViewController.xib */,
+				70BFE7D51C3E06BF004A5D1A /* RWDropsViewController.swift */,
+				70BFE7DB1C3E0955004A5D1A /* RWDropsViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -406,6 +426,8 @@
 				1F27EAEB1C27815100D8FF5A /* RWDebaterCollectionViewCell.swift */,
 				70E0EE431C29C26300E647DE /* RWDebaterTopicTableViewCell.swift */,
 				70E0EE451C29C2A200E647DE /* RWDebaterTopicTableViewCell.xib */,
+				70BFE7D71C3E07EA004A5D1A /* RWDropsTableViewCell.swift */,
+				70BFE7D91C3E082C004A5D1A /* RWDropsTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -424,6 +446,7 @@
 				70DE24441C29FD420050C2B8 /* RWCreationistObject.swift */,
 				70DE244C1C2A02400050C2B8 /* RWEvolutionObject.swift */,
 				70DE24521C2A04B60050C2B8 /* RWQuoteObject.swift */,
+				70BFE7DF1C3E0BCE004A5D1A /* RWDrop.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -440,6 +463,7 @@
 				70DE24461C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift */,
 				70DE244E1C2A027D0050C2B8 /* RWEvolutionViewModel.swift */,
 				70DE24541C2A05250050C2B8 /* RWQuoteViewModel.swift */,
+				70BFE7DD1C3E09CC004A5D1A /* RWDropsViewModel.swift */,
 			);
 			name = "View Models";
 			sourceTree = "<group>";
@@ -526,12 +550,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70BFE7D21C3E039E004A5D1A /* Clips in Resources */,
 				70DE245B1C2A09C70050C2B8 /* RWQuotesViewController.xib in Resources */,
 				1F45DDBE1B2E51FF00086116 /* LaunchScreen.xib in Resources */,
 				1F27EAE21C2771BD00D8FF5A /* smalley.plist in Resources */,
 				1F45DE281B3B4FA600086116 /* RWBlogViewController.xib in Resources */,
 				1F5D5CD71B473E0B0074FBC8 /* RWPartnerViewController.xib in Resources */,
 				1F45DE011B3A04DA00086116 /* RWMoreViewController.xib in Resources */,
+				70BFE7DC1C3E0955004A5D1A /* RWDropsViewController.xib in Resources */,
 				1F45DDDC1B2E588F00086116 /* RWPodcastCollectionViewCell.xib in Resources */,
 				1F27EAE61C2773FE00D8FF5A /* RWDebaterViewController.xib in Resources */,
 				1F5D5CB71B46E79A0074FBC8 /* RWFourthListenerViewController.xib in Resources */,
@@ -553,6 +579,8 @@
 				1F45DE1D1B3B46DC00086116 /* RWEventHeaderView.xib in Resources */,
 				70DE24591C2A091E0050C2B8 /* RWEvolutionViewController.xib in Resources */,
 				1F27EAEA1C27811F00D8FF5A /* RWDebaterCollectionViewCell.xib in Resources */,
+				70BFE7D41C3E043F004A5D1A /* sounds.plist in Resources */,
+				70BFE7DA1C3E082C004A5D1A /* RWDropsTableViewCell.xib in Resources */,
 				1F5D5CCC1B4727140074FBC8 /* RWAboutUsTableViewCell.xib in Resources */,
 				1F45DE1A1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */,
 			);
@@ -606,7 +634,9 @@
 				1FDB53821B656E0C00CE57A4 /* RWBlogContent.m in Sources */,
 				70E0EE441C29C26300E647DE /* RWDebaterTopicTableViewCell.swift in Sources */,
 				1F5D5CD01B472BE80074FBC8 /* RWStaffInfo.m in Sources */,
+				70BFE7D81C3E07EA004A5D1A /* RWDropsTableViewCell.swift in Sources */,
 				70DE24551C2A05250050C2B8 /* RWQuoteViewModel.swift in Sources */,
+				70BFE7DE1C3E09CC004A5D1A /* RWDropsViewModel.swift in Sources */,
 				1F27EAE81C2777AF00D8FF5A /* RWDebaterViewModel.swift in Sources */,
 				70DE24531C2A04B60050C2B8 /* RWQuoteObject.swift in Sources */,
 				1FE4DEA51C1A62D50092575D /* RWPodcastCollectionViewCell.swift in Sources */,
@@ -624,11 +654,13 @@
 				1F27EAE41C27732700D8FF5A /* RWDebaterViewController.swift in Sources */,
 				70DE24511C2A039F0050C2B8 /* RWEvolutionViewController.swift in Sources */,
 				1F5D5CC31B47264C0074FBC8 /* RWAboutUsViewController.m in Sources */,
+				70BFE7D61C3E06BF004A5D1A /* RWDropsViewController.swift in Sources */,
 				1F45DE301B3B6C1600086116 /* RWStore.m in Sources */,
 				702917281C28C9CF00F64075 /* RWBibleViewModel.swift in Sources */,
 				70DE24571C2A07D00050C2B8 /* RWQuotesViewController.swift in Sources */,
 				70DE24491C29FF880050C2B8 /* RWAskCreationistsViewController.swift in Sources */,
 				70DE245D1C2A0E9F0050C2B8 /* RWPodcastPlayerViewController.swift in Sources */,
+				70BFE7E01C3E0BCE004A5D1A /* RWDrop.swift in Sources */,
 				1F45DE181B3B37E800086116 /* RWEventTableViewCell.m in Sources */,
 				1F45DDAD1B2E51FF00086116 /* main.m in Sources */,
 				1F45DDFF1B3A04DA00086116 /* RWMoreViewController.m in Sources */,
