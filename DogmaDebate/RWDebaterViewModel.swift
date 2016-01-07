@@ -33,8 +33,9 @@ class RWDebaterViewModel {
         let askCreationistsViewController = RWAskCreationistsViewController()
         let bibleViewController = RWBibleViewController()
         let smalleyQuotesViewController = RWQuotesViewController()
+        let dropsViewController = RWDropsViewController()
         
-        let viewControllers = [debateTopicsViewController, evolutionBasicViewController, askCreationistsViewController, bibleViewController, smalleyQuotesViewController]
+        let viewControllers = [debateTopicsViewController, evolutionBasicViewController, askCreationistsViewController, bibleViewController, smalleyQuotesViewController, dropsViewController]
         let viewController = viewControllers[index]
         
         return viewController

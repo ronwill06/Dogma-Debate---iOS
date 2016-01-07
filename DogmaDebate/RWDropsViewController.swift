@@ -63,7 +63,7 @@ extension RWDropsViewController : UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-       // selectedIndexPath = indexPath
+        selectedIndexPath = indexPath
         tableView.beginUpdates()
         tableView.endUpdates()
         
