@@ -144,20 +144,31 @@ class RWPodcastPlayerViewController : UIViewController {
         return string as String
     }
     
-    func setUpPodcastTimer(var seconds:Double) -> String {
-        var mins = 0
-        var hours = 0
-        if seconds >= 60.0 {
-            mins++
-            seconds = 0.0
-            print("\(seconds)")
+    func setUpPodcastTimer(seconds:Double) -> String {
+        var mins = 0.0
+        var hours = 0.0
+        var countedSeconds = 0.0
+         var secs = 0.0
+        
+        while countedSeconds <= seconds {
+            secs++
             
+            if countedSeconds % 60.0 == 0 && countedSeconds > 0 {
+                mins++
+                secs = 0.0
+            }
+            
+            
+            if countedSeconds % 3600 == 0 && countedSeconds > 0 {
+                hours++
+                mins = 0.0
+            }
+            
+             countedSeconds++
         }
         
-        if mins >= 60 {
-            hours++
-        }
-       return NSString(format: "%.02d:%.02d:%.02d", hours, mins, Int(seconds)) as String
+        
+       return NSString(format: "%.02d:%.02d:%.02d", Int(hours), Int(mins), Int(secs)) as String
     }
     
 }
