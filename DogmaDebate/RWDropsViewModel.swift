@@ -55,9 +55,7 @@ class RWDropsViewModel {
         } catch {
             
         }
-        
     }
-
     
     func numberOfItems() -> Int {
         return drops.count

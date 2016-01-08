@@ -75,7 +75,8 @@ extension RWDropsViewController : UITableViewDelegate {
         }
         let mp3 = dropsViewModel?.mp3ForIndex(indexPath.row) as? String
         if let mp3 = mp3 {
-            if let url = NSURL(string:mp3) {
+            let url = NSURL(fileURLWithPath: mp3)
+            
                 do {
                     let player = try AVAudioPlayer(contentsOfURL: url)
                     player.numberOfLoops = 0
@@ -83,7 +84,6 @@ extension RWDropsViewController : UITableViewDelegate {
                 } catch {
                     
                 }
-            }
         }
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
