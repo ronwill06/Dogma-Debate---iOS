@@ -14,6 +14,7 @@ class RWDropsViewController: UIViewController {
     var dropsViewModel: RWDropsViewModel?
     var selectedIndexPath: NSIndexPath?
     var cellIsDeselected = false
+    var player: AVAudioPlayer?
 
     
     @IBOutlet weak var tableView: UITableView!
@@ -76,11 +77,12 @@ extension RWDropsViewController : UITableViewDelegate {
         let mp3 = dropsViewModel?.mp3ForIndex(indexPath.row) as? String
         if let mp3 = mp3 {
             let url = NSURL(fileURLWithPath: mp3)
+            print("\(url)")
             
                 do {
-                    let player = try AVAudioPlayer(contentsOfURL: url)
-                    player.numberOfLoops = 0
-                    player.play()
+                    self.player = try AVAudioPlayer(contentsOfURL: url)
+                    player?.numberOfLoops = 0
+                    player?.play()
                 } catch {
                     
                 }
