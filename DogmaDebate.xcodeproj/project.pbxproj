@@ -321,8 +321,8 @@
 		1F45DDAA1B2E51FF00086116 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1F45DDAB1B2E51FF00086116 /* Info.plist */,
 				70BFE7D11C3E039E004A5D1A /* Clips */,
+				1F45DDAB1B2E51FF00086116 /* Info.plist */,
 				1F27EAD91C27713D00D8FF5A /* atheism.plist */,
 				1F27EADB1C27714C00D8FF5A /* creationists.plist */,
 				1F27EADF1C27716E00D8FF5A /* evolution.plist */,

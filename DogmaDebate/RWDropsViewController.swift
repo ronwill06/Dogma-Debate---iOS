@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class RWDropsViewController: UIViewController {
     
@@ -71,6 +72,18 @@ extension RWDropsViewController : UITableViewDelegate {
             cellIsDeselected = true
         } else {
             cellIsDeselected = false
+        }
+        let mp3 = dropsViewModel?.mp3ForIndex(indexPath.row) as? String
+        if let mp3 = mp3 {
+            if let url = NSURL(string:mp3) {
+                do {
+                    let player = try AVAudioPlayer(contentsOfURL: url)
+                    player.numberOfLoops = 0
+                    player.play()
+                } catch {
+                    
+                }
+            }
         }
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)

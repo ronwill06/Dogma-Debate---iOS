@@ -11,9 +11,11 @@ import Foundation
 class RWDropsViewModel {
     
     var drops: [RWDrop] = []
+    var clips: [NSString] = []
     
     init() {
         fetchData()
+        fetchClips()
     }
     
     func fetchData() {
@@ -33,7 +35,29 @@ class RWDropsViewModel {
                 
             }
         }
+        
+   }
+    
+    func fetchClips() {
+        
+        let path = NSBundle.mainBundle().bundlePath
+        let newPath = "/Clips/"
+        let clipsPath = NSString(format: "%@%@", path, newPath)
+        print("\(NSBundle.mainBundle().resourcePath)")
+        let p = NSBundle.mainBundle().pathsForResourcesOfType("mp3", inDirectory: "Clips")
+        
+        do {
+            let clipsFile = try NSFileManager.defaultManager().contentsOfDirectoryAtPath(clipsPath as String)
+            for index in 0..<clipsFile.count {
+                let clipsURL = NSString(format:"%@%d.mp3", clipsPath, index)
+                clips.append(clipsURL)
+            }
+        } catch {
+            
+        }
+        
     }
+
     
     func numberOfItems() -> Int {
         return drops.count
@@ -44,6 +68,12 @@ class RWDropsViewModel {
             return title
         }
         return ""
+    }
+    
+    func mp3ForIndex(index: Int) -> NSString {
+        let mp3 = clips[index]
+        
+        return mp3
     }
     
 }
