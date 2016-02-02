@@ -136,6 +136,62 @@
 			remoteGlobalIDString = 1F45DDA61B2E51FF00086116;
 			remoteInfo = DogmaDebate;
 		};
+		70E6DDFD1C602E13000B31D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F435027A1A6791B200038A29;
+			remoteInfo = OAuthSwift;
+		};
+		70E6DDFF1C602E13000B31D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F451E3C5195B8CD80051434C;
+			remoteInfo = OAuthSwiftDemo;
+		};
+		70E6DE011C602E13000B31D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C48B28021AFA598D00C7DEF6;
+			remoteInfo = OAuthSwiftOSX;
+		};
+		70E6DE031C602E13000B31D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C49FD5241AFB5DF500791E1A;
+			remoteInfo = OAuthSwiftOSXDemo;
+		};
+		70E6DE051C602E13000B31D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4B6EE1E1BF74CE300443596;
+			remoteInfo = OAuthSwiftTVOS;
+		};
+		70E6DE071C602E13000B31D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C40890C01C11B37000E3146A;
+			remoteInfo = OAuthSwiftWatchOS;
+		};
+		70E6DE091C602E13000B31D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4D50DF71BFB693F0053B624;
+			remoteInfo = OAuthSwiftTests;
+		};
+		70E6DE0B1C602E7D000B31D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F43502791A6791B200038A29;
+			remoteInfo = OAuthSwift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -255,6 +311,7 @@
 		70DE245E1C2A0EE00050C2B8 /* RWPodcastPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWPodcastPlayerViewController.xib; sourceTree = "<group>"; };
 		70E0EE431C29C26300E647DE /* RWDebaterTopicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebaterTopicTableViewCell.swift; sourceTree = "<group>"; };
 		70E0EE451C29C2A200E647DE /* RWDebaterTopicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDebaterTopicTableViewCell.xib; sourceTree = "<group>"; };
+		70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthSwift.xcodeproj; path = ../../../OAuth2/OAuthSwift/OAuthSwift.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +359,7 @@
 		1F45DDA91B2E51FF00086116 /* Dogma Debate */ = {
 			isa = PBXGroup;
 			children = (
+				70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */,
 				1F45DE2E1B3B6C1600086116 /* RWStore.h */,
 				1F45DE2F1B3B6C1600086116 /* RWStore.m */,
 				1F45DDBC1B2E51FF00086116 /* LaunchScreen.xib */,
@@ -487,6 +545,20 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
+		70E6DDF41C602E13000B31D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70E6DDFE1C602E13000B31D5 /* OAuthSwift.framework */,
+				70E6DE001C602E13000B31D5 /* OAuthSwiftDemo.app */,
+				70E6DE021C602E13000B31D5 /* OAuthSwift.framework */,
+				70E6DE041C602E13000B31D5 /* OAuthSwiftOSXDemo.app */,
+				70E6DE061C602E13000B31D5 /* OAuthSwift.framework */,
+				70E6DE081C602E13000B31D5 /* OAuthSwift.framework */,
+				70E6DE0A1C602E13000B31D5 /* OAuthSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -501,6 +573,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				70E6DE0C1C602E7D000B31D5 /* PBXTargetDependency */,
 			);
 			name = DogmaDebate;
 			productName = DogmaDebate;
@@ -556,6 +629,12 @@
 			mainGroup = 1F45DD9E1B2E51FF00086116;
 			productRefGroup = 1F45DDA81B2E51FF00086116 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 70E6DDF41C602E13000B31D5 /* Products */;
+					ProjectRef = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1F45DDA61B2E51FF00086116 /* DogmaDebate */,
@@ -563,6 +642,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		70E6DDFE1C602E13000B31D5 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 70E6DDFD1C602E13000B31D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70E6DE001C602E13000B31D5 /* OAuthSwiftDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OAuthSwiftDemo.app;
+			remoteRef = 70E6DDFF1C602E13000B31D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70E6DE021C602E13000B31D5 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 70E6DE011C602E13000B31D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70E6DE041C602E13000B31D5 /* OAuthSwiftOSXDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OAuthSwiftOSXDemo.app;
+			remoteRef = 70E6DE031C602E13000B31D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70E6DE061C602E13000B31D5 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 70E6DE051C602E13000B31D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70E6DE081C602E13000B31D5 /* OAuthSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuthSwift.framework;
+			remoteRef = 70E6DE071C602E13000B31D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		70E6DE0A1C602E13000B31D5 /* OAuthSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OAuthSwiftTests.xctest;
+			remoteRef = 70E6DE091C602E13000B31D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1F45DDA51B2E51FF00086116 /* Resources */ = {
@@ -721,6 +852,11 @@
 			isa = PBXTargetDependency;
 			target = 1F45DDA61B2E51FF00086116 /* DogmaDebate */;
 			targetProxy = 1F45DDC41B2E51FF00086116 /* PBXContainerItemProxy */;
+		};
+		70E6DE0C1C602E7D000B31D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuthSwift;
+			targetProxy = 70E6DE0B1C602E7D000B31D5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

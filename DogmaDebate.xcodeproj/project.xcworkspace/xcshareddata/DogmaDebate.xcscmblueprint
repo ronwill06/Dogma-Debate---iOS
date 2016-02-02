@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "14789C2AF9CB7A20BD6D4D8639BCA97D8AF27EF5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A65BCAA9B7A77500BBF95593800C3F1B9D215F5E" : 0,
+    "14789C2AF9CB7A20BD6D4D8639BCA97D8AF27EF5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CB56A19F-9CB4-494B-8809-7C8D5A59A2EA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A65BCAA9B7A77500BBF95593800C3F1B9D215F5E" : "..\/OAuth2\/OAuthSwift",
+    "14789C2AF9CB7A20BD6D4D8639BCA97D8AF27EF5" : "DogmaDebate"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DogmaDebate",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DogmaDebate.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ronwill06\/Dogma-Debate---iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "14789C2AF9CB7A20BD6D4D8639BCA97D8AF27EF5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/OAuthSwift\/OAuthSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A65BCAA9B7A77500BBF95593800C3F1B9D215F5E"
+    }
+  ]
+}
