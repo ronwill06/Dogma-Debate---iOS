@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RWFourthListenerViewController">
@@ -39,21 +39,44 @@
                     <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4th Listener" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tma-dv-IOA">
-                            <rect key="frame" x="8" y="123" width="160" height="119"/>
+                            <rect key="frame" x="8" y="123" width="200" height="119"/>
                             <constraints>
+                                <constraint firstAttribute="width" constant="200" id="0Wr-bo-0sz"/>
                                 <constraint firstAttribute="height" constant="119" id="KRz-Jp-HZN"/>
                                 <constraint firstAttribute="width" constant="160" id="u00-sy-5u6"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="u00-sy-5u6"/>
+                                </mask>
+                            </variation>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWp-gw-23k">
+                            <rect key="frame" x="536" y="16" width="48" height="30"/>
+                            <state key="normal" title="Logout">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="logout:" destination="-1" eventType="touchUpInside" id="Rqj-Tp-MMJ"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="tma-dv-IOA" firstAttribute="leading" secondItem="cG9-CP-dbJ" secondAttribute="leading" constant="8" id="E6V-Oa-j0B"/>
+                        <constraint firstAttribute="trailing" secondItem="CWp-gw-23k" secondAttribute="trailing" constant="16" id="JHr-eg-uLl"/>
                         <constraint firstAttribute="bottom" secondItem="tma-dv-IOA" secondAttribute="bottom" constant="8" id="TyC-m7-1fI"/>
+                        <constraint firstAttribute="trailing" secondItem="tma-dv-IOA" secondAttribute="trailing" id="eHc-oI-4f4"/>
+                        <constraint firstItem="CWp-gw-23k" firstAttribute="top" secondItem="cG9-CP-dbJ" secondAttribute="top" constant="16" id="kUc-A1-hD4"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="eHc-oI-4f4"/>
+                        </mask>
+                    </variation>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -70,6 +93,7 @@
                 <constraint firstAttribute="trailing" secondItem="LEv-6i-yHR" secondAttribute="trailing" id="uoD-8s-vVO"/>
                 <constraint firstItem="cG9-CP-dbJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wFg-69-g4T"/>
             </constraints>
+            <point key="canvasLocation" x="255" y="178"/>
         </view>
     </objects>
 </document>

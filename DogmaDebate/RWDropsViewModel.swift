@@ -44,7 +44,7 @@ class RWDropsViewModel {
         let newPath = "/Clips/"
         let clipsPath = NSString(format: "%@%@", path, newPath)
         print("\(NSBundle.mainBundle().resourcePath)")
-        let p = NSBundle.mainBundle().pathsForResourcesOfType("mp3", inDirectory: "Clips")
+        _ = NSBundle.mainBundle().pathsForResourcesOfType("mp3", inDirectory: "Clips")
         
         do {
             let clipsFile = try NSFileManager.defaultManager().contentsOfDirectoryAtPath(clipsPath as String)

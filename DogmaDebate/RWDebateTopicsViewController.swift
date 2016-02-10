@@ -75,7 +75,7 @@ extension RWDebateTopicsViewController : UITableViewDataSource {
 extension RWDebateTopicsViewController : UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        _ = tableView.cellForRowAtIndexPath(indexPath)
         
         selectedIndexPath = indexPath
         tableView.beginUpdates()

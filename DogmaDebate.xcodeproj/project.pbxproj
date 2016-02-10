@@ -95,7 +95,7 @@
 		1FE4DEA51C1A62D50092575D /* RWPodcastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4DEA41C1A62D50092575D /* RWPodcastCollectionViewCell.swift */; };
 		701E181C1C433930005D7339 /* RWFourthLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E181B1C433930005D7339 /* RWFourthLoginViewController.swift */; };
 		701E181E1C434FA1005D7339 /* RWFourthLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E181D1C434FA1005D7339 /* RWFourthLoginViewModel.swift */; };
-		701E18201C4351C9005D7339 /* RWLoginOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E181F1C4351C9005D7339 /* RWLoginOperation.swift */; };
+		701E18201C4351C9005D7339 /* RWOAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E181F1C4351C9005D7339 /* RWOAuthManager.swift */; };
 		702917261C28C82B00F64075 /* RWBibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702917251C28C82B00F64075 /* RWBibleViewController.swift */; };
 		702917281C28C9CF00F64075 /* RWBibleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702917271C28C9CF00F64075 /* RWBibleViewModel.swift */; };
 		7029172A1C28CA4200F64075 /* RWDebateTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702917291C28CA4200F64075 /* RWDebateTopicsViewController.swift */; };
@@ -110,6 +110,9 @@
 		70BFE7DC1C3E0955004A5D1A /* RWDropsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7DB1C3E0955004A5D1A /* RWDropsViewController.xib */; };
 		70BFE7DE1C3E09CC004A5D1A /* RWDropsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFE7DD1C3E09CC004A5D1A /* RWDropsViewModel.swift */; };
 		70BFE7E01C3E0BCE004A5D1A /* RWDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFE7DF1C3E0BCE004A5D1A /* RWDrop.swift */; };
+		70DB180D1C6A7EC400A2A451 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E6DDFE1C602E13000B31D5 /* OAuthSwift.framework */; };
+		70DB18171C6BBC0500A2A451 /* DDFourthListenerOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB18161C6BBC0500A2A451 /* DDFourthListenerOperation.swift */; };
+		70DB18191C6BBF2000A2A451 /* RWVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB18181C6BBF2000A2A451 /* RWVideo.swift */; };
 		70DE24451C29FD420050C2B8 /* RWCreationistObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24441C29FD420050C2B8 /* RWCreationistObject.swift */; };
 		70DE24471C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24461C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift */; };
 		70DE24491C29FF880050C2B8 /* RWAskCreationistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24481C29FF880050C2B8 /* RWAskCreationistsViewController.swift */; };
@@ -280,7 +283,7 @@
 		1FE4DEA41C1A62D50092575D /* RWPodcastCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastCollectionViewCell.swift; sourceTree = "<group>"; };
 		701E181B1C433930005D7339 /* RWFourthLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFourthLoginViewController.swift; sourceTree = "<group>"; };
 		701E181D1C434FA1005D7339 /* RWFourthLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFourthLoginViewModel.swift; sourceTree = "<group>"; };
-		701E181F1C4351C9005D7339 /* RWLoginOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWLoginOperation.swift; sourceTree = "<group>"; };
+		701E181F1C4351C9005D7339 /* RWOAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWOAuthManager.swift; sourceTree = "<group>"; };
 		702917251C28C82B00F64075 /* RWBibleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWBibleViewController.swift; sourceTree = "<group>"; };
 		702917271C28C9CF00F64075 /* RWBibleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWBibleViewModel.swift; sourceTree = "<group>"; };
 		702917291C28CA4200F64075 /* RWDebateTopicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebateTopicsViewController.swift; sourceTree = "<group>"; };
@@ -295,6 +298,8 @@
 		70BFE7DB1C3E0955004A5D1A /* RWDropsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDropsViewController.xib; sourceTree = "<group>"; };
 		70BFE7DD1C3E09CC004A5D1A /* RWDropsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDropsViewModel.swift; sourceTree = "<group>"; };
 		70BFE7DF1C3E0BCE004A5D1A /* RWDrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDrop.swift; sourceTree = "<group>"; };
+		70DB18161C6BBC0500A2A451 /* DDFourthListenerOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDFourthListenerOperation.swift; sourceTree = "<group>"; };
+		70DB18181C6BBF2000A2A451 /* RWVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWVideo.swift; sourceTree = "<group>"; };
 		70DE24441C29FD420050C2B8 /* RWCreationistObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWCreationistObject.swift; sourceTree = "<group>"; };
 		70DE24461C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWAskCreationistsViewModel.swift; sourceTree = "<group>"; };
 		70DE24481C29FF880050C2B8 /* RWAskCreationistsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWAskCreationistsViewController.swift; sourceTree = "<group>"; };
@@ -319,6 +324,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70DB180D1C6A7EC400A2A451 /* OAuthSwift.framework in Frameworks */,
 				1F5D5CF41B4B7A3F0074FBC8 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +371,7 @@
 				1F45DDBC1B2E51FF00086116 /* LaunchScreen.xib */,
 				1F45DDBA1B2E51FF00086116 /* Images.xcassets */,
 				701E181A1C4338AA005D7339 /* AppDelegate */,
+				70DB18151C6B8CD700A2A451 /* Managers */,
 				701E18191C433895005D7339 /* Operations */,
 				1F528DAA1C14FB8000FDAD50 /* View Models */,
 				1F45DDE61B2F151000086116 /* Model */,
@@ -505,6 +512,7 @@
 				70DE244C1C2A02400050C2B8 /* RWEvolutionObject.swift */,
 				70DE24521C2A04B60050C2B8 /* RWQuoteObject.swift */,
 				70BFE7DF1C3E0BCE004A5D1A /* RWDrop.swift */,
+				70DB18181C6BBF2000A2A451 /* RWVideo.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -531,7 +539,7 @@
 			isa = PBXGroup;
 			children = (
 				1F528DA31BFAC96D00FDAD50 /* DDPodcastOperation.swift */,
-				701E181F1C4351C9005D7339 /* RWLoginOperation.swift */,
+				70DB18161C6BBC0500A2A451 /* DDFourthListenerOperation.swift */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -543,6 +551,14 @@
 				1F45DDAF1B2E51FF00086116 /* AppDelegate.m */,
 			);
 			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		70DB18151C6B8CD700A2A451 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				701E181F1C4351C9005D7339 /* RWOAuthManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		70E6DDF41C602E13000B31D5 /* Products */ = {
@@ -610,7 +626,7 @@
 				TargetAttributes = {
 					1F45DDA61B2E51FF00086116 = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = R9AR4U6NWF;
+						DevelopmentTeam = 58A68V737Z;
 					};
 					1F45DDC21B2E51FF00086116 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -790,13 +806,14 @@
 				1F27EAE81C2777AF00D8FF5A /* RWDebaterViewModel.swift in Sources */,
 				70DE24531C2A04B60050C2B8 /* RWQuoteObject.swift in Sources */,
 				1FE4DEA51C1A62D50092575D /* RWPodcastCollectionViewCell.swift in Sources */,
-				701E18201C4351C9005D7339 /* RWLoginOperation.swift in Sources */,
+				701E18201C4351C9005D7339 /* RWOAuthManager.swift in Sources */,
 				1F528DAC1C14FBA800FDAD50 /* RWPodcastsViewModel.swift in Sources */,
 				1F5D5CB51B46E79A0074FBC8 /* RWFourthListenerViewController.m in Sources */,
 				70DE244F1C2A027D0050C2B8 /* RWEvolutionViewModel.swift in Sources */,
 				1F5D5CD51B473E0B0074FBC8 /* RWPartnerViewController.m in Sources */,
 				1FE4DEA11C17C70B0092575D /* DogmaDebateProtocol.swift in Sources */,
 				1F45DE5C1B40743100086116 /* RWCollectionViewTransitionAnimator.m in Sources */,
+				70DB18171C6BBC0500A2A451 /* DDFourthListenerOperation.swift in Sources */,
 				702917301C28DCC600F64075 /* RWAtheismObject.swift in Sources */,
 				1F5D5CCA1B4727140074FBC8 /* RWAboutUsTableViewCell.m in Sources */,
 				1F5D5CE01B4769F30074FBC8 /* RWFAQViewController.m in Sources */,
@@ -806,6 +823,7 @@
 				1F27EAE41C27732700D8FF5A /* RWDebaterViewController.swift in Sources */,
 				70DE24511C2A039F0050C2B8 /* RWEvolutionViewController.swift in Sources */,
 				1F5D5CC31B47264C0074FBC8 /* RWAboutUsViewController.m in Sources */,
+				70DB18191C6BBF2000A2A451 /* RWVideo.swift in Sources */,
 				70BFE7D61C3E06BF004A5D1A /* RWDropsViewController.swift in Sources */,
 				1F45DE301B3B6C1600086116 /* RWStore.m in Sources */,
 				702917281C28C9CF00F64075 /* RWBibleViewModel.swift in Sources */,

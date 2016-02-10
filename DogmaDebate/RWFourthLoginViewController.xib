@@ -23,7 +23,7 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4thBackground" translatesAutoresizingMaskIntoConstraints="NO" id="CHL-L0-NrX">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         </imageView>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIf-NW-QmD">
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" canCancelContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIf-NW-QmD">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4A-CB-HgS">
@@ -69,7 +69,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fg-pn-lrJ" userLabel="Horizontal DividerView">
-                                            <rect key="frame" x="130" y="375" width="240" height="1"/>
+                                            <rect key="frame" x="130" y="385" width="240" height="1"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="3He-zd-NIb"/>
@@ -85,7 +85,7 @@
                                             </variation>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfA-zg-Pd7">
-                                            <rect key="frame" x="119" y="391" width="100" height="50"/>
+                                            <rect key="frame" x="119" y="401" width="100" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="ZPU-Bi-M3E"/>
                                                 <constraint firstAttribute="height" constant="50" id="cZX-H8-bsS"/>
@@ -99,7 +99,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2g8-Tk-dfk">
-                                            <rect key="frame" x="280" y="391" width="100" height="50"/>
+                                            <rect key="frame" x="280" y="401" width="100" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="56h-lR-Kk1"/>
                                                 <constraint firstAttribute="width" constant="100" id="Cih-v6-94F"/>
@@ -114,10 +114,10 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoA-oF-Bto">
-                                            <rect key="frame" x="200" y="305" width="100" height="30"/>
+                                            <rect key="frame" x="200" y="305" width="100" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="bFl-Yb-xMP"/>
-                                                <constraint firstAttribute="height" constant="30" id="wL2-JT-IOC"/>
+                                                <constraint firstAttribute="height" constant="40" id="wL2-JT-IOC"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <state key="normal" title="Log In">
@@ -128,7 +128,7 @@
                                             </connections>
                                         </button>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLp-0V-FA4" userLabel="Vertical Divider View">
-                                            <rect key="frame" x="249" y="386" width="1" height="75"/>
+                                            <rect key="frame" x="249" y="405" width="1" height="75"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="75" id="rFg-bu-gKz"/>
@@ -163,6 +163,7 @@
                                         <constraint firstItem="z9Q-9t-HZz" firstAttribute="leading" secondItem="n4A-CB-HgS" secondAttribute="leading" constant="130" id="TXV-Pk-vgE"/>
                                         <constraint firstItem="HLp-0V-FA4" firstAttribute="top" secondItem="n4A-CB-HgS" secondAttribute="top" constant="226" id="Vhl-ie-c11"/>
                                         <constraint firstItem="NfA-zg-Pd7" firstAttribute="top" secondItem="5fg-pn-lrJ" secondAttribute="bottom" constant="15" id="W8P-n9-Yr0"/>
+                                        <constraint firstAttribute="bottom" secondItem="5fg-pn-lrJ" secondAttribute="bottom" constant="114" id="YRF-bl-4k2"/>
                                         <constraint firstItem="2g8-Tk-dfk" firstAttribute="leading" secondItem="HLp-0V-FA4" secondAttribute="trailing" constant="30" id="YRt-6F-z7b"/>
                                         <constraint firstItem="CIZ-7L-Nmn" firstAttribute="top" secondItem="z9Q-9t-HZz" secondAttribute="bottom" constant="15" id="dzi-me-HRl"/>
                                         <constraint firstItem="z9Q-9t-HZz" firstAttribute="top" secondItem="n4A-CB-HgS" secondAttribute="top" constant="10" id="fW7-z7-S5Y"/>
@@ -174,6 +175,7 @@
                                         <constraint firstItem="HLp-0V-FA4" firstAttribute="leading" secondItem="NfA-zg-Pd7" secondAttribute="trailing" constant="30" id="pii-hN-jGj"/>
                                         <constraint firstItem="z9Q-9t-HZz" firstAttribute="top" secondItem="n4A-CB-HgS" secondAttribute="top" constant="5" id="pqS-Xp-QOy"/>
                                         <constraint firstItem="2g8-Tk-dfk" firstAttribute="leading" secondItem="NfA-zg-Pd7" secondAttribute="trailing" constant="71" id="q5O-IW-WSq"/>
+                                        <constraint firstAttribute="bottom" secondItem="HLp-0V-FA4" secondAttribute="bottom" constant="20" id="s4b-Q1-nZW"/>
                                         <constraint firstItem="HLp-0V-FA4" firstAttribute="centerX" secondItem="n4A-CB-HgS" secondAttribute="centerX" id="teq-eC-LMF"/>
                                         <constraint firstAttribute="trailing" secondItem="rz3-n1-j20" secondAttribute="trailing" constant="8" id="vMB-eV-r38"/>
                                     </constraints>
@@ -194,6 +196,8 @@
                                             <exclude reference="2Gh-Xt-OZ4"/>
                                             <exclude reference="3QT-SO-X6l"/>
                                             <exclude reference="4uj-IP-Uz3"/>
+                                            <exclude reference="LBq-M3-Dls"/>
+                                            <exclude reference="1jw-lk-g1O"/>
                                             <exclude reference="Ohz-sD-CXj"/>
                                             <exclude reference="Vhl-ie-c11"/>
                                             <exclude reference="q5O-IW-WSq"/>

@@ -8,6 +8,7 @@
 
 #import "RWMoreTableViewCell.h"
 #import "RWFourthListenerViewController.h"
+#import "DogmaDebate-Swift.h"
 #import "RWStyleControls.h"
 
 @interface RWFourthListenerViewController ()<UITableViewDataSource, UITableViewDelegate>
@@ -28,9 +29,10 @@
     return self;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
     [RWStyleControls stylizeSegmentedControl:self.segmentedControl];
     
     [[self tableView] registerNib:[UINib nibWithNibName:@"RWMoreTableViewCell" bundle:nil]
@@ -39,19 +41,15 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    self.navigationController.navigationItem.hidesBackButton = YES;
-    self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.translucent = NO;
-    self.navigationController.navigationBar.hidden = NO;
     
-    UIBarButtonItem *rbbi = [[UIBarButtonItem alloc] initWithTitle:@"Log Out"
-                                                             style:UIBarButtonItemStylePlain
-                                                            target:self
-                                                            action:@selector(logout:)];
-    
-    [self.navigationItem setRightBarButtonItem:rbbi];
+}
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    DDFourthListenerOperation *operation = [[DDFourthListenerOperation alloc] init];
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -66,9 +64,10 @@
     return cell;
 }
 
-- (void)logout:(UIBarButtonItem *)sender
+- (IBAction)logout:(id)sender
 {
-    [[self navigationController] popToRootViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:true completion:nil];
+    
 }
 
 @end

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "RWMoreViewController.h"
 #import "DogmaDebate-Swift.h"
+@import OAuthSwift;
 
 @interface AppDelegate ()
 
@@ -50,6 +51,15 @@
     
     
     [[self window] makeKeyAndVisible];
+    
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
+{
+    if ([url.host isEqual: @"oauth-swift://login.dogmadebate.com"]) {
+          [OAuth2Swift handleOpenURL:url];
+    }
     
     return YES;
 }

@@ -29,7 +29,25 @@ class RWFourthLoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBarHidden = true
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
+        usernameField?.text = nil
+        passwordField?.text = nil
+    }
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if RWOAuthManager.sharedManager.isUserLoggedIn == true  {
+            let fourthListenerVC = RWFourthListenerViewController()
+            presentViewController(fourthListenerVC, animated: false, completion: nil)
+        }
+
     }
     
     
@@ -46,13 +64,20 @@ class RWFourthLoginViewController: UIViewController {
     
     @IBAction func logIn(sender: AnyObject) {
         
+        
         let username = usernameField?.text
         let password = passwordField?.text
         
         guard let name = username else {return}
         guard let secret = password else {return}
         
-        _ = RWLoginOperation(username: name, password:secret)
+       RWOAuthManager.sharedManager.authorizeUser(name, password: secret)
+        
+        if RWOAuthManager.sharedManager.isUserLoggedIn == true  {
+           let fourthListenerVC = RWFourthListenerViewController()
+            presentViewController(fourthListenerVC, animated: false, completion: nil)
+        }
+        
 
     }
     
