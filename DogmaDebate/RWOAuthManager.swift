@@ -9,9 +9,8 @@
 import Foundation
 import OAuthSwift
 
-class RWLoginOperation {
+class RWOAuthManager {
     
-//http://login.dogmadebate.com/&response_type&client_secret=\(clientSecret)&grant_type=password&username=\(username)&password=\(password)
     let clientId = "xqBztkf8SReYxRd0dz0wlOVb4wO8Lm"
     let clientSecret = "4jNGTh18pT0ESyv5zJEzf0nabsH0At"
     
