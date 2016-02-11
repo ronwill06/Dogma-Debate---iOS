@@ -43,11 +43,6 @@ class RWFourthLoginViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        if RWOAuthManager.sharedManager.isUserLoggedIn == true  {
-            let fourthListenerVC = RWFourthListenerViewController()
-            presentViewController(fourthListenerVC, animated: false, completion: nil)
-        }
-
     }
     
     

@@ -38,13 +38,38 @@ class RWOAuthManager {
         oauthSwift.client.post("http://login.dogmadebate.com/?oauth=token&grant_type=password", parameters: ["client_id" : clientId ,"client_secret" : clientSecret,"grant_type" : "password", "username" : username, "password" : password], headers: ["Authorization" : "basic"], success: {[weak self] (data, response) -> Void in
             guard let strongSelf = self else { return }
             
-            
-            if response.statusCode == 200 {
-                let dataString = NSString(data: data, encoding:NSUTF8StringEncoding)
-                print("\(dataString)")
+            do {
+                
+                let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(rawValue: 0))
+                let accessToken =  json["access_token"] as! String
+                
+                oauthSwift.client.get("http://login.dogmadebate.com/wp-json/wp/v2/posts", parameters: ["access_token" : "\(accessToken)"], headers: ["scope" : "basic", "token_type" : "Bearer"], success: { (data, response) -> Void in
+                    
+                    do {
+                        if let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(rawValue: 0)) as? [AnyObject] {
+                            
+                            for mediaDictionary in json {
+                                if let dictionary =  mediaDictionary as? [String : AnyObject] {
+                                    strongSelf.parseMediaData(dictionary)
+                                }
+                            }
+                        }
+                        
+                    } catch {
+                        
+                    }
+                    
+                    }, failure: { (error) -> Void in
+                        print("\(error.localizedDescription)")
+                })
+                
+                
+            } catch {
+                
             }
             
-              strongSelf.isUserLoggedIn = true
+            
+            strongSelf.isUserLoggedIn = true
             
             }) { (error) -> Void in
                 print("\(error.localizedDescription)")
@@ -57,10 +82,16 @@ class RWOAuthManager {
                 alertView.show()
         }
         
-        
     }
     
-    
+    private func parseMediaData(dictionary: [String : AnyObject]) {
+        if let titleContent = dictionary["title"] as? [String : String], title = titleContent["rendered"] {
+            print("Title: \(title)")
+        }
+        let mediaContent = dictionary["content"] as? [String : String]
+        print("\(mediaContent)")
+        
+    }
     
 
 }

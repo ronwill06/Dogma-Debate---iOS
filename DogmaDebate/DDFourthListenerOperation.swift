@@ -12,6 +12,7 @@ enum ElementType: String {
     case Item = "item"
     case Title = "title"
     case Enclosure = "enclosure"
+    case ContentEncoded = "content:encoded"
 }
 
 class DDFourthListenerOperation: NSObject, NSXMLParserDelegate {
@@ -44,8 +45,8 @@ class DDFourthListenerOperation: NSObject, NSXMLParserDelegate {
     
     
     func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
-        print("Element Name:\(elementName)")
-        print("Attribute Dict:\(attributeDict)")
+        //print("Element Name:\(elementName)")
+        //print("Attribute Dict:\(attributeDict)")
         
         let podcast = RWPodcast()
         
@@ -57,7 +58,14 @@ class DDFourthListenerOperation: NSObject, NSXMLParserDelegate {
             
         case ElementType.Title.rawValue:
             parsedElement = "title"
-        case:
+        case ElementType.Enclosure.rawValue:
+            parsedElement = "enclosure"
+            let length = attributeDict["length"]
+            let url = attributeDict["url"]
+            print("\(length)")
+            print("\(url)")
+        case ElementType.ContentEncoded.rawValue:
+            parsedElement = "content:encoded"
         default:
             break
         }
@@ -65,13 +73,45 @@ class DDFourthListenerOperation: NSObject, NSXMLParserDelegate {
     
     
     func parser(parser: NSXMLParser, foundCharacters string: String) {
-        print("Found Characters:\(string)")
+         //print("Found Characters:\(string)")
+        
+        if inItem {
+            
+            switch parsedElement {
+                
+                case ElementType.ContentEncoded.rawValue:
+                print("New String: \(string)")
+            default:
+                break
+            }
+            
+        }
     }
     
     
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        print("Element Name At End:\(elementName)")
-        print("Qualified Name At End:\(qName)")
+         //print("Element Name At End:\(elementName)")
+        
+        if inItem {
+            
+            switch elementName {
+                
+            case ElementType.Title.rawValue:
+                parsedElement = ""
+            case ElementType.Enclosure.rawValue:
+                parsedElement = ""
+            case ElementType.ContentEncoded.rawValue:
+                parsedElement = ""
+            default:
+                break
+            }
+
+        }
+        
+        if elementName == "item" {
+            inItem = false
+        }
+       
     }
     
 }
