@@ -1,5 +1,5 @@
 //
-//  RWLoginOperation.swift
+//  RWOAuthManager.swift
 //  DogmaDebate
 //
 //  Created by Rondale Williams on 1/10/16.
@@ -9,16 +9,19 @@
 import Foundation
 import OAuthSwift
 
-class RWOAuthManager {
+@objc class RWOAuthManager: NSObject {
     
+    static let FourthPodcastOperationDidUpdate = "FourthPodcastsDidUpdate"
     private let clientId = "xqBztkf8SReYxRd0dz0wlOVb4wO8Lm"
     private let clientSecret = "4jNGTh18pT0ESyv5zJEzf0nabsH0At"
+    private let pClientId = "AdQrv-Ufzd163wUqICapxNhrVtAQVXf5C2xwg4qnC2KTumkln5aX4SJWvFtJ4dGSCj94F5QWhIy7jkkd"
+    private let pClientSecret = "EP7lBi-M1h-_2EtkprnnlXDGiaFpwyUBIUYJq92cL36JH4C0hmBYNm5EWtbY1rHbghNwj3XXvyPoJRYh"
     
     var isUserLoggedIn: Bool = false
     static let sharedManager = RWOAuthManager()
     
     
-    init() {
+    override init() {
        
     }
     
@@ -47,12 +50,17 @@ class RWOAuthManager {
                     
                     do {
                         if let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(rawValue: 0)) as? [AnyObject] {
-                            
+                            print("JSON: \(json)")
+                            var podcasts:[RWPodcast] = [RWPodcast]()
                             for mediaDictionary in json {
                                 if let dictionary =  mediaDictionary as? [String : AnyObject] {
-                                    strongSelf.parseMediaData(dictionary)
+                                    let podcast: RWPodcast = strongSelf.parseMediaData(dictionary)
+                                    podcasts.append(podcast)
                                 }
                             }
+                            
+                            NSNotificationCenter.defaultCenter().postNotificationName(RWOAuthManager.FourthPodcastOperationDidUpdate, object: nil, userInfo: ["fourthPodcasts" : podcasts])
+                            
                         }
                         
                     } catch {
@@ -84,12 +92,21 @@ class RWOAuthManager {
         
     }
     
-    private func parseMediaData(dictionary: [String : AnyObject]) {
+    
+    
+    private func parseMediaData(dictionary: [String : AnyObject]) -> RWPodcast {
+        
+        let podcast = RWPodcast()
         if let titleContent = dictionary["title"] as? [String : String], title = titleContent["rendered"] {
-            print("Title: \(title)")
+            podcast.title = title
         }
-        let mediaContent = dictionary["content"] as? [String : String]
-        print("\(mediaContent)")
+        
+        if let mediaContent = dictionary["content"] as? [String : String], rendered = mediaContent["rendered"] {
+            podcast.podcastDescription = rendered
+            
+        }
+        
+        return podcast
         
     }
     

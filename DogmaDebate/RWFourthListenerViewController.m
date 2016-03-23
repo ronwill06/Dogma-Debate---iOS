@@ -13,7 +13,7 @@
 
 @interface RWFourthListenerViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) RWFourthListenerViewModel *viewModel;
 
 @end
 
@@ -46,22 +46,36 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [super viewDidAppear:animated];
-    
-    DDFourthListenerOperation *operation = [[DDFourthListenerOperation alloc] init];
+    self.viewModel = [[RWFourthListenerViewModel alloc] init];
+    [self.viewModel fetchData];
+    self.viewModel.tableView = self.tableView;
     
 }
 
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return self.viewModel.podcastData.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     RWMoreTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RWMoreTableViewCell"];
+    RWPodcast *podcast = [[self.viewModel podcastData] objectAtIndex:indexPath.row];
+    cell.cellLabel.text = podcast.title;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    RWPodcastPlayerViewController *podcastPlayerVC = [[RWPodcastPlayerViewController alloc] init];
+
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
 }
 
 - (IBAction)logout:(id)sender

@@ -102,6 +102,8 @@
 		7029172C1C28CAC700F64075 /* RWDebateTopicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7029172B1C28CAC700F64075 /* RWDebateTopicsViewController.xib */; };
 		7029172E1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7029172D1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift */; };
 		702917301C28DCC600F64075 /* RWAtheismObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7029172F1C28DCC600F64075 /* RWAtheismObject.swift */; };
+		706C4D301CA3210A0083141B /* PayPalMobile in Resources */ = {isa = PBXBuildFile; fileRef = 706C4D2F1CA3210A0083141B /* PayPalMobile */; };
+		70BA62E31C89230F0080BECC /* RWFourthListenerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BA62E21C89230F0080BECC /* RWFourthListenerViewModel.swift */; };
 		70BFE7D21C3E039E004A5D1A /* Clips in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7D11C3E039E004A5D1A /* Clips */; };
 		70BFE7D41C3E043F004A5D1A /* sounds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7D31C3E043F004A5D1A /* sounds.plist */; };
 		70BFE7D61C3E06BF004A5D1A /* RWDropsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFE7D51C3E06BF004A5D1A /* RWDropsViewController.swift */; };
@@ -110,6 +112,14 @@
 		70BFE7DC1C3E0955004A5D1A /* RWDropsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7DB1C3E0955004A5D1A /* RWDropsViewController.xib */; };
 		70BFE7DE1C3E09CC004A5D1A /* RWDropsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFE7DD1C3E09CC004A5D1A /* RWDropsViewModel.swift */; };
 		70BFE7E01C3E0BCE004A5D1A /* RWDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFE7DF1C3E0BCE004A5D1A /* RWDrop.swift */; };
+		70CEF3EA1CA3316800630BD1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEF3E91CA3316800630BD1 /* Accelerate.framework */; };
+		70CEF3F11CA3317300630BD1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5D5CE61B4B712E0074FBC8 /* AVFoundation.framework */; };
+		70CEF3F31CA3317B00630BD1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEF3F21CA3317B00630BD1 /* CoreLocation.framework */; };
+		70CEF3F51CA3318400630BD1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEF3F41CA3318400630BD1 /* CoreMedia.framework */; };
+		70CEF3F71CA3318C00630BD1 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEF3F61CA3318C00630BD1 /* MessageUI.framework */; };
+		70CEF3F91CA3319700630BD1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEF3F81CA3319700630BD1 /* MobileCoreServices.framework */; };
+		70CEF3FB1CA331A300630BD1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEF3FA1CA331A300630BD1 /* SystemConfiguration.framework */; };
+		70CEF3FD1CA331AC00630BD1 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEF3FC1CA331AC00630BD1 /* SafariServices.framework */; };
 		70DB180D1C6A7EC400A2A451 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E6DDFE1C602E13000B31D5 /* OAuthSwift.framework */; };
 		70DB18171C6BBC0500A2A451 /* DDFourthListenerOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB18161C6BBC0500A2A451 /* DDFourthListenerOperation.swift */; };
 		70DB18191C6BBF2000A2A451 /* RWVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB18181C6BBF2000A2A451 /* RWVideo.swift */; };
@@ -290,6 +300,8 @@
 		7029172B1C28CAC700F64075 /* RWDebateTopicsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDebateTopicsViewController.xib; sourceTree = "<group>"; };
 		7029172D1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebateTopicsViewModel.swift; sourceTree = "<group>"; };
 		7029172F1C28DCC600F64075 /* RWAtheismObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWAtheismObject.swift; sourceTree = "<group>"; };
+		706C4D2F1CA3210A0083141B /* PayPalMobile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PayPalMobile; sourceTree = "<group>"; };
+		70BA62E21C89230F0080BECC /* RWFourthListenerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFourthListenerViewModel.swift; sourceTree = "<group>"; };
 		70BFE7D11C3E039E004A5D1A /* Clips */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Clips; sourceTree = "<group>"; };
 		70BFE7D31C3E043F004A5D1A /* sounds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sounds.plist; sourceTree = "<group>"; };
 		70BFE7D51C3E06BF004A5D1A /* RWDropsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDropsViewController.swift; sourceTree = "<group>"; };
@@ -298,6 +310,13 @@
 		70BFE7DB1C3E0955004A5D1A /* RWDropsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDropsViewController.xib; sourceTree = "<group>"; };
 		70BFE7DD1C3E09CC004A5D1A /* RWDropsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDropsViewModel.swift; sourceTree = "<group>"; };
 		70BFE7DF1C3E0BCE004A5D1A /* RWDrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDrop.swift; sourceTree = "<group>"; };
+		70CEF3E91CA3316800630BD1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		70CEF3F21CA3317B00630BD1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		70CEF3F41CA3318400630BD1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		70CEF3F61CA3318C00630BD1 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		70CEF3F81CA3319700630BD1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		70CEF3FA1CA331A300630BD1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		70CEF3FC1CA331AC00630BD1 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		70DB18161C6BBC0500A2A451 /* DDFourthListenerOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDFourthListenerOperation.swift; sourceTree = "<group>"; };
 		70DB18181C6BBF2000A2A451 /* RWVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWVideo.swift; sourceTree = "<group>"; };
 		70DE24441C29FD420050C2B8 /* RWCreationistObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWCreationistObject.swift; sourceTree = "<group>"; };
@@ -324,6 +343,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70CEF3FD1CA331AC00630BD1 /* SafariServices.framework in Frameworks */,
+				70CEF3FB1CA331A300630BD1 /* SystemConfiguration.framework in Frameworks */,
+				70CEF3F91CA3319700630BD1 /* MobileCoreServices.framework in Frameworks */,
+				70CEF3F71CA3318C00630BD1 /* MessageUI.framework in Frameworks */,
+				70CEF3F51CA3318400630BD1 /* CoreMedia.framework in Frameworks */,
+				70CEF3F31CA3317B00630BD1 /* CoreLocation.framework in Frameworks */,
+				70CEF3F11CA3317300630BD1 /* AVFoundation.framework in Frameworks */,
+				70CEF3EA1CA3316800630BD1 /* Accelerate.framework in Frameworks */,
 				70DB180D1C6A7EC400A2A451 /* OAuthSwift.framework in Frameworks */,
 				1F5D5CF41B4B7A3F0074FBC8 /* AudioToolbox.framework in Frameworks */,
 			);
@@ -342,6 +369,13 @@
 		1F45DD9E1B2E51FF00086116 = {
 			isa = PBXGroup;
 			children = (
+				70CEF3FC1CA331AC00630BD1 /* SafariServices.framework */,
+				70CEF3FA1CA331A300630BD1 /* SystemConfiguration.framework */,
+				70CEF3F81CA3319700630BD1 /* MobileCoreServices.framework */,
+				70CEF3F61CA3318C00630BD1 /* MessageUI.framework */,
+				70CEF3F41CA3318400630BD1 /* CoreMedia.framework */,
+				70CEF3F21CA3317B00630BD1 /* CoreLocation.framework */,
+				70CEF3E91CA3316800630BD1 /* Accelerate.framework */,
 				1F5D5CED1B4B73BA0074FBC8 /* AVKit.framework */,
 				1F5D5CEA1B4B71470074FBC8 /* CoreAudioKit.framework */,
 				1F5D5CE81B4B713F0074FBC8 /* CoreAudio.framework */,
@@ -365,6 +399,7 @@
 		1F45DDA91B2E51FF00086116 /* Dogma Debate */ = {
 			isa = PBXGroup;
 			children = (
+				706C4D281CA320E20083141B /* PayPalMobile */,
 				70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */,
 				1F45DE2E1B3B6C1600086116 /* RWStore.h */,
 				1F45DE2F1B3B6C1600086116 /* RWStore.m */,
@@ -531,6 +566,7 @@
 				70DE24541C2A05250050C2B8 /* RWQuoteViewModel.swift */,
 				70BFE7DD1C3E09CC004A5D1A /* RWDropsViewModel.swift */,
 				701E181D1C434FA1005D7339 /* RWFourthLoginViewModel.swift */,
+				70BA62E21C89230F0080BECC /* RWFourthListenerViewModel.swift */,
 			);
 			name = "View Models";
 			sourceTree = "<group>";
@@ -551,6 +587,14 @@
 				1F45DDAF1B2E51FF00086116 /* AppDelegate.m */,
 			);
 			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		706C4D281CA320E20083141B /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				706C4D2F1CA3210A0083141B /* PayPalMobile */,
+			);
+			name = PayPalMobile;
 			sourceTree = "<group>";
 		};
 		70DB18151C6B8CD700A2A451 /* Managers */ = {
@@ -749,6 +793,7 @@
 				70BFE7DA1C3E082C004A5D1A /* RWDropsTableViewCell.xib in Resources */,
 				1F5D5CCC1B4727140074FBC8 /* RWAboutUsTableViewCell.xib in Resources */,
 				1F45DE1A1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */,
+				706C4D301CA3210A0083141B /* PayPalMobile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,6 +854,7 @@
 				701E18201C4351C9005D7339 /* RWOAuthManager.swift in Sources */,
 				1F528DAC1C14FBA800FDAD50 /* RWPodcastsViewModel.swift in Sources */,
 				1F5D5CB51B46E79A0074FBC8 /* RWFourthListenerViewController.m in Sources */,
+				70BA62E31C89230F0080BECC /* RWFourthListenerViewModel.swift in Sources */,
 				70DE244F1C2A027D0050C2B8 /* RWEvolutionViewModel.swift in Sources */,
 				1F5D5CD51B473E0B0074FBC8 /* RWPartnerViewController.m in Sources */,
 				1FE4DEA11C17C70B0092575D /* DogmaDebateProtocol.swift in Sources */,
@@ -979,6 +1025,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DogmaDebate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rondalewilliams.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = DogmaDebate;
 				SWIFT_OBJC_BRIDGING_HEADER = "DogmaDebate/DogmaDebate-Bridging-Header.h";
@@ -994,6 +1044,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DogmaDebate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rondalewilliams.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = DogmaDebate;
 				SWIFT_OBJC_BRIDGING_HEADER = "DogmaDebate/DogmaDebate-Bridging-Header.h";
