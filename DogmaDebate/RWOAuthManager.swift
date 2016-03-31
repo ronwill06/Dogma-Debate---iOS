@@ -14,8 +14,10 @@ import OAuthSwift
     static let FourthPodcastOperationDidUpdate = "FourthPodcastsDidUpdate"
     private let clientId = "xqBztkf8SReYxRd0dz0wlOVb4wO8Lm"
     private let clientSecret = "4jNGTh18pT0ESyv5zJEzf0nabsH0At"
-    private let pClientId = "AdQrv-Ufzd163wUqICapxNhrVtAQVXf5C2xwg4qnC2KTumkln5aX4SJWvFtJ4dGSCj94F5QWhIy7jkkd"
-    private let pClientSecret = "EP7lBi-M1h-_2EtkprnnlXDGiaFpwyUBIUYJq92cL36JH4C0hmBYNm5EWtbY1rHbghNwj3XXvyPoJRYh"
+    static let pSandBoxClientID = "AdQrv-Ufzd163wUqICapxNhrVtAQVXf5C2xwg4qnC2KTumkln5aX4SJWvFtJ4dGSCj94F5QWhIy7jkkd"
+    static let pSandBoxClientSecret = "EP7lBi-M1h-_2EtkprnnlXDGiaFpwyUBIUYJq92cL36JH4C0hmBYNm5EWtbY1rHbghNwj3XXvyPoJRYh"
+    static let pLiveClientID = "AZx8Jcqhf_DM1hDCZKNU_fyjeaOOAwCyQvr3rfUkPjBVY0DQYsjTZBY-lz8FzJWyiwYAskoSKLS8geMC"
+    static let pLiveClientSecret = "EKZteZTtKyCc6uNJTuRAeR4ogfKpe4vr3pbbZEZavQyAPKDTiSkZvzTxVsIxtiephy_82e34aqFpIZaQ"
     
     var isUserLoggedIn: Bool = false
     static let sharedManager = RWOAuthManager()

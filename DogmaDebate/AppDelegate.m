@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RWMoreViewController.h"
+#import "PayPalMobile/PayPalMobile.h"
 #import "DogmaDebate-Swift.h"
 @import OAuthSwift;
 
@@ -51,6 +52,10 @@
     
     
     [[self window] makeKeyAndVisible];
+    
+    [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : [RWOAuthManager pLiveClientID],
+                                                           PayPalEnvironmentSandbox : [RWOAuthManager pSandBoxClientID]
+                                                           }];
     
     return YES;
 }
