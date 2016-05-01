@@ -53,7 +53,8 @@ class RWFourthLoginViewController: UIViewController {
     
   
     @IBAction func createAccount(sender: AnyObject) {
-        
+        let signUpViewController = RWSignUpViewController()
+        self.navigationController?.presentViewController(signUpViewController, animated: true, completion: nil)
     }
     
     

@@ -8,7 +8,7 @@
 
 #import "RWMoreTableViewCell.h"
 #import "RWFourthListenerViewController.h"
-#import "DogmaDebate-Swift.h"
+#import "Dogma_Debate-Swift.h"
 #import "RWStyleControls.h"
 
 @interface RWFourthListenerViewController ()<UITableViewDataSource, UITableViewDelegate>

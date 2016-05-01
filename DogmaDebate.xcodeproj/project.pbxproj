@@ -105,6 +105,10 @@
 		706C4D301CA3210A0083141B /* PayPalMobile in Resources */ = {isa = PBXBuildFile; fileRef = 706C4D2F1CA3210A0083141B /* PayPalMobile */; };
 		708876731CACBA4A0089DC73 /* RWSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708876721CACBA4A0089DC73 /* RWSignUpViewController.swift */; };
 		7088767B1CACBA9E0089DC73 /* RWSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7088767A1CACBA9E0089DC73 /* RWSignUpViewController.xib */; };
+		7088767C1CAD6F380089DC73 /* PayPalMobile in Sources */ = {isa = PBXBuildFile; fileRef = 706C4D2F1CA3210A0083141B /* PayPalMobile */; };
+		708876851CD5999B0089DC73 /* libobjc.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 708876841CD5999B0089DC73 /* libobjc.A.tbd */; };
+		708876871CD59ACF0089DC73 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 708876861CD59ACF0089DC73 /* libPayPalMobile.a */; };
+		708876891CD5A8320089DC73 /* UIWidgetCustomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708876881CD5A8320089DC73 /* UIWidgetCustomizer.swift */; };
 		70BA62E31C89230F0080BECC /* RWFourthListenerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BA62E21C89230F0080BECC /* RWFourthListenerViewModel.swift */; };
 		70BFE7D21C3E039E004A5D1A /* Clips in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7D11C3E039E004A5D1A /* Clips */; };
 		70BFE7D41C3E043F004A5D1A /* sounds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7D31C3E043F004A5D1A /* sounds.plist */; };
@@ -219,7 +223,7 @@
 		1F27EAE71C2777AF00D8FF5A /* RWDebaterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebaterViewModel.swift; sourceTree = "<group>"; };
 		1F27EAE91C27811F00D8FF5A /* RWDebaterCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDebaterCollectionViewCell.xib; sourceTree = "<group>"; };
 		1F27EAEB1C27815100D8FF5A /* RWDebaterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebaterCollectionViewCell.swift; sourceTree = "<group>"; };
-		1F45DDA71B2E51FF00086116 /* DogmaDebate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogmaDebate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F45DDA71B2E51FF00086116 /* Dogma Debate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dogma Debate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F45DDAB1B2E51FF00086116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F45DDAC1B2E51FF00086116 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F45DDAE1B2E51FF00086116 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -305,6 +309,9 @@
 		706C4D2F1CA3210A0083141B /* PayPalMobile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PayPalMobile; sourceTree = "<group>"; };
 		708876721CACBA4A0089DC73 /* RWSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWSignUpViewController.swift; sourceTree = "<group>"; };
 		7088767A1CACBA9E0089DC73 /* RWSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWSignUpViewController.xib; sourceTree = "<group>"; };
+		708876841CD5999B0089DC73 /* libobjc.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.A.tbd; path = usr/lib/libobjc.A.tbd; sourceTree = SDKROOT; };
+		708876861CD59ACF0089DC73 /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPayPalMobile.a; path = DogmaDebate/PayPalMobile/libPayPalMobile.a; sourceTree = "<group>"; };
+		708876881CD5A8320089DC73 /* UIWidgetCustomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWidgetCustomizer.swift; sourceTree = "<group>"; };
 		70BA62E21C89230F0080BECC /* RWFourthListenerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFourthListenerViewModel.swift; sourceTree = "<group>"; };
 		70BFE7D11C3E039E004A5D1A /* Clips */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Clips; sourceTree = "<group>"; };
 		70BFE7D31C3E043F004A5D1A /* sounds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sounds.plist; sourceTree = "<group>"; };
@@ -347,6 +354,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708876871CD59ACF0089DC73 /* libPayPalMobile.a in Frameworks */,
+				708876851CD5999B0089DC73 /* libobjc.A.tbd in Frameworks */,
 				70CEF3FD1CA331AC00630BD1 /* SafariServices.framework in Frameworks */,
 				70CEF3FB1CA331A300630BD1 /* SystemConfiguration.framework in Frameworks */,
 				70CEF3F91CA3319700630BD1 /* MobileCoreServices.framework in Frameworks */,
@@ -373,6 +382,8 @@
 		1F45DD9E1B2E51FF00086116 = {
 			isa = PBXGroup;
 			children = (
+				708876861CD59ACF0089DC73 /* libPayPalMobile.a */,
+				708876841CD5999B0089DC73 /* libobjc.A.tbd */,
 				70CEF3FC1CA331AC00630BD1 /* SafariServices.framework */,
 				70CEF3FA1CA331A300630BD1 /* SystemConfiguration.framework */,
 				70CEF3F81CA3319700630BD1 /* MobileCoreServices.framework */,
@@ -394,7 +405,7 @@
 		1F45DDA81B2E51FF00086116 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1F45DDA71B2E51FF00086116 /* DogmaDebate.app */,
+				1F45DDA71B2E51FF00086116 /* Dogma Debate.app */,
 				1F45DDC31B2E51FF00086116 /* DogmaDebateTests.xctest */,
 			);
 			name = Products;
@@ -534,6 +545,7 @@
 				70E0EE451C29C2A200E647DE /* RWDebaterTopicTableViewCell.xib */,
 				70BFE7D71C3E07EA004A5D1A /* RWDropsTableViewCell.swift */,
 				70BFE7D91C3E082C004A5D1A /* RWDropsTableViewCell.xib */,
+				708876881CD5A8320089DC73 /* UIWidgetCustomizer.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -643,7 +655,7 @@
 			);
 			name = DogmaDebate;
 			productName = DogmaDebate;
-			productReference = 1F45DDA71B2E51FF00086116 /* DogmaDebate.app */;
+			productReference = 1F45DDA71B2E51FF00086116 /* Dogma Debate.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1F45DDC21B2E51FF00086116 /* DogmaDebateTests */ = {
@@ -832,6 +844,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7088767C1CAD6F380089DC73 /* PayPalMobile in Sources */,
 				1F45DE211B3B488C00086116 /* RWEventHeaderView.m in Sources */,
 				70DE244D1C2A02400050C2B8 /* RWEvolutionObject.swift in Sources */,
 				1F27EAEC1C27815100D8FF5A /* RWDebaterCollectionViewCell.swift in Sources */,
@@ -846,6 +859,7 @@
 				7029172A1C28CA4200F64075 /* RWDebateTopicsViewController.swift in Sources */,
 				708876731CACBA4A0089DC73 /* RWSignUpViewController.swift in Sources */,
 				1F45DE061B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */,
+				708876891CD5A8320089DC73 /* UIWidgetCustomizer.swift in Sources */,
 				1F45DE2C1B3B546700086116 /* RWStyleControls.m in Sources */,
 				1F528DA71BFE8FF100FDAD50 /* RWPodcast.swift in Sources */,
 				70DE24471C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift in Sources */,
@@ -1028,37 +1042,68 @@
 		1F45DDCE1B2E51FF00086116 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					x86_64,
+					i386,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DogmaDebate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DogmaDebate/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				"OTHER_LDFLAGS[arch=*]" = (
 					"-lc++",
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rondalewilliams.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = DogmaDebate;
+				PRODUCT_NAME = "Dogma Debate";
 				SWIFT_OBJC_BRIDGING_HEADER = "DogmaDebate/DogmaDebate-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "x86_64 i386 arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
 		1F45DDCF1B2E51FF00086116 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					x86_64,
+					i386,
+				);
+				"ARCHS[sdk=*]" = (
+					x86_64,
+					i386,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DogmaDebate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DogmaDebate/PayPalMobile",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				"OTHER_LDFLAGS[arch=*]" = (
 					"-lc++",
 					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rondalewilliams.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = DogmaDebate;
+				PRODUCT_NAME = "Dogma Debate";
 				SWIFT_OBJC_BRIDGING_HEADER = "DogmaDebate/DogmaDebate-Bridging-Header.h";
+				VALID_ARCHS = "x86_64 i386 arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

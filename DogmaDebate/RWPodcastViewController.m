@@ -8,7 +8,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 #import "RWPodcastViewController.h"
-#import "DogmaDebate-Swift.h"
+#import "Dogma_Debate-Swift.h"
 
 @interface RWPodcastViewController ()
 

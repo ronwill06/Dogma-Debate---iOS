@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1F45DDA61B2E51FF00086116"
-               BuildableName = "DogmaDebate.app"
+               BuildableName = "Dogma Debate.app"
                BlueprintName = "DogmaDebate"
                ReferencedContainer = "container:DogmaDebate.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1F45DDA61B2E51FF00086116"
-            BuildableName = "DogmaDebate.app"
+            BuildableName = "Dogma Debate.app"
             BlueprintName = "DogmaDebate"
             ReferencedContainer = "container:DogmaDebate.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1F45DDA61B2E51FF00086116"
-            BuildableName = "DogmaDebate.app"
+            BuildableName = "Dogma Debate.app"
             BlueprintName = "DogmaDebate"
             ReferencedContainer = "container:DogmaDebate.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1F45DDA61B2E51FF00086116"
-            BuildableName = "DogmaDebate.app"
+            BuildableName = "Dogma Debate.app"
             BlueprintName = "DogmaDebate"
             ReferencedContainer = "container:DogmaDebate.xcodeproj">
          </BuildableReference>

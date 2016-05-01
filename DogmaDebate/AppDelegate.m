@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "RWMoreViewController.h"
 #import "PayPalMobile/PayPalMobile.h"
-#import "DogmaDebate-Swift.h"
+#import "Dogma_Debate-Swift.h"
 @import OAuthSwift;
 
 @interface AppDelegate ()
@@ -21,6 +21,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : [RWOAuthManager pLiveClientID],
+                                                           PayPalEnvironmentSandbox : [RWOAuthManager pSandBoxClientID]
+                                                           }];
+
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
@@ -53,9 +58,6 @@
     
     [[self window] makeKeyAndVisible];
     
-    [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : [RWOAuthManager pLiveClientID],
-                                                           PayPalEnvironmentSandbox : [RWOAuthManager pSandBoxClientID]
-                                                           }];
     
     return YES;
 }
