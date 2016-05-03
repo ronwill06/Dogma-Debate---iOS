@@ -93,6 +93,7 @@
 		1FE4DEA11C17C70B0092575D /* DogmaDebateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4DEA01C17C70B0092575D /* DogmaDebateProtocol.swift */; };
 		1FE4DEA31C1A605E0092575D /* RWPodcastCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4DEA21C1A605E0092575D /* RWPodcastCellViewModel.swift */; };
 		1FE4DEA51C1A62D50092575D /* RWPodcastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4DEA41C1A62D50092575D /* RWPodcastCollectionViewCell.swift */; };
+		3C2F5372C5CBA1680FA08B9F /* Pods_DogmaDebate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42341C8D838437F2C917F116 /* Pods_DogmaDebate.framework */; };
 		701E181C1C433930005D7339 /* RWFourthLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E181B1C433930005D7339 /* RWFourthLoginViewController.swift */; };
 		701E181E1C434FA1005D7339 /* RWFourthLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E181D1C434FA1005D7339 /* RWFourthLoginViewModel.swift */; };
 		701E18201C4351C9005D7339 /* RWOAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E181F1C4351C9005D7339 /* RWOAuthManager.swift */; };
@@ -102,10 +103,8 @@
 		7029172C1C28CAC700F64075 /* RWDebateTopicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7029172B1C28CAC700F64075 /* RWDebateTopicsViewController.xib */; };
 		7029172E1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7029172D1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift */; };
 		702917301C28DCC600F64075 /* RWAtheismObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7029172F1C28DCC600F64075 /* RWAtheismObject.swift */; };
-		706C4D301CA3210A0083141B /* PayPalMobile in Resources */ = {isa = PBXBuildFile; fileRef = 706C4D2F1CA3210A0083141B /* PayPalMobile */; };
 		708876731CACBA4A0089DC73 /* RWSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708876721CACBA4A0089DC73 /* RWSignUpViewController.swift */; };
 		7088767B1CACBA9E0089DC73 /* RWSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7088767A1CACBA9E0089DC73 /* RWSignUpViewController.xib */; };
-		7088767C1CAD6F380089DC73 /* PayPalMobile in Sources */ = {isa = PBXBuildFile; fileRef = 706C4D2F1CA3210A0083141B /* PayPalMobile */; };
 		708876851CD5999B0089DC73 /* libobjc.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 708876841CD5999B0089DC73 /* libobjc.A.tbd */; };
 		708876871CD59ACF0089DC73 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 708876861CD59ACF0089DC73 /* libPayPalMobile.a */; };
 		708876891CD5A8320089DC73 /* UIWidgetCustomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708876881CD5A8320089DC73 /* UIWidgetCustomizer.swift */; };
@@ -145,6 +144,7 @@
 		70DE245F1C2A0EE00050C2B8 /* RWPodcastPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70DE245E1C2A0EE00050C2B8 /* RWPodcastPlayerViewController.xib */; };
 		70E0EE441C29C26300E647DE /* RWDebaterTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0EE431C29C26300E647DE /* RWDebaterTopicTableViewCell.swift */; };
 		70E0EE461C29C2A200E647DE /* RWDebaterTopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E0EE451C29C2A200E647DE /* RWDebaterTopicTableViewCell.xib */; };
+		DFC9A60FE28F9B297B4C549A /* Pods_DogmaDebateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095962B910E3BFB349454A71 /* Pods_DogmaDebateTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,6 +214,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		095962B910E3BFB349454A71 /* Pods_DogmaDebateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogmaDebateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F27EAD91C27713D00D8FF5A /* atheism.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = atheism.plist; sourceTree = "<group>"; };
 		1F27EADB1C27714C00D8FF5A /* creationists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = creationists.plist; sourceTree = "<group>"; };
 		1F27EADF1C27716E00D8FF5A /* evolution.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = evolution.plist; sourceTree = "<group>"; };
@@ -297,6 +298,9 @@
 		1FE4DEA01C17C70B0092575D /* DogmaDebateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogmaDebateProtocol.swift; sourceTree = "<group>"; };
 		1FE4DEA21C1A605E0092575D /* RWPodcastCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastCellViewModel.swift; sourceTree = "<group>"; };
 		1FE4DEA41C1A62D50092575D /* RWPodcastCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastCollectionViewCell.swift; sourceTree = "<group>"; };
+		3557E418758017976E914D25 /* Pods-DogmaDebateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogmaDebateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogmaDebateTests/Pods-DogmaDebateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		42341C8D838437F2C917F116 /* Pods_DogmaDebate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogmaDebate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FADB92A546A79847D0B4E66 /* Pods-DogmaDebate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogmaDebate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogmaDebate/Pods-DogmaDebate.debug.xcconfig"; sourceTree = "<group>"; };
 		701E181B1C433930005D7339 /* RWFourthLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFourthLoginViewController.swift; sourceTree = "<group>"; };
 		701E181D1C434FA1005D7339 /* RWFourthLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFourthLoginViewModel.swift; sourceTree = "<group>"; };
 		701E181F1C4351C9005D7339 /* RWOAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWOAuthManager.swift; sourceTree = "<group>"; };
@@ -306,7 +310,6 @@
 		7029172B1C28CAC700F64075 /* RWDebateTopicsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDebateTopicsViewController.xib; sourceTree = "<group>"; };
 		7029172D1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebateTopicsViewModel.swift; sourceTree = "<group>"; };
 		7029172F1C28DCC600F64075 /* RWAtheismObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWAtheismObject.swift; sourceTree = "<group>"; };
-		706C4D2F1CA3210A0083141B /* PayPalMobile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PayPalMobile; sourceTree = "<group>"; };
 		708876721CACBA4A0089DC73 /* RWSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWSignUpViewController.swift; sourceTree = "<group>"; };
 		7088767A1CACBA9E0089DC73 /* RWSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWSignUpViewController.xib; sourceTree = "<group>"; };
 		708876841CD5999B0089DC73 /* libobjc.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.A.tbd; path = usr/lib/libobjc.A.tbd; sourceTree = SDKROOT; };
@@ -347,6 +350,8 @@
 		70E0EE431C29C26300E647DE /* RWDebaterTopicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebaterTopicTableViewCell.swift; sourceTree = "<group>"; };
 		70E0EE451C29C2A200E647DE /* RWDebaterTopicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDebaterTopicTableViewCell.xib; sourceTree = "<group>"; };
 		70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthSwift.xcodeproj; path = ../../../OAuth2/OAuthSwift/OAuthSwift.xcodeproj; sourceTree = "<group>"; };
+		B24282AFC1CE3C7C42593389 /* Pods-DogmaDebateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogmaDebateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogmaDebateTests/Pods-DogmaDebateTests.release.xcconfig"; sourceTree = "<group>"; };
+		D978AA01DC77AF0640241842 /* Pods-DogmaDebate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogmaDebate.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogmaDebate/Pods-DogmaDebate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,6 +371,7 @@
 				70CEF3EA1CA3316800630BD1 /* Accelerate.framework in Frameworks */,
 				70DB180D1C6A7EC400A2A451 /* OAuthSwift.framework in Frameworks */,
 				1F5D5CF41B4B7A3F0074FBC8 /* AudioToolbox.framework in Frameworks */,
+				3C2F5372C5CBA1680FA08B9F /* Pods_DogmaDebate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +379,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC9A60FE28F9B297B4C549A /* Pods_DogmaDebateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +406,8 @@
 				1F45DDA91B2E51FF00086116 /* Dogma Debate */,
 				1F45DDC61B2E51FF00086116 /* DogmaDebateTests */,
 				1F45DDA81B2E51FF00086116 /* Products */,
+				A6D8061B54675CDC9AD87E58 /* Pods */,
+				93C619A75416295836BAAB3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -414,7 +423,6 @@
 		1F45DDA91B2E51FF00086116 /* Dogma Debate */ = {
 			isa = PBXGroup;
 			children = (
-				706C4D281CA320E20083141B /* PayPalMobile */,
 				70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */,
 				1F45DE2E1B3B6C1600086116 /* RWStore.h */,
 				1F45DE2F1B3B6C1600086116 /* RWStore.m */,
@@ -607,14 +615,6 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
-		706C4D281CA320E20083141B /* PayPalMobile */ = {
-			isa = PBXGroup;
-			children = (
-				706C4D2F1CA3210A0083141B /* PayPalMobile */,
-			);
-			name = PayPalMobile;
-			sourceTree = "<group>";
-		};
 		70DB18151C6B8CD700A2A451 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -637,6 +637,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		93C619A75416295836BAAB3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42341C8D838437F2C917F116 /* Pods_DogmaDebate.framework */,
+				095962B910E3BFB349454A71 /* Pods_DogmaDebateTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6D8061B54675CDC9AD87E58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FADB92A546A79847D0B4E66 /* Pods-DogmaDebate.debug.xcconfig */,
+				D978AA01DC77AF0640241842 /* Pods-DogmaDebate.release.xcconfig */,
+				3557E418758017976E914D25 /* Pods-DogmaDebateTests.debug.xcconfig */,
+				B24282AFC1CE3C7C42593389 /* Pods-DogmaDebateTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -644,9 +664,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F45DDCD1B2E51FF00086116 /* Build configuration list for PBXNativeTarget "DogmaDebate" */;
 			buildPhases = (
+				02583A37C57BAA577747ED6D /* Check Pods Manifest.lock */,
 				1F45DDA31B2E51FF00086116 /* Sources */,
 				1F45DDA41B2E51FF00086116 /* Frameworks */,
 				1F45DDA51B2E51FF00086116 /* Resources */,
+				F8D37E1A150EA0FD983D3EB6 /* Embed Pods Frameworks */,
+				46358F694E22AD8F54597A80 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -662,9 +685,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F45DDD01B2E51FF00086116 /* Build configuration list for PBXNativeTarget "DogmaDebateTests" */;
 			buildPhases = (
+				349FA76D516AC2A17CFB0F88 /* Check Pods Manifest.lock */,
 				1F45DDBF1B2E51FF00086116 /* Sources */,
 				1F45DDC01B2E51FF00086116 /* Frameworks */,
 				1F45DDC11B2E51FF00086116 /* Resources */,
+				61C0602FC92FFECEF3A09897 /* Embed Pods Frameworks */,
+				3B518E7F1E790A515F55EFE5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -812,7 +838,6 @@
 				70BFE7DA1C3E082C004A5D1A /* RWDropsTableViewCell.xib in Resources */,
 				1F5D5CCC1B4727140074FBC8 /* RWAboutUsTableViewCell.xib in Resources */,
 				1F45DE1A1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */,
-				706C4D301CA3210A0083141B /* PayPalMobile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,12 +864,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02583A37C57BAA577747ED6D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		349FA76D516AC2A17CFB0F88 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3B518E7F1E790A515F55EFE5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogmaDebateTests/Pods-DogmaDebateTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46358F694E22AD8F54597A80 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogmaDebate/Pods-DogmaDebate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61C0602FC92FFECEF3A09897 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogmaDebateTests/Pods-DogmaDebateTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8D37E1A150EA0FD983D3EB6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogmaDebate/Pods-DogmaDebate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F45DDA31B2E51FF00086116 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7088767C1CAD6F380089DC73 /* PayPalMobile in Sources */,
 				1F45DE211B3B488C00086116 /* RWEventHeaderView.m in Sources */,
 				70DE244D1C2A02400050C2B8 /* RWEvolutionObject.swift in Sources */,
 				1F27EAEC1C27815100D8FF5A /* RWDebaterCollectionViewCell.swift in Sources */,
@@ -1041,6 +1158,7 @@
 		};
 		1F45DDCE1B2E51FF00086116 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FADB92A546A79847D0B4E66 /* Pods-DogmaDebate.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					x86_64,
@@ -1055,14 +1173,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/DogmaDebate/PayPalMobile",
 				);
-				OTHER_LDFLAGS = (
-					"-lc++",
-					"-ObjC",
-				);
-				"OTHER_LDFLAGS[arch=*]" = (
-					"-lc++",
-					"-ObjC",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rondalewilliams.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Dogma Debate";
 				SWIFT_OBJC_BRIDGING_HEADER = "DogmaDebate/DogmaDebate-Bridging-Header.h";
@@ -1073,6 +1183,7 @@
 		};
 		1F45DDCF1B2E51FF00086116 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D978AA01DC77AF0640241842 /* Pods-DogmaDebate.release.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					x86_64,
@@ -1092,14 +1203,6 @@
 					"$(PROJECT_DIR)/DogmaDebate/PayPalMobile",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"-lc++",
-					"-ObjC",
-				);
-				"OTHER_LDFLAGS[arch=*]" = (
-					"-lc++",
-					"-ObjC",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rondalewilliams.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Dogma Debate";
 				SWIFT_OBJC_BRIDGING_HEADER = "DogmaDebate/DogmaDebate-Bridging-Header.h";
@@ -1109,6 +1212,7 @@
 		};
 		1F45DDD11B2E51FF00086116 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3557E418758017976E914D25 /* Pods-DogmaDebateTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1129,6 +1233,7 @@
 		};
 		1F45DDD21B2E51FF00086116 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B24282AFC1CE3C7C42593389 /* Pods-DogmaDebateTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

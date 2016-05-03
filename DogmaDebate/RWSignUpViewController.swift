@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RWSignUpViewController: UIViewController, PayPalPaymentDelegate, PayPalFuturePaymentDelegate, PayPalProfileSharingDelegate {
+class RWSignUpViewController: UIViewController {
     
     
     @IBOutlet weak var signUpPremier: UIButton!
