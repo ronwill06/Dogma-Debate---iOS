@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CF57BE2580EC76A375E358D6'
+               BlueprintIdentifier = '01696B7B5AB9A56DE8B7CF32'
                BlueprintName = 'Pods-DogmaDebateTests'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_DogmaDebateTests.framework'>

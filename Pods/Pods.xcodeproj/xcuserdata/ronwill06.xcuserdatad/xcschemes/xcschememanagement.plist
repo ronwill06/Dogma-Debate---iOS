@@ -4,22 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Braintree-Braintree-Drop-In-Localization.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Braintree-Braintree-UI-Localization.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Braintree.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Kanna.xcscheme</key>
+		<key>HTMLReader.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -41,6 +26,27 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>35AB4E645558A256E1C06F38C71F4836</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>45935B91DF0442390E2CA6DEEF68AE99</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E74EB31859D5E9370A0F75EDC57C3F45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FAB4017980D4025B0117464D9F4BFE80</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

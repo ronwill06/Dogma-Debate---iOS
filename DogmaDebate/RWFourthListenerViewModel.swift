@@ -15,11 +15,11 @@ import Foundation
     var tableView: UITableView?
     
     func fetchData() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleFourthListenerContent:", name: RWOAuthManager.FourthPodcastOperationDidUpdate, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(RWFourthListenerViewModel.handleFourthListenerContent(_:)), name: RWOAuthManager.FourthPodcastOperationDidUpdate, object: nil)
     }
     
     func handleFourthListenerContent(notification: NSNotification) {
-        if let userInfo = notification.userInfo as? [String : [RWPodcast]]{
+        if let userInfo = notification.userInfo as? [String : [RWPodcast]] {
             if let podcasts = userInfo["fourthPodcasts"] {
                 podcastData = podcasts
                 tableView?.reloadData()

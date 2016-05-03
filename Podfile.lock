@@ -1,33 +1,23 @@
 PODS:
-  - Braintree (4.2.3):
-    - Braintree/Card (= 4.2.3)
-    - Braintree/Core (= 4.2.3)
-    - Braintree/PayPal (= 4.2.3)
-    - Braintree/UI (= 4.2.3)
-  - Braintree/Card (4.2.3):
-    - Braintree/Core
-  - Braintree/Core (4.2.3)
-  - Braintree/PayPal (4.2.3):
-    - Braintree/Core
-    - Braintree/PayPalOneTouch
-  - Braintree/PayPalDataCollector (4.2.3)
-  - Braintree/PayPalOneTouch (4.2.3):
-    - Braintree/Core
-    - Braintree/PayPalDataCollector
-  - Braintree/UI (4.2.3):
-    - Braintree/Card
-    - Braintree/Core
-  - Kanna (1.0.0)
+  - CardIO (5.3.2)
+  - HTMLReader (0.9.6)
   - OAuthSwift (0.5.2)
+  - PayPal-iOS-SDK (2.14.2):
+    - PayPal-iOS-SDK/CardIO (= 2.14.2)
+    - PayPal-iOS-SDK/Core (= 2.14.2)
+  - PayPal-iOS-SDK/CardIO (2.14.2):
+    - CardIO (~> 5.3.2)
+  - PayPal-iOS-SDK/Core (2.14.2)
 
 DEPENDENCIES:
-  - Braintree
-  - Kanna
+  - HTMLReader
   - OAuthSwift
+  - PayPal-iOS-SDK
 
 SPEC CHECKSUMS:
-  Braintree: 05791bdc6d43c3faf2f802dd2d687e9f619f7f57
-  Kanna: 92799095ecb17b85ac2444bb5c8ce6394a137adb
+  CardIO: 92c45caef0d986c4a303a7afba0c9b76ff2b1f6e
+  HTMLReader: 7e21488ee378afc56ccade8af35840c4e03e434c
   OAuthSwift: 1ef042d4362e755e24a78f158d817245641a5d24
+  PayPal-iOS-SDK: 6946b8730a3bde17e6230f5073676ecb596113c2
 
 COCOAPODS: 0.39.0

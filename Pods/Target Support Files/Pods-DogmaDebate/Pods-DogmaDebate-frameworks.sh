@@ -84,12 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-DogmaDebate/Braintree.framework"
-  install_framework "Pods-DogmaDebate/Kanna.framework"
+  install_framework "Pods-DogmaDebate/HTMLReader.framework"
   install_framework "Pods-DogmaDebate/OAuthSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-DogmaDebate/Braintree.framework"
-  install_framework "Pods-DogmaDebate/Kanna.framework"
+  install_framework "Pods-DogmaDebate/HTMLReader.framework"
   install_framework "Pods-DogmaDebate/OAuthSwift.framework"
 fi

@@ -8,6 +8,7 @@
 
 import Foundation
 import OAuthSwift
+import HTMLReader
 
 @objc class RWOAuthManager: NSObject {
     
@@ -97,10 +98,15 @@ import OAuthSwift
     
     
     private func parseMediaData(dictionary: [String : AnyObject]) -> RWPodcast {
-        
         let podcast = RWPodcast()
+        
         if let titleContent = dictionary["title"] as? [String : String], title = titleContent["rendered"] {
-            podcast.title = title
+            let firstTitle = title.stringByReplacingOccurrencesOfString("&#8211;", withString: "")
+            let secondTitle = firstTitle.stringByReplacingOccurrencesOfString("&#038;", withString: "")
+            let thirdTitle =  secondTitle.stringByReplacingOccurrencesOfString("&#8217;", withString: "'")
+            let ampersandTitle = thirdTitle.stringByReplacingOccurrencesOfString("&amp;", withString: " & ")
+            let newTitle = ampersandTitle
+            podcast.title = newTitle
         }
         
         if let mediaContent = dictionary["content"] as? [String : String], rendered = mediaContent["rendered"] {
