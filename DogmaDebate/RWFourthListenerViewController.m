@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 RondaleWilliams. All rights reserved.
 //
 
+#import <MediaPlayer/MediaPlayer.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 #import "RWMoreTableViewCell.h"
 #import "RWFourthListenerViewController.h"
 #import "Dogma_Debate-Swift.h"
@@ -62,6 +64,7 @@
 {
     RWMoreTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RWMoreTableViewCell"];
     RWPodcast *podcast = [[self.viewModel podcastData] objectAtIndex:indexPath.row];
+    NSLog(@"Podcast Data - Audio:%@  Video:%@", podcast.url, podcast.videoUrl);
     cell.cellLabel.text = podcast.title;
     
     return cell;
@@ -70,8 +73,19 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     RWPodcastPlayerViewController *podcastPlayerVC = [[RWPodcastPlayerViewController alloc] init];
+    RWPodcast *podcast = [[self.viewModel podcastData] objectAtIndex:indexPath.row];
+    if (![podcast.url isEqualToString:@""]) {
+        podcastPlayerVC.podcast = podcast;
+        [self presentViewController:podcastPlayerVC animated:true completion:nil];
+    } else if (![podcast.videoUrl  isEqualToString:@""]) {
+        RWMoviePlayerController *moviePlayerVC =  [[RWMoviePlayerController alloc] init];
+        moviePlayerVC.videoUrl = podcast.videoUrl;
+        [self presentViewController:moviePlayerVC animated:true completion:nil];
+        
+    }
 
 }
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {

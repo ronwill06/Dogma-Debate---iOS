@@ -8,16 +8,19 @@ PODS:
   - PayPal-iOS-SDK/CardIO (2.14.2):
     - CardIO (~> 5.3.2)
   - PayPal-iOS-SDK/Core (2.14.2)
+  - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
   - HTMLReader
   - OAuthSwift
   - PayPal-iOS-SDK
+  - youtube-ios-player-helper (~> 0.1.4)
 
 SPEC CHECKSUMS:
   CardIO: 92c45caef0d986c4a303a7afba0c9b76ff2b1f6e
   HTMLReader: 7e21488ee378afc56ccade8af35840c4e03e434c
   OAuthSwift: 1ef042d4362e755e24a78f158d817245641a5d24
   PayPal-iOS-SDK: 6946b8730a3bde17e6230f5073676ecb596113c2
+  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
 COCOAPODS: 0.39.0

@@ -14,6 +14,7 @@ class RWPodcast: NSObject {
     var podcastDate: String?
     var podcastDescription: String?
     var url: String?
+    var videoUrl: String?
     var episodeNumber: String?
     
     override init() {

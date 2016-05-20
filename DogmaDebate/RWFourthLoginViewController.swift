@@ -14,6 +14,7 @@ class RWFourthLoginViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField?
     @IBOutlet weak var passwordField: UITextField?
     
+    @IBOutlet weak var loginButton: UIButton!
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -37,6 +38,7 @@ class RWFourthLoginViewController: UIViewController {
         
         usernameField?.text = nil
         passwordField?.text = nil
+        loginButton.userInteractionEnabled = true
     }
     
     

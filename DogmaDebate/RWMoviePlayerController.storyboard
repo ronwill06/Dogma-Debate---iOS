@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Player Controller-->
+        <scene sceneID="yIV-V6-76a">
+            <objects>
+                <viewController id="hGJ-03-wgH" customClass="RWMoviePlayerController" customModule="Dogma_Debate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tno-Af-Zut"/>
+                        <viewControllerLayoutGuide type="bottom" id="WrE-2Z-HAT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qRZ-9k-a00">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJF-xT-4qM" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WrE-2Z-HAT" firstAttribute="top" secondItem="NJF-xT-4qM" secondAttribute="bottom" id="CTE-mP-QRC"/>
+                            <constraint firstItem="NJF-xT-4qM" firstAttribute="top" secondItem="tno-Af-Zut" secondAttribute="bottom" id="Dlx-88-iLi"/>
+                            <constraint firstAttribute="trailing" secondItem="NJF-xT-4qM" secondAttribute="trailing" id="Hva-Gw-ClT"/>
+                            <constraint firstItem="NJF-xT-4qM" firstAttribute="leading" secondItem="qRZ-9k-a00" secondAttribute="leading" id="SiC-dN-btT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerView" destination="NJF-xT-4qM" id="guU-hr-20X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pYN-mj-d9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="552" y="353"/>
+        </scene>
+    </scenes>
+</document>

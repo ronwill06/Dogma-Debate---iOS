@@ -86,8 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-DogmaDebate/HTMLReader.framework"
   install_framework "Pods-DogmaDebate/OAuthSwift.framework"
+  install_framework "Pods-DogmaDebate/youtube_ios_player_helper.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-DogmaDebate/HTMLReader.framework"
   install_framework "Pods-DogmaDebate/OAuthSwift.framework"
+  install_framework "Pods-DogmaDebate/youtube_ios_player_helper.framework"
 fi

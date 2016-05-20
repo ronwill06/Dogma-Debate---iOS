@@ -40,7 +40,7 @@ import HTMLReader
         contentType: "application/x-www-form-urlencoded")
         
         oauthSwift.accessTokenBasicAuthentification = true
-        
+            
         oauthSwift.client.post("http://login.dogmadebate.com/?oauth=token&grant_type=password", parameters: ["client_id" : clientId ,"client_secret" : clientSecret,"grant_type" : "password", "username" : username, "password" : password], headers: ["Authorization" : "basic"], success: {[weak self] (data, response) -> Void in
             guard let strongSelf = self else { return }
             
@@ -110,7 +110,21 @@ import HTMLReader
         }
         
         if let mediaContent = dictionary["content"] as? [String : String], rendered = mediaContent["rendered"] {
-            podcast.podcastDescription = rendered
+            let document =  HTMLDocument(string: rendered)
+            print("Document: \(document)")
+            let documentElements = document.nodesMatchingSelector("p")
+            print("\(documentElements)")
+            if documentElements.count >= 2 {
+                let mp3Element = documentElements[1]
+                let mp3 = mp3Element.firstNodeMatchingSelector("a")?.attributes["href"]
+                podcast.url = mp3
+                
+            } else {
+                let videoElement = documentElements[0]
+                podcast.videoUrl = videoElement.firstNodeMatchingSelector("iframe")?.attributes["src"]
+                print("Video Element: \(videoElement.firstNodeMatchingSelector("iframe")?.attributes["src"])")
+            }
+                podcast.podcastDescription = rendered
             
         }
         
