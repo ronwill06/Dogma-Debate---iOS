@@ -11,14 +11,28 @@ import youtube_ios_player_helper
 
 class RWMoviePlayerController: UIViewController {
     
-    @IBOutlet var playerView: YTPlayerView!
+    @IBOutlet weak var playerView: YTPlayerView!
+   
     var videoUrl: String = ""
     
+    static func moviePlayerViewController() -> RWMoviePlayerController {
+        let vc = UIStoryboard(name: "RWMoviePlayerController", bundle: nil).instantiateInitialViewController() as! RWMoviePlayerController
+        return vc
+    }
+    
     override func viewDidLoad() {
-        
+                
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         if !videoUrl.isEmpty {
-            let components =  videoUrl.componentsSeparatedByString("/")
-            
+            let components = videoUrl.componentsSeparatedByString("/")
+            let videoId = components[4]
+            if let playerView = playerView {
+                playerView.loadWithVideoId(videoId)
+                playerView.playVideo()
+            }
         }
+
     }
 }

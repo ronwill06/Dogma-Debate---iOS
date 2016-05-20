@@ -78,7 +78,7 @@
         podcastPlayerVC.podcast = podcast;
         [self presentViewController:podcastPlayerVC animated:true completion:nil];
     } else if (![podcast.videoUrl  isEqualToString:@""]) {
-        RWMoviePlayerController *moviePlayerVC =  [[RWMoviePlayerController alloc] init];
+        RWMoviePlayerController *moviePlayerVC =  [RWMoviePlayerController moviePlayerViewController];
         moviePlayerVC.videoUrl = podcast.videoUrl;
         [self presentViewController:moviePlayerVC animated:true completion:nil];
         
