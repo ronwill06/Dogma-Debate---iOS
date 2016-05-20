@@ -72,3 +72,11 @@ extension RWPodcastsViewController: UICollectionViewDelegate {
     }
     
 }
+
+extension RWPodcastViewController: UICollectionViewDelegateFlowLayout {
+    
+    public func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return CGSize(width: view.bounds.size.width, height: 200)
+    }
+    
+}

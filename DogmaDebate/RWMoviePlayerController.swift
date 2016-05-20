@@ -33,6 +33,5 @@ class RWMoviePlayerController: UIViewController {
                 playerView.playVideo()
             }
         }
-
     }
 }

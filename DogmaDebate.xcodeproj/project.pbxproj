@@ -112,6 +112,8 @@
 		708876891CD5A8320089DC73 /* UIWidgetCustomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708876881CD5A8320089DC73 /* UIWidgetCustomizer.swift */; };
 		70A1B2FB1CEE978E00B97840 /* RWMoviePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1B2FA1CEE978E00B97840 /* RWMoviePlayerController.swift */; };
 		70A1B3031CEE97E000B97840 /* RWMoviePlayerController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A1B3021CEE97E000B97840 /* RWMoviePlayerController.storyboard */; };
+		70A1B3101CEFB12D00B97840 /* RWMemberPackageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A1B30F1CEFB12D00B97840 /* RWMemberPackageViewController.storyboard */; };
+		70A1B3121CEFB14100B97840 /* RWMemberPackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1B3111CEFB14100B97840 /* RWMemberPackageViewController.swift */; };
 		70BA62E31C89230F0080BECC /* RWFourthListenerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BA62E21C89230F0080BECC /* RWFourthListenerViewModel.swift */; };
 		70BFE7D21C3E039E004A5D1A /* Clips in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7D11C3E039E004A5D1A /* Clips */; };
 		70BFE7D41C3E043F004A5D1A /* sounds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7D31C3E043F004A5D1A /* sounds.plist */; };
@@ -319,6 +321,8 @@
 		708876881CD5A8320089DC73 /* UIWidgetCustomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWidgetCustomizer.swift; sourceTree = "<group>"; };
 		70A1B2FA1CEE978E00B97840 /* RWMoviePlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWMoviePlayerController.swift; sourceTree = "<group>"; };
 		70A1B3021CEE97E000B97840 /* RWMoviePlayerController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RWMoviePlayerController.storyboard; sourceTree = "<group>"; };
+		70A1B30F1CEFB12D00B97840 /* RWMemberPackageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RWMemberPackageViewController.storyboard; sourceTree = "<group>"; };
+		70A1B3111CEFB14100B97840 /* RWMemberPackageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWMemberPackageViewController.swift; sourceTree = "<group>"; };
 		70BA62E21C89230F0080BECC /* RWFourthListenerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFourthListenerViewModel.swift; sourceTree = "<group>"; };
 		70BFE7D11C3E039E004A5D1A /* Clips */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Clips; sourceTree = "<group>"; };
 		70BFE7D31C3E043F004A5D1A /* sounds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sounds.plist; sourceTree = "<group>"; };
@@ -548,6 +552,8 @@
 				7088767A1CACBA9E0089DC73 /* RWSignUpViewController.xib */,
 				70A1B2FA1CEE978E00B97840 /* RWMoviePlayerController.swift */,
 				70A1B3021CEE97E000B97840 /* RWMoviePlayerController.storyboard */,
+				70A1B3111CEFB14100B97840 /* RWMemberPackageViewController.swift */,
+				70A1B30F1CEFB12D00B97840 /* RWMemberPackageViewController.storyboard */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -833,6 +839,7 @@
 				1F45DE511B3C8B6F00086116 /* RWCollectionViewCell.xib in Resources */,
 				70DE244B1C2A00210050C2B8 /* RWAskCreationistsViewController.xib in Resources */,
 				1F5D5CC51B47264C0074FBC8 /* RWAboutUsViewController.xib in Resources */,
+				70A1B3101CEFB12D00B97840 /* RWMemberPackageViewController.storyboard in Resources */,
 				1F45DE4A1B3C5AFF00086116 /* RWCollectionViewController.xib in Resources */,
 				1FE4DE9C1C17B4A30092575D /* RWPodcastsViewController.xib in Resources */,
 				1F45DE081B3AE52F00086116 /* RWMoreTableViewCell.xib in Resources */,
@@ -983,6 +990,7 @@
 				7029172E1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift in Sources */,
 				70DE24451C29FD420050C2B8 /* RWCreationistObject.swift in Sources */,
 				702917261C28C82B00F64075 /* RWBibleViewController.swift in Sources */,
+				70A1B3121CEFB14100B97840 /* RWMemberPackageViewController.swift in Sources */,
 				1F5D5CA71B4635210074FBC8 /* RWPodcastViewController.m in Sources */,
 				7029172A1C28CA4200F64075 /* RWDebateTopicsViewController.swift in Sources */,
 				708876731CACBA4A0089DC73 /* RWSignUpViewController.swift in Sources */,

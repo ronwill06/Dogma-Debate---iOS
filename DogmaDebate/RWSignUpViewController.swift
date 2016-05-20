@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RWSignUpViewController: UIViewController {
+class RWSignUpViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     
     @IBOutlet weak var signUpPremier: UIButton!
@@ -39,5 +39,25 @@ class RWSignUpViewController: UIViewController {
         
     }
     
+    @IBAction func moreInfo(sender: AnyObject) {
+        
+        let infoViewController = RWMemberPackageViewController.memberPackageViewController()
+        infoViewController.modalPresentationStyle = .FormSheet
+        self.presentViewController(infoViewController, animated: true, completion: nil)
+        
+        if let popoverViewController = infoViewController.popoverPresentationController {
+        popoverViewController.permittedArrowDirections = .Up
+        
+        popoverViewController.delegate = self;
+        
+        // in case we don't have a bar button as reference
+        popoverViewController.sourceView = self.view;
+        popoverViewController.sourceRect = CGRectMake(30, 50, 10, 10);
+        }
+        
+    }
     
+    func popoverPresentationControllerShouldDismissPopover(popoverPresentationController: UIPopoverPresentationController) -> Bool {
+        return true
+    }
 }
