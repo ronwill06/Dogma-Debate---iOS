@@ -27,6 +27,9 @@ class RWDropsViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         navigationController?.navigationBar.translucent = false
         
+        let leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: #selector(RWPodcastPlayerViewController.dismiss))
+        navigationItem.backBarButtonItem = leftBarButtonItem
+        
         dropsViewModel = RWDropsViewModel()
         tableView.registerNib(UINib(nibName: "RWDropsTableViewCell", bundle: nil), forCellReuseIdentifier: "RWDropsTableViewCell")
         

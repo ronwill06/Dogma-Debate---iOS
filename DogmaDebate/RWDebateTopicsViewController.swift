@@ -20,10 +20,14 @@ class RWDebateTopicsViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Debate Topics"
+        navigationController?.navigationBarHidden = false
         navigationController?.navigationBar.barTintColor = UIColor.blackColor()
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         navigationController?.navigationBar.translucent = false
+        
+        let leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: #selector(RWPodcastPlayerViewController.dismiss))
+        navigationController?.navigationItem.backBarButtonItem = leftBarButtonItem
         
         debateTopicsViewModel = RWDebateTopicsViewModel()
         tableView.registerNib(UINib(nibName: "RWDebaterTopicTableViewCell", bundle: nil), forCellReuseIdentifier: "RWDebaterTopicTableViewCell")

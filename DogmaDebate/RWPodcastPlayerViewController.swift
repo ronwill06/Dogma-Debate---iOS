@@ -40,13 +40,24 @@ class RWPodcastPlayerViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBarHidden = false
+        let leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: #selector(RWPodcastPlayerViewController.dismiss))
+        navigationItem.backBarButtonItem = leftBarButtonItem
+        navigationController?.navigationBar.translucent = false
+        navigationItem.title = "Dogma Debate"
+        navigationController!.navigationBar.barTintColor = UIColor.blackColor()
+        navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        navigationController?.navigationBar.titleTextAttributes =  [NSForegroundColorAttributeName : UIColor.whiteColor()]
         setUpPodcastDetails()
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        
+    }
+    
+    func dismiss() {
+        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func rewind(sender: AnyObject) {

@@ -18,7 +18,6 @@ class RWDebaterViewController : UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
-        self.title = "Debater"
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -28,8 +27,14 @@ class RWDebaterViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.registerNib( UINib(nibName: "RWDebaterCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RWDebaterCollectionViewCell")
+        self.title = "Debater"
+
+        collectionView.registerNib(UINib(nibName: "RWDebaterCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RWDebaterCollectionViewCell")
         
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+         navigationController?.navigationBarHidden = true
     }
     
 }
@@ -55,8 +60,9 @@ extension RWDebaterViewController : UICollectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let viewController = debaterViewModel.viewControllerForIndex(indexPath.row)
-        let navigationController = UINavigationController(rootViewController: viewController)
-        self.presentViewController(navigationController, animated: true, completion: nil)
+        if let navigationController = navigationController {
+            navigationController.pushViewController(viewController, animated: true)
+        }
     }
     
 }

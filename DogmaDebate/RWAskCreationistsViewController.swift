@@ -24,6 +24,9 @@ class RWAskCreationistsViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         navigationController?.navigationBar.translucent = false
         
+        let leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: #selector(RWPodcastPlayerViewController.dismiss))
+        navigationItem.backBarButtonItem = leftBarButtonItem
+        
         askCreationistsViewModel = RWAskCreationistsViewModel()
         tableView.registerNib(UINib(nibName: "RWDebaterTopicTableViewCell", bundle: nil), forCellReuseIdentifier: "RWDebaterTopicTableViewCell")
         

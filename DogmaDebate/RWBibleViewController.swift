@@ -19,6 +19,11 @@ class RWBibleViewController : UIViewController {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    override func viewDidLoad() {
+        let leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: #selector(RWPodcastPlayerViewController.dismiss))
+        navigationItem.backBarButtonItem = leftBarButtonItem
+    }
 }
 
 extension RWBibleViewController : UICollectionViewDataSource {

@@ -35,8 +35,11 @@
     UINavigationController *podCastsNavVC = [[UINavigationController alloc] initWithRootViewController:podCastsVC];
     
     RWDebaterViewController *debaterVC = [[RWDebaterViewController alloc] init];
+    UINavigationController *debateNavVC = [[UINavigationController alloc] initWithRootViewController:debaterVC];
+    debateNavVC.title = @"Debater";
     
     RWFourthLoginViewController *loginVC = [[RWFourthLoginViewController alloc] init];
+    RWSignUpWebViewController *signUpVC = [RWSignUpWebViewController signUpWebViewController];
     UINavigationController *fourthNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
     
     RWMoreViewController *moreVC = [[RWMoreViewController alloc] init];
@@ -47,7 +50,7 @@
     tabBarController.tabBar.translucent = NO;
     tabBarController.tabBar.barTintColor = [UIColor blackColor];
     tabBarController.tabBar.tintColor =  [UIColor whiteColor];
-    [tabBarController setViewControllers:@[podCastsNavVC, debaterVC, fourthNav, moreNav] animated:YES];
+    [tabBarController setViewControllers:@[podCastsNavVC, debateNavVC, signUpVC, moreNav] animated:YES];
     [[tabBarController.tabBar.items objectAtIndex:0] setImage:[UIImage imageNamed:@"PodcastImage"]];
     [[tabBarController.tabBar.items objectAtIndex:1] setImage:[UIImage imageNamed:@"Debater"]];
     [[tabBarController.tabBar.items objectAtIndex:2] setImage:[UIImage imageNamed:@"Login"]];

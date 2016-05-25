@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="h2A-uo-X7O">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up Web View Controller-->
+        <scene sceneID="d91-SF-HuE">
+            <objects>
+                <viewController id="h2A-uo-X7O" customClass="RWSignUpWebViewController" customModule="Dogma_Debate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iab-N4-QtX"/>
+                        <viewControllerLayoutGuide type="bottom" id="jwY-Cj-OW4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cLw-aI-vUt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Of-BR-HdF">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Of-BR-HdF" firstAttribute="leading" secondItem="cLw-aI-vUt" secondAttribute="leadingMargin" id="Jey-kZ-JUE"/>
+                            <constraint firstAttribute="trailing" secondItem="0Of-BR-HdF" secondAttribute="trailing" id="Lgf-fi-eu6"/>
+                            <constraint firstItem="jwY-Cj-OW4" firstAttribute="top" secondItem="0Of-BR-HdF" secondAttribute="bottom" id="Rng-EQ-TTB"/>
+                            <constraint firstItem="0Of-BR-HdF" firstAttribute="leading" secondItem="cLw-aI-vUt" secondAttribute="leading" id="Ujf-aa-z30"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Of-BR-HdF" secondAttribute="trailing" id="afO-uh-8Xh"/>
+                            <constraint firstItem="0Of-BR-HdF" firstAttribute="top" secondItem="iab-N4-QtX" secondAttribute="bottom" id="oYS-fo-yfb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Jey-kZ-JUE"/>
+                                <exclude reference="afO-uh-8Xh"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="view" destination="cLw-aI-vUt" id="iig-Zm-sTB"/>
+                        <outlet property="webView" destination="0Of-BR-HdF" id="9Zx-H5-dEr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oFo-Lk-DAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877" y="481"/>
+        </scene>
+    </scenes>
+</document>

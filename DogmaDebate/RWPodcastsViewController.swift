@@ -31,9 +31,13 @@ class RWPodcastsViewController: UIViewController {
         podcastsViewModel = RWPodcastsViewModel()
         podcastsViewModel?.collectionViewReference = collectionView
 
-        navigationController?.setNavigationBarHidden(true, animated: false)
         self.collectionView.registerNib(UINib(nibName: "RWPodcastCollectionViewCell", bundle: nil),
             forCellWithReuseIdentifier: "RWPodcastCollectionViewCell")
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        
     }
     
 }
