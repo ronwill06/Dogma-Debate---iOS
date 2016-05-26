@@ -8,7 +8,7 @@
 
 import Foundation
 
-class DDPodcastOperation: NSObject {
+class DDPodcastOperation: NSOperation {
     static let PodcastOperationDidSucceed = "PodcastOperationDidSucceed"
     static let PodcastOperationDidFail = "PodcastOperationDidFail"
     
@@ -17,16 +17,16 @@ class DDPodcastOperation: NSObject {
     
     override init() {
         super.init()
-        fetchData()
     }
     
-    func fetchData() {
+    
+    override func start() {
         
         let urlSession = NSURLSession.sharedSession()
         if let url = podcastFeedUrl {
-        
-            urlSession.dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
-               // guard let strongSelf = self else { return }
+            
+            urlSession.dataTaskWithURL(url, completionHandler: { (data, response, error) in
+                
                 if error != nil {
                     print("Error with podcast operation")
                     NSNotificationCenter.defaultCenter().postNotificationName(DDPodcastOperation.PodcastOperationDidFail, object: error)
@@ -38,7 +38,7 @@ class DDPodcastOperation: NSObject {
                         do {
                             jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data, options:NSJSONReadingOptions(rawValue: 0)) as! [String : AnyObject]
                             if let jsonResponse = jsonDictionary["response"] as? [String : AnyObject], pager = jsonResponse["pager"] as? [String : AnyObject],
-                            results = pager["results"] as? [[String : AnyObject]] {
+                                results = pager["results"] as? [[String : AnyObject]] {
                                 print("\(results)")
                                 for episode in results {
                                     let podcast = RWPodcast()
@@ -54,19 +54,19 @@ class DDPodcastOperation: NSObject {
                                 }
                                 
                                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                                  NSNotificationCenter.defaultCenter().postNotificationName(DDPodcastOperation.PodcastOperationDidSucceed, object: nil,
-                                  userInfo: ["podcastInfo" : self.podCasts])
+                                    NSNotificationCenter.defaultCenter().postNotificationName(DDPodcastOperation.PodcastOperationDidSucceed, object: nil,
+                                        userInfo: ["podcastInfo" : self.podCasts])
                                 })
                             }
                         } catch {
                             jsonDictionary = [:]
                         }
-
+                        
                     }
                 }
             }).resume()
+            
         }
+        
     }
-    
-
 }

@@ -61,6 +61,11 @@
     
     [[self window] makeKeyAndVisible];
     
+    DDPodcastOperation *podcastOperation = [[DDPodcastOperation alloc] init];
+    
+    NSOperationQueue *operationQueue = [[NSOperationQueue alloc] init];
+    [operationQueue addOperation:podcastOperation];
+    
     
     return YES;
 }
