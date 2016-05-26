@@ -28,7 +28,17 @@ class RWDebateTopicsViewModel {
                     if let object = info as? [String:String] {
                         let atheismObject = RWAtheismObject()
                         atheismObject.title = object["menu"]
-                        atheismObject.information = object["information"]
+                        
+                        if let information = object["information"] {
+                            do {
+                                let editedInformation = try NSAttributedString(data: information.dataUsingEncoding(NSUTF8StringEncoding)!, options: [NSDocumentTypeDocumentAttribute : NSHTMLTextDocumentType], documentAttributes: nil)
+                                 atheismObject.information = editedInformation
+                            } catch {
+                                print("Error w/\(information)")
+                            }
+                        }
+                        
+
                         
                         atheismTopics.append(atheismObject)
                     }

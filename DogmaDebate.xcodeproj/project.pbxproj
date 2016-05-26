@@ -97,6 +97,8 @@
 		38FC2C54A8020BBFF96DCB34 /* Pods_DogmaDebate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A43CB49864B8E07187D2C4 /* Pods_DogmaDebate.framework */; };
 		700DCD961CF60BA000433925 /* RWSignUpWebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700DCD951CF60BA000433925 /* RWSignUpWebViewController.storyboard */; };
 		700DCD9E1CF60C3F00433925 /* RWSignUpWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DCD9D1CF60C3F00433925 /* RWSignUpWebViewController.swift */; };
+		700DCDA21CF7650100433925 /* RWQuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DCDA11CF7650100433925 /* RWQuoteTableViewCell.swift */; };
+		700DCDA41CF7682900433925 /* RWQuoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 700DCDA31CF7682900433925 /* RWQuoteTableViewCell.xib */; };
 		701E181C1C433930005D7339 /* RWFourthLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E181B1C433930005D7339 /* RWFourthLoginViewController.swift */; };
 		701E181E1C434FA1005D7339 /* RWFourthLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E181D1C434FA1005D7339 /* RWFourthLoginViewModel.swift */; };
 		701E18201C4351C9005D7339 /* RWOAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E181F1C4351C9005D7339 /* RWOAuthManager.swift */; };
@@ -310,6 +312,8 @@
 		2CEB53FD812D63B2C7C4CD71 /* Pods-DogmaDebate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogmaDebate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogmaDebate/Pods-DogmaDebate.debug.xcconfig"; sourceTree = "<group>"; };
 		700DCD951CF60BA000433925 /* RWSignUpWebViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RWSignUpWebViewController.storyboard; sourceTree = "<group>"; };
 		700DCD9D1CF60C3F00433925 /* RWSignUpWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWSignUpWebViewController.swift; sourceTree = "<group>"; };
+		700DCDA11CF7650100433925 /* RWQuoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWQuoteTableViewCell.swift; sourceTree = "<group>"; };
+		700DCDA31CF7682900433925 /* RWQuoteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWQuoteTableViewCell.xib; sourceTree = "<group>"; };
 		701E181B1C433930005D7339 /* RWFourthLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFourthLoginViewController.swift; sourceTree = "<group>"; };
 		701E181D1C434FA1005D7339 /* RWFourthLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFourthLoginViewModel.swift; sourceTree = "<group>"; };
 		701E181F1C4351C9005D7339 /* RWOAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWOAuthManager.swift; sourceTree = "<group>"; };
@@ -601,6 +605,8 @@
 				70BFE7D71C3E07EA004A5D1A /* RWDropsTableViewCell.swift */,
 				70BFE7D91C3E082C004A5D1A /* RWDropsTableViewCell.xib */,
 				708876881CD5A8320089DC73 /* UIWidgetCustomizer.swift */,
+				700DCDA11CF7650100433925 /* RWQuoteTableViewCell.swift */,
+				700DCDA31CF7682900433925 /* RWQuoteTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -850,6 +856,7 @@
 				7088767B1CACBA9E0089DC73 /* RWSignUpViewController.xib in Resources */,
 				1F45DE511B3C8B6F00086116 /* RWCollectionViewCell.xib in Resources */,
 				70DE244B1C2A00210050C2B8 /* RWAskCreationistsViewController.xib in Resources */,
+				700DCDA41CF7682900433925 /* RWQuoteTableViewCell.xib in Resources */,
 				1F5D5CC51B47264C0074FBC8 /* RWAboutUsViewController.xib in Resources */,
 				70A1B3101CEFB12D00B97840 /* RWMemberPackageViewController.storyboard in Resources */,
 				70EDD4BE1CF2695700953480 /* PayPalPaymentViewController.storyboard in Resources */,
@@ -1036,6 +1043,7 @@
 				1F45DE5C1B40743100086116 /* RWCollectionViewTransitionAnimator.m in Sources */,
 				70DB18171C6BBC0500A2A451 /* DDFourthListenerOperation.swift in Sources */,
 				702917301C28DCC600F64075 /* RWAtheismObject.swift in Sources */,
+				700DCDA21CF7650100433925 /* RWQuoteTableViewCell.swift in Sources */,
 				1F5D5CCA1B4727140074FBC8 /* RWAboutUsTableViewCell.m in Sources */,
 				1F5D5CE01B4769F30074FBC8 /* RWFAQViewController.m in Sources */,
 				701E181C1C433930005D7339 /* RWFourthLoginViewController.swift in Sources */,

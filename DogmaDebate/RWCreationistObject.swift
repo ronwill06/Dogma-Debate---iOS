@@ -10,7 +10,7 @@ import Foundation
 
 class RWCreationistObject {
     var title: String?
-    var information: String?
+    var information: NSAttributedString?
     
     init() {
     

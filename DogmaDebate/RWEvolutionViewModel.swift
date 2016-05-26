@@ -7,10 +7,12 @@
 //
 
 import Foundation
+import HTMLReader
 
 class RWEvolutionViewModel {
     
     var evolutionTopics: [RWEvolutionObject] = []
+    let htmlTags = ["</b>", "<br>", "&"]
     
     init() {
         fetchData()
@@ -27,7 +29,16 @@ class RWEvolutionViewModel {
                     if let object = info as? [String : String] {
                         let evolutionObject = RWEvolutionObject()
                         evolutionObject.title = object["menu"]
-                        evolutionObject.information = object["information"]
+                        if let information = object["information"] {
+                            
+                            do {
+                                let editedInformation = try NSAttributedString(data: information.dataUsingEncoding(NSUTF8StringEncoding)!, options: [NSDocumentTypeDocumentAttribute : NSHTMLTextDocumentType], documentAttributes: nil)
+                                evolutionObject.information = editedInformation
+                            } catch {
+                                print("Error w/\(information)")
+                            }
+                            
+                        }
                         
                         evolutionTopics.append(evolutionObject)
                     }
@@ -44,7 +55,6 @@ class RWEvolutionViewModel {
     
     func topicForIndex(index: Int) -> RWEvolutionObject {
         let topic = evolutionTopics[index]
-        
         return topic
     }
     

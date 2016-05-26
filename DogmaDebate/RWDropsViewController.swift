@@ -21,7 +21,8 @@ class RWDropsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Smalley Quotes"
+        self.title = "Drops"
+        navigationController?.navigationBarHidden = false
         navigationController?.navigationBar.barTintColor = UIColor.blackColor()
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]

@@ -28,7 +28,16 @@ class RWAskCreationistsViewModel {
                     if let object = info as? [String : String] {
                         let creationistObject = RWCreationistObject()
                         creationistObject.title = object["menu"]
-                        creationistObject.information = object["information"]
+                        
+                        if let information = object["information"] {
+                            do {
+                                let editedInformation = try NSAttributedString(data: information.dataUsingEncoding(NSUTF8StringEncoding)!, options: [NSDocumentTypeDocumentAttribute : NSHTMLTextDocumentType], documentAttributes: nil)
+                                creationistObject.information = editedInformation
+                            } catch {
+                                print("Error w/\(information)")
+                            }
+                        }
+                        
                         
                         creationistTopics.append(creationistObject)
                     }

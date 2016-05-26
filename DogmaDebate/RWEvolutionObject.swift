@@ -11,7 +11,7 @@ import Foundation
 class RWEvolutionObject {
 
     var title: String?
-    var information: String?
+    var information: NSAttributedString?
     
     init() {
         

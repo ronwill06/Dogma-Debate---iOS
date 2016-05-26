@@ -19,10 +19,15 @@ class RWEvolutionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Evolution Basics"
+        navigationController?.navigationBarHidden = false
         navigationController?.navigationBar.barTintColor = UIColor.blackColor()
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         navigationController?.navigationBar.translucent = false
+        
+        
+        let leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: #selector(RWPodcastPlayerViewController.dismiss))
+        navigationController?.navigationItem.backBarButtonItem = leftBarButtonItem
         
         evolutionViewModel = RWEvolutionViewModel()
         tableView.registerNib(UINib(nibName: "RWDebaterTopicTableViewCell", bundle: nil), forCellReuseIdentifier: "RWDebaterTopicTableViewCell")
@@ -47,7 +52,7 @@ extension RWEvolutionViewController : UITableViewDataSource {
             let topic = evolutionViewModel?.topicForIndex(indexPath.row)
             cell.questionLabel.text = topic?.title
             cell.informationViewHeightConstraint.constant = 170
-            cell.informationView.text = topic?.information
+            cell.informationView.attributedText = topic?.information
             return cell
         }
         

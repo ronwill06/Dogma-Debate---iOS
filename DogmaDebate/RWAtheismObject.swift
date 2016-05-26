@@ -11,13 +11,13 @@ import Foundation
 class RWAtheismObject {
 
     var title: String?
-    var information: String?
+    var information: NSAttributedString?
     
     init() {
         
     }
     
-    convenience init(title: String, information: String) {
+    convenience init(title: String, information: NSAttributedString) {
         self.init()
         self.title = title
         self.information = information

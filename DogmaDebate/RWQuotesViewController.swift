@@ -18,6 +18,7 @@ class RWQuotesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Smalley Quotes"
+        navigationController?.navigationBarHidden = false
         navigationController?.navigationBar.barTintColor = UIColor.blackColor()
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
@@ -27,7 +28,7 @@ class RWQuotesViewController: UIViewController {
         navigationItem.backBarButtonItem = leftBarButtonItem
         
         quotesViewModel = RWQuoteViewModel()
-        tableView.registerNib(UINib(nibName: "RWDebaterTopicTableViewCell", bundle: nil), forCellReuseIdentifier: "RWDebaterTopicTableViewCell")
+        tableView.registerNib(UINib(nibName: "RWQuoteTableViewCell", bundle: nil), forCellReuseIdentifier: "RWQuoteTableViewCell")
         
     }
 }
@@ -45,9 +46,9 @@ extension RWQuotesViewController : UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let genericCell =  UITableViewCell()
-        if let cell = tableView.dequeueReusableCellWithIdentifier("RWDebaterTopicTableViewCell", forIndexPath: indexPath) as? RWDebaterTopicTableViewCell {
+        if let cell = tableView.dequeueReusableCellWithIdentifier("RWQuoteTableViewCell", forIndexPath: indexPath) as? RWQuoteTableViewCell {
             let topic = quotesViewModel?.topicForIndex(indexPath.row)
-            cell.questionLabel.text = topic?.quote
+            cell.quoteLabel.text = topic?.quote
             return cell
         }
         
@@ -55,7 +56,7 @@ extension RWQuotesViewController : UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 50
+        return 100
     }
     
 }

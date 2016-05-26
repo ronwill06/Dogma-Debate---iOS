@@ -19,6 +19,7 @@ class RWAskCreationistsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Ask Creationists"
+        navigationController?.navigationBarHidden = false
         navigationController?.navigationBar.barTintColor = UIColor.blackColor()
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
@@ -50,7 +51,7 @@ extension RWAskCreationistsViewController : UITableViewDataSource {
             let topic = askCreationistsViewModel?.topicForIndex(indexPath.row)
             cell.questionLabel.text = topic?.title
             cell.informationViewHeightConstraint.constant = 170
-            cell.informationView.text = topic?.information
+            cell.informationView.attributedText = topic?.information
             return cell
         }
         
@@ -61,7 +62,7 @@ extension RWAskCreationistsViewController : UITableViewDataSource {
         if cellIsDeselected == false {
             if let selectedIndexPath = selectedIndexPath {
                 if indexPath.compare(selectedIndexPath) == NSComparisonResult.OrderedSame {
-                    return 200
+                    return 250
                 }
                 
             }

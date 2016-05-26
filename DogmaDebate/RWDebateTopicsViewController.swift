@@ -52,7 +52,7 @@ extension RWDebateTopicsViewController : UITableViewDataSource {
         let topic = debateTopicsViewModel!.topicForIndex(indexPath.row)
         cell.questionLabel.text = topic.title
         cell.informationViewHeightConstraint.constant = 170
-        cell.informationView.text = topic.information
+        cell.informationView.attributedText = topic.information
         return cell
         }
         
