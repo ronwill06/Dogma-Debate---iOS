@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RWPodcastPlayerViewController" customModule="Dogma_Debate" customModuleProvider="target">
             <connections>
                 <outlet property="imageView" destination="Uzr-zJ-hk2" id="LC5-JC-kOs"/>
+                <outlet property="imageViewHeight" destination="42r-Vt-LMz" id="U7i-2h-JGB"/>
                 <outlet property="innerButtonViewLeadingConstraint" destination="VU8-Oe-pfB" id="Ele-WL-hBt"/>
                 <outlet property="innerButtonViewTrailingConstraint" destination="Tda-uf-q6P" id="Bl1-UR-H2k"/>
                 <outlet property="podcastDescription" destination="Jz0-dr-5ho" id="R51-wX-lIp"/>
@@ -61,7 +62,7 @@
                                             <rect key="frame" x="110" y="0.0" width="380" height="75"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="de4-NQ-xS8" userLabel="Stop Button">
-                                                    <rect key="frame" x="0.0" y="13" width="50" height="50"/>
+                                                    <rect key="frame" x="0.0" y="12.5" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="5Hv-Km-Pno"/>
                                                         <constraint firstAttribute="height" constant="50" id="Zlh-ce-mQE"/>
@@ -171,14 +172,14 @@
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jz0-dr-5ho">
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jz0-dr-5ho">
                             <rect key="frame" x="8" y="104" width="584" height="188"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="130" id="mKa-RE-Z3F"/>
                             </constraints>
                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             <variation key="default">
                                 <mask key="constraints">
@@ -253,6 +254,6 @@
         <image name="Play" width="60" height="60"/>
         <image name="Rewind" width="60" height="60"/>
         <image name="Stop" width="60" height="60"/>
-        <image name="ddlogo" width="400" height="400"/>
+        <image name="ddlogo" width="34" height="34"/>
     </resources>
 </document>

@@ -25,6 +25,7 @@ class RWPodcastPlayerViewController : UIViewController {
     
     @IBOutlet weak var innerButtonViewLeadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var innerButtonViewTrailingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var imageViewHeight: NSLayoutConstraint!
     
     var player: AVPlayer?
     var trackTime:CMTime?
@@ -59,9 +60,13 @@ class RWPodcastPlayerViewController : UIViewController {
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         navigationController?.navigationBar.titleTextAttributes =  [NSForegroundColorAttributeName : UIColor.whiteColor()]
         
+        
         if UIDevice.isIphone4() {
             innerButtonViewLeadingConstraint.constant = 20
             innerButtonViewTrailingConstraint.constant = 20
+            imageViewHeight.constant = 200.0
+        } else if UIDevice.isIphone6() {
+             imageViewHeight.constant = 250.0
         }
         
         setUpPodcastDetails()
