@@ -34,6 +34,7 @@
     debateNavVC.title = @"Debater";
     
     RWSignUpWebViewController *signUpVC = [RWSignUpWebViewController signUpWebViewController];
+    UINavigationController *signUpNav = [[UINavigationController alloc] initWithRootViewController:signUpVC];
     
     RWMoreViewController *moreVC = [[RWMoreViewController alloc] init];
     UINavigationController *moreNav = [[UINavigationController alloc] initWithRootViewController:moreVC];
@@ -43,7 +44,7 @@
     tabBarController.tabBar.translucent = NO;
     tabBarController.tabBar.barTintColor = [UIColor blackColor];
     tabBarController.tabBar.tintColor =  [UIColor whiteColor];
-    [tabBarController setViewControllers:@[podCastsNavVC, debateNavVC, signUpVC, moreNav] animated:YES];
+    [tabBarController setViewControllers:@[podCastsNavVC, debateNavVC, signUpNav, moreNav] animated:YES];
     [[tabBarController.tabBar.items objectAtIndex:0] setImage:[UIImage imageNamed:@"PodcastImage"]];
     [[tabBarController.tabBar.items objectAtIndex:1] setImage:[UIImage imageNamed:@"Debater"]];
     [[tabBarController.tabBar.items objectAtIndex:2] setImage:[UIImage imageNamed:@"Login"]];

@@ -33,7 +33,7 @@ class RWDebaterViewController : UIViewController {
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         navigationController?.navigationBar.translucent = false
-
+        navigationController?.navigationBar.barStyle = .Black
 
         collectionView.registerNib(UINib(nibName: "RWDebaterCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RWDebaterCollectionViewCell")
         
@@ -43,6 +43,10 @@ class RWDebaterViewController : UIViewController {
       
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
+
 }
 
 extension RWDebaterViewController : UICollectionViewDataSource {

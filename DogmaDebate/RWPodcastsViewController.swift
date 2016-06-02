@@ -49,6 +49,10 @@ class RWPodcastsViewController: UIViewController {
         
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
+    
 }
 
 extension RWPodcastsViewController: UICollectionViewDataSource {

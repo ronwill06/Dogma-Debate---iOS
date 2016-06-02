@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import WebKit
 
 class RWSignUpWebViewController: UIViewController {
     
@@ -17,27 +18,39 @@ class RWSignUpWebViewController: UIViewController {
     }
     
     
-    @IBOutlet weak var webView: UIWebView!
     
     override func viewDidLoad() {
+        navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        navigationController?.navigationBar.translucent = false
+        navigationController?.navigationBar.barStyle = .Black
         
-//        self.title = "4th"
-//        let url = NSURL(string: "http://login.dogmadebate.com/")
-//        if let url = url {
-//            let request = NSURLRequest(URL: url)
-//            webView.loadRequest(request)
-//        }
+        let configuration = WKWebViewConfiguration()
+        configuration.allowsInlineMediaPlayback = true
+        let webview = WKWebView(frame: view.frame, configuration: configuration)
+        let url = NSURL(string: "http://login.dogmadebate.com/")
         
+        if let url = url {
+            let request = NSURLRequest(URL: url)
+            webview.loadRequest(request)
+        }
+        
+        view.addSubview(webview)
     }
     
     override func viewWillAppear(animated: Bool) {
         self.title = "4th"
-        let url = NSURL(string: "http://login.dogmadebate.com/")
-        if let url = url {
-            let request = NSURLRequest(URL: url)
-            webView.loadRequest(request)
-        }
-        
+        //        let url = NSURL(string: "http://login.dogmadebate.com/")
+        //        if let url = url {
+        //            let request = NSURLRequest(URL: url)
+        //            webview.loadRequest(request)
+        //        }
+        //
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
     }
     
     
