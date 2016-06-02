@@ -39,8 +39,6 @@
 		1F45DE1E1B3B46DC00086116 /* RWEventHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE1C1B3B46DC00086116 /* RWEventHeaderView.xib */; };
 		1F45DE211B3B488C00086116 /* RWEventHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE201B3B488C00086116 /* RWEventHeaderView.m */; };
 		1F45DE221B3B488C00086116 /* RWEventHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE201B3B488C00086116 /* RWEventHeaderView.m */; };
-		1F45DE281B3B4FA600086116 /* RWBlogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE251B3B4FA600086116 /* RWBlogViewController.xib */; };
-		1F45DE291B3B4FA600086116 /* RWBlogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE251B3B4FA600086116 /* RWBlogViewController.xib */; };
 		1F45DE2C1B3B546700086116 /* RWStyleControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE2B1B3B546700086116 /* RWStyleControls.m */; };
 		1F45DE2D1B3B546700086116 /* RWStyleControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE2B1B3B546700086116 /* RWStyleControls.m */; };
 		1F45DE481B3C5AFF00086116 /* RWCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE461B3C5AFF00086116 /* RWCollectionViewController.m */; };
@@ -180,7 +178,6 @@
 		1F45DE1C1B3B46DC00086116 /* RWEventHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWEventHeaderView.xib; sourceTree = "<group>"; };
 		1F45DE1F1B3B488C00086116 /* RWEventHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWEventHeaderView.h; sourceTree = "<group>"; };
 		1F45DE201B3B488C00086116 /* RWEventHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWEventHeaderView.m; sourceTree = "<group>"; };
-		1F45DE251B3B4FA600086116 /* RWBlogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWBlogViewController.xib; sourceTree = "<group>"; };
 		1F45DE2A1B3B546700086116 /* RWStyleControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWStyleControls.h; sourceTree = "<group>"; };
 		1F45DE2B1B3B546700086116 /* RWStyleControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWStyleControls.m; sourceTree = "<group>"; };
 		1F45DE451B3C5AFF00086116 /* RWCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCollectionViewController.h; sourceTree = "<group>"; };
@@ -378,7 +375,6 @@
 				1F45DDFC1B3A04DA00086116 /* RWMoreViewController.h */,
 				1F45DDFD1B3A04DA00086116 /* RWMoreViewController.m */,
 				1F45DDFE1B3A04DA00086116 /* RWMoreViewController.xib */,
-				1F45DE251B3B4FA600086116 /* RWBlogViewController.xib */,
 				1F5D5CA41B4635210074FBC8 /* RWPodcastViewController.h */,
 				1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */,
 				1F5D5CB41B46E79A0074FBC8 /* RWFourthListenerViewController.xib */,
@@ -415,8 +411,8 @@
 				70A1B3111CEFB14100B97840 /* RWMemberPackageViewController.swift */,
 				70A1B30F1CEFB12D00B97840 /* RWMemberPackageViewController.storyboard */,
 				70EDD4BD1CF2695700953480 /* PayPalPaymentViewController.storyboard */,
-				700DCD951CF60BA000433925 /* RWSignUpWebViewController.storyboard */,
 				700DCD9D1CF60C3F00433925 /* RWSignUpWebViewController.swift */,
+				700DCD951CF60BA000433925 /* RWSignUpWebViewController.storyboard */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -614,7 +610,6 @@
 				1F45DDBE1B2E51FF00086116 /* LaunchScreen.xib in Resources */,
 				70A1B3031CEE97E000B97840 /* RWMoviePlayerController.storyboard in Resources */,
 				1F27EAE21C2771BD00D8FF5A /* smalley.plist in Resources */,
-				1F45DE281B3B4FA600086116 /* RWBlogViewController.xib in Resources */,
 				1F5D5CD71B473E0B0074FBC8 /* RWPartnerViewController.xib in Resources */,
 				1F45DE011B3A04DA00086116 /* RWMoreViewController.xib in Resources */,
 				70BFE7DC1C3E0955004A5D1A /* RWDropsViewController.xib in Resources */,
@@ -668,7 +663,6 @@
 				1F45DE1B1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */,
 				1F5D5CE31B4769F30074FBC8 /* RWFAQViewController.xib in Resources */,
 				1F5D5CBF1B46F4CA0074FBC8 /* RWFourthLoginViewController.xib in Resources */,
-				1F45DE291B3B4FA600086116 /* RWBlogViewController.xib in Resources */,
 				1F45DE091B3AE52F00086116 /* RWMoreTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

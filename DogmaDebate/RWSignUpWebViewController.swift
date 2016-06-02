@@ -9,7 +9,7 @@
 import Foundation
 import WebKit
 
-class RWSignUpWebViewController: UIViewController {
+class RWSignUpWebViewController: UIViewController{
     
     static func signUpWebViewController() -> RWSignUpWebViewController {
         let vc = UIStoryboard(name: "RWSignUpWebViewController", bundle: nil).instantiateInitialViewController() as! RWSignUpWebViewController
@@ -18,6 +18,7 @@ class RWSignUpWebViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         navigationController?.navigationBar.barTintColor = UIColor.blackColor()
@@ -26,9 +27,12 @@ class RWSignUpWebViewController: UIViewController {
         navigationController?.navigationBar.translucent = false
         navigationController?.navigationBar.barStyle = .Black
         
+        activityIndicator.startAnimating()
+        
         let configuration = WKWebViewConfiguration()
         configuration.allowsInlineMediaPlayback = true
         let webview = WKWebView(frame: view.frame, configuration: configuration)
+        webview.navigationDelegate = self
         let url = NSURL(string: "http://login.dogmadebate.com/")
         
         if let url = url {
@@ -37,21 +41,36 @@ class RWSignUpWebViewController: UIViewController {
         }
         
         view.addSubview(webview)
+        
+        if webview.loading == true {
+            activityIndicator.alpha = 1.0
+            activityIndicator.startAnimating()
+        } else {
+            activityIndicator.stopAnimating()
+        }
+
     }
     
     override func viewWillAppear(animated: Bool) {
-        self.title = "4th"
-        //        let url = NSURL(string: "http://login.dogmadebate.com/")
-        //        if let url = url {
-        //            let request = NSURLRequest(URL: url)
-        //            webview.loadRequest(request)
-        //        }
-        //
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
     }
     
+}
+
+extension RWSignUpWebViewController: WKNavigationDelegate {
     
+    func webView(webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        self.view.bringSubviewToFront(activityIndicator)
+        activityIndicator.startAnimating()
+    }
+    
+    func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+        activityIndicator.stopAnimating()
+    }
+
 }
