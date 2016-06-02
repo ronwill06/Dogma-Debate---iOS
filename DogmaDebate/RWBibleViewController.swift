@@ -11,30 +11,92 @@ import UIKit
 
 class RWBibleViewController : UIViewController {
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     
+    @IBOutlet weak var tableView: UITableView!
+    
+    var bibleViewModel: RWBibleViewModel? {
+        didSet {
+            
+        }
     }
+    var selectedIndexPath: NSIndexPath?
+    var cellIsDeselected = false
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+   
+    static func bibleViewController() -> RWBibleViewController {
+        let vc = UIStoryboard(name: "RWBibleViewController", bundle: nil).instantiateInitialViewController() as! RWBibleViewController
+        return vc
     }
     
     override func viewDidLoad() {
+        self.title = "Bible Contradictions"
+        navigationController?.navigationBarHidden = false
+        navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        navigationController?.navigationBar.translucent = false
+
+        bibleViewModel = RWBibleViewModel()
+        tableView.registerNib(UINib(nibName: "RWDebaterTopicTableViewCell", bundle: nil), forCellReuseIdentifier: "RWDebaterTopicTableViewCell")
+        
         let leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: #selector(RWPodcastPlayerViewController.dismiss))
         navigationItem.backBarButtonItem = leftBarButtonItem
     }
 }
 
-extension RWBibleViewController : UICollectionViewDataSource {
+extension RWBibleViewController : UITableViewDataSource {
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let numberOfItems = bibleViewModel?.numberOfItems() else { return 0}
+        return numberOfItems
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell =  UICollectionViewCell()
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let tableViewCell = UITableViewCell()
+        if let cell = tableView.dequeueReusableCellWithIdentifier("RWDebaterTopicTableViewCell", forIndexPath: indexPath) as? RWDebaterTopicTableViewCell {
+            let topic = bibleViewModel?.topicForIndex(indexPath.row)
+            cell.questionLabel.text = topic?.question
+            cell.informationView.attributedText = topic?.description
+            cell.informationViewHeightConstraint.constant = 170
+            return cell
+        }
+
+        return tableViewCell
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if cellIsDeselected == false {
+            if let selectedIndexPath = selectedIndexPath {
+                if indexPath.compare(selectedIndexPath) == NSComparisonResult.OrderedSame {
+                    return 200
+                }
+                
+            }
+        }
         
-        return cell
+        return 50
     }
+
+   
+}
+
+extension RWBibleViewController: UITableViewDelegate {
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        selectedIndexPath = indexPath
+        tableView.beginUpdates()
+        tableView.endUpdates()
+        
+        if cellIsDeselected == false {
+            cellIsDeselected = true
+        } else {
+            cellIsDeselected = false
+        }
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    
+    
 }

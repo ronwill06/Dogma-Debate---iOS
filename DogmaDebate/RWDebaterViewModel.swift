@@ -31,7 +31,7 @@ class RWDebaterViewModel {
         let debateTopicsViewController = RWDebateTopicsViewController()
         let evolutionBasicViewController = RWEvolutionViewController()
         let askCreationistsViewController = RWAskCreationistsViewController()
-        let bibleViewController = RWBibleViewController()
+        let bibleViewController = RWBibleViewController.bibleViewController()
         let smalleyQuotesViewController = RWQuotesViewController()
         let dropsViewController = RWDropsViewController()
         

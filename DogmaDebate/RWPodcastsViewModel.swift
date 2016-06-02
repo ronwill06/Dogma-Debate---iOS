@@ -23,15 +23,16 @@ class RWPodcastsViewModel: NSObject, DogmaDebateProtocol {
     }
     
     func fetchData() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "podcastData:", name:DDPodcastOperation.PodcastOperationDidSucceed,
-            object: nil)
         _ = DDPodcastOperation()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(RWPodcastsViewModel.podcastData(_:)), name:DDPodcastOperation.PodcastOperationDidSucceed,
+                                                         object: nil)
     }
     
     func podcastData(notification: NSNotification) {
         if let userInfo = notification.userInfo as? [String : [AnyObject]] {
             if let podcasts = userInfo["podcastInfo"] as? [RWPodcast] {
                 self.podcasts = podcasts
+                
                 if let collectionView = self.collectionViewReference {
                     collectionView.reloadData()
                 }

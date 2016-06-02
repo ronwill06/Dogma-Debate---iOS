@@ -43,8 +43,6 @@
 		1F45DE291B3B4FA600086116 /* RWBlogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE251B3B4FA600086116 /* RWBlogViewController.xib */; };
 		1F45DE2C1B3B546700086116 /* RWStyleControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE2B1B3B546700086116 /* RWStyleControls.m */; };
 		1F45DE2D1B3B546700086116 /* RWStyleControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE2B1B3B546700086116 /* RWStyleControls.m */; };
-		1F45DE301B3B6C1600086116 /* RWStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE2F1B3B6C1600086116 /* RWStore.m */; };
-		1F45DE311B3B6C1600086116 /* RWStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE2F1B3B6C1600086116 /* RWStore.m */; };
 		1F45DE481B3C5AFF00086116 /* RWCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE461B3C5AFF00086116 /* RWCollectionViewController.m */; };
 		1F45DE491B3C5AFF00086116 /* RWCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F45DE461B3C5AFF00086116 /* RWCollectionViewController.m */; };
 		1F45DE4A1B3C5AFF00086116 /* RWCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F45DE471B3C5AFF00086116 /* RWCollectionViewController.xib */; };
@@ -60,8 +58,6 @@
 		1F528DAC1C14FBA800FDAD50 /* RWPodcastsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F528DAB1C14FBA800FDAD50 /* RWPodcastsViewModel.swift */; };
 		1F5D5CA71B4635210074FBC8 /* RWPodcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */; };
 		1F5D5CA81B4635210074FBC8 /* RWPodcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */; };
-		1F5D5CB51B46E79A0074FBC8 /* RWFourthListenerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CB31B46E79A0074FBC8 /* RWFourthListenerViewController.m */; };
-		1F5D5CB61B46E79A0074FBC8 /* RWFourthListenerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D5CB31B46E79A0074FBC8 /* RWFourthListenerViewController.m */; };
 		1F5D5CB71B46E79A0074FBC8 /* RWFourthListenerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CB41B46E79A0074FBC8 /* RWFourthListenerViewController.xib */; };
 		1F5D5CB81B46E79A0074FBC8 /* RWFourthListenerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CB41B46E79A0074FBC8 /* RWFourthListenerViewController.xib */; };
 		1F5D5CBE1B46F4CA0074FBC8 /* RWFourthLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CBB1B46F4CA0074FBC8 /* RWFourthLoginViewController.xib */; };
@@ -88,38 +84,30 @@
 		1F5D5CE31B4769F30074FBC8 /* RWFAQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CDF1B4769F30074FBC8 /* RWFAQViewController.xib */; };
 		1F5D5CF41B4B7A3F0074FBC8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5D5CE41B4B71280074FBC8 /* AudioToolbox.framework */; };
 		1F73FC411C15044B0050FB28 /* RWPodcastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73FC401C15044B0050FB28 /* RWPodcastsViewController.swift */; };
-		1FDB53821B656E0C00CE57A4 /* RWBlogContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDB53811B656E0C00CE57A4 /* RWBlogContent.m */; };
 		1FE4DE9C1C17B4A30092575D /* RWPodcastsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4DE9B1C17B4A30092575D /* RWPodcastsViewController.xib */; };
 		1FE4DEA11C17C70B0092575D /* DogmaDebateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4DEA01C17C70B0092575D /* DogmaDebateProtocol.swift */; };
 		1FE4DEA31C1A605E0092575D /* RWPodcastCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4DEA21C1A605E0092575D /* RWPodcastCellViewModel.swift */; };
 		1FE4DEA51C1A62D50092575D /* RWPodcastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4DEA41C1A62D50092575D /* RWPodcastCollectionViewCell.swift */; };
-		304F1C7A8B54A0F803C036FE /* Pods_DogmaDebateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A9F56950EFA2A9E0B610CE /* Pods_DogmaDebateTests.framework */; };
-		38FC2C54A8020BBFF96DCB34 /* Pods_DogmaDebate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A43CB49864B8E07187D2C4 /* Pods_DogmaDebate.framework */; };
 		700DCD961CF60BA000433925 /* RWSignUpWebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700DCD951CF60BA000433925 /* RWSignUpWebViewController.storyboard */; };
 		700DCD9E1CF60C3F00433925 /* RWSignUpWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DCD9D1CF60C3F00433925 /* RWSignUpWebViewController.swift */; };
 		700DCDA21CF7650100433925 /* RWQuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DCDA11CF7650100433925 /* RWQuoteTableViewCell.swift */; };
 		700DCDA41CF7682900433925 /* RWQuoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 700DCDA31CF7682900433925 /* RWQuoteTableViewCell.xib */; };
-		701E181C1C433930005D7339 /* RWFourthLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E181B1C433930005D7339 /* RWFourthLoginViewController.swift */; };
 		701E181E1C434FA1005D7339 /* RWFourthLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E181D1C434FA1005D7339 /* RWFourthLoginViewModel.swift */; };
-		701E18201C4351C9005D7339 /* RWOAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E181F1C4351C9005D7339 /* RWOAuthManager.swift */; };
 		702917261C28C82B00F64075 /* RWBibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702917251C28C82B00F64075 /* RWBibleViewController.swift */; };
 		702917281C28C9CF00F64075 /* RWBibleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702917271C28C9CF00F64075 /* RWBibleViewModel.swift */; };
 		7029172A1C28CA4200F64075 /* RWDebateTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702917291C28CA4200F64075 /* RWDebateTopicsViewController.swift */; };
 		7029172C1C28CAC700F64075 /* RWDebateTopicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7029172B1C28CAC700F64075 /* RWDebateTopicsViewController.xib */; };
 		7029172E1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7029172D1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift */; };
 		702917301C28DCC600F64075 /* RWAtheismObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7029172F1C28DCC600F64075 /* RWAtheismObject.swift */; };
-		7030D5441CD91DBC00E1E91B /* PayPalMobile in Resources */ = {isa = PBXBuildFile; fileRef = 7030D5431CD91DBC00E1E91B /* PayPalMobile */; };
-		7030D5461CD91DE100E1E91B /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7030D5451CD91DE100E1E91B /* libPayPalMobile.a */; };
-		708876731CACBA4A0089DC73 /* RWSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708876721CACBA4A0089DC73 /* RWSignUpViewController.swift */; };
+		703600E21D008E6D00D3746D /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703600E11D008E6D00D3746D /* UIDeviceExtension.swift */; };
+		703600E41D009BF400D3746D /* contradictions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 703600E31D009BF400D3746D /* contradictions.plist */; };
+		703600E61D009C7E00D3746D /* RWBibleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703600E51D009C7E00D3746D /* RWBibleObject.swift */; };
+		703600E81D009F2400D3746D /* RWBibleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703600E71D009F2400D3746D /* RWBibleViewController.storyboard */; };
 		7088767B1CACBA9E0089DC73 /* RWSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7088767A1CACBA9E0089DC73 /* RWSignUpViewController.xib */; };
-		708876851CD5999B0089DC73 /* libobjc.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 708876841CD5999B0089DC73 /* libobjc.A.tbd */; };
 		708876891CD5A8320089DC73 /* UIWidgetCustomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708876881CD5A8320089DC73 /* UIWidgetCustomizer.swift */; };
-		70A1B2FB1CEE978E00B97840 /* RWMoviePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1B2FA1CEE978E00B97840 /* RWMoviePlayerController.swift */; };
 		70A1B3031CEE97E000B97840 /* RWMoviePlayerController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A1B3021CEE97E000B97840 /* RWMoviePlayerController.storyboard */; };
 		70A1B3101CEFB12D00B97840 /* RWMemberPackageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A1B30F1CEFB12D00B97840 /* RWMemberPackageViewController.storyboard */; };
 		70A1B3121CEFB14100B97840 /* RWMemberPackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1B3111CEFB14100B97840 /* RWMemberPackageViewController.swift */; };
-		70A1B3141CF2580300B97840 /* RWPayPalPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1B3131CF2580300B97840 /* RWPayPalPaymentViewController.swift */; };
-		70BA62E31C89230F0080BECC /* RWFourthListenerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BA62E21C89230F0080BECC /* RWFourthListenerViewModel.swift */; };
 		70BFE7D21C3E039E004A5D1A /* Clips in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7D11C3E039E004A5D1A /* Clips */; };
 		70BFE7D41C3E043F004A5D1A /* sounds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7D31C3E043F004A5D1A /* sounds.plist */; };
 		70BFE7D61C3E06BF004A5D1A /* RWDropsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFE7D51C3E06BF004A5D1A /* RWDropsViewController.swift */; };
@@ -128,17 +116,8 @@
 		70BFE7DC1C3E0955004A5D1A /* RWDropsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7DB1C3E0955004A5D1A /* RWDropsViewController.xib */; };
 		70BFE7DE1C3E09CC004A5D1A /* RWDropsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFE7DD1C3E09CC004A5D1A /* RWDropsViewModel.swift */; };
 		70BFE7E01C3E0BCE004A5D1A /* RWDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFE7DF1C3E0BCE004A5D1A /* RWDrop.swift */; };
-		70CEF3EA1CA3316800630BD1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEF3E91CA3316800630BD1 /* Accelerate.framework */; };
 		70CEF3F11CA3317300630BD1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5D5CE61B4B712E0074FBC8 /* AVFoundation.framework */; };
-		70CEF3F31CA3317B00630BD1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEF3F21CA3317B00630BD1 /* CoreLocation.framework */; };
 		70CEF3F51CA3318400630BD1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEF3F41CA3318400630BD1 /* CoreMedia.framework */; };
-		70CEF3F71CA3318C00630BD1 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEF3F61CA3318C00630BD1 /* MessageUI.framework */; };
-		70CEF3F91CA3319700630BD1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEF3F81CA3319700630BD1 /* MobileCoreServices.framework */; };
-		70CEF3FB1CA331A300630BD1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEF3FA1CA331A300630BD1 /* SystemConfiguration.framework */; };
-		70CEF3FD1CA331AC00630BD1 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEF3FC1CA331AC00630BD1 /* SafariServices.framework */; };
-		70DB180D1C6A7EC400A2A451 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E6DDFE1C602E13000B31D5 /* OAuthSwift.framework */; };
-		70DB18171C6BBC0500A2A451 /* DDFourthListenerOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB18161C6BBC0500A2A451 /* DDFourthListenerOperation.swift */; };
-		70DB18191C6BBF2000A2A451 /* RWVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB18181C6BBF2000A2A451 /* RWVideo.swift */; };
 		70DE24451C29FD420050C2B8 /* RWCreationistObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24441C29FD420050C2B8 /* RWCreationistObject.swift */; };
 		70DE24471C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24461C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift */; };
 		70DE24491C29FF880050C2B8 /* RWAskCreationistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24481C29FF880050C2B8 /* RWAskCreationistsViewController.swift */; };
@@ -166,66 +145,9 @@
 			remoteGlobalIDString = 1F45DDA61B2E51FF00086116;
 			remoteInfo = DogmaDebate;
 		};
-		70E6DDFD1C602E13000B31D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F435027A1A6791B200038A29;
-			remoteInfo = OAuthSwift;
-		};
-		70E6DDFF1C602E13000B31D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F451E3C5195B8CD80051434C;
-			remoteInfo = OAuthSwiftDemo;
-		};
-		70E6DE011C602E13000B31D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C48B28021AFA598D00C7DEF6;
-			remoteInfo = OAuthSwiftOSX;
-		};
-		70E6DE031C602E13000B31D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C49FD5241AFB5DF500791E1A;
-			remoteInfo = OAuthSwiftOSXDemo;
-		};
-		70E6DE051C602E13000B31D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C4B6EE1E1BF74CE300443596;
-			remoteInfo = OAuthSwiftTVOS;
-		};
-		70E6DE071C602E13000B31D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C40890C01C11B37000E3146A;
-			remoteInfo = OAuthSwiftWatchOS;
-		};
-		70E6DE091C602E13000B31D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C4D50DF71BFB693F0053B624;
-			remoteInfo = OAuthSwiftTests;
-		};
-		70E6DE0B1C602E7D000B31D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F43502791A6791B200038A29;
-			remoteInfo = OAuthSwift;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		087EB1EB42733A8415384BE1 /* Pods-DogmaDebateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogmaDebateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogmaDebateTests/Pods-DogmaDebateTests.release.xcconfig"; sourceTree = "<group>"; };
 		1F27EAD91C27713D00D8FF5A /* atheism.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = atheism.plist; sourceTree = "<group>"; };
 		1F27EADB1C27714C00D8FF5A /* creationists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = creationists.plist; sourceTree = "<group>"; };
 		1F27EADF1C27716E00D8FF5A /* evolution.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = evolution.plist; sourceTree = "<group>"; };
@@ -261,8 +183,6 @@
 		1F45DE251B3B4FA600086116 /* RWBlogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWBlogViewController.xib; sourceTree = "<group>"; };
 		1F45DE2A1B3B546700086116 /* RWStyleControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWStyleControls.h; sourceTree = "<group>"; };
 		1F45DE2B1B3B546700086116 /* RWStyleControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWStyleControls.m; sourceTree = "<group>"; };
-		1F45DE2E1B3B6C1600086116 /* RWStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWStore.h; sourceTree = "<group>"; };
-		1F45DE2F1B3B6C1600086116 /* RWStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWStore.m; sourceTree = "<group>"; };
 		1F45DE451B3C5AFF00086116 /* RWCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCollectionViewController.h; sourceTree = "<group>"; };
 		1F45DE461B3C5AFF00086116 /* RWCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCollectionViewController.m; sourceTree = "<group>"; };
 		1F45DE471B3C5AFF00086116 /* RWCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWCollectionViewController.xib; sourceTree = "<group>"; };
@@ -277,8 +197,6 @@
 		1F528DAB1C14FBA800FDAD50 /* RWPodcastsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastsViewModel.swift; sourceTree = "<group>"; };
 		1F5D5CA41B4635210074FBC8 /* RWPodcastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWPodcastViewController.h; sourceTree = "<group>"; };
 		1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWPodcastViewController.m; sourceTree = "<group>"; };
-		1F5D5CB21B46E79A0074FBC8 /* RWFourthListenerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWFourthListenerViewController.h; sourceTree = "<group>"; };
-		1F5D5CB31B46E79A0074FBC8 /* RWFourthListenerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWFourthListenerViewController.m; sourceTree = "<group>"; };
 		1F5D5CB41B46E79A0074FBC8 /* RWFourthListenerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWFourthListenerViewController.xib; sourceTree = "<group>"; };
 		1F5D5CBB1B46F4CA0074FBC8 /* RWFourthLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWFourthLoginViewController.xib; sourceTree = "<group>"; };
 		1F5D5CC01B47264C0074FBC8 /* RWAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWAboutUsViewController.h; sourceTree = "<group>"; };
@@ -300,41 +218,32 @@
 		1F5D5CE41B4B71280074FBC8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1F5D5CE61B4B712E0074FBC8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1F5D5CE81B4B713F0074FBC8 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		1F5D5CEA1B4B71470074FBC8 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		1F5D5CED1B4B73BA0074FBC8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		1F73FC401C15044B0050FB28 /* RWPodcastsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastsViewController.swift; sourceTree = "<group>"; };
-		1FDB53801B656E0C00CE57A4 /* RWBlogContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWBlogContent.h; sourceTree = "<group>"; };
-		1FDB53811B656E0C00CE57A4 /* RWBlogContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWBlogContent.m; sourceTree = "<group>"; };
 		1FE4DE9B1C17B4A30092575D /* RWPodcastsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWPodcastsViewController.xib; sourceTree = "<group>"; };
 		1FE4DEA01C17C70B0092575D /* DogmaDebateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogmaDebateProtocol.swift; sourceTree = "<group>"; };
 		1FE4DEA21C1A605E0092575D /* RWPodcastCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastCellViewModel.swift; sourceTree = "<group>"; };
 		1FE4DEA41C1A62D50092575D /* RWPodcastCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastCollectionViewCell.swift; sourceTree = "<group>"; };
-		2CEB53FD812D63B2C7C4CD71 /* Pods-DogmaDebate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogmaDebate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogmaDebate/Pods-DogmaDebate.debug.xcconfig"; sourceTree = "<group>"; };
 		700DCD951CF60BA000433925 /* RWSignUpWebViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RWSignUpWebViewController.storyboard; sourceTree = "<group>"; };
 		700DCD9D1CF60C3F00433925 /* RWSignUpWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWSignUpWebViewController.swift; sourceTree = "<group>"; };
 		700DCDA11CF7650100433925 /* RWQuoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWQuoteTableViewCell.swift; sourceTree = "<group>"; };
 		700DCDA31CF7682900433925 /* RWQuoteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWQuoteTableViewCell.xib; sourceTree = "<group>"; };
-		701E181B1C433930005D7339 /* RWFourthLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFourthLoginViewController.swift; sourceTree = "<group>"; };
 		701E181D1C434FA1005D7339 /* RWFourthLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFourthLoginViewModel.swift; sourceTree = "<group>"; };
-		701E181F1C4351C9005D7339 /* RWOAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWOAuthManager.swift; sourceTree = "<group>"; };
 		702917251C28C82B00F64075 /* RWBibleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWBibleViewController.swift; sourceTree = "<group>"; };
 		702917271C28C9CF00F64075 /* RWBibleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWBibleViewModel.swift; sourceTree = "<group>"; };
 		702917291C28CA4200F64075 /* RWDebateTopicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebateTopicsViewController.swift; sourceTree = "<group>"; };
 		7029172B1C28CAC700F64075 /* RWDebateTopicsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDebateTopicsViewController.xib; sourceTree = "<group>"; };
 		7029172D1C28CB6E00F64075 /* RWDebateTopicsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebateTopicsViewModel.swift; sourceTree = "<group>"; };
 		7029172F1C28DCC600F64075 /* RWAtheismObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWAtheismObject.swift; sourceTree = "<group>"; };
-		7030D5431CD91DBC00E1E91B /* PayPalMobile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PayPalMobile; sourceTree = "<group>"; };
-		7030D5451CD91DE100E1E91B /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
-		708876721CACBA4A0089DC73 /* RWSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWSignUpViewController.swift; sourceTree = "<group>"; };
+		703600E11D008E6D00D3746D /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		703600E31D009BF400D3746D /* contradictions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = contradictions.plist; sourceTree = "<group>"; };
+		703600E51D009C7E00D3746D /* RWBibleObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWBibleObject.swift; sourceTree = "<group>"; };
+		703600E71D009F2400D3746D /* RWBibleViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RWBibleViewController.storyboard; sourceTree = "<group>"; };
 		7088767A1CACBA9E0089DC73 /* RWSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWSignUpViewController.xib; sourceTree = "<group>"; };
-		708876841CD5999B0089DC73 /* libobjc.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.A.tbd; path = usr/lib/libobjc.A.tbd; sourceTree = SDKROOT; };
 		708876881CD5A8320089DC73 /* UIWidgetCustomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWidgetCustomizer.swift; sourceTree = "<group>"; };
-		70A1B2FA1CEE978E00B97840 /* RWMoviePlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWMoviePlayerController.swift; sourceTree = "<group>"; };
 		70A1B3021CEE97E000B97840 /* RWMoviePlayerController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RWMoviePlayerController.storyboard; sourceTree = "<group>"; };
 		70A1B30F1CEFB12D00B97840 /* RWMemberPackageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RWMemberPackageViewController.storyboard; sourceTree = "<group>"; };
 		70A1B3111CEFB14100B97840 /* RWMemberPackageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWMemberPackageViewController.swift; sourceTree = "<group>"; };
-		70A1B3131CF2580300B97840 /* RWPayPalPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPayPalPaymentViewController.swift; sourceTree = "<group>"; };
-		70BA62E21C89230F0080BECC /* RWFourthListenerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFourthListenerViewModel.swift; sourceTree = "<group>"; };
 		70BFE7D11C3E039E004A5D1A /* Clips */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Clips; sourceTree = "<group>"; };
 		70BFE7D31C3E043F004A5D1A /* sounds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sounds.plist; sourceTree = "<group>"; };
 		70BFE7D51C3E06BF004A5D1A /* RWDropsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDropsViewController.swift; sourceTree = "<group>"; };
@@ -343,15 +252,7 @@
 		70BFE7DB1C3E0955004A5D1A /* RWDropsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDropsViewController.xib; sourceTree = "<group>"; };
 		70BFE7DD1C3E09CC004A5D1A /* RWDropsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDropsViewModel.swift; sourceTree = "<group>"; };
 		70BFE7DF1C3E0BCE004A5D1A /* RWDrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDrop.swift; sourceTree = "<group>"; };
-		70CEF3E91CA3316800630BD1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		70CEF3F21CA3317B00630BD1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		70CEF3F41CA3318400630BD1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		70CEF3F61CA3318C00630BD1 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		70CEF3F81CA3319700630BD1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		70CEF3FA1CA331A300630BD1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		70CEF3FC1CA331AC00630BD1 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		70DB18161C6BBC0500A2A451 /* DDFourthListenerOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDFourthListenerOperation.swift; sourceTree = "<group>"; };
-		70DB18181C6BBF2000A2A451 /* RWVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWVideo.swift; sourceTree = "<group>"; };
 		70DE24441C29FD420050C2B8 /* RWCreationistObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWCreationistObject.swift; sourceTree = "<group>"; };
 		70DE24461C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWAskCreationistsViewModel.swift; sourceTree = "<group>"; };
 		70DE24481C29FF880050C2B8 /* RWAskCreationistsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWAskCreationistsViewController.swift; sourceTree = "<group>"; };
@@ -368,12 +269,7 @@
 		70DE245E1C2A0EE00050C2B8 /* RWPodcastPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWPodcastPlayerViewController.xib; sourceTree = "<group>"; };
 		70E0EE431C29C26300E647DE /* RWDebaterTopicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDebaterTopicTableViewCell.swift; sourceTree = "<group>"; };
 		70E0EE451C29C2A200E647DE /* RWDebaterTopicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDebaterTopicTableViewCell.xib; sourceTree = "<group>"; };
-		70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuthSwift.xcodeproj; path = ../../../OAuth2/OAuthSwift/OAuthSwift.xcodeproj; sourceTree = "<group>"; };
 		70EDD4BD1CF2695700953480 /* PayPalPaymentViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PayPalPaymentViewController.storyboard; sourceTree = "<group>"; };
-		7739FCB4784799D918EF5C08 /* Pods-DogmaDebateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogmaDebateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogmaDebateTests/Pods-DogmaDebateTests.debug.xcconfig"; sourceTree = "<group>"; };
-		99A43CB49864B8E07187D2C4 /* Pods_DogmaDebate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogmaDebate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B20AAFC5A1CAD91A6BA142DA /* Pods-DogmaDebate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogmaDebate.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogmaDebate/Pods-DogmaDebate.release.xcconfig"; sourceTree = "<group>"; };
-		F0A9F56950EFA2A9E0B610CE /* Pods_DogmaDebateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogmaDebateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,19 +277,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				708876851CD5999B0089DC73 /* libobjc.A.tbd in Frameworks */,
-				7030D5461CD91DE100E1E91B /* libPayPalMobile.a in Frameworks */,
-				70CEF3FD1CA331AC00630BD1 /* SafariServices.framework in Frameworks */,
-				70CEF3FB1CA331A300630BD1 /* SystemConfiguration.framework in Frameworks */,
-				70CEF3F91CA3319700630BD1 /* MobileCoreServices.framework in Frameworks */,
-				70CEF3F71CA3318C00630BD1 /* MessageUI.framework in Frameworks */,
 				70CEF3F51CA3318400630BD1 /* CoreMedia.framework in Frameworks */,
-				70CEF3F31CA3317B00630BD1 /* CoreLocation.framework in Frameworks */,
 				70CEF3F11CA3317300630BD1 /* AVFoundation.framework in Frameworks */,
-				70CEF3EA1CA3316800630BD1 /* Accelerate.framework in Frameworks */,
-				70DB180D1C6A7EC400A2A451 /* OAuthSwift.framework in Frameworks */,
 				1F5D5CF41B4B7A3F0074FBC8 /* AudioToolbox.framework in Frameworks */,
-				38FC2C54A8020BBFF96DCB34 /* Pods_DogmaDebate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,55 +287,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				304F1C7A8B54A0F803C036FE /* Pods_DogmaDebateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0410DA90CB666284E6E5F6C8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2CEB53FD812D63B2C7C4CD71 /* Pods-DogmaDebate.debug.xcconfig */,
-				B20AAFC5A1CAD91A6BA142DA /* Pods-DogmaDebate.release.xcconfig */,
-				7739FCB4784799D918EF5C08 /* Pods-DogmaDebateTests.debug.xcconfig */,
-				087EB1EB42733A8415384BE1 /* Pods-DogmaDebateTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		142901397E3BA1FC57202144 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				99A43CB49864B8E07187D2C4 /* Pods_DogmaDebate.framework */,
-				F0A9F56950EFA2A9E0B610CE /* Pods_DogmaDebateTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		1F45DD9E1B2E51FF00086116 = {
 			isa = PBXGroup;
 			children = (
-				7030D5451CD91DE100E1E91B /* libPayPalMobile.a */,
-				708876841CD5999B0089DC73 /* libobjc.A.tbd */,
-				70CEF3FC1CA331AC00630BD1 /* SafariServices.framework */,
-				70CEF3FA1CA331A300630BD1 /* SystemConfiguration.framework */,
-				70CEF3F81CA3319700630BD1 /* MobileCoreServices.framework */,
-				70CEF3F61CA3318C00630BD1 /* MessageUI.framework */,
 				70CEF3F41CA3318400630BD1 /* CoreMedia.framework */,
-				70CEF3F21CA3317B00630BD1 /* CoreLocation.framework */,
-				70CEF3E91CA3316800630BD1 /* Accelerate.framework */,
 				1F5D5CED1B4B73BA0074FBC8 /* AVKit.framework */,
-				1F5D5CEA1B4B71470074FBC8 /* CoreAudioKit.framework */,
 				1F5D5CE81B4B713F0074FBC8 /* CoreAudio.framework */,
 				1F5D5CE61B4B712E0074FBC8 /* AVFoundation.framework */,
 				1F5D5CE41B4B71280074FBC8 /* AudioToolbox.framework */,
 				1F45DDA91B2E51FF00086116 /* Dogma Debate */,
 				1F45DDC61B2E51FF00086116 /* DogmaDebateTests */,
 				1F45DDA81B2E51FF00086116 /* Products */,
-				0410DA90CB666284E6E5F6C8 /* Pods */,
-				142901397E3BA1FC57202144 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -465,13 +319,10 @@
 		1F45DDA91B2E51FF00086116 /* Dogma Debate */ = {
 			isa = PBXGroup;
 			children = (
-				7030D5431CD91DBC00E1E91B /* PayPalMobile */,
-				70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */,
-				1F45DE2E1B3B6C1600086116 /* RWStore.h */,
-				1F45DE2F1B3B6C1600086116 /* RWStore.m */,
 				1F45DDBC1B2E51FF00086116 /* LaunchScreen.xib */,
 				1F45DDBA1B2E51FF00086116 /* Images.xcassets */,
 				701E181A1C4338AA005D7339 /* AppDelegate */,
+				703600E01D008E4900D3746D /* Extensions */,
 				70DB18151C6B8CD700A2A451 /* Managers */,
 				701E18191C433895005D7339 /* Operations */,
 				1F528DAA1C14FB8000FDAD50 /* View Models */,
@@ -492,6 +343,7 @@
 				1F45DDAB1B2E51FF00086116 /* Info.plist */,
 				1F27EAD91C27713D00D8FF5A /* atheism.plist */,
 				1F27EADB1C27714C00D8FF5A /* creationists.plist */,
+				703600E31D009BF400D3746D /* contradictions.plist */,
 				1F27EADF1C27716E00D8FF5A /* evolution.plist */,
 				1F27EAE11C2771BD00D8FF5A /* smalley.plist */,
 				70BFE7D31C3E043F004A5D1A /* sounds.plist */,
@@ -529,10 +381,7 @@
 				1F45DE251B3B4FA600086116 /* RWBlogViewController.xib */,
 				1F5D5CA41B4635210074FBC8 /* RWPodcastViewController.h */,
 				1F5D5CA51B4635210074FBC8 /* RWPodcastViewController.m */,
-				1F5D5CB21B46E79A0074FBC8 /* RWFourthListenerViewController.h */,
-				1F5D5CB31B46E79A0074FBC8 /* RWFourthListenerViewController.m */,
 				1F5D5CB41B46E79A0074FBC8 /* RWFourthListenerViewController.xib */,
-				701E181B1C433930005D7339 /* RWFourthLoginViewController.swift */,
 				1F5D5CBB1B46F4CA0074FBC8 /* RWFourthLoginViewController.xib */,
 				1F5D5CC01B47264C0074FBC8 /* RWAboutUsViewController.h */,
 				1F5D5CC11B47264C0074FBC8 /* RWAboutUsViewController.m */,
@@ -548,6 +397,7 @@
 				1F27EAE31C27732700D8FF5A /* RWDebaterViewController.swift */,
 				1F27EAE51C2773FE00D8FF5A /* RWDebaterViewController.xib */,
 				702917251C28C82B00F64075 /* RWBibleViewController.swift */,
+				703600E71D009F2400D3746D /* RWBibleViewController.storyboard */,
 				702917291C28CA4200F64075 /* RWDebateTopicsViewController.swift */,
 				7029172B1C28CAC700F64075 /* RWDebateTopicsViewController.xib */,
 				70DE24481C29FF880050C2B8 /* RWAskCreationistsViewController.swift */,
@@ -560,13 +410,10 @@
 				70DE245E1C2A0EE00050C2B8 /* RWPodcastPlayerViewController.xib */,
 				70BFE7D51C3E06BF004A5D1A /* RWDropsViewController.swift */,
 				70BFE7DB1C3E0955004A5D1A /* RWDropsViewController.xib */,
-				708876721CACBA4A0089DC73 /* RWSignUpViewController.swift */,
 				7088767A1CACBA9E0089DC73 /* RWSignUpViewController.xib */,
-				70A1B2FA1CEE978E00B97840 /* RWMoviePlayerController.swift */,
 				70A1B3021CEE97E000B97840 /* RWMoviePlayerController.storyboard */,
 				70A1B3111CEFB14100B97840 /* RWMemberPackageViewController.swift */,
 				70A1B30F1CEFB12D00B97840 /* RWMemberPackageViewController.storyboard */,
-				70A1B3131CF2580300B97840 /* RWPayPalPaymentViewController.swift */,
 				70EDD4BD1CF2695700953480 /* PayPalPaymentViewController.storyboard */,
 				700DCD951CF60BA000433925 /* RWSignUpWebViewController.storyboard */,
 				700DCD9D1CF60C3F00433925 /* RWSignUpWebViewController.swift */,
@@ -618,15 +465,13 @@
 				1F5D5CCF1B472BE80074FBC8 /* RWStaffInfo.m */,
 				1F5D5CD91B473EA00074FBC8 /* RWPartner.h */,
 				1F5D5CDA1B473EA00074FBC8 /* RWPartner.m */,
-				1FDB53801B656E0C00CE57A4 /* RWBlogContent.h */,
-				1FDB53811B656E0C00CE57A4 /* RWBlogContent.m */,
 				1F528DA61BFE8FF100FDAD50 /* RWPodcast.swift */,
 				7029172F1C28DCC600F64075 /* RWAtheismObject.swift */,
 				70DE24441C29FD420050C2B8 /* RWCreationistObject.swift */,
 				70DE244C1C2A02400050C2B8 /* RWEvolutionObject.swift */,
 				70DE24521C2A04B60050C2B8 /* RWQuoteObject.swift */,
 				70BFE7DF1C3E0BCE004A5D1A /* RWDrop.swift */,
-				70DB18181C6BBF2000A2A451 /* RWVideo.swift */,
+				703600E51D009C7E00D3746D /* RWBibleObject.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -645,7 +490,6 @@
 				70DE24541C2A05250050C2B8 /* RWQuoteViewModel.swift */,
 				70BFE7DD1C3E09CC004A5D1A /* RWDropsViewModel.swift */,
 				701E181D1C434FA1005D7339 /* RWFourthLoginViewModel.swift */,
-				70BA62E21C89230F0080BECC /* RWFourthListenerViewModel.swift */,
 			);
 			name = "View Models";
 			sourceTree = "<group>";
@@ -654,7 +498,6 @@
 			isa = PBXGroup;
 			children = (
 				1F528DA31BFAC96D00FDAD50 /* DDPodcastOperation.swift */,
-				70DB18161C6BBC0500A2A451 /* DDFourthListenerOperation.swift */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -668,26 +511,19 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
+		703600E01D008E4900D3746D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				703600E11D008E6D00D3746D /* UIDeviceExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		70DB18151C6B8CD700A2A451 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				701E181F1C4351C9005D7339 /* RWOAuthManager.swift */,
 			);
 			name = Managers;
-			sourceTree = "<group>";
-		};
-		70E6DDF41C602E13000B31D5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				70E6DDFE1C602E13000B31D5 /* OAuthSwift.framework */,
-				70E6DE001C602E13000B31D5 /* OAuthSwiftDemo.app */,
-				70E6DE021C602E13000B31D5 /* OAuthSwift.framework */,
-				70E6DE041C602E13000B31D5 /* OAuthSwiftOSXDemo.app */,
-				70E6DE061C602E13000B31D5 /* OAuthSwift.framework */,
-				70E6DE081C602E13000B31D5 /* OAuthSwift.framework */,
-				70E6DE0A1C602E13000B31D5 /* OAuthSwiftTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -697,17 +533,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F45DDCD1B2E51FF00086116 /* Build configuration list for PBXNativeTarget "DogmaDebate" */;
 			buildPhases = (
-				02583A37C57BAA577747ED6D /* Check Pods Manifest.lock */,
 				1F45DDA31B2E51FF00086116 /* Sources */,
 				1F45DDA41B2E51FF00086116 /* Frameworks */,
 				1F45DDA51B2E51FF00086116 /* Resources */,
-				F8D37E1A150EA0FD983D3EB6 /* Embed Pods Frameworks */,
-				46358F694E22AD8F54597A80 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				70E6DE0C1C602E7D000B31D5 /* PBXTargetDependency */,
 			);
 			name = DogmaDebate;
 			productName = DogmaDebate;
@@ -718,12 +550,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F45DDD01B2E51FF00086116 /* Build configuration list for PBXNativeTarget "DogmaDebateTests" */;
 			buildPhases = (
-				349FA76D516AC2A17CFB0F88 /* Check Pods Manifest.lock */,
 				1F45DDBF1B2E51FF00086116 /* Sources */,
 				1F45DDC01B2E51FF00086116 /* Frameworks */,
 				1F45DDC11B2E51FF00086116 /* Resources */,
-				61C0602FC92FFECEF3A09897 /* Embed Pods Frameworks */,
-				3B518E7F1E790A515F55EFE5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -747,7 +576,7 @@
 				TargetAttributes = {
 					1F45DDA61B2E51FF00086116 = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = 58A68V737Z;
+						DevelopmentTeam = MTU73GAGZ6;
 					};
 					1F45DDC21B2E51FF00086116 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -766,12 +595,6 @@
 			mainGroup = 1F45DD9E1B2E51FF00086116;
 			productRefGroup = 1F45DDA81B2E51FF00086116 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 70E6DDF41C602E13000B31D5 /* Products */;
-					ProjectRef = 70E6DDF31C602E13000B31D5 /* OAuthSwift.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1F45DDA61B2E51FF00086116 /* DogmaDebate */,
@@ -780,58 +603,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		70E6DDFE1C602E13000B31D5 /* OAuthSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OAuthSwift.framework;
-			remoteRef = 70E6DDFD1C602E13000B31D5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		70E6DE001C602E13000B31D5 /* OAuthSwiftDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = OAuthSwiftDemo.app;
-			remoteRef = 70E6DDFF1C602E13000B31D5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		70E6DE021C602E13000B31D5 /* OAuthSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OAuthSwift.framework;
-			remoteRef = 70E6DE011C602E13000B31D5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		70E6DE041C602E13000B31D5 /* OAuthSwiftOSXDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = OAuthSwiftOSXDemo.app;
-			remoteRef = 70E6DE031C602E13000B31D5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		70E6DE061C602E13000B31D5 /* OAuthSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OAuthSwift.framework;
-			remoteRef = 70E6DE051C602E13000B31D5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		70E6DE081C602E13000B31D5 /* OAuthSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OAuthSwift.framework;
-			remoteRef = 70E6DE071C602E13000B31D5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		70E6DE0A1C602E13000B31D5 /* OAuthSwiftTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = OAuthSwiftTests.xctest;
-			remoteRef = 70E6DE091C602E13000B31D5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		1F45DDA51B2E51FF00086116 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -839,6 +610,7 @@
 			files = (
 				70BFE7D21C3E039E004A5D1A /* Clips in Resources */,
 				70DE245B1C2A09C70050C2B8 /* RWQuotesViewController.xib in Resources */,
+				703600E41D009BF400D3746D /* contradictions.plist in Resources */,
 				1F45DDBE1B2E51FF00086116 /* LaunchScreen.xib in Resources */,
 				70A1B3031CEE97E000B97840 /* RWMoviePlayerController.storyboard in Resources */,
 				1F27EAE21C2771BD00D8FF5A /* smalley.plist in Resources */,
@@ -849,10 +621,10 @@
 				1F45DDDC1B2E588F00086116 /* RWPodcastCollectionViewCell.xib in Resources */,
 				1F27EAE61C2773FE00D8FF5A /* RWDebaterViewController.xib in Resources */,
 				1F5D5CB71B46E79A0074FBC8 /* RWFourthListenerViewController.xib in Resources */,
-				7030D5441CD91DBC00E1E91B /* PayPalMobile in Resources */,
 				70DE245F1C2A0EE00050C2B8 /* RWPodcastPlayerViewController.xib in Resources */,
 				7029172C1C28CAC700F64075 /* RWDebateTopicsViewController.xib in Resources */,
 				1F27EADA1C27713D00D8FF5A /* atheism.plist in Resources */,
+				703600E81D009F2400D3746D /* RWBibleViewController.storyboard in Resources */,
 				7088767B1CACBA9E0089DC73 /* RWSignUpViewController.xib in Resources */,
 				1F45DE511B3C8B6F00086116 /* RWCollectionViewCell.xib in Resources */,
 				70DE244B1C2A00210050C2B8 /* RWAskCreationistsViewController.xib in Resources */,
@@ -903,99 +675,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		02583A37C57BAA577747ED6D /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		349FA76D516AC2A17CFB0F88 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		3B518E7F1E790A515F55EFE5 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogmaDebateTests/Pods-DogmaDebateTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		46358F694E22AD8F54597A80 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogmaDebate/Pods-DogmaDebate-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		61C0602FC92FFECEF3A09897 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogmaDebateTests/Pods-DogmaDebateTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F8D37E1A150EA0FD983D3EB6 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DogmaDebate/Pods-DogmaDebate-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		1F45DDA31B2E51FF00086116 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1015,46 +694,37 @@
 				70A1B3121CEFB14100B97840 /* RWMemberPackageViewController.swift in Sources */,
 				1F5D5CA71B4635210074FBC8 /* RWPodcastViewController.m in Sources */,
 				7029172A1C28CA4200F64075 /* RWDebateTopicsViewController.swift in Sources */,
-				708876731CACBA4A0089DC73 /* RWSignUpViewController.swift in Sources */,
 				1F45DE061B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */,
 				708876891CD5A8320089DC73 /* UIWidgetCustomizer.swift in Sources */,
+				703600E61D009C7E00D3746D /* RWBibleObject.swift in Sources */,
 				1F45DE2C1B3B546700086116 /* RWStyleControls.m in Sources */,
 				1F528DA71BFE8FF100FDAD50 /* RWPodcast.swift in Sources */,
 				70DE24471C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift in Sources */,
 				1F45DDB01B2E51FF00086116 /* AppDelegate.m in Sources */,
-				1FDB53821B656E0C00CE57A4 /* RWBlogContent.m in Sources */,
-				70A1B3141CF2580300B97840 /* RWPayPalPaymentViewController.swift in Sources */,
 				70E0EE441C29C26300E647DE /* RWDebaterTopicTableViewCell.swift in Sources */,
 				1F5D5CD01B472BE80074FBC8 /* RWStaffInfo.m in Sources */,
-				70A1B2FB1CEE978E00B97840 /* RWMoviePlayerController.swift in Sources */,
 				70BFE7D81C3E07EA004A5D1A /* RWDropsTableViewCell.swift in Sources */,
 				70DE24551C2A05250050C2B8 /* RWQuoteViewModel.swift in Sources */,
 				70BFE7DE1C3E09CC004A5D1A /* RWDropsViewModel.swift in Sources */,
 				1F27EAE81C2777AF00D8FF5A /* RWDebaterViewModel.swift in Sources */,
 				70DE24531C2A04B60050C2B8 /* RWQuoteObject.swift in Sources */,
 				1FE4DEA51C1A62D50092575D /* RWPodcastCollectionViewCell.swift in Sources */,
-				701E18201C4351C9005D7339 /* RWOAuthManager.swift in Sources */,
 				1F528DAC1C14FBA800FDAD50 /* RWPodcastsViewModel.swift in Sources */,
-				1F5D5CB51B46E79A0074FBC8 /* RWFourthListenerViewController.m in Sources */,
-				70BA62E31C89230F0080BECC /* RWFourthListenerViewModel.swift in Sources */,
 				70DE244F1C2A027D0050C2B8 /* RWEvolutionViewModel.swift in Sources */,
 				1F5D5CD51B473E0B0074FBC8 /* RWPartnerViewController.m in Sources */,
 				1FE4DEA11C17C70B0092575D /* DogmaDebateProtocol.swift in Sources */,
+				703600E21D008E6D00D3746D /* UIDeviceExtension.swift in Sources */,
 				1F45DE5C1B40743100086116 /* RWCollectionViewTransitionAnimator.m in Sources */,
-				70DB18171C6BBC0500A2A451 /* DDFourthListenerOperation.swift in Sources */,
 				702917301C28DCC600F64075 /* RWAtheismObject.swift in Sources */,
 				700DCDA21CF7650100433925 /* RWQuoteTableViewCell.swift in Sources */,
 				1F5D5CCA1B4727140074FBC8 /* RWAboutUsTableViewCell.m in Sources */,
 				1F5D5CE01B4769F30074FBC8 /* RWFAQViewController.m in Sources */,
-				701E181C1C433930005D7339 /* RWFourthLoginViewController.swift in Sources */,
 				1F45DE481B3C5AFF00086116 /* RWCollectionViewController.m in Sources */,
 				701E181E1C434FA1005D7339 /* RWFourthLoginViewModel.swift in Sources */,
 				1F27EAE41C27732700D8FF5A /* RWDebaterViewController.swift in Sources */,
 				70DE24511C2A039F0050C2B8 /* RWEvolutionViewController.swift in Sources */,
 				1F5D5CC31B47264C0074FBC8 /* RWAboutUsViewController.m in Sources */,
-				70DB18191C6BBF2000A2A451 /* RWVideo.swift in Sources */,
 				70BFE7D61C3E06BF004A5D1A /* RWDropsViewController.swift in Sources */,
-				1F45DE301B3B6C1600086116 /* RWStore.m in Sources */,
 				702917281C28C9CF00F64075 /* RWBibleViewModel.swift in Sources */,
 				70DE24571C2A07D00050C2B8 /* RWQuotesViewController.swift in Sources */,
 				70DE24491C29FF880050C2B8 /* RWAskCreationistsViewController.swift in Sources */,
@@ -1073,7 +743,6 @@
 			files = (
 				1F5D5CA81B4635210074FBC8 /* RWPodcastViewController.m in Sources */,
 				1F45DE071B3AE52F00086116 /* RWMoreTableViewCell.m in Sources */,
-				1F45DE311B3B6C1600086116 /* RWStore.m in Sources */,
 				1F5D5CCB1B4727140074FBC8 /* RWAboutUsTableViewCell.m in Sources */,
 				1F5D5CC41B47264C0074FBC8 /* RWAboutUsViewController.m in Sources */,
 				1F45DE5D1B40743100086116 /* RWCollectionViewTransitionAnimator.m in Sources */,
@@ -1084,7 +753,6 @@
 				1F45DDCA1B2E51FF00086116 /* DogmaDebateTests.m in Sources */,
 				1F5D5CD61B473E0B0074FBC8 /* RWPartnerViewController.m in Sources */,
 				1F45DE501B3C8B6F00086116 /* RWCollectionViewCell.m in Sources */,
-				1F5D5CB61B46E79A0074FBC8 /* RWFourthListenerViewController.m in Sources */,
 				1F45DE001B3A04DA00086116 /* RWMoreViewController.m in Sources */,
 				1F5D5CE11B4769F30074FBC8 /* RWFAQViewController.m in Sources */,
 				1F45DE191B3B37E800086116 /* RWEventTableViewCell.m in Sources */,
@@ -1099,11 +767,6 @@
 			isa = PBXTargetDependency;
 			target = 1F45DDA61B2E51FF00086116 /* DogmaDebate */;
 			targetProxy = 1F45DDC41B2E51FF00086116 /* PBXContainerItemProxy */;
-		};
-		70E6DE0C1C602E7D000B31D5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OAuthSwift;
-			targetProxy = 70E6DE0B1C602E7D000B31D5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1202,11 +865,11 @@
 		};
 		1F45DDCE1B2E51FF00086116 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CEB53FD812D63B2C7C4CD71 /* Pods-DogmaDebate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: David Smalley (NYZ9B4LL77)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: David Smalley (NYZ9B4LL77)";
 				INFOPLIST_FILE = DogmaDebate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1216,6 +879,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rondalewilliams.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Dogma Debate";
+				PROVISIONING_PROFILE = "ae77bf73-dd99-4049-94e6-d00d28f49865";
 				SWIFT_OBJC_BRIDGING_HEADER = "DogmaDebate/DogmaDebate-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALID_ARCHS = "x86_64 i386 arm64 armv7 armv7s";
@@ -1224,15 +888,12 @@
 		};
 		1F45DDCF1B2E51FF00086116 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B20AAFC5A1CAD91A6BA142DA /* Pods-DogmaDebate.release.xcconfig */;
 			buildSettings = {
-				"ARCHS[sdk=*]" = (
-					x86_64,
-					i386,
-				);
+				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David Smalley (MTU73GAGZ6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Smalley (MTU73GAGZ6)";
 				INFOPLIST_FILE = DogmaDebate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1243,6 +904,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rondalewilliams.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Dogma Debate";
+				PROVISIONING_PROFILE = "ae77bf73-dd99-4049-94e6-d00d28f49865";
 				SWIFT_OBJC_BRIDGING_HEADER = "DogmaDebate/DogmaDebate-Bridging-Header.h";
 				VALID_ARCHS = "x86_64 i386 arm64 armv7 armv7s";
 			};
@@ -1250,7 +912,6 @@
 		};
 		1F45DDD11B2E51FF00086116 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7739FCB4784799D918EF5C08 /* Pods-DogmaDebateTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1271,7 +932,6 @@
 		};
 		1F45DDD21B2E51FF00086116 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 087EB1EB42733A8415384BE1 /* Pods-DogmaDebateTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

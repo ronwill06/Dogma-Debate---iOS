@@ -12,6 +12,9 @@ import UIKit
 class RWPodcastsViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var imageViewHeight: NSLayoutConstraint!
+    
+    
     
     var podcastsViewModel: RWPodcastsViewModel?
     
@@ -28,9 +31,15 @@ class RWPodcastsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if UIDevice.isIphone4() {
+            imageViewHeight.constant = 200
+        }
+        
         podcastsViewModel = RWPodcastsViewModel()
         podcastsViewModel?.collectionViewReference = collectionView
-
+        
+        
         self.collectionView.registerNib(UINib(nibName: "RWPodcastCollectionViewCell", bundle: nil),
             forCellWithReuseIdentifier: "RWPodcastCollectionViewCell")
     }
@@ -70,17 +79,24 @@ extension RWPodcastsViewController: UICollectionViewDataSource {
 extension RWPodcastsViewController: UICollectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let podcastPlayerViewController = RWPodcastPlayerViewController()
-        podcastPlayerViewController.podcast = podcastsViewModel?.podcastAtIndex(indexPath.row)
-        self.navigationController?.pushViewController(podcastPlayerViewController, animated: true)
+        if let podcast = podcastsViewModel?.podcastAtIndex(indexPath.row) {
+            let podcastPlayerViewController = RWPodcastPlayerViewController(podcast: podcast)
+            navigationController?.pushViewController(podcastPlayerViewController, animated: true)
+        }
+        
     }
     
 }
 
-extension RWPodcastViewController: UICollectionViewDelegateFlowLayout {
+extension RWPodcastsViewController: UICollectionViewDelegateFlowLayout {
     
-    public func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: view.bounds.size.width, height: 200)
+    internal func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        if UIDevice.isIphone4() {
+            return CGSize(width: view.bounds.size.width, height: 190)
+        }
+        
+        return CGSize(width: view.bounds.size.width, height: 250)
     }
     
 }

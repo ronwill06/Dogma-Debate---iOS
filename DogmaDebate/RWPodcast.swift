@@ -15,7 +15,7 @@ class RWPodcast: NSObject {
     var podcastDescription: String?
     var url: String?
     var videoUrl: String?
-    var episodeNumber: String?
+    var episodeNumber: String = ""
     
     override init() {
         super.init()
@@ -28,6 +28,20 @@ class RWPodcast: NSObject {
         self.podcastDate = date
         self.podcastDescription = description
         self.episodeNumber = number
+    }
+    
+    static func fetchEpisodeForPodcast(podcast: RWPodcast) -> String  {
+        let directores = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let documentDirectory = directores.first
+        guard let mp3FilePath = documentDirectory?.stringByAppendingString("/Dogma-Debate-Episode-\(podcast.episodeNumber)") else { return "" }
+        
+        
+        if NSFileManager.defaultManager().fileExistsAtPath(mp3FilePath) {
+            guard let data = NSData(contentsOfFile: mp3FilePath), mp3Url = String(data:data , encoding: NSUTF8StringEncoding) else { return ""}
+            return mp3Url
+        }
+        
+        return ""
     }
 
 }

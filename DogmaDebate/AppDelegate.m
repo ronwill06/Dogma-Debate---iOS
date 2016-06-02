@@ -8,9 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RWMoreViewController.h"
-#import "PayPalMobile/PayPalMobile.h"
 #import "Dogma_Debate-Swift.h"
-@import OAuthSwift;
 
 @interface AppDelegate ()
 
@@ -22,10 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : [RWOAuthManager pLiveClientID],
-                                                           PayPalEnvironmentSandbox : [RWOAuthManager pSandBoxClientID]
-                                                           }];
-
+    
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
@@ -38,9 +33,7 @@
     UINavigationController *debateNavVC = [[UINavigationController alloc] initWithRootViewController:debaterVC];
     debateNavVC.title = @"Debater";
     
-    RWFourthLoginViewController *loginVC = [[RWFourthLoginViewController alloc] init];
     RWSignUpWebViewController *signUpVC = [RWSignUpWebViewController signUpWebViewController];
-    UINavigationController *fourthNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
     
     RWMoreViewController *moreVC = [[RWMoreViewController alloc] init];
     UINavigationController *moreNav = [[UINavigationController alloc] initWithRootViewController:moreVC];
@@ -73,7 +66,6 @@
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
 {
     if ([url.host isEqual: @"oauth-swift://login.dogmadebate.com"]) {
-          [OAuth2Swift handleOpenURL:url];
     }
     
     return YES;

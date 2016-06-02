@@ -11,7 +11,7 @@ import AVFoundation
 
 class RWPodcastPlayerViewController : UIViewController {
     
-    var podcast: RWPodcast?
+    var podcast: RWPodcast
     var isPlaying: Bool = false
     var isPaused: Bool = false
     private var seconds = 0.0
@@ -23,17 +23,27 @@ class RWPodcastPlayerViewController : UIViewController {
     @IBOutlet weak var timeDurationLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     
+    @IBOutlet weak var innerButtonViewLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var innerButtonViewTrailingConstraint: NSLayoutConstraint!
+    
     var player: AVPlayer?
     var trackTime:CMTime?
     
     private var kRateDidChangeKVO = 0
     
     
+    init(podcast: RWPodcast) {
+       self.podcast = podcast
+        super.init(nibName: "RWPodcastPlayerViewController", bundle: nil)
+    }
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        self.podcast = RWPodcast()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 
     required init?(coder aDecoder: NSCoder) {
+         self.podcast = RWPodcast()
         super.init(coder: aDecoder)
     }
     
@@ -48,6 +58,12 @@ class RWPodcastPlayerViewController : UIViewController {
         navigationController!.navigationBar.barTintColor = UIColor.blackColor()
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         navigationController?.navigationBar.titleTextAttributes =  [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        
+        if UIDevice.isIphone4() {
+            innerButtonViewLeadingConstraint.constant = 20
+            innerButtonViewTrailingConstraint.constant = 20
+        }
+        
         setUpPodcastDetails()
     }
     
@@ -74,17 +90,17 @@ class RWPodcastPlayerViewController : UIViewController {
     
     @IBAction func play(sender: AnyObject) {
         
+        let podcastUrl = RWPodcast.fetchEpisodeForPodcast(podcast)
+        
         if isPlaying == false {
-            if let podcastUrl = podcast?.url {
-                let url = NSURL(string: podcastUrl)
-                if let audioUrl = url {
-                    
-                    let audioPlayer = AVPlayer(URL:audioUrl)
-                    player = audioPlayer
-                    player?.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions(rawValue: 0), context: nil)
-                }
-                
+            let podcastUrl = podcastUrl
+            let url = NSURL(string: podcastUrl)
+            if let audioUrl = url {
+                let audioPlayer = AVPlayer(URL:audioUrl)
+                player = audioPlayer
+                player?.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions(rawValue: 0), context: nil)
             }
+            
         } else if isPaused == true {
             player?.play()
         } else {
@@ -142,8 +158,8 @@ class RWPodcastPlayerViewController : UIViewController {
     }
     
     func setUpPodcastDetails() {
-        titleLabel.text = podcast?.title
-        podcastDescription.text = podcast?.podcastDescription
+        titleLabel.text = podcast.title
+        podcastDescription.text = podcast.podcastDescription
     }
     
     func setUpPodcastDuration(seconds: Double) -> String {

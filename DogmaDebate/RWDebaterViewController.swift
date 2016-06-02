@@ -28,13 +28,19 @@ class RWDebaterViewController : UIViewController {
         super.viewDidLoad()
         
         self.title = "Debater"
+        navigationController?.navigationBarHidden = false
+        navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        navigationController?.navigationBar.translucent = false
+
 
         collectionView.registerNib(UINib(nibName: "RWDebaterCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RWDebaterCollectionViewCell")
         
     }
     
     override func viewWillAppear(animated: Bool) {
-         navigationController?.navigationBarHidden = true
+      
     }
     
 }
@@ -70,6 +76,12 @@ extension RWDebaterViewController : UICollectionViewDelegate {
 extension RWDebaterViewController : UICollectionViewDelegateFlowLayout {
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        if UIDevice.isIphone4() {
+            return CGSizeMake(150.0, 150.0)
+        } else if UIDevice.isIphone6() {
+            return CGSizeMake(180.0, 175.0)
+        }
+        
         return CGSizeMake(200.0, 215.0)
     }
     
@@ -78,7 +90,11 @@ extension RWDebaterViewController : UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(30, 5, -10, 5)
+        if UIDevice.isIphone6() {
+           return UIEdgeInsetsMake(10, 5, 0, 5)
+        }
+        
+        return UIEdgeInsetsMake(10, 5, -10, 5)
     }
     
 }
