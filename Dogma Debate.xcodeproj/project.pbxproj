@@ -580,7 +580,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1F45DDA21B2E51FF00086116 /* Build configuration list for PBXProject "DogmaDebate" */;
+			buildConfigurationList = 1F45DDA21B2E51FF00086116 /* Build configuration list for PBXProject "Dogma Debate" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -943,7 +943,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F45DDA21B2E51FF00086116 /* Build configuration list for PBXProject "DogmaDebate" */ = {
+		1F45DDA21B2E51FF00086116 /* Build configuration list for PBXProject "Dogma Debate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F45DDCB1B2E51FF00086116 /* Debug */,

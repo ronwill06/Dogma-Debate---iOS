@@ -17,7 +17,7 @@
                BlueprintIdentifier = "1F45DDA61B2E51FF00086116"
                BuildableName = "Dogma Debate.app"
                BlueprintName = "DogmaDebate"
-               ReferencedContainer = "container:DogmaDebate.xcodeproj">
+               ReferencedContainer = "container:Dogma Debate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "1F45DDC21B2E51FF00086116"
                BuildableName = "DogmaDebateTests.xctest"
                BlueprintName = "DogmaDebateTests"
-               ReferencedContainer = "container:DogmaDebate.xcodeproj">
+               ReferencedContainer = "container:Dogma Debate.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "1F45DDA61B2E51FF00086116"
             BuildableName = "Dogma Debate.app"
             BlueprintName = "DogmaDebate"
-            ReferencedContainer = "container:DogmaDebate.xcodeproj">
+            ReferencedContainer = "container:Dogma Debate.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,7 +68,7 @@
             BlueprintIdentifier = "1F45DDA61B2E51FF00086116"
             BuildableName = "Dogma Debate.app"
             BlueprintName = "DogmaDebate"
-            ReferencedContainer = "container:DogmaDebate.xcodeproj">
+            ReferencedContainer = "container:Dogma Debate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -87,7 +87,7 @@
             BlueprintIdentifier = "1F45DDA61B2E51FF00086116"
             BuildableName = "Dogma Debate.app"
             BlueprintName = "DogmaDebate"
-            ReferencedContainer = "container:DogmaDebate.xcodeproj">
+            ReferencedContainer = "container:Dogma Debate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
