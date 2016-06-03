@@ -23,7 +23,6 @@ class RWPodcastsViewModel: NSObject, DogmaDebateProtocol {
     }
     
     func fetchData() {
-        _ = DDPodcastOperation()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(RWPodcastsViewModel.podcastData(_:)), name:DDPodcastOperation.PodcastOperationDidSucceed,
                                                          object: nil)
     }

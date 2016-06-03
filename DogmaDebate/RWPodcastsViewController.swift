@@ -16,9 +16,10 @@ class RWPodcastsViewController: UIViewController {
     
     
     
-    var podcastsViewModel: RWPodcastsViewModel?
+    var podcastsViewModel: RWPodcastsViewModel
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        self.podcastsViewModel = RWPodcastsViewModel()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.title = "Podcasts"
         
@@ -27,6 +28,7 @@ class RWPodcastsViewController: UIViewController {
     }
     
     required init?(coder aDecoder: NSCoder) {
+        self.podcastsViewModel = RWPodcastsViewModel()
         super.init(coder: aDecoder)
 
     }
@@ -39,7 +41,7 @@ class RWPodcastsViewController: UIViewController {
         }
         
         podcastsViewModel = RWPodcastsViewModel()
-        podcastsViewModel?.collectionViewReference = collectionView
+        podcastsViewModel.collectionViewReference = collectionView
         
         
         self.collectionView.registerNib(UINib(nibName: "RWPodcastCollectionViewCell", bundle: nil),
@@ -65,18 +67,23 @@ extension RWPodcastsViewController: UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        if let count = podcastsViewModel?.numberOfItemsInSection() {
-            return count
-        }
-        
-        return 0
+        let count = podcastsViewModel.numberOfItemsInSection()
+        return count
+
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("RWPodcastCollectionViewCell", forIndexPath: indexPath) as! RWPodcastCollectionViewCell
-        if let cellViewModel = podcastsViewModel?.cellViewModelAtIndex(indexPath.row) {
-            cell.cellViewModel = cellViewModel
+         let cellViewModel = podcastsViewModel.cellViewModelAtIndex(indexPath.row)
+        cell.cellViewModel = cellViewModel
+        
+        
+        var page = 1
+        if indexPath.row == podcastsViewModel.podcasts.count - 1 {
+            page += 1
+            DDPodcastOperation(page: page)
         }
+
         
         return cell
     }
@@ -85,11 +92,18 @@ extension RWPodcastsViewController: UICollectionViewDataSource {
 extension RWPodcastsViewController: UICollectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        if let podcast = podcastsViewModel?.podcastAtIndex(indexPath.row) {
+        let podcast = podcastsViewModel.podcastAtIndex(indexPath.row)
             let podcastPlayerViewController = RWPodcastPlayerViewController(podcast: podcast)
             navigationController?.pushViewController(podcastPlayerViewController, animated: true)
-        }
         
+    }
+    
+    func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+        var page = 1
+        if indexPath.row == podcastsViewModel.podcasts.count {
+            page += 1
+            DDPodcastOperation(page: page)
+        }
     }
     
 }
@@ -105,4 +119,20 @@ extension RWPodcastsViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: view.bounds.size.width, height: 250)
     }
     
+}
+
+extension RWPodcastsViewModel : UIScrollViewDelegate {
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        if scrollView.contentOffset.y == scrollView.contentSize.height - scrollView.frame.size.height {
+            //LOAD MORE
+            // you can also add a isLoading bool value for better dealing :D
+            var page = 1
+            page += 1
+            let podcstOp = DDPodcastOperation(page: page)
+            let operationQueue = NSOperationQueue()
+            operationQueue.addOperation(podcstOp)
+            
+        }
+    }
 }

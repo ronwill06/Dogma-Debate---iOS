@@ -27,6 +27,13 @@ extension UIDevice {
     }
     
 
+    static func isIphone6Plus() -> Bool {
+        if UIScreen.mainScreen().bounds.width == 414 {
+            return true
+        }
+        
+        return false
+    }
     
     
 }

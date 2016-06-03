@@ -13,10 +13,11 @@ class DDPodcastOperation: NSOperation {
     static let PodcastOperationDidFail = "PodcastOperationDidFail"
     
     var podcasts:[RWPodcast] = [RWPodcast]()
-    let podcastFeedUrl = NSURL(string: "https://api.spreaker.com/show/261996/episodes")
+    var podcastFeedUrl: NSURL? //NSURL(string: "https://api.spreaker.com/show/261996/episodes")
     
-    override init() {
-        super.init()
+    convenience init(page: Int) {
+        self.init()
+        self.podcastFeedUrl = NSURL(string: "https://api.spreaker.com/show/261996/episodes?page=\(page)")
     }
     
     
@@ -38,6 +39,7 @@ class DDPodcastOperation: NSOperation {
                     if let data = data {
                         do {
                             jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data, options:NSJSONReadingOptions(rawValue: 0)) as! [String : AnyObject]
+                            print(jsonDictionary)
                             if let jsonResponse = jsonDictionary["response"] as? [String : AnyObject], pager = jsonResponse["pager"] as? [String : AnyObject],
                                 results = pager["results"] as? [[String : AnyObject]] {
                                 print("\(results)")

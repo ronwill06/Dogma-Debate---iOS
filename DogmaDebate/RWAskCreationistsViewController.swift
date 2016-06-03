@@ -72,11 +72,13 @@ extension RWAskCreationistsViewController : UITableViewDataSource {
             return 60
         }
         
-        if indexPath.row == 3 {
+        if UIDevice.isIphone4() && indexPath.row == 3 {
             return 115
+        } else if UIDevice.isIphone6Plus() && indexPath.row == 3 {
+            return 80
         }
         
-        return 85
+        return 50
     }
     
 }
