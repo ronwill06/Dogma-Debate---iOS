@@ -14,7 +14,7 @@ class RWPodcastsViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var imageViewHeight: NSLayoutConstraint!
     
-    
+    var page = 1
     
     var podcastsViewModel: RWPodcastsViewModel
     
@@ -77,14 +77,6 @@ extension RWPodcastsViewController: UICollectionViewDataSource {
          let cellViewModel = podcastsViewModel.cellViewModelAtIndex(indexPath.row)
         cell.cellViewModel = cellViewModel
         
-        
-        var page = 1
-        if indexPath.row == podcastsViewModel.podcasts.count - 1 {
-            page += 1
-            DDPodcastOperation(page: page)
-        }
-
-        
         return cell
     }
 }
@@ -98,13 +90,6 @@ extension RWPodcastsViewController: UICollectionViewDelegate {
         
     }
     
-    func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
-        var page = 1
-        if indexPath.row == podcastsViewModel.podcasts.count {
-            page += 1
-            DDPodcastOperation(page: page)
-        }
-    }
     
 }
 
@@ -121,17 +106,15 @@ extension RWPodcastsViewController: UICollectionViewDelegateFlowLayout {
     
 }
 
-extension RWPodcastsViewModel : UIScrollViewDelegate {
+extension RWPodcastsViewController : UIScrollViewDelegate {
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
         if scrollView.contentOffset.y == scrollView.contentSize.height - scrollView.frame.size.height {
-            //LOAD MORE
-            // you can also add a isLoading bool value for better dealing :D
-            var page = 1
+            print("Content Offset:\(scrollView.contentOffset.y)")
             page += 1
-            let podcstOp = DDPodcastOperation(page: page)
+            let podcastOp = DDPodcastOperation(page: page)
             let operationQueue = NSOperationQueue()
-            operationQueue.addOperation(podcstOp)
+            operationQueue.addOperation(podcastOp)
             
         }
     }

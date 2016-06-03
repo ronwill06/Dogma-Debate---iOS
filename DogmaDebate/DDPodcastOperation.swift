@@ -15,9 +15,10 @@ class DDPodcastOperation: NSOperation {
     var podcasts:[RWPodcast] = [RWPodcast]()
     var podcastFeedUrl: NSURL? //NSURL(string: "https://api.spreaker.com/show/261996/episodes")
     
-    convenience init(page: Int) {
-        self.init()
+    init(page: Int) {
         self.podcastFeedUrl = NSURL(string: "https://api.spreaker.com/show/261996/episodes?page=\(page)")
+        
+        super.init()
     }
     
     
@@ -54,7 +55,7 @@ class DDPodcastOperation: NSOperation {
                                         podcast.episodeNumber = number
                                     }
                                     
-                                    podcast.podcastDescription = episode["description"] as? String ?? ""
+                                    podcast.podcastDescription = episode["description"] as? String ?? "No Description"
                                     let dateString = episode["published_at"] as? NSString ?? ""
                                     podcast.podcastDate = dateString.substringWithRange(NSMakeRange(0, 10))
                                     podcast.url = episode["download_url"] as? String ?? ""
