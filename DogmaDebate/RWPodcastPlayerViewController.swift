@@ -52,11 +52,11 @@ class RWPodcastPlayerViewController : UIViewController {
         super.viewDidLoad()
         
         navigationController?.navigationBarHidden = false
-        let leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: #selector(RWPodcastPlayerViewController.dismiss))
+        let leftBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: self, action: #selector(RWPodcastPlayerViewController.dismiss))
         navigationItem.backBarButtonItem = leftBarButtonItem
         navigationController?.navigationBar.translucent = false
         navigationItem.title = "Dogma Debate"
-        navigationController!.navigationBar.barTintColor = UIColor.blackColor()
+        navigationController?.navigationBar.barTintColor = UIColor.blackColor()
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         navigationController?.navigationBar.titleTextAttributes =  [NSForegroundColorAttributeName : UIColor.whiteColor()]
         
@@ -165,6 +165,11 @@ class RWPodcastPlayerViewController : UIViewController {
     func setUpPodcastDetails() {
         titleLabel.text = podcast.title
         podcastDescription.text = podcast.podcastDescription
+        
+        if UIDevice.isIphone4() {
+            imageViewHeight.constant = 150
+            podcastDescription.font = UIFont.systemFontOfSize(12)
+        }
     }
     
     func setUpPodcastDuration(seconds: Double) -> String {
@@ -182,20 +187,20 @@ class RWPodcastPlayerViewController : UIViewController {
          var secs = 0.0
         
         while countedSeconds <= seconds {
-            secs++
+            secs += 1
             
             if countedSeconds % 60.0 == 0 && countedSeconds > 0 {
-                mins++
+                mins += 1
                 secs = 0.0
             }
             
             
             if countedSeconds % 3600 == 0 && countedSeconds > 0 {
-                hours++
+                hours += 1
                 mins = 0.0
             }
             
-             countedSeconds++
+             countedSeconds += 1
         }
         
         

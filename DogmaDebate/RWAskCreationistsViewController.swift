@@ -68,7 +68,15 @@ extension RWAskCreationistsViewController : UITableViewDataSource {
             }
         }
         
-        return 50
+        if indexPath.row == 2 {
+            return 60
+        }
+        
+        if indexPath.row == 3 {
+            return 115
+        }
+        
+        return 85
     }
     
 }

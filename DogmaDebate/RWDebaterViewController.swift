@@ -34,6 +34,8 @@ class RWDebaterViewController : UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         navigationController?.navigationBar.translucent = false
         navigationController?.navigationBar.barStyle = .Black
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
 
         collectionView.registerNib(UINib(nibName: "RWDebaterCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RWDebaterCollectionViewCell")
         

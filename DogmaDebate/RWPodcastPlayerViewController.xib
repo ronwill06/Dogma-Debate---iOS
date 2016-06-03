@@ -62,7 +62,7 @@
                                             <rect key="frame" x="110" y="0.0" width="380" height="75"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="de4-NQ-xS8" userLabel="Stop Button">
-                                                    <rect key="frame" x="0.0" y="12.5" width="50" height="50"/>
+                                                    <rect key="frame" x="0.0" y="12" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="5Hv-Km-Pno"/>
                                                         <constraint firstAttribute="height" constant="50" id="Zlh-ce-mQE"/>
@@ -173,7 +173,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jz0-dr-5ho">
-                            <rect key="frame" x="8" y="104" width="584" height="188"/>
+                            <rect key="frame" x="8" y="112" width="584" height="188"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="130" id="mKa-RE-Z3F"/>
@@ -197,7 +197,9 @@
                         <constraint firstAttribute="bottom" secondItem="Jz0-dr-5ho" secondAttribute="bottom" constant="8" id="EtL-9I-N0B"/>
                         <constraint firstItem="Jz0-dr-5ho" firstAttribute="leading" secondItem="92b-GT-1cu" secondAttribute="leading" constant="8" id="K1h-8a-XdI"/>
                         <constraint firstItem="Jz0-dr-5ho" firstAttribute="centerX" secondItem="92b-GT-1cu" secondAttribute="centerX" id="N6C-4L-Qo0"/>
+                        <constraint firstItem="Jz0-dr-5ho" firstAttribute="top" secondItem="nPb-N6-RYa" secondAttribute="bottom" constant="8" id="Ou8-6S-eEv"/>
                         <constraint firstItem="nPb-N6-RYa" firstAttribute="leading" secondItem="92b-GT-1cu" secondAttribute="leading" constant="8" id="W7I-We-jmI"/>
+                        <constraint firstAttribute="bottom" secondItem="Jz0-dr-5ho" secondAttribute="bottom" id="aks-Un-hoO"/>
                         <constraint firstAttribute="trailing" secondItem="wQa-vu-0Ek" secondAttribute="trailing" id="ik6-2l-y1o"/>
                         <constraint firstItem="nPb-N6-RYa" firstAttribute="top" secondItem="wQa-vu-0Ek" secondAttribute="bottom" constant="8" id="jmM-nY-9J2"/>
                         <constraint firstAttribute="bottom" secondItem="Jz0-dr-5ho" secondAttribute="bottom" constant="30" id="l7V-jw-45h"/>
@@ -206,8 +208,10 @@
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
+                            <exclude reference="EtL-9I-N0B"/>
                             <exclude reference="l7V-jw-45h"/>
                             <exclude reference="rVG-p1-MId"/>
+                            <exclude reference="yGH-J6-xD4"/>
                         </mask>
                     </variation>
                 </view>

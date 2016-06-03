@@ -22,6 +22,8 @@ class RWPodcastsViewController: UIViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.title = "Podcasts"
         
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
