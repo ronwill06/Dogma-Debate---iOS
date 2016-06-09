@@ -13,7 +13,11 @@ class RWDebaterViewController : UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let debaterViewModel = RWDebaterViewModel()
+    var debaterViewModel: RWDebaterViewModel? {
+        didSet {
+            
+        }
+    }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -54,13 +58,21 @@ class RWDebaterViewController : UIViewController {
 extension RWDebaterViewController : UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return debaterViewModel.numberOfLists()
+        
+        if let viewModel = debaterViewModel {
+            return viewModel.numberOfLists()
+        }
+        
+        return 0
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let genericCell = UICollectionViewCell()
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("RWDebaterCollectionViewCell", forIndexPath: indexPath) as? RWDebaterCollectionViewCell {
-            cell.subjectLabel.text = debaterViewModel.categoryNameAtIndex(indexPath.row)
+            if let viewModel =  debaterViewModel {
+                cell.subjectLabel.text = viewModel.categoryNameAtIndex(indexPath.row)
+            }
+            
             return cell
         }
         
@@ -71,7 +83,7 @@ extension RWDebaterViewController : UICollectionViewDataSource {
 extension RWDebaterViewController : UICollectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let viewController = debaterViewModel.viewControllerForIndex(indexPath.row)
+        guard let viewController = debaterViewModel?.viewControllerForIndex(indexPath.row) else { return }
         if let navigationController = navigationController {
             navigationController.pushViewController(viewController, animated: true)
         }

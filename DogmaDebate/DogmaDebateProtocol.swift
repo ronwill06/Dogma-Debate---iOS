@@ -10,6 +10,7 @@ import Foundation
 
 protocol DogmaDebateProtocol {
     var tabBarTitle: String? { get }
+    var update: (() -> Void)? { get set}
     
     func fetchData()
 }

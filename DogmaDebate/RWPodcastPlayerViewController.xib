@@ -24,8 +24,9 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ddlogo" translatesAutoresizingMaskIntoConstraints="NO" id="Uzr-zJ-hk2">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ddwhitelogo" translatesAutoresizingMaskIntoConstraints="NO" id="Uzr-zJ-hk2">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="300" id="42r-Vt-LMz"/>
                     </constraints>
@@ -258,6 +259,6 @@
         <image name="Play" width="60" height="60"/>
         <image name="Rewind" width="60" height="60"/>
         <image name="Stop" width="60" height="60"/>
-        <image name="ddlogo" width="34" height="34"/>
+        <image name="ddwhitelogo" width="645" height="645"/>
     </resources>
 </document>

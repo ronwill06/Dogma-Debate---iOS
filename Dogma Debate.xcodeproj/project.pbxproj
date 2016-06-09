@@ -106,6 +106,8 @@
 		70A1B3031CEE97E000B97840 /* RWMoviePlayerController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A1B3021CEE97E000B97840 /* RWMoviePlayerController.storyboard */; };
 		70A1B3101CEFB12D00B97840 /* RWMemberPackageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A1B30F1CEFB12D00B97840 /* RWMemberPackageViewController.storyboard */; };
 		70A1B3121CEFB14100B97840 /* RWMemberPackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1B3111CEFB14100B97840 /* RWMemberPackageViewController.swift */; };
+		70B9667E1D08855C00B350E1 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5D5CE81B4B713F0074FBC8 /* CoreAudio.framework */; };
+		70B9667F1D08856E00B350E1 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5D5CED1B4B73BA0074FBC8 /* AVKit.framework */; };
 		70BFE7D21C3E039E004A5D1A /* Clips in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7D11C3E039E004A5D1A /* Clips */; };
 		70BFE7D41C3E043F004A5D1A /* sounds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7D31C3E043F004A5D1A /* sounds.plist */; };
 		70BFE7D61C3E06BF004A5D1A /* RWDropsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFE7D51C3E06BF004A5D1A /* RWDropsViewController.swift */; };
@@ -274,6 +276,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70B9667F1D08856E00B350E1 /* AVKit.framework in Frameworks */,
+				70B9667E1D08855C00B350E1 /* CoreAudio.framework in Frameworks */,
 				70CEF3F51CA3318400630BD1 /* CoreMedia.framework in Frameworks */,
 				70CEF3F11CA3317300630BD1 /* AVFoundation.framework in Frameworks */,
 				1F5D5CF41B4B7A3F0074FBC8 /* AudioToolbox.framework in Frameworks */,
@@ -525,9 +529,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1F45DDA61B2E51FF00086116 /* DogmaDebate */ = {
+		1F45DDA61B2E51FF00086116 /* Dogma Debate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F45DDCD1B2E51FF00086116 /* Build configuration list for PBXNativeTarget "DogmaDebate" */;
+			buildConfigurationList = 1F45DDCD1B2E51FF00086116 /* Build configuration list for PBXNativeTarget "Dogma Debate" */;
 			buildPhases = (
 				1F45DDA31B2E51FF00086116 /* Sources */,
 				1F45DDA41B2E51FF00086116 /* Frameworks */,
@@ -537,7 +541,7 @@
 			);
 			dependencies = (
 			);
-			name = DogmaDebate;
+			name = "Dogma Debate";
 			productName = DogmaDebate;
 			productReference = 1F45DDA71B2E51FF00086116 /* Dogma Debate.app */;
 			productType = "com.apple.product-type.application";
@@ -593,7 +597,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F45DDA61B2E51FF00086116 /* DogmaDebate */,
+				1F45DDA61B2E51FF00086116 /* Dogma Debate */,
 				1F45DDC21B2E51FF00086116 /* DogmaDebateTests */,
 			);
 		};
@@ -759,7 +763,7 @@
 /* Begin PBXTargetDependency section */
 		1F45DDC51B2E51FF00086116 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1F45DDA61B2E51FF00086116 /* DogmaDebate */;
+			target = 1F45DDA61B2E51FF00086116 /* Dogma Debate */;
 			targetProxy = 1F45DDC41B2E51FF00086116 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -793,7 +797,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: David Smalley (NYZ9B4LL77)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: David Smalley (NYZ9B4LL77)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -837,7 +842,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David Smalley (MTU73GAGZ6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Smalley (MTU73GAGZ6)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -862,8 +868,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: David Smalley (NYZ9B4LL77)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: David Smalley (NYZ9B4LL77)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Smalley (MTU73GAGZ6)";
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = DogmaDebate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -871,9 +880,9 @@
 					"$(PROJECT_DIR)/DogmaDebate/PayPalMobile",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rondalewilliams.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.secularmedia.dogmadebate;
 				PRODUCT_NAME = "Dogma Debate";
-				PROVISIONING_PROFILE = "ae77bf73-dd99-4049-94e6-d00d28f49865";
+				PROVISIONING_PROFILE = "b15f03e5-799f-4b68-a723-c5ba4b6a04ce";
 				SWIFT_OBJC_BRIDGING_HEADER = "DogmaDebate/DogmaDebate-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALID_ARCHS = "x86_64 i386 arm64 armv7 armv7s";
@@ -886,8 +895,11 @@
 				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: David Smalley (MTU73GAGZ6)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Smalley (MTU73GAGZ6)";
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = DogmaDebate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -896,9 +908,9 @@
 					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rondalewilliams.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.secularmedia.dogmadebate;
 				PRODUCT_NAME = "Dogma Debate";
-				PROVISIONING_PROFILE = "ae77bf73-dd99-4049-94e6-d00d28f49865";
+				PROVISIONING_PROFILE = "b15f03e5-799f-4b68-a723-c5ba4b6a04ce";
 				SWIFT_OBJC_BRIDGING_HEADER = "DogmaDebate/DogmaDebate-Bridging-Header.h";
 				VALID_ARCHS = "x86_64 i386 arm64 armv7 armv7s";
 			};
@@ -952,7 +964,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F45DDCD1B2E51FF00086116 /* Build configuration list for PBXNativeTarget "DogmaDebate" */ = {
+		1F45DDCD1B2E51FF00086116 /* Build configuration list for PBXNativeTarget "Dogma Debate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F45DDCE1B2E51FF00086116 /* Debug */,

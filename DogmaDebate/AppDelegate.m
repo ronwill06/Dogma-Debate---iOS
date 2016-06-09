@@ -10,6 +10,7 @@
 #import "RWMoreViewController.h"
 #import "Dogma_Debate-Swift.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -20,14 +21,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
-    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     
-    RWPodcastsViewController *podCastsVC =  [[RWPodcastsViewController alloc] init];
-    UINavigationController *podCastsNavVC = [[UINavigationController alloc] initWithRootViewController:podCastsVC];
+    RWPodcastsViewController *podcastsVC =  [[RWPodcastsViewController alloc] init];
+    RWPodcastsViewModel *podcastsViewModel = [[RWPodcastsViewModel alloc] init];
+    podcastsVC.podcastsViewModel = podcastsViewModel;
+    UINavigationController *podCastsNavVC = [[UINavigationController alloc] initWithRootViewController:podcastsVC];
     
     RWDebaterViewController *debaterVC = [[RWDebaterViewController alloc] init];
     UINavigationController *debateNavVC = [[UINavigationController alloc] initWithRootViewController:debaterVC];
@@ -51,12 +52,9 @@
     [[tabBarController.tabBar.items objectAtIndex:3] setImage:[UIImage imageNamed:@"More"]];
     
     [[self window] setRootViewController:tabBarController];
-    
-    
     [[self window] makeKeyAndVisible];
     
     DDPodcastOperation *podcastOperation = [[DDPodcastOperation alloc] initWithPage:1];
-    
     NSOperationQueue *operationQueue = [[NSOperationQueue alloc] init];
     [operationQueue addOperation:podcastOperation];
     
@@ -66,9 +64,6 @@
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
 {
-    if ([url.host isEqual: @"oauth-swift://login.dogmadebate.com"]) {
-    }
-    
     return YES;
 }
 

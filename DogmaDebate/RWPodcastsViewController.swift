@@ -13,35 +13,29 @@ class RWPodcastsViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var imageViewHeight: NSLayoutConstraint!
-    
     var page = 1
     
-    var podcastsViewModel: RWPodcastsViewModel
-    
+    var podcastsViewModel: RWPodcastsViewModel?
+        
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        self.podcastsViewModel = RWPodcastsViewModel()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.title = "Podcasts"
-        
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
         
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.podcastsViewModel = RWPodcastsViewModel()
         super.init(coder: aDecoder)
 
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.navigationBarHidden = true
+
         if UIDevice.isIphone4() {
             imageViewHeight.constant = 200
         }
         
-        podcastsViewModel = RWPodcastsViewModel()
-        podcastsViewModel.collectionViewReference = collectionView
         
         
         self.collectionView.registerNib(UINib(nibName: "RWPodcastCollectionViewCell", bundle: nil),
@@ -50,6 +44,10 @@ class RWPodcastsViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        podcastsViewModel?.update = {
+            self.collectionView.reloadData()
+        }
         
     }
     
@@ -67,14 +65,14 @@ extension RWPodcastsViewController: UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        let count = podcastsViewModel.numberOfItemsInSection()
+        guard let count = podcastsViewModel?.numberOfItemsInSection() else { return 0}
         return count
 
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("RWPodcastCollectionViewCell", forIndexPath: indexPath) as! RWPodcastCollectionViewCell
-         let cellViewModel = podcastsViewModel.cellViewModelAtIndex(indexPath.row)
+        let cellViewModel = podcastsViewModel?.cellViewModelAtIndex(indexPath.row)
         cell.cellViewModel = cellViewModel
         
         return cell
@@ -84,7 +82,7 @@ extension RWPodcastsViewController: UICollectionViewDataSource {
 extension RWPodcastsViewController: UICollectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let podcast = podcastsViewModel.podcastAtIndex(indexPath.row)
+        guard let podcast = podcastsViewModel?.podcastAtIndex(indexPath.row) else { return }
             let podcastPlayerViewController = RWPodcastPlayerViewController(podcast: podcast)
             navigationController?.pushViewController(podcastPlayerViewController, animated: true)
         

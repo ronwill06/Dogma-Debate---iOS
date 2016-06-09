@@ -12,14 +12,14 @@ import UIKit
 class RWPodcastsViewModel: NSObject, DogmaDebateProtocol {
     
     var tabBarTitle: String?
-    var podcasts = [RWPodcast]()
+    var podcasts:[RWPodcast]?
     var collectionViewReference: UICollectionView?
+    var update: (() -> Void)?
     
     override init() {
         super.init()
         tabBarTitle = "Podcasts"
         fetchData()
-       
     }
     
     func fetchData() {
@@ -27,11 +27,11 @@ class RWPodcastsViewModel: NSObject, DogmaDebateProtocol {
                                                          object: nil)
     }
     
-    func podcastData(notification: NSNotification) {
+    @objc func podcastData(notification: NSNotification) {
         if let userInfo = notification.userInfo as? [String : [AnyObject]] {
             if let podcasts = userInfo["podcastInfo"] as? [RWPodcast] {
                 self.podcasts = podcasts
-                
+                self.update?()
                 if let collectionView = self.collectionViewReference {
                     collectionView.reloadData()
                 }
@@ -41,19 +41,27 @@ class RWPodcastsViewModel: NSObject, DogmaDebateProtocol {
     
     func cellViewModelAtIndex(index: Int) -> RWPodcastCellViewModel {
         let cellViewModel = RWPodcastCellViewModel()
-        cellViewModel.podcast = podcasts[index]
+        if let podcasts = podcasts {
+            cellViewModel.podcast = podcasts[index]
+        }
         
         return cellViewModel
     }
     
-    func podcastAtIndex(index: Int) -> RWPodcast {
-        let podcast = podcasts[index]
+    func podcastAtIndex(index: Int) -> RWPodcast? {
+        if let podcasts = podcasts {
+            let podcast = podcasts[index]
+            return podcast
+        }
         
-        return podcast
+        return nil
     }
     
     func numberOfItemsInSection() -> Int {
-        return self.podcasts.count
+        if let podcasts = podcasts {
+            return podcasts.count
+        }
+        return 0
     }
     
     deinit {
