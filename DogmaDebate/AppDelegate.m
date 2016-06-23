@@ -31,6 +31,8 @@
     UINavigationController *podCastsNavVC = [[UINavigationController alloc] initWithRootViewController:podcastsVC];
     
     RWDebaterViewController *debaterVC = [[RWDebaterViewController alloc] init];
+    RWDebaterViewModel *debaterViewModel = [[RWDebaterViewModel alloc] init];
+    debaterVC.debaterViewModel = debaterViewModel;
     UINavigationController *debateNavVC = [[UINavigationController alloc] initWithRootViewController:debaterVC];
     debateNavVC.title = @"Debater";
     

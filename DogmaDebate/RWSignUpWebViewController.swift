@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import WebKit
 
 class RWSignUpWebViewController: UIViewController{
     
@@ -17,7 +16,7 @@ class RWSignUpWebViewController: UIViewController{
         return vc
     }
     
-    
+    @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
@@ -29,24 +28,19 @@ class RWSignUpWebViewController: UIViewController{
         
         activityIndicator.startAnimating()
         
-        let configuration = WKWebViewConfiguration()
-        configuration.allowsInlineMediaPlayback = true
-        let webview = WKWebView(frame: view.frame, configuration: configuration)
-        webview.navigationDelegate = self
         let url = NSURL(string: "http://login.dogmadebate.com/")
         
         if let url = url {
             let request = NSURLRequest(URL: url)
-            webview.loadRequest(request)
+            webView.loadRequest(request)
         }
         
-        view.addSubview(webview)
-        
-        if webview.loading == true {
+        if webView.loading == true {
             activityIndicator.alpha = 1.0
             activityIndicator.startAnimating()
         } else {
             activityIndicator.stopAnimating()
+            activityIndicator.view.removeFromSuperView()
         }
 
     }

@@ -18,6 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6c-fm-yYn">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1ey-Ak-Znx">
                                 <rect key="frame" x="20" y="20" width="560" height="580"/>
                                 <constraints>
@@ -35,11 +39,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1ey-Ak-Znx" firstAttribute="top" secondItem="iab-N4-QtX" secondAttribute="bottom" id="CwV-lT-rFS"/>
+                            <constraint firstAttribute="trailing" secondItem="w6c-fm-yYn" secondAttribute="trailing" id="FCL-vu-kr9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1ey-Ak-Znx" secondAttribute="trailing" id="GWJ-lR-YIZ"/>
                             <constraint firstItem="1ey-Ak-Znx" firstAttribute="centerY" secondItem="cLw-aI-vUt" secondAttribute="centerY" id="H8Z-AJ-zjZ"/>
+                            <constraint firstItem="jwY-Cj-OW4" firstAttribute="top" secondItem="w6c-fm-yYn" secondAttribute="bottom" id="HME-F2-eah"/>
                             <constraint firstItem="1ey-Ak-Znx" firstAttribute="centerX" secondItem="cLw-aI-vUt" secondAttribute="centerX" id="NAP-5X-xoH"/>
                             <constraint firstItem="1ey-Ak-Znx" firstAttribute="leading" secondItem="cLw-aI-vUt" secondAttribute="leadingMargin" id="U7c-2s-zRT"/>
+                            <constraint firstItem="w6c-fm-yYn" firstAttribute="leading" secondItem="cLw-aI-vUt" secondAttribute="leading" id="d5P-kK-rxr"/>
                             <constraint firstItem="jwY-Cj-OW4" firstAttribute="top" secondItem="1ey-Ak-Znx" secondAttribute="bottom" id="hOa-Yd-b7f"/>
+                            <constraint firstItem="w6c-fm-yYn" firstAttribute="top" secondItem="iab-N4-QtX" secondAttribute="bottom" id="w1g-9A-bti"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -51,6 +59,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="1ey-Ak-Znx" id="Ld3-In-pTy"/>
                         <outlet property="view" destination="cLw-aI-vUt" id="iig-Zm-sTB"/>
+                        <outlet property="webView" destination="w6c-fm-yYn" id="cdS-Pb-KKE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFo-Lk-DAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

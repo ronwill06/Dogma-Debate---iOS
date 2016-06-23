@@ -13,18 +13,16 @@ class RWDebaterViewController : UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var debaterViewModel: RWDebaterViewModel? {
-        didSet {
-            
-        }
-    }
+    var debaterViewModel: RWDebaterViewModel
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        self.debaterViewModel = RWDebaterViewModel()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
     }
 
     required init?(coder aDecoder: NSCoder) {
+        self.debaterViewModel = RWDebaterViewModel()
         super.init(coder: aDecoder)
     }
     
@@ -59,20 +57,14 @@ extension RWDebaterViewController : UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        if let viewModel = debaterViewModel {
-            return viewModel.numberOfLists()
-        }
-        
-        return 0
+        return debaterViewModel.numberOfLists()
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let genericCell = UICollectionViewCell()
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("RWDebaterCollectionViewCell", forIndexPath: indexPath) as? RWDebaterCollectionViewCell {
-            if let viewModel =  debaterViewModel {
-                cell.subjectLabel.text = viewModel.categoryNameAtIndex(indexPath.row)
-            }
             
+            cell.subjectLabel.text = debaterViewModel.categoryNameAtIndex(indexPath.row)
             return cell
         }
         
@@ -83,7 +75,7 @@ extension RWDebaterViewController : UICollectionViewDataSource {
 extension RWDebaterViewController : UICollectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        guard let viewController = debaterViewModel?.viewControllerForIndex(indexPath.row) else { return }
+        let viewController = debaterViewModel.viewControllerForIndex(indexPath.row)
         if let navigationController = navigationController {
             navigationController.pushViewController(viewController, animated: true)
         }

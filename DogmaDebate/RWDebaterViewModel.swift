@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class RWDebaterViewModel {
+class RWDebaterViewModel: NSObject {
     
     var categoryNames = ["Debate Topics", "Evolution Basics", "Ask Creationists", "The Bible", "Smalley Quotes", "Drops"]
     
