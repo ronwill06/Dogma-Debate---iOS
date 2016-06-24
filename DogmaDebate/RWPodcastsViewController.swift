@@ -97,7 +97,7 @@ extension RWPodcastsViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: view.bounds.size.width, height: 190)
         }
         
-        return CGSize(width: view.bounds.size.width, height: 250)
+        return CGSize(width: view.bounds.size.width, height: 230)
     }
     
 }
