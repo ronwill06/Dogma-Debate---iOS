@@ -7,20 +7,22 @@
 //
 
 import Foundation
+import AVFoundation
 
-class RWPodcast: NSObject {
+class RWPodcast {
     
     var title: String = ""
     var podcastDate: String?
     var podcastDescription: String?
+    var secs: String = ""
     var url: String?
     var videoUrl: String?
     var episodeNumber: String = ""
     
-    override init() {
-        super.init()
-        self.url = ""
+    init() {
+        
     }
+    
     
     convenience init(title: String, date: String, description: String, number: String) {
         self.init()
@@ -29,7 +31,7 @@ class RWPodcast: NSObject {
         self.podcastDescription = description
         self.episodeNumber = number
     }
-    
+        
     static func fetchEpisodeForPodcast(podcast: RWPodcast) -> String  {
         let directores = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         let documentDirectory = directores.first

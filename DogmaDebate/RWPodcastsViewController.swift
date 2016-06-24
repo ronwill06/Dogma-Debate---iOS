@@ -36,8 +36,6 @@ class RWPodcastsViewController: UIViewController {
             imageViewHeight.constant = 200
         }
         
-        
-        
         self.collectionView.registerNib(UINib(nibName: "RWPodcastCollectionViewCell", bundle: nil),
             forCellWithReuseIdentifier: "RWPodcastCollectionViewCell")
     }

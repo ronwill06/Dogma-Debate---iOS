@@ -41,8 +41,8 @@
                             <constraint firstItem="QQd-lY-fAw" firstAttribute="centerY" secondItem="7gk-eF-k2h" secondAttribute="centerY" id="uwQ-Af-PSm"/>
                         </constraints>
                     </view>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNj-QR-QDy">
-                        <rect key="frame" x="80" y="-16.5" width="430" height="207"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNj-QR-QDy">
+                        <rect key="frame" x="80" y="-16" width="430" height="207"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="100" id="pDe-N2-TKx"/>
@@ -70,6 +70,12 @@
                             </mask>
                         </variation>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWO-NB-kVV" userLabel="Time Label">
+                        <rect key="frame" x="16" y="44" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 21, 2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ge5-eA-IjT">
                         <rect key="frame" x="430" y="145" width="74" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -80,6 +86,7 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
+                <constraint firstItem="qWO-NB-kVV" firstAttribute="leading" secondItem="7gk-eF-k2h" secondAttribute="trailing" constant="8" id="3HR-2m-yCr"/>
                 <constraint firstItem="7gk-eF-k2h" firstAttribute="centerY" secondItem="HOj-y7-r0U" secondAttribute="centerY" id="6gU-bq-7Ct"/>
                 <constraint firstAttribute="bottom" secondItem="ge5-eA-IjT" secondAttribute="bottom" constant="15" id="6zE-9R-t5q"/>
                 <constraint firstItem="wNj-QR-QDy" firstAttribute="top" secondItem="HOj-y7-r0U" secondAttribute="top" constant="45" id="97l-bn-ayX"/>
@@ -93,6 +100,8 @@
                 <constraint firstItem="wNj-QR-QDy" firstAttribute="leading" secondItem="7gk-eF-k2h" secondAttribute="trailing" constant="7" id="PLF-IM-2AN"/>
                 <constraint firstItem="wNj-QR-QDy" firstAttribute="top" secondItem="ENh-5e-BK1" secondAttribute="bottom" constant="20" id="UkD-aP-vbK"/>
                 <constraint firstItem="ENh-5e-BK1" firstAttribute="top" secondItem="HOj-y7-r0U" secondAttribute="top" constant="16" id="Vn9-L1-Sqh"/>
+                <constraint firstItem="qWO-NB-kVV" firstAttribute="leading" secondItem="ENh-5e-BK1" secondAttribute="leading" id="X50-NV-VQf"/>
+                <constraint firstItem="qWO-NB-kVV" firstAttribute="top" secondItem="ENh-5e-BK1" secondAttribute="bottom" constant="8" id="XBn-Uf-pZu"/>
                 <constraint firstAttribute="trailing" secondItem="ge5-eA-IjT" secondAttribute="trailing" constant="16" id="ZNe-mH-ptg"/>
                 <constraint firstItem="wNj-QR-QDy" firstAttribute="centerY" secondItem="HOj-y7-r0U" secondAttribute="centerY" id="fhp-iY-BRD"/>
                 <constraint firstItem="wNj-QR-QDy" firstAttribute="centerY" secondItem="HOj-y7-r0U" secondAttribute="centerY" id="lI6-XA-obj"/>
@@ -106,7 +115,6 @@
             <variation key="default">
                 <mask key="constraints">
                     <exclude reference="Gvn-SY-rvI"/>
-                    <exclude reference="Gw3-RD-Mnl"/>
                     <exclude reference="97l-bn-ayX"/>
                     <exclude reference="ElD-Ur-nuW"/>
                     <exclude reference="PLF-IM-2AN"/>
@@ -116,12 +124,15 @@
                     <exclude reference="mvs-Qv-WZc"/>
                     <exclude reference="pML-hv-EWc"/>
                     <exclude reference="vsp-8v-6eG"/>
+                    <exclude reference="Gw3-RD-Mnl"/>
+                    <exclude reference="3HR-2m-yCr"/>
                 </mask>
             </variation>
             <connections>
                 <outlet property="dateLabel" destination="ge5-eA-IjT" id="b5v-aR-R8s"/>
                 <outlet property="descriptionTextView" destination="wNj-QR-QDy" id="l48-R1-U8h"/>
                 <outlet property="numberLabel" destination="DHt-2y-XEt" id="UkN-2D-cnV"/>
+                <outlet property="timeLabel" destination="qWO-NB-kVV" id="zbj-IV-zKc"/>
                 <outlet property="titleLabel" destination="ENh-5e-BK1" id="TWv-wz-9gi"/>
             </connections>
             <point key="canvasLocation" x="296" y="416.5"/>

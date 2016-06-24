@@ -35,12 +35,11 @@ class RWSignUpWebViewController: UIViewController{
             webView.loadRequest(request)
         }
         
-        if webView.loading == true {
+        if webView.loading {
             activityIndicator.alpha = 1.0
             activityIndicator.startAnimating()
         } else {
             activityIndicator.stopAnimating()
-            activityIndicator.view.removeFromSuperView()
         }
 
     }
@@ -54,17 +53,14 @@ class RWSignUpWebViewController: UIViewController{
     
 }
 
-extension RWSignUpWebViewController: WKNavigationDelegate {
+extension RWSignUpWebViewController: UIWebViewDelegate {
     
-    func webView(webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-        self.view.bringSubviewToFront(activityIndicator)
+    func webViewDidStartLoad(webView: UIWebView) {
         activityIndicator.startAnimating()
     }
     
-    func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+    func webViewDidFinishLoad(webView: UIWebView) {
         activityIndicator.stopAnimating()
     }
-
+    
 }

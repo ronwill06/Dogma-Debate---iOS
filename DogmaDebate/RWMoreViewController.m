@@ -46,7 +46,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBar.hidden = YES;
-    self.options =  @[@"about us", @"contact us", @"partners", @"faq", @"atheist audiobooks"];
+    self.options =  @[@"about us", @"contact us", @"faq", @"atheist audiobooks"];
     
 }
 
@@ -74,16 +74,11 @@
     if ([indexPath row] == 1) {
         MFMailComposeViewController *mailVC = [[MFMailComposeViewController alloc] init];
         mailVC.mailComposeDelegate = self;
-        [mailVC setToRecipients:@[@"donovan@dogmadebate.com"]];
+        [mailVC setToRecipients:@[@"info@dogmadebate.com"]];
         [self presentViewController:mailVC animated:YES completion:nil];
     }
     
     if ([indexPath row] == 2) {
-        RWPartnerViewController *partnerVC = [[RWPartnerViewController alloc] init];
-        [[self navigationController] pushViewController:partnerVC animated:YES];
-    }
-    
-    if ([indexPath row] == 3) {
         RWFAQViewController *faqVC = [[RWFAQViewController alloc] init];
         [[self navigationController] pushViewController:faqVC animated:YES];
     }

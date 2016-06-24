@@ -72,17 +72,12 @@ class RWPodcastPlayerViewController : UIViewController {
         setUpPodcastDetails()
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
-    }
-    
     func dismiss() {
         self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func rewind(sender: AnyObject) {
-        let thirtySecondsBack = CMTimeMake(30, 1)
+        let thirtySecondsBack = CMTimeMake(15, 1)
         if let trackTime =  self.trackTime {
             player?.seekToTime(CMTimeSubtract(trackTime, thirtySecondsBack))
         }
@@ -156,7 +151,7 @@ class RWPodcastPlayerViewController : UIViewController {
     }
     
     @IBAction func fastForward(sender: AnyObject) {
-        let addedTime =  CMTimeMake(30, 1)
+        let addedTime =  CMTimeMake(15, 1)
         if let trackTime = self.trackTime {
             player?.seekToTime(CMTimeAdd(trackTime, addedTime))
         }
@@ -184,7 +179,7 @@ class RWPodcastPlayerViewController : UIViewController {
         var mins = 0.0
         var hours = 0.0
         var countedSeconds = 0.0
-         var secs = 0.0
+        var secs = 0.0
         
         while countedSeconds <= seconds {
             secs += 1

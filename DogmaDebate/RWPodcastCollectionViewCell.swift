@@ -15,6 +15,7 @@ class RWPodcastCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel?
     @IBOutlet weak var dateLabel: UILabel?
     @IBOutlet weak var numberLabel: UILabel?
+    @IBOutlet weak var timeLabel: UILabel!
     
     var cellViewModel: RWPodcastCellViewModel? {
         didSet {
@@ -22,6 +23,7 @@ class RWPodcastCollectionViewCell: UICollectionViewCell {
             self.dateLabel?.text = cellViewModel?.date
             self.numberLabel?.text = cellViewModel?.episodeNumber
             self.titleLabel?.text = cellViewModel?.title
+            self.timeLabel.text = cellViewModel?.secs 
         }
     }
 

@@ -101,6 +101,7 @@
 		703600E41D009BF400D3746D /* contradictions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 703600E31D009BF400D3746D /* contradictions.plist */; };
 		703600E61D009C7E00D3746D /* RWBibleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703600E51D009C7E00D3746D /* RWBibleObject.swift */; };
 		703600E81D009F2400D3746D /* RWBibleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703600E71D009F2400D3746D /* RWBibleViewController.storyboard */; };
+		705084651D1CB3E00043F342 /* RWPodcastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705084641D1CB3DF0043F342 /* RWPodcastManager.swift */; };
 		7088767B1CACBA9E0089DC73 /* RWSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7088767A1CACBA9E0089DC73 /* RWSignUpViewController.xib */; };
 		708876891CD5A8320089DC73 /* UIWidgetCustomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708876881CD5A8320089DC73 /* UIWidgetCustomizer.swift */; };
 		70A1B3031CEE97E000B97840 /* RWMoviePlayerController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A1B3021CEE97E000B97840 /* RWMoviePlayerController.storyboard */; };
@@ -238,6 +239,7 @@
 		703600E31D009BF400D3746D /* contradictions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = contradictions.plist; sourceTree = "<group>"; };
 		703600E51D009C7E00D3746D /* RWBibleObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWBibleObject.swift; sourceTree = "<group>"; };
 		703600E71D009F2400D3746D /* RWBibleViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RWBibleViewController.storyboard; sourceTree = "<group>"; };
+		705084641D1CB3DF0043F342 /* RWPodcastManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastManager.swift; sourceTree = "<group>"; };
 		7088767A1CACBA9E0089DC73 /* RWSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWSignUpViewController.xib; sourceTree = "<group>"; };
 		708876881CD5A8320089DC73 /* UIWidgetCustomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWidgetCustomizer.swift; sourceTree = "<group>"; };
 		70A1B3021CEE97E000B97840 /* RWMoviePlayerController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RWMoviePlayerController.storyboard; sourceTree = "<group>"; };
@@ -424,7 +426,6 @@
 		1F45DDD81B2E580E00086116 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1F45DDDB1B2E588F00086116 /* RWPodcastCollectionViewCell.xib */,
 				1F45DE031B3AE52F00086116 /* RWMoreTableViewCell.h */,
 				1F45DE041B3AE52F00086116 /* RWMoreTableViewCell.m */,
 				1F45DE051B3AE52F00086116 /* RWMoreTableViewCell.xib */,
@@ -445,6 +446,7 @@
 				1F5D5CC81B4727140074FBC8 /* RWAboutUsTableViewCell.m */,
 				1F5D5CC91B4727140074FBC8 /* RWAboutUsTableViewCell.xib */,
 				1FE4DEA41C1A62D50092575D /* RWPodcastCollectionViewCell.swift */,
+				1F45DDDB1B2E588F00086116 /* RWPodcastCollectionViewCell.xib */,
 				1F27EAE91C27811F00D8FF5A /* RWDebaterCollectionViewCell.xib */,
 				1F27EAEB1C27815100D8FF5A /* RWDebaterCollectionViewCell.swift */,
 				70E0EE431C29C26300E647DE /* RWDebaterTopicTableViewCell.swift */,
@@ -472,6 +474,7 @@
 				70DE24521C2A04B60050C2B8 /* RWQuoteObject.swift */,
 				70BFE7DF1C3E0BCE004A5D1A /* RWDrop.swift */,
 				703600E51D009C7E00D3746D /* RWBibleObject.swift */,
+				705084641D1CB3DF0043F342 /* RWPodcastManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -727,6 +730,7 @@
 				70DE24571C2A07D00050C2B8 /* RWQuotesViewController.swift in Sources */,
 				70DE24491C29FF880050C2B8 /* RWAskCreationistsViewController.swift in Sources */,
 				70DE245D1C2A0E9F0050C2B8 /* RWPodcastPlayerViewController.swift in Sources */,
+				705084651D1CB3E00043F342 /* RWPodcastManager.swift in Sources */,
 				70BFE7E01C3E0BCE004A5D1A /* RWDrop.swift in Sources */,
 				1F45DE181B3B37E800086116 /* RWEventTableViewCell.m in Sources */,
 				1F45DDAD1B2E51FF00086116 /* main.m in Sources */,

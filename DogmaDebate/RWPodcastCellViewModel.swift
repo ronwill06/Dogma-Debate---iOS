@@ -17,6 +17,7 @@ class RWPodcastCellViewModel: NSObject {
             self.date = podcast?.podcastDate
             self.episodeNumber = podcast?.episodeNumber
             self.title = podcast?.title
+            self.secs = RWPodcastManager.secondsForPodcast(podcast!)
         }
     }
     
@@ -24,5 +25,6 @@ class RWPodcastCellViewModel: NSObject {
     var date: String?
     var episodeNumber: String?
     var title: String?
+    var secs: String?
     
 }
