@@ -14,6 +14,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="520" height="175"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqG-xk-w3p" userLabel="DividerView">
+                        <rect key="frame" x="0.0" y="173" width="520" height="2"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="2GD-uh-Zkh"/>
+                        </constraints>
+                    </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gk-eF-k2h" userLabel="NumberView">
                         <rect key="frame" x="16" y="61" width="57" height="52"/>
                         <subviews>
@@ -97,15 +104,20 @@
                 <constraint firstItem="7gk-eF-k2h" firstAttribute="centerY" secondItem="wNj-QR-QDy" secondAttribute="centerY" id="Gvn-SY-rvI"/>
                 <constraint firstItem="DHt-2y-XEt" firstAttribute="centerY" secondItem="wNj-QR-QDy" secondAttribute="centerY" id="Gw3-RD-Mnl"/>
                 <constraint firstAttribute="trailing" secondItem="wNj-QR-QDy" secondAttribute="trailing" constant="10" id="JXj-fY-Gfj"/>
+                <constraint firstItem="ge5-eA-IjT" firstAttribute="leading" secondItem="EqG-xk-w3p" secondAttribute="trailing" id="MVI-p1-EEP"/>
                 <constraint firstItem="wNj-QR-QDy" firstAttribute="leading" secondItem="7gk-eF-k2h" secondAttribute="trailing" constant="7" id="PLF-IM-2AN"/>
+                <constraint firstItem="EqG-xk-w3p" firstAttribute="leading" secondItem="HOj-y7-r0U" secondAttribute="leading" id="QLd-g7-y5c"/>
+                <constraint firstAttribute="trailing" secondItem="EqG-xk-w3p" secondAttribute="trailing" id="UYo-ud-awy"/>
                 <constraint firstItem="wNj-QR-QDy" firstAttribute="top" secondItem="ENh-5e-BK1" secondAttribute="bottom" constant="20" id="UkD-aP-vbK"/>
                 <constraint firstItem="ENh-5e-BK1" firstAttribute="top" secondItem="HOj-y7-r0U" secondAttribute="top" constant="16" id="Vn9-L1-Sqh"/>
                 <constraint firstItem="qWO-NB-kVV" firstAttribute="leading" secondItem="ENh-5e-BK1" secondAttribute="leading" id="X50-NV-VQf"/>
                 <constraint firstItem="qWO-NB-kVV" firstAttribute="top" secondItem="ENh-5e-BK1" secondAttribute="bottom" constant="8" id="XBn-Uf-pZu"/>
                 <constraint firstAttribute="trailing" secondItem="ge5-eA-IjT" secondAttribute="trailing" constant="16" id="ZNe-mH-ptg"/>
+                <constraint firstAttribute="bottom" secondItem="EqG-xk-w3p" secondAttribute="bottom" id="acG-oj-6PQ"/>
                 <constraint firstItem="wNj-QR-QDy" firstAttribute="centerY" secondItem="HOj-y7-r0U" secondAttribute="centerY" id="fhp-iY-BRD"/>
                 <constraint firstItem="wNj-QR-QDy" firstAttribute="centerY" secondItem="HOj-y7-r0U" secondAttribute="centerY" id="lI6-XA-obj"/>
                 <constraint firstItem="wNj-QR-QDy" firstAttribute="top" secondItem="ENh-5e-BK1" secondAttribute="bottom" constant="10" id="mvs-Qv-WZc"/>
+                <constraint firstItem="EqG-xk-w3p" firstAttribute="leading" secondItem="7gk-eF-k2h" secondAttribute="trailing" id="mwz-zF-oNu"/>
                 <constraint firstItem="wNj-QR-QDy" firstAttribute="centerY" secondItem="7gk-eF-k2h" secondAttribute="centerY" id="pML-hv-EWc"/>
                 <constraint firstItem="7gk-eF-k2h" firstAttribute="leading" secondItem="HOj-y7-r0U" secondAttribute="leading" constant="16" id="qgg-RX-sDc"/>
                 <constraint firstItem="wNj-QR-QDy" firstAttribute="centerY" secondItem="HOj-y7-r0U" secondAttribute="centerY" id="vsp-8v-6eG"/>
@@ -114,6 +126,7 @@
             <size key="customSize" width="520" height="175"/>
             <variation key="default">
                 <mask key="constraints">
+                    <exclude reference="3HR-2m-yCr"/>
                     <exclude reference="Gvn-SY-rvI"/>
                     <exclude reference="97l-bn-ayX"/>
                     <exclude reference="ElD-Ur-nuW"/>
@@ -125,7 +138,8 @@
                     <exclude reference="pML-hv-EWc"/>
                     <exclude reference="vsp-8v-6eG"/>
                     <exclude reference="Gw3-RD-Mnl"/>
-                    <exclude reference="3HR-2m-yCr"/>
+                    <exclude reference="mwz-zF-oNu"/>
+                    <exclude reference="MVI-p1-EEP"/>
                 </mask>
             </variation>
             <connections>

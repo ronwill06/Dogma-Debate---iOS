@@ -26,6 +26,9 @@ class RWPodcastCollectionViewCell: UICollectionViewCell {
             self.timeLabel.text = cellViewModel?.secs 
         }
     }
+    
+    override func awakeFromNib() {
+    }
 
     
     override func prepareForReuse() {

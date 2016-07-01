@@ -19,17 +19,13 @@ class RWPodcast {
     var videoUrl: String?
     var episodeNumber: String = ""
     
-    init() {
-        
-    }
-    
-    
     convenience init(title: String, date: String, description: String, number: String) {
         self.init()
         self.title = title
         self.podcastDate = date
         self.podcastDescription = description
         self.episodeNumber = number
+        
     }
         
     static func fetchEpisodeForPodcast(podcast: RWPodcast) -> String  {

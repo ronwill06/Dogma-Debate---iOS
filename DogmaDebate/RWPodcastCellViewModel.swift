@@ -13,11 +13,12 @@ class RWPodcastCellViewModel: NSObject {
     
     var podcast: RWPodcast? {
         didSet {
-            self.podcastDescription = podcast?.podcastDescription
-            self.date = podcast?.podcastDate
-            self.episodeNumber = podcast?.episodeNumber
-            self.title = podcast?.title
-            self.secs = RWPodcastManager.secondsForPodcast(podcast!)
+            guard let podcast = podcast else { return }
+            self.podcastDescription = podcast.podcastDescription
+            self.date = podcast.podcastDate
+            self.episodeNumber = podcast.episodeNumber
+            self.title = podcast.title
+            //self.secs = RWPodcastManager.secondsForPodcast(podcast)
         }
     }
     
