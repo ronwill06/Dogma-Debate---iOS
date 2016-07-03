@@ -89,8 +89,13 @@ class RWPodcastPlayerViewController : UIViewController {
     }
     
     @IBAction func play(sender: AnyObject) {
+        var podcastUrl = ""
         
-        let podcastUrl = RWPodcast.fetchEpisodeForPodcast(podcast)
+        if podcast.isFullLengthPodcast == true {
+           podcastUrl = RWPodcast.fetchFullEpisodeForPodcast(podcast)
+        } else {
+            podcastUrl = RWPodcast.fetchEpisodeForPodcast(podcast)
+        }
         
         if isPlaying == false {
             let podcastUrl = podcastUrl

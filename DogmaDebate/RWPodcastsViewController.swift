@@ -6,18 +6,18 @@
 //  Copyright © 2015 RondaleWilliams. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class RWPodcastsViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var imageViewHeight: NSLayoutConstraint!
+    
     var page = 1
     
     var podcastsViewModel: RWPodcastsViewModel? {
         didSet {
-            podcastsViewModel?.update = {
+            podcastsViewModel?.update = { 
                 self.collectionView.reloadData()
             }
 
@@ -27,7 +27,6 @@ class RWPodcastsViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.title = "Podcasts"
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -47,6 +46,7 @@ class RWPodcastsViewController: UIViewController {
             forCellWithReuseIdentifier: "RWPodcastCollectionViewCell")
         collectionView.registerNib(UINib(nibName: "RWLoadMoreCell", bundle: nil),
                                         forCellWithReuseIdentifier: "RWLoadMoreCell")
+       
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -64,6 +64,10 @@ class RWPodcastsViewController: UIViewController {
         let operationQueue = NSOperationQueue()
         operationQueue.addOperation(podcastOp)
     }
+    
+//    func removeSplashScreen() {
+//        self.splashScreenImage.removeFromSuperview()
+//    }
     
 }
 
