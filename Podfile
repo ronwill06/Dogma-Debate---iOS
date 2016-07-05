@@ -5,6 +5,7 @@
 
 target 'Dogma Debate' do
 pod 'Backendless-ios-SDK'
+pod 'OAuthSwift', '~> 0.5.0'
 end
 
 target 'DogmaDebateTests' do
