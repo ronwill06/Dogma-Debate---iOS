@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>OAuthSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Dogma Debate.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -12,7 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>631F5AF9FF432013782F8A2D779B2501</key>
+		<key>33CEFFBD7F709811F4B9C25BBD51843C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>45935B91DF0442390E2CA6DEEF68AE99</key>
 		<dict>
 			<key>primary</key>
 			<true/>

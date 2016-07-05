@@ -10,7 +10,69 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>03E9D400F387BD3793A8B6AA1DC6B441</key>
+		<key>01185A0302DA7E9DBF9F2622E18EC6E1</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C1F8D9540FA28B56CD2CBF8EE1C2A91D</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-Dogma Debate/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-Dogma Debate/Pods-Dogma Debate.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_Dogma_Debate</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>01948EA46929BDCF605230FBD3B34EBD</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -19,13 +81,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>BodyParts.h</string>
+			<string>AbstractProperty.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/BodyParts.h</string>
+			<string>SDK/lib/backendless/include/AbstractProperty.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>066FF63E8F68CF39F47827180817D845</key>
+		<key>02F2AA4B6CB33CBCC0E46FC85F8A56EB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -34,13 +96,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MediaPlayer.h</string>
+			<string>pixfmt.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/MediaPlayer.h</string>
+			<string>SDK/lib/libav-11.4/include/libavutil/pixfmt.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>077709BBF365180B93CE2546960259B8</key>
+		<key>03CE1DFEB8A01A624A2D5EC93F679836</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -49,13 +111,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AMFSerializer.h</string>
+			<string>md5.h</string>
 			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/AMFSerializer.h</string>
+			<string>SDK/lib/libav-11.4/include/libavutil/md5.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>07CAD63078D601BD365A1930C57E7362</key>
+		<key>0435FE1AC76FBE3E0B650FEEA54FAF3B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -64,13 +126,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>sha.h</string>
+			<string>version.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/sha.h</string>
+			<string>SDK/lib/libav-11.4/include/libavresample/version.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>07ED392BB7153B00D07736F9CC3A21C2</key>
+		<key>04D87277BFD77F1CB2D231A922D34684</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -79,28 +141,28 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>speex_header.h</string>
+			<string>MPMediaDecoder.h</string>
 			<key>path</key>
-			<string>SDK/lib/speex-1.2rc2/include/speex_header.h</string>
+			<string>SDK/lib/MediaLibiOS3x/include/MPMediaDecoder.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0A6D0202B97D3B251566A31B4A3E0E68</key>
+		<key>050A59E933F33F84E0F9D1ACEA5DC14D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>aes.h</string>
+			<string>Utils.swift</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/aes.h</string>
+			<string>OAuthSwift/Utils.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0A9A2C25BCBD7DEDE91EB25C91B50CB5</key>
+		<key>05CB67B6EB0443B64E0B8E0A693D9AD3</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -109,13 +171,25 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>dv_profile.h</string>
+			<string>BackendlessCollection.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavcodec/dv_profile.h</string>
+			<string>SDK/lib/backendless/include/BackendlessCollection.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0FC6995A7BABE32886572CEACFF3F4C4</key>
+		<key>0691210EC4FFD58AE2E28EC918813988</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D83030900188C4F921198F74249E1BF2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>070173C6B9783858D8C15B394B335F62</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -124,9 +198,186 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>avfilter.h</string>
+			<string>MediaPlaybackOptions.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavfilter/avfilter.h</string>
+			<string>SDK/lib/backendless/include/MediaPlaybackOptions.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0855BA5F8893B31DD81FEEF1EB84452F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>mathematics.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/mathematics.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>08B5E64157D159ECCD56EE1CE6FD3D09</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FilePermission.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/FilePermission.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>096FB1973BA9EC2D4C1D8DF698133F1D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>39903C16914F1079243265260FDED3AA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>0A0FDD6DDF41C70219C53AD4DCCFC53B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>random_seed.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/random_seed.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0A60106DE5472A2E2C4FE97C6B2E0A03</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BackendlessGeoQuery.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/BackendlessGeoQuery.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0BC89BACA1A189ED20BE6F4781336716</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IClientSharedObjectDelegate.h</string>
+			<key>path</key>
+			<string>SDK/lib/CommLibiOS/include/IClientSharedObjectDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0C09E5BE6953AC70F5B674055822FFA5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AbstractQuery.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/AbstractQuery.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0C8910C6FE602AD606F5C06BFF53DEFF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>swscale.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libswscale/swscale.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D75B86873B15B51DA19253A6846E3B8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>common.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/common.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0E7DEA970263B7FBDF58DDBDED4102B8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>buffersink.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavfilter/buffersink.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0EFE44880561DAA4878F3F253A516F6D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>blowfish.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/blowfish.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F77A2005CB9C57B7C7A96A4DD6C3017</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AtomicCounters.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/AtomicCounters.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -198,7 +449,7 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>13450C38CE2DCCD4B002F2614640D52F</key>
+		<key>132F4771C5FBE883647D8D30E35B32CB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -207,13 +458,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>audioconvert.h</string>
+			<string>MessageStatus.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/audioconvert.h</string>
+			<string>SDK/lib/backendless/include/MessageStatus.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>15016EF7BD3D9263C675985D8D1502D1</key>
+		<key>142AF48C6AAC4B7D636110597B58CCF7</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -222,13 +473,33 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>GeoCluster.h</string>
+			<string>BackendlessCachePolicy.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/GeoCluster.h</string>
+			<string>SDK/lib/backendless/include/BackendlessCachePolicy.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1672011877E416152E0F45078CEADACF</key>
+		<key>14387BAD3302BC29FD2B61669907CEEA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>41A00F5CF45C7D1B97225996C473293F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>147F9FBE94002C01DED269B60AD2BD24</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F534B104318DDBB0347945F3949E3D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>15104AA765BB67236CC226FE48735F0D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -237,13 +508,186 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>md5.h</string>
+			<string>sha.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/md5.h</string>
+			<string>SDK/lib/libav-11.4/include/libavutil/sha.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>16DB6B6E9E7E5F45638410B67668DA20</key>
+		<key>153E0A68FAF51B119BE8EA3490AC649F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>log.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/log.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>15ABC4D32EE04C7AC45878EFE22FF08A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OAuthSwift-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>16257E2CFBABEC091CC11719EC87570C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avfiltergraph.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavfilter/avfiltergraph.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>18162EE326F37FF1661414DF4FBFF892</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>DeliveryOptions.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/DeliveryOptions.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>18202AACEFCB1CB633DFC3011775FCBE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BackendlessFile.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/BackendlessFile.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>18A71871701C8D7C21683F672C4D0E06</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IClientSharedObject.h</string>
+			<key>path</key>
+			<string>SDK/lib/CommLibiOS/include/IClientSharedObject.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>19089E225478631E0685BC62765C385A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OAuthSwift-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1AEF70C2F96A9B942547DFAE029F7CCC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Logging.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/Logging.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1C12F2E4F1172545BB500BE11DC82D2C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>53F80D7BB63E4CD92BF5A2D0A3CE8DCE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>1CE1CA2150F88B4B871A2C2AE45F156C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>old_pix_fmts.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/old_pix_fmts.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2259713AD61DE4732237ECFD971A8F89</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Backendless-With-Media-Bridging-Header.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/Backendless-With-Media-Bridging-Header.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>231068BD9C47B564F5CDAC2E43BD923F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>GeoFence.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/GeoFence.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>257A795C71B7DAB09DE5080D1A129462</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -254,159 +698,11 @@
 			<key>name</key>
 			<string>version.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavresample/version.h</string>
+			<string>SDK/lib/libav-11.4/include/libavfilter/version.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1815868FB19BB3DE13B8FA96584B185A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ProtectedBackendlessGeoQuery.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/ProtectedBackendlessGeoQuery.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>186CD40F8332A3C2C6A7580AC0DDD828</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>vdpau.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavcodec/vdpau.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18C5E4725A3B13DA798B0A246791C904</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPMediaEncoder.h</string>
-			<key>path</key>
-			<string>SDK/lib/MediaLibiOS3x/include/MPMediaEncoder.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>19BAE11D9DB548151CB936A84A893C6B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MemoryTicker.h</string>
-			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/MemoryTicker.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1E943CFA07A51BAF3F6C290B1BFD0F5C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>avutil.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/avutil.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2102691A23310512D6C698676343B268</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BackendlessGeoQuery.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/BackendlessGeoQuery.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>21992603F4AECC366A0D8C720F5C16CE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>avresample.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavresample/avresample.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2333E4C1C8175215A8D3268C016A453A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ObjectProperty.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/ObjectProperty.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>235A51AF73BAC7D3E82CD4753DCEB65E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HashMap.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/HashMap.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>258D3C47CE9B5C8F59ACA282DFAD7DC4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Dogma Debate-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>25D40BF03AC8BD506D1DB9854021CC5A</key>
+		<key>2741C1103529D4AC8271995A27DC8DD6</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -421,7 +717,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>26B0CEF6EC31D1DECCCC37B14B9DAAA4</key>
+		<key>27BAE1D1BFF3DC49F493C72ACA7BC727</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -430,13 +726,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Backendless.h</string>
+			<string>MessagingService.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/Backendless.h</string>
+			<string>SDK/lib/backendless/include/MessagingService.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2A097F938279DE701DA9156BAA42DE66</key>
+		<key>28757C043A35D0081175BDCD72EA8BFA</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -445,13 +741,25 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MediaPublisher.h</string>
+			<string>Events.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/MediaPublisher.h</string>
+			<string>SDK/lib/backendless/include/Events.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2A430C92A8C9FDBD78D12DAF1C99D97C</key>
+		<key>291FE1D4F4658AE8249A7AA798367A07</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FC7F3CFB4A7E1B3FEA5B9E2E36327EE3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>2B6421C1FE2BC42FB8E1C10F0D261203</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -460,13 +768,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>DeviceRegistration.h</string>
+			<string>audioconvert.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/DeviceRegistration.h</string>
+			<string>SDK/lib/libav-11.4/include/libavutil/audioconvert.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2CB9645BBEA39F58FB3855EB6D5B7E3F</key>
+		<key>2C99191D0324613D4B6A5583CA15BC9A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -475,13 +783,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>version.h</string>
+			<string>avdevice.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavformat/version.h</string>
+			<string>SDK/lib/libav-11.4/include/libavdevice/avdevice.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2CCD3B016D47032E9C7FECC5A9BFBD71</key>
+		<key>2D554EBBB27E3EBB5473325B9C13A10B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -490,9 +798,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>buffersink.h</string>
+			<string>error.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavfilter/buffersink.h</string>
+			<string>SDK/lib/libav-11.4/include/libavutil/error.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -510,7 +818,19 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>2DFC8E50559F45A37A802BE6223CE495</key>
+		<key>2FB79A55DE2E9F7ABB3B4C7871CD0C5B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8B35810EE7D79FFD9CCC9DB03546A9E6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>2FE0589675A5565B7BEF7D0385F81199</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -519,13 +839,47 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>log.h</string>
+			<string>WeborbClient.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/log.h</string>
+			<string>SDK/lib/CommLibiOS/include/WeborbClient.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2EED590C4D773D230D4F90B2434B3C8D</key>
+		<key>2FF0663A31A365DB0DC113DA3327882F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D7132486A4A75E6F8AD5525C55692E9B</string>
+				<string>77399E4566C45F617708F2D406020478</string>
+				<string>BD2C74D2A7EFCAC1BFB43CBD9040E543</string>
+				<string>52F7B5473FA08BB8ED0661DEE4632645</string>
+				<string>33182B65F18D1C24C3B39BCB56889386</string>
+				<string>C9591044DB2184285747C711CEABDDC9</string>
+				<string>8B35810EE7D79FFD9CCC9DB03546A9E6</string>
+				<string>53F80D7BB63E4CD92BF5A2D0A3CE8DCE</string>
+				<string>D41E280AF202D3C54B4A5AEABB532495</string>
+				<string>39903C16914F1079243265260FDED3AA</string>
+				<string>5AD0F6AD40A4D658AD87EA4D61FEDE12</string>
+				<string>FC7F3CFB4A7E1B3FEA5B9E2E36327EE3</string>
+				<string>FFC33672FE3BA8D999784FD476D09214</string>
+				<string>D83030900188C4F921198F74249E1BF2</string>
+				<string>C23BBBECDCABF6EEBE43D8914E2A8B31</string>
+				<string>4A3E84214EC5AEABFC03DDA4EAC3CB49</string>
+				<string>A618FE47A98897EDF841027F10BDD9E7</string>
+				<string>5C4165374BE5E143069D6544B2EB23C8</string>
+				<string>050A59E933F33F84E0F9D1ACEA5DC14D</string>
+				<string>452505DC0B39FAFA600AAE80A305A9DC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>OAuthSwift</string>
+			<key>path</key>
+			<string>OAuthSwift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>30DD6A618BD3A1A818FCF0FF4E1BD7CC</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -534,13 +888,55 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>vaapi.h</string>
+			<string>GeoCluster.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavcodec/vaapi.h</string>
+			<string>SDK/lib/backendless/include/GeoCluster.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2FE8FB0B2E28369821294551CC639220</key>
+		<key>33182B65F18D1C24C3B39BCB56889386</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NSDate+OAuthSwift.swift</string>
+			<key>path</key>
+			<string>OAuthSwift/NSDate+OAuthSwift.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>33CEFFBD7F709811F4B9C25BBD51843C</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>D96221277ED7EC88675CAE10F114A2DB</string>
+			<key>buildPhases</key>
+			<array>
+				<string>8BCDB1BDE10193B9DF854BE095854E15</string>
+				<string>CAA86AA61623E8A031EF116168ABC29E</string>
+				<string>4F1290D66A0B42915754C95D30BE8C50</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>60D13B1A2495BADDB12FE26EF2D2415E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-Dogma Debate</string>
+			<key>productName</key>
+			<string>Pods-Dogma Debate</string>
+			<key>productReference</key>
+			<string>552E4DBFA885EE0AC1AD4AE293F9940C</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>34C48284C5A5B5F2EDC73BF64924B644</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -549,13 +945,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>audio_fifo.h</string>
+			<string>BackendlessSimpleQuery.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/audio_fifo.h</string>
+			<string>SDK/lib/backendless/include/BackendlessSimpleQuery.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>31883C4326F6FCBB73AB82E0E3F72C61</key>
+		<key>356131AFFCC7FF63340BDDF54213FCA9</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -564,13 +960,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MPMediaDecoder.h</string>
+			<string>speex_bits.h</string>
 			<key>path</key>
-			<string>SDK/lib/MediaLibiOS3x/include/MPMediaDecoder.h</string>
+			<string>SDK/lib/speex-1.2rc2/include/speex_bits.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>32DE8BBC83884E6B05D7573402E95E90</key>
+		<key>356BF7D9F38450EA23CE538498B25C25</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -579,13 +975,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AtomicCounters.h</string>
+			<string>QueryOptions.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/AtomicCounters.h</string>
+			<string>SDK/lib/backendless/include/QueryOptions.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>33381C2FE2D7F729977B8D59D8497D15</key>
+		<key>37B09A492AED5804AD4A2550FB46A949</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -594,26 +990,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>buffersrc.h</string>
+			<string>BEFileInfo.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavfilter/buffersrc.h</string>
+			<string>SDK/lib/backendless/include/BEFileInfo.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>334A9FE427AA206C8ED253844EC3C321</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Dogma Debate-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>34B25A5E1B0BE89F2C772F8B9DF3E245</key>
+		<key>3869CAB784BBC6D75984DCB8E3527136</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -622,13 +1005,43 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>speex_config_types.h</string>
+			<string>eval.h</string>
 			<key>path</key>
-			<string>SDK/lib/speex-1.2rc2/include/speex_config_types.h</string>
+			<string>SDK/lib/libav-11.4/include/libavutil/eval.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>36F0121DDABD20A3D732A479B9F1FFF1</key>
+		<key>39277AE2A4B428DD8CCCB0FE9A57CD49</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avutil.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/avutil.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>39903C16914F1079243265260FDED3AA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>OAuthSwiftClient.swift</string>
+			<key>path</key>
+			<string>OAuthSwift/OAuthSwiftClient.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>39A344B42AF6718FEF4AE5B31431A422</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -643,7 +1056,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>379164BE43C8E2BE0C67F7F724597709</key>
+		<key>3A74C9B91DD15CC08D785A816450C2F8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -652,28 +1065,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>avconfig.h</string>
+			<string>ProtectedBackendlessGeoQuery.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/avconfig.h</string>
+			<string>SDK/lib/backendless/include/ProtectedBackendlessGeoQuery.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>37ADAB906407219F8ACF92111703685D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-Dogma Debate.a</string>
-			<key>path</key>
-			<string>libPods-Dogma Debate.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>37AF6BC3BDE8A08E044D638B4D000E43</key>
+		<key>3A97F8E39C5A14611DBB11B6228FEDA5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -682,13 +1080,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>speex_stereo.h</string>
+			<string>parseutils.h</string>
 			<key>path</key>
-			<string>SDK/lib/speex-1.2rc2/include/speex_stereo.h</string>
+			<string>SDK/lib/libav-11.4/include/libavutil/parseutils.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>37F1E5DA61653E4BDA9231AF69B74C86</key>
+		<key>3D5DCE2FE3F1B619D6DEFF3DDA899061</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -697,67 +1095,23 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>file.h</string>
+			<string>IMediaStreamer.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/file.h</string>
+			<string>SDK/lib/backendless/include/IMediaStreamer.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3A280C7A7A2E77F96154BFD66C10A238</key>
+		<key>3D6AC7BE7AC39003684B4AA5FECF40A9</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>37ADAB906407219F8ACF92111703685D</string>
+				<string>4F5F2BBF62C51EC1022ED93DA3ED9E56</string>
+				<string>2FF0663A31A365DB0DC113DA3327882F</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A5C9BF75FB248FD69413A3B0DD7DDCC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AbstractProperty.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/AbstractProperty.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3D10E5159ECFF9F08D0E75DC3A22DEF2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BETableView.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/BETableView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3E132A0EE2F097873F24596410138C53</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>downmix_info.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/downmix_info.h</string>
+			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -774,7 +1128,7 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>3E76A962C864AABE9639E7FC76E4C8B9</key>
+		<key>3E765B3966001B2E3B522E3BD7E90127</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -783,13 +1137,570 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>avdevice.h</string>
+			<string>DEBUG.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavdevice/avdevice.h</string>
+			<string>SDK/lib/CommLibiOS/include/DEBUG.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3E9DEDAC1A02A7B8774454A3A940EC0C</key>
+		<key>3EC4C43369923EC0050401580C053BFB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MediaStreamPlayer.h</string>
+			<key>path</key>
+			<string>SDK/lib/MediaLibiOS3x/include/MediaStreamPlayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>40ABEA71478C0CBF2A7BB77D44531D00</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OAuthSwift-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>41188F54269708D0C1BD346E993DB713</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FlashorbBinaryWriter.h</string>
+			<key>path</key>
+			<string>SDK/lib/CommLibiOS/include/FlashorbBinaryWriter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>41A00F5CF45C7D1B97225996C473293F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>40ABEA71478C0CBF2A7BB77D44531D00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>425C6AD5374741C65D8CB7C25521349B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>imgutils.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/imgutils.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>43047FBBD53D1AF531AFA6D52E915189</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BECollectionView.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/BECollectionView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>432CE3D0B280348941A6A4B9F1396E8F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>HashMap.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/HashMap.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>452505DC0B39FAFA600AAE80A305A9DC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9418BD8B02E433F6DAA8AA333FA9BAF7</string>
+				<string>4D5FACC989F2B1D5602F3C5C106CB550</string>
+				<string>8B92A65DFD91984F367115FBC836FA3F</string>
+				<string>15ABC4D32EE04C7AC45878EFE22FF08A</string>
+				<string>19089E225478631E0685BC62765C385A</string>
+				<string>40ABEA71478C0CBF2A7BB77D44531D00</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/OAuthSwift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>45935B91DF0442390E2CA6DEEF68AE99</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>65C945B9F8F7427F83E2AD2F43DF0BC5</string>
+			<key>buildPhases</key>
+			<array>
+				<string>CB9CACE5B69239D17009AECF0310C585</string>
+				<string>7B6FC608D01ADF7FE8FA1D690C0A7120</string>
+				<string>14387BAD3302BC29FD2B61669907CEEA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>OAuthSwift</string>
+			<key>productName</key>
+			<string>OAuthSwift</string>
+			<key>productReference</key>
+			<string>4EDAFED9969FA5DCD07F4BB5FFCEE05A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>469C26B8C11F6CB88197A505EDA4AC38</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>aes.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/aes.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4A3E84214EC5AEABFC03DDA4EAC3CB49</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SHA1.swift</string>
+			<key>path</key>
+			<string>OAuthSwift/SHA1.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4ABB3982241CF418C73E7B9C348C0231</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>downmix_info.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/downmix_info.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4B6AA99A89A78E0739D8EF7ED870E70B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PersistenceService.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/PersistenceService.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D5FACC989F2B1D5602F3C5C106CB550</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>OAuthSwift.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D9EAFDB487C220D1B598DC2EE2CCF60</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avresample.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavresample/avresample.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4E23C0C3C5CF154075BDE3E79D2EAC43</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4A3E84214EC5AEABFC03DDA4EAC3CB49</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>4EDAFED9969FA5DCD07F4BB5FFCEE05A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>OAuthSwift.framework</string>
+			<key>path</key>
+			<string>OAuthSwift.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>4EF6E2987021F70B36FBACAB9FBE92EF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avcodec.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavcodec/avcodec.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4F1290D66A0B42915754C95D30BE8C50</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5A272EB5038586DF7A8922E78917936E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4F5F2BBF62C51EC1022ED93DA3ED9E56</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>01948EA46929BDCF605230FBD3B34EBD</string>
+				<string>0C09E5BE6953AC70F5B674055822FFA5</string>
+				<string>AEABB4CC46AFFB783DBF3FEFE9ED6DC7</string>
+				<string>469C26B8C11F6CB88197A505EDA4AC38</string>
+				<string>6975A7629D4A2C5DA955FDE441D2372A</string>
+				<string>0F77A2005CB9C57B7C7A96A4DD6C3017</string>
+				<string>DD9F904FC2066011DD503411ECC45172</string>
+				<string>DBD342A472D507D290F635E711918C35</string>
+				<string>FFC9864BE263C7FDBB43738EBFF0261A</string>
+				<string>2B6421C1FE2BC42FB8E1C10F0D261203</string>
+				<string>9CBDE431AC1D13694A1C755E499E10E7</string>
+				<string>4EF6E2987021F70B36FBACAB9FBE92EF</string>
+				<string>5BF651BF2C36AABC6030A3727D484136</string>
+				<string>2C99191D0324613D4B6A5583CA15BC9A</string>
+				<string>FAA775B87D7A8EE16164B2335F5F1213</string>
+				<string>53320EC448A88DC6CF62DB9CDEE236AA</string>
+				<string>16257E2CFBABEC091CC11719EC87570C</string>
+				<string>2741C1103529D4AC8271995A27DC8DD6</string>
+				<string>8C519C7B6552F75013675A4B21E9049F</string>
+				<string>4D9EAFDB487C220D1B598DC2EE2CCF60</string>
+				<string>AFC1AE155C39423582DB5F8F492B4C4E</string>
+				<string>39277AE2A4B428DD8CCCB0FE9A57CD49</string>
+				<string>DDBD71FD71973A49F9B228599666F0CE</string>
+				<string>F00913E8887271B48BC13400063AFFC9</string>
+				<string>2259713AD61DE4732237ECFD971A8F89</string>
+				<string>ED8C71759E29E315593516E54758056F</string>
+				<string>142AF48C6AAC4B7D636110597B58CCF7</string>
+				<string>B743E568E79E9642A6C62359C4A64B62</string>
+				<string>05CB67B6EB0443B64E0B8E0A693D9AD3</string>
+				<string>FADF3F2B1DF3AA5F85B3E82AA847A7BA</string>
+				<string>993A24500CBE3FE88A73D27B51495599</string>
+				<string>18202AACEFCB1CB633DFC3011775FCBE</string>
+				<string>0A60106DE5472A2E2C4FE97C6B2E0A03</string>
+				<string>34C48284C5A5B5F2EDC73BF64924B644</string>
+				<string>52D9AEA274C7994FD44AD645E4A58D9E</string>
+				<string>B9E053919E6CEF79D7E759C7C1B50ADF</string>
+				<string>D387DEEF91541C0268E172D47031CA30</string>
+				<string>43047FBBD53D1AF531AFA6D52E915189</string>
+				<string>37B09A492AED5804AD4A2550FB46A949</string>
+				<string>DEEB9A791C2872C065854746405BC491</string>
+				<string>5E4FE607D2708C63918E57CA727B5FE5</string>
+				<string>6AD7F5F5FE1F93786CBE3C6025357620</string>
+				<string>E8AEC6EE10BE8623C2C26E240A8F3FC1</string>
+				<string>5F92930FBCD46280242F15395727F4DA</string>
+				<string>0EFE44880561DAA4878F3F253A516F6D</string>
+				<string>9E38D092099A372DFD75858AE4DCF7B1</string>
+				<string>BD49435DB149B84284CE62D5912CFFA4</string>
+				<string>8680714BC15BCCF85557C98C3ABDA784</string>
+				<string>C32976AB9B0AFDE2A6025877E6C89616</string>
+				<string>0E7DEA970263B7FBDF58DDBDED4102B8</string>
+				<string>4FAD537881DE07E5CB4133D6EE18B10D</string>
+				<string>BAD219136EE452372042200CF017D805</string>
+				<string>55543A705777C0F5403B322AA5C128BE</string>
+				<string>C054A5C338454CD9A1CDCF0C8B050CEE</string>
+				<string>0D75B86873B15B51DA19253A6846E3B8</string>
+				<string>744B7E3C0F6452514166F6D08D3F67FC</string>
+				<string>D7287B160C41E9F03670FE72D90A30F3</string>
+				<string>C89251C577BB13CB74888629C2D501ED</string>
+				<string>66C0A4D915FA50ADB5CF231FD5C5040F</string>
+				<string>55FF044691010FC7932E4306FAC10FE2</string>
+				<string>3E765B3966001B2E3B522E3BD7E90127</string>
+				<string>18162EE326F37FF1661414DF4FBFF892</string>
+				<string>E4A61593F95BD1CD7AB89458D5B0EF44</string>
+				<string>B81E2C160F27809AF4F1C8C46ADCCDD9</string>
+				<string>866447C6E4196112B8D0FD4225E5791D</string>
+				<string>4ABB3982241CF418C73E7B9C348C0231</string>
+				<string>89D96B199FE017AC9A494BE79271559F</string>
+				<string>ECB30C7D503B9D27A3E24A6900A716F8</string>
+				<string>2D554EBBB27E3EBB5473325B9C13A10B</string>
+				<string>3869CAB784BBC6D75984DCB8E3527136</string>
+				<string>28757C043A35D0081175BDCD72EA8BFA</string>
+				<string>AD54DA8D6AE3314BB6302094C7A496E8</string>
+				<string>93ADBFC73F235161B8591DFB1AEC102B</string>
+				<string>08B5E64157D159ECCD56EE1CE6FD3D09</string>
+				<string>B9594727F2B2C0499EC509D33AD31F86</string>
+				<string>65B7EC5CF85D76C7E35447E9A418073A</string>
+				<string>41188F54269708D0C1BD346E993DB713</string>
+				<string>68550DF4861C3673A2083F570609F1AE</string>
+				<string>74448A70119CEDE56C5AA5A37265E764</string>
+				<string>30DD6A618BD3A1A818FCF0FF4E1BD7CC</string>
+				<string>231068BD9C47B564F5CDAC2E43BD923F</string>
+				<string>C8C0FC27827B15612ADE38C48E54B717</string>
+				<string>EAAF0D7C57C508D477B297966D056765</string>
+				<string>432CE3D0B280348941A6A4B9F1396E8F</string>
+				<string>761E1439A8CD8909019038085D86BA2A</string>
+				<string>E803372F830B0CD5DC6D53BEC51D53A8</string>
+				<string>B637230E19C5D2791AED8B32C83CBC86</string>
+				<string>E517768249C3E5542047160CF3F009F8</string>
+				<string>732B0FF7DB524D772DFC78E9E327D5A7</string>
+				<string>18A71871701C8D7C21683F672C4D0E06</string>
+				<string>0BC89BACA1A189ED20BE6F4781336716</string>
+				<string>CFF95E58CDDD9CB73F89F651806BF446</string>
+				<string>3D5DCE2FE3F1B619D6DEFF3DDA899061</string>
+				<string>425C6AD5374741C65D8CB7C25521349B</string>
+				<string>550C1ED22AB899F3934AD9BFE28DFB5E</string>
+				<string>E76D6A2D6DBA002E3251AB9512CCF84F</string>
+				<string>94C58FED5AD2A426DB626BC9B72CB0BF</string>
+				<string>F2358DCC71F7F6187462F6E79E4782D1</string>
+				<string>F663AF811607BB3D90C46FDDF9D5011C</string>
+				<string>A448FE124B0BFB478BA8DBC0E9D620A3</string>
+				<string>713C1DCFC34A618E6CFA0CECE458255A</string>
+				<string>A6D6E860834A2DD34E6A0003C2741F70</string>
+				<string>CB3C63D19151784A14D05653C8113165</string>
+				<string>5093B9BFA564AD1241676759968DBF66</string>
+				<string>153E0A68FAF51B119BE8EA3490AC649F</string>
+				<string>B633EA41322A6125ACA18A0452DA24A0</string>
+				<string>1AEF70C2F96A9B942547DFAE029F7CCC</string>
+				<string>A6CAC8DF9C33C6BDEBB8EB08E0487CF1</string>
+				<string>0855BA5F8893B31DD81FEEF1EB84452F</string>
+				<string>03CE1DFEB8A01A624A2D5EC93F679836</string>
+				<string>070173C6B9783858D8C15B394B335F62</string>
+				<string>DD978C4FB065C7DD29BBFF7B421F4C1B</string>
+				<string>86EA9AC1E81F2F98B88E3DCDAE9BE145</string>
+				<string>D545DCF37D406691E2134FA36D3E331F</string>
+				<string>55746C74B2876C8F287E51FB2C6E32AD</string>
+				<string>3EC4C43369923EC0050401580C053BFB</string>
+				<string>E4400E46ADFDC7DC4349D10B623C5E5A</string>
+				<string>BACCDA5EE6ED311392FFD3263F023D9D</string>
+				<string>B980B3503F48DBC7BA91B8C5A300FE61</string>
+				<string>132F4771C5FBE883647D8D30E35B32CB</string>
+				<string>27BAE1D1BFF3DC49F493C72ACA7BC727</string>
+				<string>ABF3DB641C8F254CAC1DEF281FE18783</string>
+				<string>04D87277BFD77F1CB2D231A922D34684</string>
+				<string>C73E7B265F27C21DED21F04DADA63B9E</string>
+				<string>8B69C75C164490F86FA13154C0C15E73</string>
+				<string>1CE1CA2150F88B4B871A2C2AE45F156C</string>
+				<string>E88281BA4C638177C534D182B4287D52</string>
+				<string>3A97F8E39C5A14611DBB11B6228FEDA5</string>
+				<string>4B6AA99A89A78E0739D8EF7ED870E70B</string>
+				<string>C6BE3B052A507200066B0BF390517439</string>
+				<string>02F2AA4B6CB33CBCC0E46FC85F8A56EB</string>
+				<string>39A344B42AF6718FEF4AE5B31431A422</string>
+				<string>3A74C9B91DD15CC08D785A816450C2F8</string>
+				<string>AEE41441DA2F186ACBE64BF55BD55160</string>
+				<string>356BF7D9F38450EA23CE538498B25C25</string>
+				<string>0A0FDD6DDF41C70219C53AD4DCCFC53B</string>
+				<string>EC709CC3EC292B112897988A310167A7</string>
+				<string>FD3B6422216AB27552D5D49E9547EBDA</string>
+				<string>AB756329AAA3CDB1446BF5C63E5D51A5</string>
+				<string>76B9C665759FD8906D1E5AB77C7EEE45</string>
+				<string>9FC4035518AD4841D40A2A59511E7555</string>
+				<string>15104AA765BB67236CC226FE48735F0D</string>
+				<string>E75EACD4E2ED6D3F8F946274A8C5F601</string>
+				<string>356131AFFCC7FF63340BDDF54213FCA9</string>
+				<string>C05BC2AA272F37931A86939827315DCA</string>
+				<string>EF8FBFBD74714B4FA8FBA58D1CF2E5CC</string>
+				<string>6FF85B8A64C960E219224ED27523458F</string>
+				<string>E3B5562007DA0EDB3A2B884C341D9A4C</string>
+				<string>65E7E6D4DCDC8E2B62BFA8607BB0FE82</string>
+				<string>B3870BC07A850E97F2DE149288639132</string>
+				<string>8E236C37ABB1A7C428C88B823C1180D2</string>
+				<string>0C8910C6FE602AD606F5C06BFF53DEFF</string>
+				<string>D005D43D9E5C5E23134547E1214E0B69</string>
+				<string>62A696571C345F0D55C9D3A9390B436C</string>
+				<string>B6AF076A64D19A2DC3C1B62D227A1207</string>
+				<string>5C6F610A1F9CB7F7541608111D8A1A01</string>
+				<string>C13E2FB28E851E0B87DDF2D583B7815A</string>
+				<string>9972EDEBC42C5833C4E60C7729B9323B</string>
+				<string>0435FE1AC76FBE3E0B650FEEA54FAF3B</string>
+				<string>A2A98C3718167BCFA463C61A6C173299</string>
+				<string>C668888C682DC5926518F89F4488687A</string>
+				<string>7A2706237CA0652D1CDAA9449F6DF22F</string>
+				<string>53030353977E79F897518670851C6607</string>
+				<string>785DDB0B297F8708A8654E485BE58AD0</string>
+				<string>257A795C71B7DAB09DE5080D1A129462</string>
+				<string>C9BA48703A2AA07557B5D8A0A3C225DB</string>
+				<string>2FE0589675A5565B7BEF7D0385F81199</string>
+				<string>55353373446CEA2CF03B3C19AC3B3620</string>
+				<string>D7C0824938FC5ACC6C809F315328DE3A</string>
+				<string>5D7288A403E17C4A4FBF3618D0BD33BC</string>
+				<string>A56896712A62F3260EEF06EAE955367E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Backendless-ios-SDK</string>
+			<key>path</key>
+			<string>Backendless-ios-SDK</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4FAD537881DE07E5CB4133D6EE18B10D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>buffersrc.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavfilter/buffersrc.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5093B9BFA564AD1241676759968DBF66</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>LocationTracker.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/LocationTracker.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>514657DE649EE1E9ECB564E58D72A671</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A3EDA5CC1B58ACA101FC5A3AF5131084</string>
+				<string>C32B1F09251824961DA8FE16722FF3FB</string>
+				<string>E8866E83CE892248B1A354CCCFCE3D99</string>
+				<string>F96B1506429EBA4D83321BB7D2478369</string>
+				<string>C9F534B104318DDBB0347945F3949E3D</string>
+				<string>D115EFFB1DEA3EBF33A95E13A0123253</string>
+				<string>F436D3DFBB0BFA35D2C2F61C1C13EF66</string>
+				<string>F85853763111E42091EE3DDBD7D2964A</string>
+				<string>9C85FA7E85845618B4AB0BC4F5D5DB64</string>
+				<string>C1F8D9540FA28B56CD2CBF8EE1C2A91D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-Dogma Debate</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-Dogma Debate</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>52D9AEA274C7994FD44AD645E4A58D9E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BackendlessUser.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/BackendlessUser.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>52F7B5473FA08BB8ED0661DEE4632645</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NSData+OAuthSwift.swift</string>
+			<key>path</key>
+			<string>OAuthSwift/NSData+OAuthSwift.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>53030353977E79F897518670851C6607</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -800,11 +1711,11 @@
 			<key>name</key>
 			<string>version.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavfilter/version.h</string>
+			<string>SDK/lib/libav-11.4/include/libavutil/version.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3ED4543530F741E4675B3B9F46A0846B</key>
+		<key>53320EC448A88DC6CF62DB9CDEE236AA</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -813,13 +1724,40 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>BEMapView.h</string>
+			<string>avfilter.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/BEMapView.h</string>
+			<string>SDK/lib/libav-11.4/include/libavfilter/avfilter.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>420ADC995C5493DF6664A93F4AFAB7AC</key>
+		<key>53C50C8277DD48BD3D6B9A6CAF9B226A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D41E280AF202D3C54B4A5AEABB532495</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>53F80D7BB63E4CD92BF5A2D0A3CE8DCE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>OAuth2Swift.swift</string>
+			<key>path</key>
+			<string>OAuthSwift/OAuth2Swift.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>550C1ED22AB899F3934AD9BFE28DFB5E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -828,275 +1766,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>intreadwrite.h</string>
+			<string>intfloat.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/intreadwrite.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4275EDE72DD06A98B571EE58D8E7ED2B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>IDataStore.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/IDataStore.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4299922302F3CC86F7221764C45119F1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>pixdesc.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/pixdesc.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>43CD6DC7B11132F286FFE4A138F52AAA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MediaService.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/MediaService.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>44788A6D38FFB889223DB16FC91FB71B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>speex_types.h</string>
-			<key>path</key>
-			<string>SDK/lib/speex-1.2rc2/include/speex_types.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46CC6CE9A8D893E984DB7B230591D9E3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GeoFence.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/GeoFence.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>495E4F23DC0655C275F60E966466499E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>speex_callbacks.h</string>
-			<key>path</key>
-			<string>SDK/lib/speex-1.2rc2/include/speex_callbacks.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4992B5751AF3C83550E3FA0F7BD2C0F8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BESubscription.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/BESubscription.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49D89D98D75144F52F4EF8ABEC7F4DEC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>channel_layout.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/channel_layout.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4C3268B436FCE7E5C888C17009CF70BB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Dogma Debate.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4C56FA241AC286F6DAA03650B6F23287</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>avassert.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/avassert.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4ECBA6BBC15A94DAF8F6978780B5A1C5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>stereo3d.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/stereo3d.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4EE10F8C0ECD465F4159F2DB90947BA0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-Dogma Debate-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4F09EE8F1203FC5679E9D6C4C7E66690</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>speex.h</string>
-			<key>path</key>
-			<string>SDK/lib/speex-1.2rc2/include/speex.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>50348BDF5488483238E9507157F06D2D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CacheFactory.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/CacheFactory.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5104D3F04E96CD403FAB9041B20EF236</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>vda.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavcodec/vda.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>52034C92B7176FB22311981D792BA23A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>error.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/error.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5427B5D6C67085417B7778B89A21D517</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>replaygain.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/replaygain.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>547793FB9541CA337AAEA98E84F3AC58</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GeoPoint.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/GeoPoint.h</string>
+			<string>SDK/lib/libav-11.4/include/libavutil/intfloat.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1173,125 +1845,22 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>5559EAE5B1C412001F1D4B1D3397EDAB</key>
+		<key>552E4DBFA885EE0AC1AD4AE293F9940C</key>
 		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
 			<key>includeInIndex</key>
-			<string>1</string>
+			<string>0</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>version.h</string>
+			<string>Pods_Dogma_Debate.framework</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libswscale/version.h</string>
+			<string>Pods_Dogma_Debate.framework</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>56B67AA0280457C3B3B4B38B9CF99B7C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DataStoreFactory.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/DataStoreFactory.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>58B52BE82D846EFB0098EA4CEBC629EC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>x264_config.h</string>
-			<key>path</key>
-			<string>SDK/lib/x264/include/x264_config.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>59622AF64DEFA3F522A6D697CABB91A6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MessageStatus.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/MessageStatus.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5970A280A78694B4DA229F62E054ABCD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>attributes.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/attributes.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5A12D3E6E3F08F755F2A6400F6260794</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BECollectionView.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/BECollectionView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5B8BC249FBB2F398CF08AF790F67C3E2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Dogma Debate-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5B970400111801CA0D88A3AEB69BBDA0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>lfg.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/lfg.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5C180EF6B5DEB271CE9924A4C74C1694</key>
+		<key>55353373446CEA2CF03B3C19AC3B3620</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1306,764 +1875,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5FF7677730C8985CDF12861367275219</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>parseutils.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/parseutils.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6072B1690EA56924E53123BFD641DEF2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>IAttributeStore.h</string>
-			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/IAttributeStore.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>631F5AF9FF432013782F8A2D779B2501</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C757E9D9D686DE2C03F65BD696EF448B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>EDE8F59B21805E452EEBF300991BCD45</string>
-				<string>C97532E11DE6A437A5DEDC2AE32D4FBB</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Dogma Debate</string>
-			<key>productName</key>
-			<string>Pods-Dogma Debate</string>
-			<key>productReference</key>
-			<string>37ADAB906407219F8ACF92111703685D</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>63B37DD6CD8B843176D13A57A99EAE3A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>avcodec.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavcodec/avcodec.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>64027BAA4E0AE520A9207CFFFF2D8FF6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>frame.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/frame.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>683969A665AE643F7C86EF5F07D2E5F2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BackendlessCollection.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/BackendlessCollection.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6BBE898B600AEF94A4D346A0F173A3B4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Types.h</string>
-			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/Types.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6C27C7C1300282308502F054F4F2C645</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BackendlessCachePolicy.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/BackendlessCachePolicy.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6C775FD1079CF3609EA8447E6DB688B0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>avfft.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavcodec/avfft.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6C92EAE88972D41507B1CDC8B98F50BB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BEFileInfo.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/BEFileInfo.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6CF2FEC3EA1B50F6D2E82D0A2A103CF1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>adler32.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/adler32.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6DD76C869D715758B5548F34F2036BF7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>WeborbClient.h</string>
-			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/WeborbClient.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E90EC4ADF93069870F65BB46138E747</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Events.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/Events.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6FDF4CDA33326DD4FC709830520DA1AB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>dxva2.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavcodec/dxva2.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>70F2C2E5E9E1143E807137A1B271183C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ICacheService.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/ICacheService.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7575753A72FA2C6EA0E3F8BB3FC52C79</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Logger.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/Logger.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>77E5B38DEF53ECF5F4B486E9527611C5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>opt.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/opt.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79561331847C160C03E793054BC4F603</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>blowfish.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/blowfish.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7B7F5BEA62DA4C7F3B40BCDA0C6B988F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MediaPublishOptions.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/MediaPublishOptions.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7D864C03152281BB11EFD07AB7B32A99</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PublishOptions.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/PublishOptions.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>DD918748DC76FE64BFD6896C54291FF4</string>
-				<string>3A280C7A7A2E77F96154BFD66C10A238</string>
-				<string>CB237BD6DA07A6C7C8300E7612CF61CC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7F26BEF9F519EEB01F0334D4326266B4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>IPresenceListener.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/IPresenceListener.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>825224D18537EFE5C83169A47F7D8A3D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UserProperty.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/UserProperty.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>831F5F385C2E553B1726D30BCC88EADB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>IServiceCall.h</string>
-			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/IServiceCall.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>85A698AFAFBEA0F79D4A11E21B65E793</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>IMediaStreamer.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/IMediaStreamer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8B7A2997CBCE0EDD54798D32E7316435</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ICallback.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/ICallback.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8C4503AA596A43451377E230B939A7EB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>avio.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavformat/avio.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8C8B93FEEC89B21A5C0B41C40BC39B21</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>fifo.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/fifo.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8CE2DFF70F1B9690899292CDA175C414</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>dict.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/dict.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8F9BDE50371B897211FC728AAC99B606</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BackendlessCacheProtocol.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/BackendlessCacheProtocol.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8FBA78C0C7E859404590FBB6E97F943D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FlashorbBinaryReader.h</string>
-			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/FlashorbBinaryReader.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>912075D75E0214A389E8D1093CA5CC8D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>IRTMProtocol.h</string>
-			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/IRTMProtocol.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>959E2D9AB7DA1555D48AA08B2F858205</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>RTMPClient.h</string>
-			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/RTMPClient.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9691D5BAEE78BC015EAD7811C885A6A8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BackendlessDataQuery.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/BackendlessDataQuery.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>987B6B04C26080C7BF08DE0BC528462A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FileService.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/FileService.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>99FB3F9DE37D27026C8A4E85584C1688</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>display.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/display.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A2D05831BB534169B227A28BB1A6D92</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BinaryCodec.h</string>
-			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/BinaryCodec.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9D68DE930284F586C2869812660A9EB1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>LocationTracker.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/LocationTracker.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9F5B9A39E63153F9F434B90931063791</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ISharedObjectListener.h</string>
-			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/ISharedObjectListener.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9FBFE356ABDCF790902D69B2355B5A5E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Dogma Debate.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A024D34AAA6719194E4657DA27E99FF9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPMediaData.h</string>
-			<key>path</key>
-			<string>SDK/lib/MediaLibiOS3x/include/MPMediaData.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A06AEBAA625A8180EE1722B92CC064C2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>rational.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/rational.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A17FFEFDE69E7E31CE3985543BFA5434</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BroadcastStreamClient.h</string>
-			<key>path</key>
-			<string>SDK/lib/MediaLibiOS3x/include/BroadcastStreamClient.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A1DE8BEAE76E68CD87FAA26D05588558</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>xtea.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/xtea.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A4A6DDE1DC23F148DA326FF34AFF2B1A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BEAnnotation.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/BEAnnotation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A6AFBCE694CA5EC15A9E3A9C6EDA17BF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>speex_bits.h</string>
-			<key>path</key>
-			<string>SDK/lib/speex-1.2rc2/include/speex_bits.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A899BC5ED80D60ECBDF347078E51DB3D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DataPermission.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/DataPermission.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AC8C22DA3BADA1915671AC2B5C3D536E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>old_pix_fmts.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/old_pix_fmts.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AFD75306D916CC28C8815B3D0BFFA85D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>macros.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/macros.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B20230FA7F363EBBB1F5CC8BF5F83443</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MediaStreamPlayer.h</string>
-			<key>path</key>
-			<string>SDK/lib/MediaLibiOS3x/include/MediaStreamPlayer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B293F29E99F54F3DB640B235E497F3F4</key>
+		<key>55543A705777C0F5403B322AA5C128BE</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2078,7 +1890,706 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B5CB7A90D7149D634D52FABF0311C641</key>
+		<key>55746C74B2876C8F287E51FB2C6E32AD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MediaService.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/MediaService.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>55FF044691010FC7932E4306FAC10FE2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>DataStoreFactory.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/DataStoreFactory.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5A272EB5038586DF7A8922E78917936E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F85853763111E42091EE3DDBD7D2964A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5AD0F6AD40A4D658AD87EA4D61FEDE12</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>OAuthSwiftCredential.swift</string>
+			<key>path</key>
+			<string>OAuthSwift/OAuthSwiftCredential.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5BF651BF2C36AABC6030A3727D484136</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avconfig.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/avconfig.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5C4165374BE5E143069D6544B2EB23C8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>UIApplication+OAuthSwift.swift</string>
+			<key>path</key>
+			<string>OAuthSwift/UIApplication+OAuthSwift.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5C6F610A1F9CB7F7541608111D8A1A01</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>vaapi.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavcodec/vaapi.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5CCD4C096567D4870589600725CE680C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5D7288A403E17C4A4FBF3618D0BD33BC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>xtea.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/xtea.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5E4FE607D2708C63918E57CA727B5FE5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BESubscription.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/BESubscription.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5F92930FBCD46280242F15395727F4DA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BinaryStream.h</string>
+			<key>path</key>
+			<string>SDK/lib/CommLibiOS/include/BinaryStream.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>605DA560C2D69698B1BA8DF3C5FF74C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>52F7B5473FA08BB8ED0661DEE4632645</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>60D13B1A2495BADDB12FE26EF2D2415E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>OAuthSwift</string>
+			<key>target</key>
+			<string>45935B91DF0442390E2CA6DEEF68AE99</string>
+			<key>targetProxy</key>
+			<string>E920569803527AF1BE08E856BCC7EA61</string>
+		</dict>
+		<key>62A696571C345F0D55C9D3A9390B436C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UserProperty.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/UserProperty.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65B7EC5CF85D76C7E35447E9A418073A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FlashorbBinaryReader.h</string>
+			<key>path</key>
+			<string>SDK/lib/CommLibiOS/include/FlashorbBinaryReader.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65C945B9F8F7427F83E2AD2F43DF0BC5</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D872BF42F5951328B05711109D7A3259</string>
+				<string>C32D568FF3D92001BD18599BDD8DA1B1</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>65E7E6D4DCDC8E2B62BFA8607BB0FE82</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>speex_types.h</string>
+			<key>path</key>
+			<string>SDK/lib/speex-1.2rc2/include/speex_types.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>66C0A4D915FA50ADB5CF231FD5C5040F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>DataPermission.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/DataPermission.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>66D5F4B978226E27A4D075926DF5CE07</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>514657DE649EE1E9ECB564E58D72A671</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68550DF4861C3673A2083F570609F1AE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>frame.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/frame.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6975A7629D4A2C5DA955FDE441D2372A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AMFSerializer.h</string>
+			<key>path</key>
+			<string>SDK/lib/CommLibiOS/include/AMFSerializer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6AD7F5F5FE1F93786CBE3C6025357620</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BETableView.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/BETableView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF85B8A64C960E219224ED27523458F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>speex_header.h</string>
+			<key>path</key>
+			<string>SDK/lib/speex-1.2rc2/include/speex_header.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>713C1DCFC34A618E6CFA0CECE458255A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IServiceCall.h</string>
+			<key>path</key>
+			<string>SDK/lib/CommLibiOS/include/IServiceCall.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>732B0FF7DB524D772DFC78E9E327D5A7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ICallback.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/ICallback.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74448A70119CEDE56C5AA5A37265E764</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>GeoCategory.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/GeoCategory.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>744B7E3C0F6452514166F6D08D3F67FC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>cpu.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/cpu.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>761E1439A8CD8909019038085D86BA2A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>hmac.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/hmac.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76B9C665759FD8906D1E5AB77C7EEE45</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RTMPClient.h</string>
+			<key>path</key>
+			<string>SDK/lib/CommLibiOS/include/RTMPClient.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>77399E4566C45F617708F2D406020478</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>HMAC.swift</string>
+			<key>path</key>
+			<string>OAuthSwift/HMAC.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>785DDB0B297F8708A8654E485BE58AD0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>version.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavcodec/version.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A2706237CA0652D1CDAA9449F6DF22F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>version.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavformat/version.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7B6FC608D01ADF7FE8FA1D690C0A7120</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5CCD4C096567D4870589600725CE680C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>3D6AC7BE7AC39003684B4AA5FECF40A9</string>
+				<string>C30322528D2B5E0A8266149BEC35324C</string>
+				<string>66D5F4B978226E27A4D075926DF5CE07</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8347B4DF59FC5B188430E56C185F2364</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D7132486A4A75E6F8AD5525C55692E9B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>85E8D739830AC6F6E98D7B43A2932099</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A618FE47A98897EDF841027F10BDD9E7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>866447C6E4196112B8D0FD4225E5791D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>display.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/display.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8680714BC15BCCF85557C98C3ABDA784</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>bswap.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/bswap.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>86EA9AC1E81F2F98B88E3DCDAE9BE145</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MediaPublisher.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/MediaPublisher.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>871DEEBCCD0B2F702C162DF9F6AD1F30</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AD0F6AD40A4D658AD87EA4D61FEDE12</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>89D96B199FE017AC9A494BE79271559F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>dv_profile.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavcodec/dv_profile.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8B35810EE7D79FFD9CCC9DB03546A9E6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>OAuth1Swift.swift</string>
+			<key>path</key>
+			<string>OAuthSwift/OAuth1Swift.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8B69C75C164490F86FA13154C0C15E73</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ObjectProperty.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/ObjectProperty.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8B92A65DFD91984F367115FBC836FA3F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>OAuthSwift.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8BCDB1BDE10193B9DF854BE095854E15</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>147F9FBE94002C01DED269B60AD2BD24</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8C519C7B6552F75013675A4B21E9049F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avio.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavformat/avio.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8E236C37ABB1A7C428C88B823C1180D2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SubscriptionOptions.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/SubscriptionOptions.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93ADBFC73F235161B8591DFB1AEC102B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>file.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/file.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9418BD8B02E433F6DAA8AA333FA9BAF7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>94C58FED5AD2A426DB626BC9B72CB0BF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2093,7 +2604,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B6CB7DB404B6BFD8E8A7E24E6C05587C</key>
+		<key>993A24500CBE3FE88A73D27B51495599</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2102,13 +2613,98 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>IClientSharedObject.h</string>
+			<string>BackendlessEntity.h</string>
 			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/IClientSharedObject.h</string>
+			<string>SDK/lib/backendless/include/BackendlessEntity.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B702555DBDAEDE09D9D193218FE682A7</key>
+		<key>9972EDEBC42C5833C4E60C7729B9323B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>vdpau.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavcodec/vdpau.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C85FA7E85845618B4AB0BC4F5D5DB64</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Dogma Debate.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9CBDE431AC1D13694A1C755E499E10E7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avassert.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/avassert.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E38D092099A372DFD75858AE4DCF7B1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BodyParts.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/BodyParts.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9FC4035518AD4841D40A2A59511E7555</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>samplefmt.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/samplefmt.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A1A522460FB8F634AEA3F48F9C0FC7D4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>33182B65F18D1C24C3B39BCB56889386</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>A2A98C3718167BCFA463C61A6C173299</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2119,11 +2715,24 @@
 			<key>name</key>
 			<string>version.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavdevice/version.h</string>
+			<string>SDK/lib/libav-11.4/include/libswscale/version.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B75FD267AA4E4E8539E6CC4C4867B6D4</key>
+		<key>A3EDA5CC1B58ACA101FC5A3AF5131084</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A448FE124B0BFB478BA8DBC0E9D620A3</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2132,9 +2741,330 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>bswap.h</string>
+			<string>IRTMProtocol.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/bswap.h</string>
+			<string>SDK/lib/CommLibiOS/include/IRTMProtocol.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A56896712A62F3260EEF06EAE955367E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>xvmc.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavcodec/xvmc.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A618FE47A98897EDF841027F10BDD9E7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>String+OAuthSwift.swift</string>
+			<key>path</key>
+			<string>OAuthSwift/String+OAuthSwift.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A6CAC8DF9C33C6BDEBB8EB08E0487CF1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>macros.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/macros.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A6D6E860834A2DD34E6A0003C2741F70</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ISharedObjectListener.h</string>
+			<key>path</key>
+			<string>SDK/lib/CommLibiOS/include/ISharedObjectListener.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8E32D941D75EC298C7E256A3C6D31D4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BD2C74D2A7EFCAC1BFB43CBD9040E543</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>A972F072AE0487FC7C5135B086C51F7D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C23BBBECDCABF6EEBE43D8914E2A8B31</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>AB756329AAA3CDB1446BF5C63E5D51A5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Responder.h</string>
+			<key>path</key>
+			<string>SDK/lib/CommLibiOS/include/Responder.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ABF3DB641C8F254CAC1DEF281FE18783</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MPMediaData.h</string>
+			<key>path</key>
+			<string>SDK/lib/MediaLibiOS3x/include/MPMediaData.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD54DA8D6AE3314BB6302094C7A496E8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>fifo.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/fifo.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AEABB4CC46AFFB783DBF3FEFE9ED6DC7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>adler32.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/adler32.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AEE41441DA2F186ACBE64BF55BD55160</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PublishOptions.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/PublishOptions.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AFC1AE155C39423582DB5F8F492B4C4E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>avstring.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/avstring.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B34BBDBBA5577DEAB2F973B1CC7E2FD1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>050A59E933F33F84E0F9D1ACEA5DC14D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>B3870BC07A850E97F2DE149288639132</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>stereo3d.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/stereo3d.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B633EA41322A6125ACA18A0452DA24A0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Logger.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/Logger.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B637230E19C5D2791AED8B32C83CBC86</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IAttributeStore.h</string>
+			<key>path</key>
+			<string>SDK/lib/CommLibiOS/include/IAttributeStore.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B6AF076A64D19A2DC3C1B62D227A1207</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UserService.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/UserService.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B743E568E79E9642A6C62359C4A64B62</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BackendlessCacheProtocol.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/BackendlessCacheProtocol.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B81E2C160F27809AF4F1C8C46ADCCDD9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>dict.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/dict.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B9594727F2B2C0499EC509D33AD31F86</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FileService.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/FileService.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B980B3503F48DBC7BA91B8C5A300FE61</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Message.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/Message.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B9E053919E6CEF79D7E759C7C1B50ADF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>base64.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/base64.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2155,37 +3085,47 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>BB3E37ADE835393E49270CEC8A4E2C7C</key>
+		<key>BACCDA5EE6ED311392FFD3263F023D9D</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>4C3268B436FCE7E5C888C17009CF70BB</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Debug</string>
+			<string>MemoryTicker.h</string>
+			<key>path</key>
+			<string>SDK/lib/CommLibiOS/include/MemoryTicker.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BAD219136EE452372042200CF017D805</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CacheFactory.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/CacheFactory.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BC3B56D2ACA3877977DC9B7A85E9F214</key>
+		<dict>
+			<key>fileRef</key>
+			<string>77399E4566C45F617708F2D406020478</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
 		</dict>
 		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
 		<dict>
@@ -2200,22 +3140,22 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BD02B2704F3D7DD272877AC7F0A06C83</key>
+		<key>BD2C74D2A7EFCAC1BFB43CBD9040E543</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>VideoPlayer.h</string>
+			<string>Int+OAuthSwift.swift</string>
 			<key>path</key>
-			<string>SDK/lib/MediaLibiOS3x/include/VideoPlayer.h</string>
+			<string>OAuthSwift/Int+OAuthSwift.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BE9B0748388122D8160F421555C6418F</key>
+		<key>BD49435DB149B84284CE62D5912CFFA4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2224,9 +3164,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>PersistenceService.h</string>
+			<string>BroadcastStreamClient.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/PersistenceService.h</string>
+			<string>SDK/lib/MediaLibiOS3x/include/BroadcastStreamClient.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2243,7 +3183,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BF7D2F0DB385CCE68033B9219E918344</key>
+		<key>C054A5C338454CD9A1CDCF0C8B050CEE</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2252,13 +3192,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>imgutils.h</string>
+			<string>channel_layout.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/imgutils.h</string>
+			<string>SDK/lib/libav-11.4/include/libavutil/channel_layout.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C065D4F255E926E9DD4E69E24303D7C6</key>
+		<key>C05BC2AA272F37931A86939827315DCA</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2267,13 +3207,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>FilePermission.h</string>
+			<string>speex_callbacks.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/FilePermission.h</string>
+			<string>SDK/lib/speex-1.2rc2/include/speex_callbacks.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C2126087D92068D037F4A21321E6E20F</key>
+		<key>C13E2FB28E851E0B87DDF2D583B7815A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2282,13 +3222,55 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>IPersistable.h</string>
+			<string>vda.h</string>
 			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/IPersistable.h</string>
+			<string>SDK/lib/libav-11.4/include/libavcodec/vda.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C294283752A65C5992BF5807D80CE6CE</key>
+		<key>C1F8D9540FA28B56CD2CBF8EE1C2A91D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Dogma Debate.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C23BBBECDCABF6EEBE43D8914E2A8B31</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>OAuthWebViewController.swift</string>
+			<key>path</key>
+			<string>OAuthSwift/OAuthWebViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C30322528D2B5E0A8266149BEC35324C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4EDAFED9969FA5DCD07F4BB5FFCEE05A</string>
+				<string>552E4DBFA885EE0AC1AD4AE293F9940C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C32976AB9B0AFDE2A6025877E6C89616</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2297,75 +3279,80 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>GeoService.h</string>
+			<string>buffer.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/GeoService.h</string>
+			<string>SDK/lib/libav-11.4/include/libavutil/buffer.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C30E109B264FA1ED63783B2786B3FC79</key>
+		<key>C32B1F09251824961DA8FE16722FF3FB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Message.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/Message.h</string>
+			<string>Pods-Dogma Debate.modulemap</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C35EEF55E1A9C690FC6747E3456C7CB9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>mathematics.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/mathematics.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3D939BC7A809049ED5582CCB6A5E65E</key>
+		<key>C32D568FF3D92001BD18599BDD8DA1B1</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>9FBFE356ABDCF790902D69B2355B5A5E</string>
+			<string>8B92A65DFD91984F367115FBC836FA3F</string>
 			<key>buildSettings</key>
 			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
 				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/OAuthSwift/OAuthSwift-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/OAuthSwift/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
 				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
 				<string>8.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/OAuthSwift/OAuthSwift.modulemap</string>
 				<key>MTL_ENABLE_DEBUG_INFO</key>
 				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
 				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
+				<string>OAuthSwift</string>
 				<key>SDKROOT</key>
 				<string>iphoneos</string>
 				<key>SKIP_INSTALL</key>
 				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
 			</dict>
 			<key>isa</key>
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>C3E5DE6069C0C568B0AB103C3966B78B</key>
+		<key>C668888C682DC5926518F89F4488687A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2374,13 +3361,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>DEBUG.h</string>
+			<string>version.h</string>
 			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/DEBUG.h</string>
+			<string>SDK/lib/libav-11.4/include/libavdevice/version.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C45DDB258DCA2448AC17023C20C725A0</key>
+		<key>C6BE3B052A507200066B0BF390517439</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2389,198 +3376,28 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AbstractQuery.h</string>
+			<string>pixdesc.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/AbstractQuery.h</string>
+			<string>SDK/lib/libav-11.4/include/libavutil/pixdesc.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C508BA83D994719A1C5F1B19BE1B788C</key>
+		<key>C73E7B265F27C21DED21F04DADA63B9E</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>3A5C9BF75FB248FD69413A3B0DD7DDCC</string>
-				<string>C45DDB258DCA2448AC17023C20C725A0</string>
-				<string>6CF2FEC3EA1B50F6D2E82D0A2A103CF1</string>
-				<string>0A6D0202B97D3B251566A31B4A3E0E68</string>
-				<string>077709BBF365180B93CE2546960259B8</string>
-				<string>32DE8BBC83884E6B05D7573402E95E90</string>
-				<string>E7AC42C650A4315AAF58248215A888F3</string>
-				<string>5970A280A78694B4DA229F62E054ABCD</string>
-				<string>2FE8FB0B2E28369821294551CC639220</string>
-				<string>13450C38CE2DCCD4B002F2614640D52F</string>
-				<string>4C56FA241AC286F6DAA03650B6F23287</string>
-				<string>63B37DD6CD8B843176D13A57A99EAE3A</string>
-				<string>379164BE43C8E2BE0C67F7F724597709</string>
-				<string>3E76A962C864AABE9639E7FC76E4C8B9</string>
-				<string>6C775FD1079CF3609EA8447E6DB688B0</string>
-				<string>0FC6995A7BABE32886572CEACFF3F4C4</string>
-				<string>E93A0A684AFAAA4F09BD9C1B1765BD3A</string>
-				<string>25D40BF03AC8BD506D1DB9854021CC5A</string>
-				<string>8C4503AA596A43451377E230B939A7EB</string>
-				<string>21992603F4AECC366A0D8C720F5C16CE</string>
-				<string>E1BDD481795E5BE76A83FA98EBBF27D2</string>
-				<string>1E943CFA07A51BAF3F6C290B1BFD0F5C</string>
-				<string>26B0CEF6EC31D1DECCCC37B14B9DAAA4</string>
-				<string>D510DB5B3CAE22619B24063C088F95F4</string>
-				<string>F212D156C9F90CF86276AC5B6A75366F</string>
-				<string>CAA301EEA08C653B87D2F0D10B92436A</string>
-				<string>6C27C7C1300282308502F054F4F2C645</string>
-				<string>8F9BDE50371B897211FC728AAC99B606</string>
-				<string>683969A665AE643F7C86EF5F07D2E5F2</string>
-				<string>9691D5BAEE78BC015EAD7811C885A6A8</string>
-				<string>DCC44FEEF6F15E01C5CB29B559DA73DA</string>
-				<string>EB0997088F14371A451D1DFCD9FBE0BA</string>
-				<string>2102691A23310512D6C698676343B268</string>
-				<string>DA92A886FF2AAC5E13936C4FB6A6B1AA</string>
-				<string>E7B1A8871BDAAB7AA798239471B72B98</string>
-				<string>FF55D75382CBF48DDD2BA7DC25EDA27C</string>
-				<string>A4A6DDE1DC23F148DA326FF34AFF2B1A</string>
-				<string>5A12D3E6E3F08F755F2A6400F6260794</string>
-				<string>6C92EAE88972D41507B1CDC8B98F50BB</string>
-				<string>3ED4543530F741E4675B3B9F46A0846B</string>
-				<string>4992B5751AF3C83550E3FA0F7BD2C0F8</string>
-				<string>3D10E5159ECFF9F08D0E75DC3A22DEF2</string>
-				<string>9A2D05831BB534169B227A28BB1A6D92</string>
-				<string>D282511003E90D2A105A746B24215541</string>
-				<string>79561331847C160C03E793054BC4F603</string>
-				<string>03E9D400F387BD3793A8B6AA1DC6B441</string>
-				<string>A17FFEFDE69E7E31CE3985543BFA5434</string>
-				<string>B75FD267AA4E4E8539E6CC4C4867B6D4</string>
-				<string>F77ECD6FAC21B08B985A1EC477984859</string>
-				<string>2CCD3B016D47032E9C7FECC5A9BFBD71</string>
-				<string>33381C2FE2D7F729977B8D59D8497D15</string>
-				<string>50348BDF5488483238E9507157F06D2D</string>
-				<string>B293F29E99F54F3DB640B235E497F3F4</string>
-				<string>49D89D98D75144F52F4EF8ABEC7F4DEC</string>
-				<string>E5A51DF05EC900D0D4E51A98DAA63DFE</string>
-				<string>D40FCD996DD22409772AA784F59D4447</string>
-				<string>D795F7FD12D48EF39EDC958AD8AEFABA</string>
-				<string>C609AE63985B06A4CA963A5934578162</string>
-				<string>A899BC5ED80D60ECBDF347078E51DB3D</string>
-				<string>56B67AA0280457C3B3B4B38B9CF99B7C</string>
-				<string>C3E5DE6069C0C568B0AB103C3966B78B</string>
-				<string>F456F434913784F48702DE9B667ACA70</string>
-				<string>2A430C92A8C9FDBD78D12DAF1C99D97C</string>
-				<string>8CE2DFF70F1B9690899292CDA175C414</string>
-				<string>99FB3F9DE37D27026C8A4E85584C1688</string>
-				<string>3E132A0EE2F097873F24596410138C53</string>
-				<string>0A9A2C25BCBD7DEDE91EB25C91B50CB5</string>
-				<string>6FDF4CDA33326DD4FC709830520DA1AB</string>
-				<string>52034C92B7176FB22311981D792BA23A</string>
-				<string>C6EAFAD577712CFA14348B9428650D0D</string>
-				<string>6E90EC4ADF93069870F65BB46138E747</string>
-				<string>8C8B93FEEC89B21A5C0B41C40BC39B21</string>
-				<string>37F1E5DA61653E4BDA9231AF69B74C86</string>
-				<string>C065D4F255E926E9DD4E69E24303D7C6</string>
-				<string>987B6B04C26080C7BF08DE0BC528462A</string>
-				<string>8FBA78C0C7E859404590FBB6E97F943D</string>
-				<string>EE0C07A5B165357301724B1358E8BA06</string>
-				<string>64027BAA4E0AE520A9207CFFFF2D8FF6</string>
-				<string>F4999729958D1FA2144768B311A02F36</string>
-				<string>15016EF7BD3D9263C675985D8D1502D1</string>
-				<string>46CC6CE9A8D893E984DB7B230591D9E3</string>
-				<string>547793FB9541CA337AAEA98E84F3AC58</string>
-				<string>C294283752A65C5992BF5807D80CE6CE</string>
-				<string>235A51AF73BAC7D3E82CD4753DCEB65E</string>
-				<string>EFB19B94E729BDF45D12B28FAF7B53B5</string>
-				<string>D6A874D40B6188716A05CBDDAA7FA48B</string>
-				<string>6072B1690EA56924E53123BFD641DEF2</string>
-				<string>70F2C2E5E9E1143E807137A1B271183C</string>
-				<string>8B7A2997CBCE0EDD54798D32E7316435</string>
-				<string>B6CB7DB404B6BFD8E8A7E24E6C05587C</string>
-				<string>D499267F777A1D425EB435B005CD0E65</string>
-				<string>4275EDE72DD06A98B571EE58D8E7ED2B</string>
-				<string>85A698AFAFBEA0F79D4A11E21B65E793</string>
-				<string>BF7D2F0DB385CCE68033B9219E918344</string>
-				<string>E25B3AD42F262CB3018C1E2F149007DA</string>
-				<string>420ADC995C5493DF6664A93F4AFAB7AC</string>
-				<string>B5CB7A90D7149D634D52FABF0311C641</string>
-				<string>C2126087D92068D037F4A21321E6E20F</string>
-				<string>7F26BEF9F519EEB01F0334D4326266B4</string>
-				<string>912075D75E0214A389E8D1093CA5CC8D</string>
-				<string>831F5F385C2E553B1726D30BCC88EADB</string>
-				<string>9F5B9A39E63153F9F434B90931063791</string>
-				<string>5B970400111801CA0D88A3AEB69BBDA0</string>
-				<string>9D68DE930284F586C2869812660A9EB1</string>
-				<string>2DFC8E50559F45A37A802BE6223CE495</string>
-				<string>7575753A72FA2C6EA0E3F8BB3FC52C79</string>
-				<string>F5637033A0983603EF1C7AC0C51C932C</string>
-				<string>AFD75306D916CC28C8815B3D0BFFA85D</string>
-				<string>C35EEF55E1A9C690FC6747E3456C7CB9</string>
-				<string>1672011877E416152E0F45078CEADACF</string>
-				<string>D218669F9F327BB4B40217BF48CC64D6</string>
-				<string>066FF63E8F68CF39F47827180817D845</string>
-				<string>2A097F938279DE701DA9156BAA42DE66</string>
-				<string>7B7F5BEA62DA4C7F3B40BCDA0C6B988F</string>
-				<string>43CD6DC7B11132F286FFE4A138F52AAA</string>
-				<string>B20230FA7F363EBBB1F5CC8BF5F83443</string>
-				<string>DEADEE78F54CD75753054DEE2126028B</string>
-				<string>19BAE11D9DB548151CB936A84A893C6B</string>
-				<string>C30E109B264FA1ED63783B2786B3FC79</string>
-				<string>59622AF64DEFA3F522A6D697CABB91A6</string>
-				<string>C8FE7E21BA5268805677638CE0C8C52F</string>
-				<string>A024D34AAA6719194E4657DA27E99FF9</string>
-				<string>31883C4326F6FCBB73AB82E0E3F72C61</string>
-				<string>18C5E4725A3B13DA798B0A246791C904</string>
-				<string>2333E4C1C8175215A8D3268C016A453A</string>
-				<string>AC8C22DA3BADA1915671AC2B5C3D536E</string>
-				<string>77E5B38DEF53ECF5F4B486E9527611C5</string>
-				<string>5FF7677730C8985CDF12861367275219</string>
-				<string>BE9B0748388122D8160F421555C6418F</string>
-				<string>4299922302F3CC86F7221764C45119F1</string>
-				<string>F77C08158BE988EC065B5E0B63B187C2</string>
-				<string>36F0121DDABD20A3D732A479B9F1FFF1</string>
-				<string>1815868FB19BB3DE13B8FA96584B185A</string>
-				<string>7D864C03152281BB11EFD07AB7B32A99</string>
-				<string>EBBA1ABFBE76D639209BDC215B6B1B1B</string>
-				<string>EA8C8905249BDFA2C8BC68A39E6E61F7</string>
-				<string>A06AEBAA625A8180EE1722B92CC064C2</string>
-				<string>5427B5D6C67085417B7778B89A21D517</string>
-				<string>D90DF02B768601A221062481E39166D2</string>
-				<string>959E2D9AB7DA1555D48AA08B2F858205</string>
-				<string>F3236476DE311A43054AE703CE38F5CC</string>
-				<string>07CAD63078D601BD365A1930C57E7362</string>
-				<string>4F09EE8F1203FC5679E9D6C4C7E66690</string>
-				<string>A6AFBCE694CA5EC15A9E3A9C6EDA17BF</string>
-				<string>495E4F23DC0655C275F60E966466499E</string>
-				<string>34B25A5E1B0BE89F2C772F8B9DF3E245</string>
-				<string>07ED392BB7153B00D07736F9CC3A21C2</string>
-				<string>37AF6BC3BDE8A08E044D638B4D000E43</string>
-				<string>44788A6D38FFB889223DB16FC91FB71B</string>
-				<string>4ECBA6BBC15A94DAF8F6978780B5A1C5</string>
-				<string>FD54A3ED5F4CDB54FD4C6BED1B07EC3B</string>
-				<string>F6EBCC7C73E3E997FF2D997CCAEA953B</string>
-				<string>6BBE898B600AEF94A4D346A0F173A3B4</string>
-				<string>825224D18537EFE5C83169A47F7D8A3D</string>
-				<string>CD0BB699D422CFCB499EAC7706ADCC0F</string>
-				<string>2EED590C4D773D230D4F90B2434B3C8D</string>
-				<string>5104D3F04E96CD403FAB9041B20EF236</string>
-				<string>186CD40F8332A3C2C6A7580AC0DDD828</string>
-				<string>16DB6B6E9E7E5F45638410B67668DA20</string>
-				<string>5559EAE5B1C412001F1D4B1D3397EDAB</string>
-				<string>B702555DBDAEDE09D9D193218FE682A7</string>
-				<string>2CB9645BBEA39F58FB3855EB6D5B7E3F</string>
-				<string>C77DC3154C4E59709BDFDD4871E31D25</string>
-				<string>F38BED1B24E0E19EB305731FD38D484F</string>
-				<string>3E9DEDAC1A02A7B8774454A3A940EC0C</string>
-				<string>BD02B2704F3D7DD272877AC7F0A06C83</string>
-				<string>6DD76C869D715758B5548F34F2036BF7</string>
-				<string>5C180EF6B5DEB271CE9924A4C74C1694</string>
-				<string>58B52BE82D846EFB0098EA4CEBC629EC</string>
-				<string>A1DE8BEAE76E68CD87FAA26D05588558</string>
-				<string>EF6D2FEAE98AC6B99F4A8C0F5146BF78</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Backendless-ios-SDK</string>
+			<string>MPMediaEncoder.h</string>
 			<key>path</key>
-			<string>Backendless-ios-SDK</string>
+			<string>SDK/lib/MediaLibiOS3x/include/MPMediaEncoder.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C609AE63985B06A4CA963A5934578162</key>
+		<key>C89251C577BB13CB74888629C2D501ED</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2595,7 +3412,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C6EAFAD577712CFA14348B9428650D0D</key>
+		<key>C8C0FC27827B15612ADE38C48E54B717</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2604,27 +3421,28 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>eval.h</string>
+			<string>GeoPoint.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/eval.h</string>
+			<string>SDK/lib/backendless/include/GeoPoint.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C757E9D9D686DE2C03F65BD696EF448B</key>
+		<key>C9591044DB2184285747C711CEABDDC9</key>
 		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>BB3E37ADE835393E49270CEC8A4E2C7C</string>
-				<string>C3D939BC7A809049ED5582CCB6A5E65E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>XCConfigurationList</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>NSURL+OAuthSwift.swift</string>
+			<key>path</key>
+			<string>OAuthSwift/NSURL+OAuthSwift.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C77DC3154C4E59709BDFDD4871E31D25</key>
+		<key>C9BA48703A2AA07557B5D8A0A3C225DB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2633,41 +3451,39 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>version.h</string>
+			<string>VideoPlayer.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/version.h</string>
+			<string>SDK/lib/MediaLibiOS3x/include/VideoPlayer.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C8FE7E21BA5268805677638CE0C8C52F</key>
+		<key>C9F534B104318DDBB0347945F3949E3D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MessagingService.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/MessagingService.h</string>
+			<string>Pods-Dogma Debate-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C97532E11DE6A437A5DEDC2AE32D4FBB</key>
+		<key>CAA86AA61623E8A031EF116168ABC29E</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>EA9E59507408CE73A7E302C2B12E1F1A</string>
+				<string>E39651703AAA739BB326DE4997453E37</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>CAA301EEA08C653B87D2F0D10B92436A</key>
+		<key>CB3C63D19151784A14D05653C8113165</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2676,26 +3492,57 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>BackendlessBeacon.h</string>
+			<string>lfg.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/BackendlessBeacon.h</string>
+			<string>SDK/lib/libav-11.4/include/libavutil/lfg.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>CB237BD6DA07A6C7C8300E7612CF61CC</key>
+		<key>CB51AB19914745F2250D9DB0D5C3C806</key>
 		<dict>
-			<key>children</key>
+			<key>fileRef</key>
+			<string>5C4165374BE5E143069D6544B2EB23C8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>CB9CACE5B69239D17009AECF0310C585</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>FC61097ED8B6474897E8CBD3B7B04E06</string>
+				<string>8347B4DF59FC5B188430E56C185F2364</string>
+				<string>BC3B56D2ACA3877977DC9B7A85E9F214</string>
+				<string>A8E32D941D75EC298C7E256A3C6D31D4</string>
+				<string>605DA560C2D69698B1BA8DF3C5FF74C2</string>
+				<string>A1A522460FB8F634AEA3F48F9C0FC7D4</string>
+				<string>E25FA70C34718EADF86156088FDB44B9</string>
+				<string>2FB79A55DE2E9F7ABB3B4C7871CD0C5B</string>
+				<string>1C12F2E4F1172545BB500BE11DC82D2C</string>
+				<string>F61EBE50A04A7BDA0A9DD179F193012B</string>
+				<string>53C50C8277DD48BD3D6B9A6CAF9B226A</string>
+				<string>096FB1973BA9EC2D4C1D8DF698133F1D</string>
+				<string>871DEEBCCD0B2F702C162DF9F6AD1F30</string>
+				<string>291FE1D4F4658AE8249A7AA798367A07</string>
+				<string>D40315620E9D700DC73323A8CED6612F</string>
+				<string>0691210EC4FFD58AE2E28EC918813988</string>
+				<string>A972F072AE0487FC7C5135B086C51F7D</string>
+				<string>4E23C0C3C5CF154075BDE3E79D2EAC43</string>
+				<string>85E8D739830AC6F6E98D7B43A2932099</string>
+				<string>CB51AB19914745F2250D9DB0D5C3C806</string>
+				<string>B34BBDBBA5577DEAB2F973B1CC7E2FD1</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
-		<key>CD0BB699D422CFCB499EAC7706ADCC0F</key>
+		<key>CFF95E58CDDD9CB73F89F651806BF446</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2704,13 +3551,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>UserService.h</string>
+			<string>IDataStore.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/UserService.h</string>
+			<string>SDK/lib/backendless/include/IDataStore.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D218669F9F327BB4B40217BF48CC64D6</key>
+		<key>D005D43D9E5C5E23134547E1214E0B69</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2719,13 +3566,26 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MediaPlaybackOptions.h</string>
+			<string>Types.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/MediaPlaybackOptions.h</string>
+			<string>SDK/lib/CommLibiOS/include/Types.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D282511003E90D2A105A746B24215541</key>
+		<key>D115EFFB1DEA3EBF33A95E13A0123253</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-Dogma Debate-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D387DEEF91541C0268E172D47031CA30</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2734,26 +3594,23 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>BinaryStream.h</string>
+			<string>BEAnnotation.h</string>
 			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/BinaryStream.h</string>
+			<string>SDK/lib/backendless/include/BEAnnotation.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D40FCD996DD22409772AA784F59D4447</key>
+		<key>D40315620E9D700DC73323A8CED6612F</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>FFC33672FE3BA8D999784FD476D09214</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>cpu.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/cpu.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
 		</dict>
 		<key>D41D8CD98F00B204E9800998ECF8427E</key>
 		<dict>
@@ -2781,7 +3638,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>3A280C7A7A2E77F96154BFD66C10A238</string>
+			<string>C30322528D2B5E0A8266149BEC35324C</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -2790,10 +3647,26 @@
 			<string></string>
 			<key>targets</key>
 			<array>
-				<string>631F5AF9FF432013782F8A2D779B2501</string>
+				<string>45935B91DF0442390E2CA6DEEF68AE99</string>
+				<string>33CEFFBD7F709811F4B9C25BBD51843C</string>
 			</array>
 		</dict>
-		<key>D499267F777A1D425EB435B005CD0E65</key>
+		<key>D41E280AF202D3C54B4A5AEABB532495</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>OAuthSwift.swift</string>
+			<key>path</key>
+			<string>OAuthSwift/OAuthSwift.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D545DCF37D406691E2134FA36D3E331F</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2802,43 +3675,28 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>IClientSharedObjectDelegate.h</string>
+			<string>MediaPublishOptions.h</string>
 			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/IClientSharedObjectDelegate.h</string>
+			<string>SDK/lib/backendless/include/MediaPublishOptions.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D510DB5B3CAE22619B24063C088F95F4</key>
+		<key>D7132486A4A75E6F8AD5525C55692E9B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>Backendless-Bridging-Header.h</string>
+			<string>Dictionary+OAuthSwift.swift</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/Backendless-Bridging-Header.h</string>
+			<string>OAuthSwift/Dictionary+OAuthSwift.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D6A874D40B6188716A05CBDDAA7FA48B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>IAtomicCounters.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/IAtomicCounters.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D795F7FD12D48EF39EDC958AD8AEFABA</key>
+		<key>D7287B160C41E9F03670FE72D90A30F3</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2853,7 +3711,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D90DF02B768601A221062481E39166D2</key>
+		<key>D7C0824938FC5ACC6C809F315328DE3A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2862,56 +3720,100 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Responder.h</string>
+			<string>x264_config.h</string>
 			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/Responder.h</string>
+			<string>SDK/lib/x264/include/x264_config.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>DA92A886FF2AAC5E13936C4FB6A6B1AA</key>
+		<key>D83030900188C4F921198F74249E1BF2</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.swift</string>
 			<key>name</key>
-			<string>BackendlessSimpleQuery.h</string>
+			<string>OAuthSwiftURLHandlerType.swift</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/BackendlessSimpleQuery.h</string>
+			<string>OAuthSwift/OAuthSwiftURLHandlerType.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>DCC44FEEF6F15E01C5CB29B559DA73DA</key>
+		<key>D872BF42F5951328B05711109D7A3259</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>baseConfigurationReference</key>
+			<string>8B92A65DFD91984F367115FBC836FA3F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/OAuthSwift/OAuthSwift-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/OAuthSwift/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/OAuthSwift/OAuthSwift.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>OAuthSwift</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>BackendlessEntity.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/BackendlessEntity.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>Debug</string>
 		</dict>
-		<key>DD918748DC76FE64BFD6896C54291FF4</key>
+		<key>D96221277ED7EC88675CAE10F114A2DB</key>
 		<dict>
-			<key>children</key>
+			<key>buildConfigurations</key>
 			<array>
-				<string>C508BA83D994719A1C5F1B19BE1B788C</string>
+				<string>E5C2D3A7EE3ADA6AD019964133C7DA6A</string>
+				<string>01185A0302DA7E9DBF9F2622E18EC6E1</string>
 			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>XCConfigurationList</string>
 		</dict>
-		<key>DEADEE78F54CD75753054DEE2126028B</key>
+		<key>DBD342A472D507D290F635E711918C35</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2920,13 +3822,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>mem.h</string>
+			<string>attributes.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/mem.h</string>
+			<string>SDK/lib/libav-11.4/include/libavutil/attributes.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E1BDD481795E5BE76A83FA98EBBF27D2</key>
+		<key>DD978C4FB065C7DD29BBFF7B421F4C1B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2935,43 +3837,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>avstring.h</string>
+			<string>MediaPlayer.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/avstring.h</string>
+			<string>SDK/lib/backendless/include/MediaPlayer.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E25B3AD42F262CB3018C1E2F149007DA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>intfloat.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/intfloat.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5A51DF05EC900D0D4E51A98DAA63DFE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>common.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/common.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E7AC42C650A4315AAF58248215A888F3</key>
+		<key>DD9F904FC2066011DD503411ECC45172</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2986,7 +3858,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E7B1A8871BDAAB7AA798239471B72B98</key>
+		<key>DDBD71FD71973A49F9B228599666F0CE</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2995,13 +3867,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>BackendlessUser.h</string>
+			<string>Backendless.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/BackendlessUser.h</string>
+			<string>SDK/lib/backendless/include/Backendless.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E93A0A684AFAAA4F09BD9C1B1765BD3A</key>
+		<key>DEEB9A791C2872C065854746405BC491</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3010,35 +3882,32 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>avfiltergraph.h</string>
+			<string>BEMapView.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavfilter/avfiltergraph.h</string>
+			<string>SDK/lib/backendless/include/BEMapView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EA8C8905249BDFA2C8BC68A39E6E61F7</key>
+		<key>E25FA70C34718EADF86156088FDB44B9</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>C9591044DB2184285747C711CEABDDC9</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>random_seed.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/random_seed.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
 		</dict>
-		<key>EA9E59507408CE73A7E302C2B12E1F1A</key>
+		<key>E39651703AAA739BB326DE4997453E37</key>
 		<dict>
 			<key>fileRef</key>
 			<string>3E4E89230EF59BC255123B67864ACF77</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>EB0997088F14371A451D1DFCD9FBE0BA</key>
+		<key>E3B5562007DA0EDB3A2B884C341D9A4C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3047,13 +3916,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>BackendlessFile.h</string>
+			<string>speex_stereo.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/BackendlessFile.h</string>
+			<string>SDK/lib/speex-1.2rc2/include/speex_stereo.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EBBA1ABFBE76D639209BDC215B6B1B1B</key>
+		<key>E4400E46ADFDC7DC4349D10B623C5E5A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3062,33 +3931,333 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>QueryOptions.h</string>
+			<string>mem.h</string>
 			<key>path</key>
-			<string>SDK/lib/backendless/include/QueryOptions.h</string>
+			<string>SDK/lib/libav-11.4/include/libavutil/mem.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>ED41B63BAD5A67F84D403FC1C02CE814</key>
+		<key>E4A61593F95BD1CD7AB89458D5B0EF44</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>DeviceRegistration.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/DeviceRegistration.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E517768249C3E5542047160CF3F009F8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ICacheService.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/ICacheService.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5C2D3A7EE3ADA6AD019964133C7DA6A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9C85FA7E85845618B4AB0BC4F5D5DB64</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-Dogma Debate/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-Dogma Debate/Pods-Dogma Debate.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_Dogma_Debate</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E75EACD4E2ED6D3F8F946274A8C5F601</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>speex.h</string>
+			<key>path</key>
+			<string>SDK/lib/speex-1.2rc2/include/speex.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E76D6A2D6DBA002E3251AB9512CCF84F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>intreadwrite.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/intreadwrite.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E803372F830B0CD5DC6D53BEC51D53A8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IAtomicCounters.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/IAtomicCounters.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E88281BA4C638177C534D182B4287D52</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>opt.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/opt.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E8866E83CE892248B1A354CCCFCE3D99</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-Dogma Debate-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E8AEC6EE10BE8623C2C26E240A8F3FC1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BinaryCodec.h</string>
+			<key>path</key>
+			<string>SDK/lib/CommLibiOS/include/BinaryCodec.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E920569803527AF1BE08E856BCC7EA61</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>45935B91DF0442390E2CA6DEEF68AE99</string>
+			<key>remoteInfo</key>
+			<string>OAuthSwift</string>
+		</dict>
+		<key>EAAF0D7C57C508D477B297966D056765</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>GeoService.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/GeoService.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC709CC3EC292B112897988A310167A7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>rational.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/rational.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ECB30C7D503B9D27A3E24A6900A716F8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>dxva2.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavcodec/dxva2.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED8C71759E29E315593516E54758056F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BackendlessBeacon.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/BackendlessBeacon.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EF8FBFBD74714B4FA8FBA58D1CF2E5CC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>speex_config_types.h</string>
+			<key>path</key>
+			<string>SDK/lib/speex-1.2rc2/include/speex_config_types.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F00913E8887271B48BC13400063AFFC9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Backendless-Bridging-Header.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/Backendless-Bridging-Header.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F2358DCC71F7F6187462F6E79E4782D1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>IPersistable.h</string>
+			<key>path</key>
+			<string>SDK/lib/CommLibiOS/include/IPersistable.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F436D3DFBB0BFA35D2C2F61C1C13EF66</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-Dogma Debate-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F61EBE50A04A7BDA0A9DD179F193012B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>258D3C47CE9B5C8F59ACA282DFAD7DC4</string>
+			<string>15ABC4D32EE04C7AC45878EFE22FF08A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>EDE8F59B21805E452EEBF300991BCD45</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>ED41B63BAD5A67F84D403FC1C02CE814</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EE0C07A5B165357301724B1358E8BA06</key>
+		<key>F663AF811607BB3D90C46FDDF9D5011C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3097,13 +4266,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>FlashorbBinaryWriter.h</string>
+			<string>IPresenceListener.h</string>
 			<key>path</key>
-			<string>SDK/lib/CommLibiOS/include/FlashorbBinaryWriter.h</string>
+			<string>SDK/lib/backendless/include/IPresenceListener.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EF6D2FEAE98AC6B99F4A8C0F5146BF78</key>
+		<key>F85853763111E42091EE3DDBD7D2964A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3111,200 +4280,12 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>xvmc.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavcodec/xvmc.h</string>
+			<string>Pods-Dogma Debate-umbrella.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EFB19B94E729BDF45D12B28FAF7B53B5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>hmac.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/hmac.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F212D156C9F90CF86276AC5B6A75366F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Backendless-With-Media-Bridging-Header.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/Backendless-With-Media-Bridging-Header.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F3236476DE311A43054AE703CE38F5CC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>samplefmt.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/samplefmt.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F38BED1B24E0E19EB305731FD38D484F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>version.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavcodec/version.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F456F434913784F48702DE9B667ACA70</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>DeliveryOptions.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/DeliveryOptions.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F4999729958D1FA2144768B311A02F36</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GeoCategory.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/GeoCategory.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F5637033A0983603EF1C7AC0C51C932C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Logging.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/Logging.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F6EBCC7C73E3E997FF2D997CCAEA953B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>swscale.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libswscale/swscale.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F77C08158BE988EC065B5E0B63B187C2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>pixfmt.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/pixfmt.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F77ECD6FAC21B08B985A1EC477984859</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>buffer.h</string>
-			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/buffer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FC61097ED8B6474897E8CBD3B7B04E06</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4EE10F8C0ECD465F4159F2DB90947BA0</string>
-				<string>FEA93C46EFB6CBC80D1E1F98B0B44D76</string>
-				<string>258D3C47CE9B5C8F59ACA282DFAD7DC4</string>
-				<string>5B8BC249FBB2F398CF08AF790F67C3E2</string>
-				<string>334A9FE427AA206C8ED253844EC3C321</string>
-				<string>4C3268B436FCE7E5C888C17009CF70BB</string>
-				<string>9FBFE356ABDCF790902D69B2355B5A5E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-Dogma Debate</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-Dogma Debate</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FD54A3ED5F4CDB54FD4C6BED1B07EC3B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SubscriptionOptions.h</string>
-			<key>path</key>
-			<string>SDK/lib/backendless/include/SubscriptionOptions.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FEA93C46EFB6CBC80D1E1F98B0B44D76</key>
+		<key>F96B1506429EBA4D83321BB7D2478369</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3317,7 +4298,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FF55D75382CBF48DDD2BA7DC25EDA27C</key>
+		<key>FAA775B87D7A8EE16164B2335F5F1213</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3326,9 +4307,84 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>base64.h</string>
+			<string>avfft.h</string>
 			<key>path</key>
-			<string>SDK/lib/libav-11.4/include/libavutil/base64.h</string>
+			<string>SDK/lib/libav-11.4/include/libavcodec/avfft.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FADF3F2B1DF3AA5F85B3E82AA847A7BA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BackendlessDataQuery.h</string>
+			<key>path</key>
+			<string>SDK/lib/backendless/include/BackendlessDataQuery.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FC7F3CFB4A7E1B3FEA5B9E2E36327EE3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>OAuthSwiftHTTPRequest.swift</string>
+			<key>path</key>
+			<string>OAuthSwift/OAuthSwiftHTTPRequest.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FD3B6422216AB27552D5D49E9547EBDA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>replaygain.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/replaygain.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFC33672FE3BA8D999784FD476D09214</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>OAuthSwiftMultipartData.swift</string>
+			<key>path</key>
+			<string>OAuthSwift/OAuthSwiftMultipartData.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFC9864BE263C7FDBB43738EBFF0261A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>audio_fifo.h</string>
+			<key>path</key>
+			<string>SDK/lib/libav-11.4/include/libavutil/audio_fifo.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>

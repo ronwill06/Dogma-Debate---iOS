@@ -1,0 +1,6 @@
+framework module Pods_Dogma_Debate {
+  umbrella header "Pods-Dogma Debate-umbrella.h"
+
+  export *
+  module * { export * }
+}

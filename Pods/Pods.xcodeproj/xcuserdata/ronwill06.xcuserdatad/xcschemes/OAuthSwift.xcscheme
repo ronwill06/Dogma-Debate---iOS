@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '40649447B35D396D49F45171'
-               BlueprintName = 'Pods-Dogma Debate'
+               BlueprintIdentifier = '7E8C456C06DD34213502A256'
+               BlueprintName = 'OAuthSwift'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_Dogma_Debate.framework'>
+               BuildableName = 'OAuthSwift.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
