@@ -22,21 +22,4 @@ class RWPodcastManager {
         
         return string as String
     }
-    
-    
-    static func secondsForPodcast(podcast: RWPodcast) -> String {
-        var secs = ""
-        guard let url =  podcast.url else { return "" }
-        guard let audioUrl = NSURL(string: url) else { return "" }
-        let audioPlayer = AVPlayer(URL:audioUrl)
-        
-        if let duration = audioPlayer.currentItem?.asset.duration {
-            let seconds = CMTimeGetSeconds(duration)
-            secs = RWPodcastManager.setUpPodcastDuration(seconds)
-        }
-        
-        return secs
-    }
-    
-
 }

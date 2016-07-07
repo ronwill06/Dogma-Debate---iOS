@@ -133,10 +133,10 @@ extension RWPodcastsViewController: UICollectionViewDelegateFlowLayout {
         }
         
         if UIDevice.isIphone4() {
-            return CGSize(width: view.bounds.size.width, height: 190)
+            return CGSize(width: view.bounds.size.width - 20, height: 190)
         }
         
-        return CGSize(width: view.bounds.size.width, height: 200)
+        return CGSize(width: view.bounds.size.width - 20, height: 200)
     }
     
 }

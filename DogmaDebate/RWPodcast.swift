@@ -14,7 +14,7 @@ class RWPodcast {
     var title: String = ""
     var podcastDate: String?
     var podcastDescription: String?
-    var secs: String = ""
+    var length: String = ""
     var url: String?
     var videoUrl: String?
     var episodeNumber: String = ""
@@ -34,7 +34,6 @@ class RWPodcast {
         let documentDirectory = directores.first
         guard let mp3FilePath = documentDirectory?.stringByAppendingString("/Dogma-Debate-Episode-\(podcast.episodeNumber)") else { return "" }
         
-        
         if NSFileManager.defaultManager().fileExistsAtPath(mp3FilePath) {
             guard let data = NSData(contentsOfFile: mp3FilePath), mp3Url = String(data:data , encoding: NSUTF8StringEncoding) else { return ""}
             return mp3Url
@@ -48,13 +47,26 @@ class RWPodcast {
         let documentDirectory = directores.first
         guard let mp3FilePath = documentDirectory?.stringByAppendingString("/Dogma-Debate-EpisodeExtra-\(podcast.episodeNumber)") else { return "" }
         
-        
         if NSFileManager.defaultManager().fileExistsAtPath(mp3FilePath) {
             guard let data = NSData(contentsOfFile: mp3FilePath), mp3Url = String(data:data , encoding: NSUTF8StringEncoding) else { return ""}
             return mp3Url
         }
         
         return ""
+    }
+    
+    func timeForPodcasts(seconds: Int) -> String {
+        var string: NSString
+        let hrs = seconds / 3600
+        let mins = (seconds % 3600) / 60
+        let secs = mins % 60
+        if Int(hrs) == 0 {
+            string = NSString(format: "%.02d:%.02d", mins, secs)
+        } else {
+            string = NSString(format: "%.02d:%.02d:%.02d", hrs, mins, secs)
+        }
+        
+        return string as String
 
     }
 

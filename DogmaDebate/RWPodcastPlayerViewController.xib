@@ -86,6 +86,9 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="225" id="zhZ-Vb-NFC"/>
                     </constraints>
+                    <connections>
+                        <action selector="slideToTime:" destination="-1" eventType="valueChanged" id="IQv-ze-Qwv"/>
+                    </connections>
                 </slider>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cD0-Uq-ZHy">
                     <rect key="frame" x="142" y="265" width="36" height="15"/>

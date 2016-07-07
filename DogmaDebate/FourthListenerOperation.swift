@@ -18,7 +18,7 @@ class FourthListenerOperation: NSOperation {
 
     let session: NSURLSession
     var podcasts: [RWPodcast] = []
-    
+
    override var asynchronous: Bool {
         return true
     }
@@ -44,32 +44,32 @@ class FourthListenerOperation: NSOperation {
                     for object in jsonResponse {
                         let podcast = RWPodcast()
                         let episodeNumber = object["episodenumber"] as! Int
-                        let seconds = object["seconds"] as? Int
-                        podcast.secs = String(seconds)
                         podcast.episodeNumber = String(episodeNumber)
                         podcast.title = object["title"] as! String
                         podcast.podcastDescription = object["description"] as? String
                         podcast.url = object["url"] as? String
+                        let secs =  object["seconds"] as! Int
+                        podcast.length = podcast.timeForPodcasts(secs)
                         podcast.isFullLengthPodcast = true
-                        
+
                         var podcastfile = ""
                         podcastfile = "/Dogma-Debate-EpisodeExtra-\(podcast.episodeNumber)"
 
-                        
+
                         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
                         let documentsDirectory = paths.first
-                        
+
                         guard let filePath = documentsDirectory?.stringByAppendingString(podcastfile) else { return }
                         try podcast.url?.writeToFile(filePath, atomically: true, encoding: NSUTF8StringEncoding)
-                        
+
                         strongSelf.podcasts.append(podcast)
                     }
-                    
 
-                    dispatch_async(dispatch_get_main_queue(), { 
+
+                    dispatch_async(dispatch_get_main_queue(), {
                           NSNotificationCenter.defaultCenter().postNotificationName(FourthOperationKeys.FourthListenerContentFinishedNotification, object: nil, userInfo: ["content" : strongSelf.podcasts])
                     })
-                   
+
                 }
 
             } catch {
