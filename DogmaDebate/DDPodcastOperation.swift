@@ -16,8 +16,7 @@ class DDPodcastOperation: NSOperation {
     var podcastFeedUrl: NSURL? //NSURL(string: "https://api.spreaker.com/show/261996/episodes")
     
     init(page: Int) {
-        self.podcastFeedUrl = NSURL(string: "https://api.spreaker.com/show/261996/episodes?page=\(page)")
-        
+        podcastFeedUrl = NSURL(string: "https://api.spreaker.com/show/261996/episodes?page=\(page)")
         super.init()
     }
     
@@ -51,7 +50,7 @@ class DDPodcastOperation: NSOperation {
                                     
                                     var podcastfile = ""
                                     if let number = string?.substringWithRange(NSMakeRange(1, 3)) {
-                                        podcastfile = "/Dogma-Debate-Episode-\(number)"
+                                        podcastfile = "Dogma-Debate-Episode-\(number).mp3"
                                         podcast.episodeNumber = number
                                     }
                                     
@@ -60,12 +59,12 @@ class DDPodcastOperation: NSOperation {
                                     podcast.podcastDate = dateString.substringWithRange(NSMakeRange(0, 10))
                                     podcast.url = episode["download_url"] as? String ?? ""
                                     
-                                    let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+                                    let fileManager = NSFileManager.defaultManager()
+                                    let paths = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+                                    //let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
                                     let documentsDirectory = paths.first
-                                    
-                                    guard let filePath = documentsDirectory?.stringByAppendingString(podcastfile) else { return }
-                                    try podcast.url?.writeToFile(filePath, atomically: true, encoding: NSUTF8StringEncoding)
-                                    
+                                    let filePath = documentsDirectory?.URLByAppendingPathComponent(podcastfile)
+                                    //try podcast.url?.writeToFile(filePath, atomically: true, encoding: NSUTF8StringEncoding)
                                     self.podcasts.append(podcast)
                                     
                                 }

@@ -10,7 +10,9 @@ import UIKit
 
 class RWPodcastsViewController: UIViewController {
     
+    
     @IBOutlet weak var collectionView: UICollectionView!
+    
     @IBOutlet weak var imageViewHeight: NSLayoutConstraint!
     
     var page = 1
@@ -20,23 +22,19 @@ class RWPodcastsViewController: UIViewController {
             podcastsViewModel?.update = { 
                 self.collectionView.reloadData()
             }
-
         }
     }
-        
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        self.title = "Podcasts"
-    }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    static func podcastsViewController() -> RWPodcastsViewController {
+        let podcastsViewController = UIStoryboard(name: "HomeTabBarViewController", bundle: nil).instantiateViewControllerWithIdentifier("RWPodcastsViewController") as! RWPodcastsViewController
+        return podcastsViewController
+    }
 
-    }
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBarHidden = true
+        
 
         if UIDevice.isIphone4() {
             imageViewHeight.constant = 200
@@ -49,8 +47,9 @@ class RWPodcastsViewController: UIViewController {
        
     }
     
+    
     override func viewWillAppear(animated: Bool) {
-        navigationController?.setNavigationBarHidden(true, animated: false)
+        super.viewWillAppear(animated)
         
     }
     
@@ -64,11 +63,7 @@ class RWPodcastsViewController: UIViewController {
         let operationQueue = NSOperationQueue()
         operationQueue.addOperation(podcastOp)
     }
-    
-//    func removeSplashScreen() {
-//        self.splashScreenImage.removeFromSuperview()
-//    }
-    
+        
 }
 
 extension RWPodcastsViewController: UICollectionViewDataSource {
@@ -113,14 +108,6 @@ extension RWPodcastsViewController: UICollectionViewDelegate {
             navigationController?.pushViewController(podcastPlayerViewController, animated: true)
     }
     
-//    func collectionView(collectionView: UICollectionView, didHighlightItemAtIndexPath indexPath: NSIndexPath) {
-//        guard let podcastCount = podcastsViewModel?.podcasts?.count else { return }
-//        if indexPath.row == podcastCount - 1 {
-//            let cell = collectionView.cellForItemAtIndexPath(indexPath)
-//            cell?.backgroundColor = UIColor.grayColor()
-//        }
-//    }
-   
 }
 
 extension RWPodcastsViewController: UICollectionViewDelegateFlowLayout {
@@ -139,7 +126,4 @@ extension RWPodcastsViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: view.bounds.size.width - 20, height: 200)
     }
     
-}
-
-extension RWPodcastsViewController : UIScrollViewDelegate {
 }

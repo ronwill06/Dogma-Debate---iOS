@@ -18,7 +18,7 @@ class RWPodcastCellViewModel: NSObject {
             self.date = podcast.podcastDate
             self.episodeNumber = podcast.episodeNumber
             self.title = podcast.title
-            //self.secs = RWPodcastManager.secondsForPodcast(podcast)
+            //Fetch data for URL here
         }
     }
     

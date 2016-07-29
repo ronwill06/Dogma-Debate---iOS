@@ -5,6 +5,30 @@ This application makes use of the following third party libraries:
 
 Copyright (c) 2012-2016 by Backendless.com
 
+## Firebase
+
+Copyright 2016 Google Inc.
+
+## FirebaseAnalytics
+
+Copyright 2016 Google
+
+## FirebaseInstanceID
+
+Copyright 2016 Google Inc.
+
+## GoogleInterchangeUtilities
+
+Copyright 2015 Google Inc.
+
+## GoogleSymbolUtilities
+
+Copyright 2015 Google Inc.
+
+## GoogleUtilities
+
+Copyright 2015 Google Inc.
+
 ## OAuthSwift
 
 Copyright (c) 2014 Dongri Jin <dongriat@gmail.com>

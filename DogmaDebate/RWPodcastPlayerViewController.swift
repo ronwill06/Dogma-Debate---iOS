@@ -11,7 +11,7 @@ import AVFoundation
 
 class RWPodcastPlayerViewController: UIViewController {
 
-    var podcast: RWPodcast
+    var podcast: RWPodcast?
     var isPlaying: Bool = false
     var isPaused: Bool = false
     private var seconds = 0.0
@@ -27,24 +27,22 @@ class RWPodcastPlayerViewController: UIViewController {
     @IBOutlet weak var innerButtonViewTrailingConstraint: NSLayoutConstraint!
     @IBOutlet weak var imageViewHeight: NSLayoutConstraint!
 
-    var player: AVPlayer?
-    var trackTime: CMTime?
+    var player: AVAudioPlayer?
+    var trackTime: NSTimeInterval?
 
     private var kRateDidChangeKVO = 0
 
 
-    init(podcast: RWPodcast) {
-       self.podcast = podcast
-        super.init(nibName: "RWPodcastPlayerViewController", bundle: nil)
+    convenience init(podcast: RWPodcast) {
+        self.init(nibName: "RWPodcastPlayerViewController", bundle: nil)
+        self.podcast = podcast
     }
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        self.podcast = RWPodcast()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 
     required init?(coder aDecoder: NSCoder) {
-         self.podcast = RWPodcast()
         super.init(coder: aDecoder)
     }
 
@@ -61,7 +59,6 @@ class RWPodcastPlayerViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes =  [NSForegroundColorAttributeName : UIColor.whiteColor()]
         slider.minimumValue = 0.0
         slider.value = 0.0
-        slider.continuous = true
 
         if UIDevice.isIphone4() {
             innerButtonViewLeadingConstraint.constant = 20
@@ -73,135 +70,144 @@ class RWPodcastPlayerViewController: UIViewController {
     }
 
     override func viewWillAppear(animated: Bool) {
-        super.viewDidAppear(animated)
+        super.viewWillAppear(animated)
         setUpPodcastDetails()
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            if #available(iOS 9.0, *) {
+                try AVAudioSession.sharedInstance().setMode(AVAudioSessionModeSpokenAudio)
+            } else {
+                // Fallback on earlier versions
+            }
+        } catch {
+            print("\(error)")
+        }
+        
     }
 
 
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
-        isPaused = true
     }
 
     func dismiss() {
         self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
-
+    
     @IBAction func slideToTime(slider: UISlider) {
-        let seekTimeTo = slider.value
-        let forwardedTime = CMTimeMake(1, 1)
-
-        if let trackTime = trackTime {
-            if seekTimeTo < Float(CMTimeGetSeconds(trackTime)) {
-                player?.seekToTime(CMTimeSubtract(trackTime, forwardedTime))
-                slider.value = Float(CMTimeGetSeconds(trackTime))
-            } else {
-                player?.seekToTime(CMTimeAdd(trackTime, forwardedTime))
-                slider.value = Float(CMTimeGetSeconds(trackTime))
-            }
+        guard let player = player else { return }
+        player.pause()
+        let seconds = Int64(slider.value)
+        let seekTimeTo = CMTimeMake(seconds, 1)
+        
+        if slider.tracking {
+            return
         }
+        
+//        if let trackTime = trackTime {
+//            if CMTimeCompare(seekTimeTo, trackTime) == -1 || Float(CMTimeGetSeconds(player.currentTime())) == slider.maximumValue {
+//                player.seekToTime(CMTimeSubtract(trackTime, seekTimeTo), toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
+//                 slider.setValue(Float(CMTimeGetSeconds(trackTime)), animated: true)
+//                player.play()
+//            } else {
+//                player.seekToTime(CMTimeAdd(trackTime, seekTimeTo), toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
+//                slider.setValue(Float(CMTimeGetSeconds(trackTime)), animated: true)
+//                player.play()
+//            }
+//        }
     }
 
-
     @IBAction func rewind(sender: AnyObject) {
-        let thirtySecondsBack = CMTimeMake(15, 1)
-        if let trackTime =  self.trackTime {
-            player?.seekToTime(CMTimeSubtract(trackTime, thirtySecondsBack))
-        }
+        let fifteenSecondsBack = CMTimeMake(15, 1)
+        guard let player = player, trackTime = trackTime else { return }
+        //player.seekToTime(CMTimeSubtract(trackTime, fifteenSecondsBack))
+        player.currentTime = NSTimeInterval(trackTime + 15)
     }
 
     @IBAction func stop(sender: AnyObject) {
-        player?.pause()
         isPaused = true
+        player?.pause()
     }
 
     @IBAction func play(sender: AnyObject) {
-        var podcastUrl = ""
-
-        if podcast.isFullLengthPodcast == true {
-           podcastUrl = RWPodcast.fetchFullEpisodeForPodcast(podcast)
-        } else {
-            podcastUrl = RWPodcast.fetchEpisodeForPodcast(podcast)
-        }
-
         if isPlaying == false {
-            let podcastUrl = podcastUrl
-            let url = NSURL(string: podcastUrl)
-            if let audioUrl = url {
-                let audioPlayer = AVPlayer(URL:audioUrl)
-                player = audioPlayer
-                player?.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions(rawValue: 0), context: nil)
-            }
-
+            player?.play()
+            trackTime = player?.currentTime
         } else if isPaused == true {
             player?.play()
         } else {
             player?.pause()
         }
-
     }
 
-    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
-
-        if let keyPath = keyPath {
-            if (object === self.player) && (keyPath == "status") {
-
-                if player?.status == AVPlayerStatus.ReadyToPlay {
-                    isPlaying = true
-                    player?.play()
-
-                    if let duration = player?.currentItem?.asset.duration {
-                        let secs = CMTimeGetSeconds(duration)
-                        self.slider.maximumValue = Float(secs)
-                        //timeDurationLabel.text =  setUpPodcastDuration(secs)
-
-                    }
-
-                    player?.addPeriodicTimeObserverForInterval(CMTimeMake(1, 1), queue: nil) { (time) -> Void in
-                        self.trackTime = time
-                        self.seconds = CMTimeGetSeconds(time)
-                        self.timerLabel.text = self.setUpPodcastTimer(self.seconds)
-                        self.slider.value = Float(self.seconds)
-                        print("\(self.slider.value)")
-                    }
-
-                    if let time = player?.currentItem?.duration.seconds {
-                    let number = NSNumber(double: time)
-                    slider.setValue(number.floatValue, animated: true)
-                    }
-
-                }
-
-
-                if self.player?.status == AVPlayerStatus.Failed {
-                }
-
-            }
-
-        }
-
-    }
+//    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+//        guard let player = player, keyPath = keyPath else { return }
+//        
+//            if (object === player) && (keyPath == "status") {
+//
+//                if player.status == AVPlayerStatus.ReadyToPlay {
+//                    isPlaying = true
+//                    player.play()
+//
+//                    if let duration = player.currentItem?.asset.duration {
+//                        let secs = CMTimeGetSeconds(duration)
+//                        slider.maximumValue = Float(secs)
+//                    }
+//
+//                    player.addPeriodicTimeObserverForInterval(CMTimeMake(1, 1), queue: nil) { (time) -> Void in
+//                        self.trackTime = time
+//                        self.seconds = CMTimeGetSeconds(time)
+//                        self.timerLabel.text = self.setUpPodcastTimer(self.seconds)
+//                        let sliderTime = Float(CMTimeGetSeconds(player.currentTime()))//Float(self.seconds)
+//                        self.slider.setValue(sliderTime, animated: true)
+//                        print("\(self.slider.value)")
+//                    }
+//                }
+//            }
+//        
+//        if player.status == AVPlayerStatus.Failed {
+//        }
+//
+//    }
 
     @IBAction func fastForward(sender: AnyObject) {
-        let addedTime =  CMTimeMake(15, 1)
-        if let trackTime = self.trackTime {
-            player?.seekToTime(CMTimeAdd(trackTime, addedTime))
-        }
+        let fifteenSecondsForward =  CMTimeMake(15, 1)
+        guard let player = player, trackTime = trackTime else { return }
+        player.currentTime = Double(trackTime + 15)
     }
 
     func setUpPodcastDetails() {
+        guard let podcast = self.podcast else { return }
+        var url: NSURL?
+        
+        if podcast.isFullLengthPodcast == true {
+            url = RWPodcastManager.sharedManager.podcastContentForEpisode(podcast)
+        } else {
+            url = RWPodcastManager.sharedManager.podcastContentForEpisode(podcast)
+        }
+
         if podcast.isFullLengthPodcast {
             timeDurationLabel.text = podcast.length
 
         } else {
-            guard let url = podcast.url, podcastURL = NSURL(string: url) else { return }
-            let audioPlayer = AVPlayer(URL: podcastURL)
-            self.player = audioPlayer
+            do {
+                if let url = url  {
+                    player = try AVAudioPlayer(contentsOfURL: url)
+                }
+            } catch {
+               print("\(error)")
+            }
 
-            guard let duration = player?.currentItem?.asset.duration else { return }
-            let secs = CMTimeGetSeconds(duration)
+            if let duration = player?.duration {
+                 timeDurationLabel.text = setUpPodcastDuration(duration)
+            }
             titleLabel.text = podcast.title
-            timeDurationLabel.text = setUpPodcastDuration(secs)
             podcastDescription.text = podcast.podcastDescription
         }
 
@@ -224,26 +230,23 @@ class RWPodcastPlayerViewController: UIViewController {
         var hours = 0.0
         var countedSeconds = 0.0
         var secs = 0.0
-
+        
         while countedSeconds <= seconds {
             secs += 1
-
+            
             if countedSeconds % 60.0 == 0 && countedSeconds > 0 {
                 mins += 1
                 secs = 0.0
             }
-
-
+            
             if countedSeconds % 3600 == 0 && countedSeconds > 0 {
                 hours += 1
                 mins = 0.0
             }
-
-             countedSeconds += 1
+            countedSeconds += 1
         }
-
-
-       return NSString(format: "%.02d:%.02d:%.02d", Int(hours), Int(mins), Int(secs)) as String
+        
+        return NSString(format: "%.02d:%.02d:%.02d", Int(hours), Int(mins), Int(secs)) as String
     }
 
 }

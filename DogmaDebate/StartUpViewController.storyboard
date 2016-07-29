@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2ou-0e-VJ8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start Up View Controller-->
+        <scene sceneID="18q-ii-TEy">
+            <objects>
+                <viewController id="2ou-0e-VJ8" customClass="StartUpViewController" customModule="Dogma_Debate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cT3-MO-qhK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hsg-r9-P2n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2XY-mM-UaM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash-Screen-1080-x1920" translatesAutoresizingMaskIntoConstraints="NO" id="Nn4-6M-r7R">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Nn4-6M-r7R" secondAttribute="trailing" id="AOf-3O-kZs"/>
+                            <constraint firstItem="Nn4-6M-r7R" firstAttribute="top" secondItem="cT3-MO-qhK" secondAttribute="bottom" id="BIC-vD-0wY"/>
+                            <constraint firstItem="Nn4-6M-r7R" firstAttribute="leading" secondItem="2XY-mM-UaM" secondAttribute="leading" id="NVx-y5-6s7"/>
+                            <constraint firstItem="Nn4-6M-r7R" firstAttribute="top" secondItem="2XY-mM-UaM" secondAttribute="topMargin" id="NcB-uI-ej0"/>
+                            <constraint firstItem="Hsg-r9-P2n" firstAttribute="top" secondItem="Nn4-6M-r7R" secondAttribute="bottom" id="TL7-dy-3V5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BIC-vD-0wY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cfT-RK-jrS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="438"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash-Screen-1080-x1920" width="1080" height="1920"/>
+    </resources>
+</document>

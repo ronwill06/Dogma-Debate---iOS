@@ -11,6 +11,7 @@
 #import "MediaService.h"
 #import "RWMoreViewController.h"
 #import "Dogma_Debate-Swift.h"
+@import Firebase;
 
 @interface AppDelegate ()
 
@@ -31,64 +32,18 @@ static NSString *VERSION_NUM = @"v1";
     Backendless *backendLess = [Backendless sharedInstance];
     [backendLess initApp:APP_ID secret:SECRET_KEY version:VERSION_NUM];
     backendLess.mediaService = [MediaService new];
+    [FIRApp configure];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    StartUpViewController *startUpVC = [[StartUpViewController alloc] init];
-    
-    UIImage *image = [UIImage imageNamed:@"Splash-Screen-1080-x1920"];
-    self.imageView = [[UIImageView alloc] initWithImage:image];
-    [self.window.superview addSubview: self.imageView];
     
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     
-    RWPodcastsViewController *podcastsVC =  [[RWPodcastsViewController alloc] init];
-    RWPodcastsViewModel *podcastsViewModel = [[RWPodcastsViewModel alloc] init];
-    podcastsVC.podcastsViewModel = podcastsViewModel;
-    UINavigationController *podCastsNavVC = [[UINavigationController alloc] initWithRootViewController:podcastsVC];
+    StartUpViewController *startUpViewController = [StartUpViewController startUpViewController];
     
-    RWDebaterViewController *debaterVC = [[RWDebaterViewController alloc] init];
-    RWDebaterViewModel *debaterViewModel = [[RWDebaterViewModel alloc] init];
-    debaterVC.debaterViewModel = debaterViewModel;
-    UINavigationController *debateNavVC = [[UINavigationController alloc] initWithRootViewController:debaterVC];
-    debateNavVC.title = @"Debater";
-    
-    RWFourthLoginViewController *fourthVC = [[RWFourthLoginViewController alloc] init];
-    fourthVC.title = @"4th";
-
-    RWSignUpWebViewController *signUpVC = [RWSignUpWebViewController signUpWebViewController];
-    UINavigationController *fourthNav = [[UINavigationController alloc] initWithRootViewController:fourthVC];
-    
-    RWMoreViewController *moreVC = [[RWMoreViewController alloc] init];
-    UINavigationController *moreNav = [[UINavigationController alloc] initWithRootViewController:moreVC];
-
-
-    UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.tabBar.translucent = NO;
-    tabBarController.tabBar.barTintColor = [UIColor blackColor];
-    tabBarController.tabBar.tintColor =  [UIColor whiteColor];
-    [tabBarController setViewControllers:@[podCastsNavVC, fourthNav] animated:YES];
-    [[tabBarController.tabBar.items objectAtIndex:0] setImage:[UIImage imageNamed:@"PodcastImage"]];
-    //[[tabBarController.tabBar.items objectAtIndex:1] setImage:[UIImage imageNamed:@"Debater"]];
-    [[tabBarController.tabBar.items objectAtIndex:1] setImage:[UIImage imageNamed:@"Login"]];
-    //[[tabBarController.tabBar.items objectAtIndex:3] setImage:[UIImage imageNamed:@"More"]];
-    
-    [NSTimer scheduledTimerWithTimeInterval:7.0 target:self selector:@selector(removeSplashImage) userInfo:nil repeats:nil];
-    
-    [[self window] setRootViewController:tabBarController];
+    [[self window] setRootViewController:startUpViewController];
     [[self window] makeKeyAndVisible];
     
-
-    
-    DDPodcastOperation *podcastOperation = [[DDPodcastOperation alloc] initWithPage:1];
-    NSOperationQueue *operationQueue = [[NSOperationQueue alloc] init];
-    [operationQueue addOperation:podcastOperation];
-    
     return YES;
-}
-
-- (void)removeSplashImage
-{
-    [self.imageView removeFromSuperview];
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options

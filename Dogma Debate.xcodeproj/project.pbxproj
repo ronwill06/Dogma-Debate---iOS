@@ -80,7 +80,6 @@
 		1F5D5CE31B4769F30074FBC8 /* RWFAQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5D5CDF1B4769F30074FBC8 /* RWFAQViewController.xib */; };
 		1F5D5CF41B4B7A3F0074FBC8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5D5CE41B4B71280074FBC8 /* AudioToolbox.framework */; };
 		1F73FC411C15044B0050FB28 /* RWPodcastsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73FC401C15044B0050FB28 /* RWPodcastsViewController.swift */; };
-		1FE4DE9C1C17B4A30092575D /* RWPodcastsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE4DE9B1C17B4A30092575D /* RWPodcastsViewController.xib */; };
 		1FE4DEA11C17C70B0092575D /* DogmaDebateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4DEA01C17C70B0092575D /* DogmaDebateProtocol.swift */; };
 		1FE4DEA31C1A605E0092575D /* RWPodcastCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4DEA21C1A605E0092575D /* RWPodcastCellViewModel.swift */; };
 		1FE4DEA51C1A62D50092575D /* RWPodcastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4DEA41C1A62D50092575D /* RWPodcastCollectionViewCell.swift */; };
@@ -89,7 +88,6 @@
 		7005AB0B1D260A8200FBA4E8 /* RWFourthLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005AB0A1D260A8200FBA4E8 /* RWFourthLoginViewController.swift */; };
 		7005AB0D1D26155400FBA4E8 /* RWOAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005AB0C1D26155400FBA4E8 /* RWOAuthManager.swift */; };
 		7005AB2B1D26EFCC00FBA4E8 /* FourthListenerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005AB2A1D26EFCC00FBA4E8 /* FourthListenerViewController.swift */; };
-		7005AB311D2703CB00FBA4E8 /* StartUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7005AB301D2703CB00FBA4E8 /* StartUpViewController.xib */; };
 		7005AB331D2703EB00FBA4E8 /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7005AB321D2703EB00FBA4E8 /* StartUpViewController.swift */; };
 		700DCD961CF60BA000433925 /* RWSignUpWebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700DCD951CF60BA000433925 /* RWSignUpWebViewController.storyboard */; };
 		700DCD9E1CF60C3F00433925 /* RWSignUpWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DCD9D1CF60C3F00433925 /* RWSignUpWebViewController.swift */; };
@@ -126,6 +124,12 @@
 		70BFE7DC1C3E0955004A5D1A /* RWDropsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BFE7DB1C3E0955004A5D1A /* RWDropsViewController.xib */; };
 		70BFE7DE1C3E09CC004A5D1A /* RWDropsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFE7DD1C3E09CC004A5D1A /* RWDropsViewModel.swift */; };
 		70BFE7E01C3E0BCE004A5D1A /* RWDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFE7DF1C3E0BCE004A5D1A /* RWDrop.swift */; };
+		70CCD8BD1D3FF6E80049AFCF /* HomeTabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70CCD8BC1D3FF6E80049AFCF /* HomeTabBarViewController.storyboard */; };
+		70CCD8BF1D4004850049AFCF /* StartUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70CCD8BE1D4004850049AFCF /* StartUpViewController.storyboard */; };
+		70CCD8C11D40055D0049AFCF /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CCD8C01D40055D0049AFCF /* HomeTabBarViewController.swift */; };
+		70CCD8C31D4035410049AFCF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70CCD8C21D4035410049AFCF /* GoogleService-Info.plist */; };
+		70CCD8C41D4035410049AFCF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70CCD8C21D4035410049AFCF /* GoogleService-Info.plist */; };
+		70CCD8DA1D4990920049AFCF /* PodcastDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CCD8D91D4990920049AFCF /* PodcastDownloadOperation.swift */; };
 		70CEF3F11CA3317300630BD1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5D5CE61B4B712E0074FBC8 /* AVFoundation.framework */; };
 		70CEF3F51CA3318400630BD1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEF3F41CA3318400630BD1 /* CoreMedia.framework */; };
 		70DE24451C29FD420050C2B8 /* RWCreationistObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DE24441C29FD420050C2B8 /* RWCreationistObject.swift */; };
@@ -229,7 +233,6 @@
 		1F5D5CE81B4B713F0074FBC8 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		1F5D5CED1B4B73BA0074FBC8 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		1F73FC401C15044B0050FB28 /* RWPodcastsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastsViewController.swift; sourceTree = "<group>"; };
-		1FE4DE9B1C17B4A30092575D /* RWPodcastsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWPodcastsViewController.xib; sourceTree = "<group>"; };
 		1FE4DEA01C17C70B0092575D /* DogmaDebateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogmaDebateProtocol.swift; sourceTree = "<group>"; };
 		1FE4DEA21C1A605E0092575D /* RWPodcastCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastCellViewModel.swift; sourceTree = "<group>"; };
 		1FE4DEA41C1A62D50092575D /* RWPodcastCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWPodcastCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -240,7 +243,6 @@
 		7005AB0A1D260A8200FBA4E8 /* RWFourthLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFourthLoginViewController.swift; sourceTree = "<group>"; };
 		7005AB0C1D26155400FBA4E8 /* RWOAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWOAuthManager.swift; sourceTree = "<group>"; };
 		7005AB2A1D26EFCC00FBA4E8 /* FourthListenerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthListenerViewController.swift; sourceTree = "<group>"; };
-		7005AB301D2703CB00FBA4E8 /* StartUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartUpViewController.xib; sourceTree = "<group>"; };
 		7005AB321D2703EB00FBA4E8 /* StartUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
 		700DCD951CF60BA000433925 /* RWSignUpWebViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RWSignUpWebViewController.storyboard; sourceTree = "<group>"; };
 		700DCD9D1CF60C3F00433925 /* RWSignUpWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWSignUpWebViewController.swift; sourceTree = "<group>"; };
@@ -275,6 +277,11 @@
 		70BFE7DB1C3E0955004A5D1A /* RWDropsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RWDropsViewController.xib; sourceTree = "<group>"; };
 		70BFE7DD1C3E09CC004A5D1A /* RWDropsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDropsViewModel.swift; sourceTree = "<group>"; };
 		70BFE7DF1C3E0BCE004A5D1A /* RWDrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWDrop.swift; sourceTree = "<group>"; };
+		70CCD8BC1D3FF6E80049AFCF /* HomeTabBarViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeTabBarViewController.storyboard; sourceTree = "<group>"; };
+		70CCD8BE1D4004850049AFCF /* StartUpViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StartUpViewController.storyboard; sourceTree = "<group>"; };
+		70CCD8C01D40055D0049AFCF /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		70CCD8C21D4035410049AFCF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		70CCD8D91D4990920049AFCF /* PodcastDownloadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastDownloadOperation.swift; sourceTree = "<group>"; };
 		70CEF3F41CA3318400630BD1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		70DE24441C29FD420050C2B8 /* RWCreationistObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWCreationistObject.swift; sourceTree = "<group>"; };
 		70DE24461C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWAskCreationistsViewModel.swift; sourceTree = "<group>"; };
@@ -376,6 +383,7 @@
 				1F27EADF1C27716E00D8FF5A /* evolution.plist */,
 				1F27EAE11C2771BD00D8FF5A /* smalley.plist */,
 				70BFE7D31C3E043F004A5D1A /* sounds.plist */,
+				70CCD8C21D4035410049AFCF /* GoogleService-Info.plist */,
 				1F45DDAC1B2E51FF00086116 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -421,7 +429,6 @@
 				1F5D5CDE1B4769F30074FBC8 /* RWFAQViewController.m */,
 				1F5D5CDF1B4769F30074FBC8 /* RWFAQViewController.xib */,
 				1F73FC401C15044B0050FB28 /* RWPodcastsViewController.swift */,
-				1FE4DE9B1C17B4A30092575D /* RWPodcastsViewController.xib */,
 				1F27EAE31C27732700D8FF5A /* RWDebaterViewController.swift */,
 				1F27EAE51C2773FE00D8FF5A /* RWDebaterViewController.xib */,
 				702917251C28C82B00F64075 /* RWBibleViewController.swift */,
@@ -448,7 +455,9 @@
 				7005AB2A1D26EFCC00FBA4E8 /* FourthListenerViewController.swift */,
 				709280F21D289108007E0669 /* FourthListenerViewController.storyboard */,
 				7005AB321D2703EB00FBA4E8 /* StartUpViewController.swift */,
-				7005AB301D2703CB00FBA4E8 /* StartUpViewController.xib */,
+				70CCD8BE1D4004850049AFCF /* StartUpViewController.storyboard */,
+				70CCD8C01D40055D0049AFCF /* HomeTabBarViewController.swift */,
+				70CCD8BC1D3FF6E80049AFCF /* HomeTabBarViewController.storyboard */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -543,6 +552,7 @@
 				1F528DA31BFAC96D00FDAD50 /* DDPodcastOperation.swift */,
 				709280E61D2846A7007E0669 /* UserAuthenticationOperation.swift */,
 				709280F01D287452007E0669 /* FourthListenerOperation.swift */,
+				70CCD8D91D4990920049AFCF /* PodcastDownloadOperation.swift */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -680,11 +690,11 @@
 				1F45DDDC1B2E588F00086116 /* RWPodcastCollectionViewCell.xib in Resources */,
 				1F27EAE61C2773FE00D8FF5A /* RWDebaterViewController.xib in Resources */,
 				70DE245F1C2A0EE00050C2B8 /* RWPodcastPlayerViewController.xib in Resources */,
-				7005AB311D2703CB00FBA4E8 /* StartUpViewController.xib in Resources */,
 				7029172C1C28CAC700F64075 /* RWDebateTopicsViewController.xib in Resources */,
 				1F27EADA1C27713D00D8FF5A /* atheism.plist in Resources */,
 				703600E81D009F2400D3746D /* RWBibleViewController.storyboard in Resources */,
 				7088767B1CACBA9E0089DC73 /* RWSignUpViewController.xib in Resources */,
+				70CCD8BF1D4004850049AFCF /* StartUpViewController.storyboard in Resources */,
 				1F45DE511B3C8B6F00086116 /* RWCollectionViewCell.xib in Resources */,
 				70DE244B1C2A00210050C2B8 /* RWAskCreationistsViewController.xib in Resources */,
 				700DCDA41CF7682900433925 /* RWQuoteTableViewCell.xib in Resources */,
@@ -693,7 +703,6 @@
 				70EDD4BE1CF2695700953480 /* PayPalPaymentViewController.storyboard in Resources */,
 				1F45DE4A1B3C5AFF00086116 /* RWCollectionViewController.xib in Resources */,
 				709280F31D289108007E0669 /* FourthListenerViewController.storyboard in Resources */,
-				1FE4DE9C1C17B4A30092575D /* RWPodcastsViewController.xib in Resources */,
 				1F45DE081B3AE52F00086116 /* RWMoreTableViewCell.xib in Resources */,
 				700DCD961CF60BA000433925 /* RWSignUpWebViewController.storyboard in Resources */,
 				1F45DDBB1B2E51FF00086116 /* Images.xcassets in Resources */,
@@ -706,7 +715,9 @@
 				70DE24591C2A091E0050C2B8 /* RWEvolutionViewController.xib in Resources */,
 				1F27EAEA1C27811F00D8FF5A /* RWDebaterCollectionViewCell.xib in Resources */,
 				70BFE7D41C3E043F004A5D1A /* sounds.plist in Resources */,
+				70CCD8BD1D3FF6E80049AFCF /* HomeTabBarViewController.storyboard in Resources */,
 				70BFE7DA1C3E082C004A5D1A /* RWDropsTableViewCell.xib in Resources */,
+				70CCD8C31D4035410049AFCF /* GoogleService-Info.plist in Resources */,
 				1F5D5CCC1B4727140074FBC8 /* RWAboutUsTableViewCell.xib in Resources */,
 				1F45DE1A1B3B37E800086116 /* RWEventTableViewCell.xib in Resources */,
 			);
@@ -716,6 +727,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70CCD8C41D4035410049AFCF /* GoogleService-Info.plist in Resources */,
 				1F5D5CD81B473E0B0074FBC8 /* RWPartnerViewController.xib in Resources */,
 				1F45DE1E1B3B46DC00086116 /* RWEventHeaderView.xib in Resources */,
 				1F45DDDD1B2E588F00086116 /* RWPodcastCollectionViewCell.xib in Resources */,
@@ -809,6 +821,7 @@
 				708876891CD5A8320089DC73 /* UIWidgetCustomizer.swift in Sources */,
 				703600E61D009C7E00D3746D /* RWBibleObject.swift in Sources */,
 				1F45DE2C1B3B546700086116 /* RWStyleControls.m in Sources */,
+				70CCD8DA1D4990920049AFCF /* PodcastDownloadOperation.swift in Sources */,
 				1F528DA71BFE8FF100FDAD50 /* RWPodcast.swift in Sources */,
 				70DE24471C29FDD10050C2B8 /* RWAskCreationistsViewModel.swift in Sources */,
 				1F45DDB01B2E51FF00086116 /* AppDelegate.m in Sources */,
@@ -831,6 +844,7 @@
 				700DCDA21CF7650100433925 /* RWQuoteTableViewCell.swift in Sources */,
 				7005AB331D2703EB00FBA4E8 /* StartUpViewController.swift in Sources */,
 				1F5D5CCA1B4727140074FBC8 /* RWAboutUsTableViewCell.m in Sources */,
+				70CCD8C11D40055D0049AFCF /* HomeTabBarViewController.swift in Sources */,
 				1F5D5CE01B4769F30074FBC8 /* RWFAQViewController.m in Sources */,
 				1F45DE481B3C5AFF00086116 /* RWCollectionViewController.m in Sources */,
 				1F27EAE41C27732700D8FF5A /* RWDebaterViewController.swift in Sources */,
@@ -986,7 +1000,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: David Smalley (NYZ9B4LL77)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Smalley (MTU73GAGZ6)";
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -1014,7 +1028,7 @@
 				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: David Smalley (NYZ9B4LL77)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Smalley (MTU73GAGZ6)";
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;

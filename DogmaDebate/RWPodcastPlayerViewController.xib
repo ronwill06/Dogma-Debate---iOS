@@ -186,7 +186,7 @@
                                         <constraint firstAttribute="height" constant="50" id="fta-aM-KEc"/>
                                         <constraint firstAttribute="width" constant="50" id="qCJ-Rn-s2R"/>
                                     </constraints>
-                                    <state key="normal" image="Fast-Forward"/>
+                                    <state key="normal" image="FastForward"/>
                                     <connections>
                                         <action selector="fastForward:" destination="-1" eventType="touchUpInside" id="LCv-G4-WrU"/>
                                     </connections>
@@ -267,10 +267,10 @@
         </view>
     </objects>
     <resources>
-        <image name="Fast-Forward" width="60" height="60"/>
-        <image name="Play" width="60" height="60"/>
-        <image name="Rewind" width="60" height="60"/>
-        <image name="Stop" width="60" height="60"/>
+        <image name="FastForward" width="417" height="417"/>
+        <image name="Play" width="417" height="417"/>
+        <image name="Rewind" width="139" height="139"/>
+        <image name="Stop" width="417" height="417"/>
         <image name="david_smalley" width="1500" height="1152"/>
     </resources>
 </document>

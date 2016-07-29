@@ -6,6 +6,7 @@ use_frameworks!
 target 'Dogma Debate' do
 pod 'Backendless-ios-SDK'
 pod 'OAuthSwift', '~> 0.5.0'
+pod 'Firebase'
 end
 
 target 'DogmaDebateTests' do

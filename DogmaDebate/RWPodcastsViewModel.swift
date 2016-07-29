@@ -14,7 +14,6 @@ class RWPodcastsViewModel: NSObject, DogmaDebateProtocol {
     var tabBarTitle: String?
     var podcasts:[AnyObject] = []
     var oldPodcasts = [AnyObject]()
-    var collectionViewReference: UICollectionView?
     var update: (() -> Void)?
     
     override init() {
@@ -55,7 +54,6 @@ class RWPodcastsViewModel: NSObject, DogmaDebateProtocol {
     func podcastAtIndex(index: Int) -> RWPodcast? {
         let podcast = podcasts[index]
         return podcast as? RWPodcast
-        
     }
     
     func numberOfItemsInSection() -> Int {
