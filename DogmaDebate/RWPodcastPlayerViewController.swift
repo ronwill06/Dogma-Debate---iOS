@@ -48,7 +48,7 @@ class RWPodcastPlayerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationController?.navigationBarHidden = false
         let leftBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: self, action: #selector(RWPodcastPlayerViewController.dismiss))
         navigationItem.backBarButtonItem = leftBarButtonItem
@@ -67,6 +67,8 @@ class RWPodcastPlayerViewController: UIViewController {
         } else if UIDevice.isIphone6() {
              imageViewHeight.constant = 250.0
         }
+        
+        _ = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(RWPodcastPlayerViewController.updateSlider), userInfo: nil, repeats: true)
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -91,36 +93,29 @@ class RWPodcastPlayerViewController: UIViewController {
         
     }
 
-
-    override func viewDidDisappear(animated: Bool) {
-        super.viewDidDisappear(animated)
-    }
-
     func dismiss() {
         self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func slideToTime(slider: UISlider) {
         guard let player = player else { return }
-        player.pause()
-        let seconds = Int64(slider.value)
-        let seekTimeTo = CMTimeMake(seconds, 1)
+        player.stop()
         
         if slider.tracking {
             return
         }
+
+        let time = NSTimeInterval(slider.value)
+        player.currentTime = time
+        player.prepareToPlay()
+        player.play()
         
-//        if let trackTime = trackTime {
-//            if CMTimeCompare(seekTimeTo, trackTime) == -1 || Float(CMTimeGetSeconds(player.currentTime())) == slider.maximumValue {
-//                player.seekToTime(CMTimeSubtract(trackTime, seekTimeTo), toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
-//                 slider.setValue(Float(CMTimeGetSeconds(trackTime)), animated: true)
-//                player.play()
-//            } else {
-//                player.seekToTime(CMTimeAdd(trackTime, seekTimeTo), toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
-//                slider.setValue(Float(CMTimeGetSeconds(trackTime)), animated: true)
-//                player.play()
-//            }
-//        }
+    }
+    
+    func updateSlider() {
+        guard let player = player else { return }
+        slider.value = Float(player.currentTime)
+        timerLabel.text = setUpPodcastTimer(Double(slider.value))
     }
 
     @IBAction func rewind(sender: AnyObject) {
@@ -146,35 +141,6 @@ class RWPodcastPlayerViewController: UIViewController {
         }
     }
 
-//    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
-//        guard let player = player, keyPath = keyPath else { return }
-//        
-//            if (object === player) && (keyPath == "status") {
-//
-//                if player.status == AVPlayerStatus.ReadyToPlay {
-//                    isPlaying = true
-//                    player.play()
-//
-//                    if let duration = player.currentItem?.asset.duration {
-//                        let secs = CMTimeGetSeconds(duration)
-//                        slider.maximumValue = Float(secs)
-//                    }
-//
-//                    player.addPeriodicTimeObserverForInterval(CMTimeMake(1, 1), queue: nil) { (time) -> Void in
-//                        self.trackTime = time
-//                        self.seconds = CMTimeGetSeconds(time)
-//                        self.timerLabel.text = self.setUpPodcastTimer(self.seconds)
-//                        let sliderTime = Float(CMTimeGetSeconds(player.currentTime()))//Float(self.seconds)
-//                        self.slider.setValue(sliderTime, animated: true)
-//                        print("\(self.slider.value)")
-//                    }
-//                }
-//            }
-//        
-//        if player.status == AVPlayerStatus.Failed {
-//        }
-//
-//    }
 
     @IBAction func fastForward(sender: AnyObject) {
         let fifteenSecondsForward =  CMTimeMake(15, 1)
@@ -205,10 +171,14 @@ class RWPodcastPlayerViewController: UIViewController {
             }
 
             if let duration = player?.duration {
+                 slider.maximumValue = Float(duration)
                  timeDurationLabel.text = setUpPodcastDuration(duration)
             }
             titleLabel.text = podcast.title
             podcastDescription.text = podcast.podcastDescription
+            if let player = player {
+                timerLabel.text = String(player.currentTime)
+            }
         }
 
         if UIDevice.isIphone4() {
