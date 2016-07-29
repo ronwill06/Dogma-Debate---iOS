@@ -58,6 +58,7 @@ class RWPodcastPlayerViewController: UIViewController {
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         navigationController?.navigationBar.titleTextAttributes =  [NSForegroundColorAttributeName : UIColor.whiteColor()]
         slider.minimumValue = 0.0
+        slider.continuous = true
         slider.value = 0.0
 
         if UIDevice.isIphone4() {
@@ -101,10 +102,6 @@ class RWPodcastPlayerViewController: UIViewController {
         guard let player = player else { return }
         player.stop()
         
-        if slider.tracking {
-            return
-        }
-
         let time = NSTimeInterval(slider.value)
         player.currentTime = time
         player.prepareToPlay()
